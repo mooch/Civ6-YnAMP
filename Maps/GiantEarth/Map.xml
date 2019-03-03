@@ -325,8 +325,8 @@
 		<Replace MapName="GiantEarth" X="93" Y="16" FeatureType="FEATURE_ULURU" TerrainType="TERRAIN_DESERT" />
 
 		<!-- FEATURE_HA_LONG_BAY -->
-		<Replace MapName="GiantEarth" X="78" Y="45" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />
-		<Replace MapName="GiantEarth" X="79" Y="46" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="GiantEarth" X="78" Y="46" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />
+		<Replace MapName="GiantEarth" X="78" Y="47" FeatureType="FEATURE_HA_LONG_BAY" TerrainType="TERRAIN_COAST" />
 		
 		<!-- **************** -->
 		<!-- Rise and Fall NW -->
@@ -337,9 +337,9 @@
 		<Replace MapName="GiantEarth" X="161" Y="36" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_HILLS" />
 		<Replace MapName="GiantEarth" X="162" Y="37" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_HILLS" />
 		
-		<Replace MapName="GiantEarth" X="71" Y="58" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
-		<Replace MapName="GiantEarth" X="72" Y="58" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
-		<Replace MapName="GiantEarth" X="73" Y="58" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
+		<Replace MapName="GiantEarth" X="75" Y="64" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		<Replace MapName="GiantEarth" X="76" Y="64" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		<Replace MapName="GiantEarth" X="77" Y="64" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
 		
 		<Replace MapName="GiantEarth" X="70" Y="72" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_GRASS" />
 		<Replace MapName="GiantEarth" X="71" Y="72" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_GRASS" />
@@ -350,7 +350,7 @@
 		<Replace MapName="GiantEarth" X="5" Y="39" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
 		
 		<Replace MapName="GiantEarth" X="17" Y="64" FeatureType="FEATURE_MATTERHORN" TerrainType="TERRAIN_PLAINS_MOUNTAIN" /> 
-		<Replace MapName="GiantEarth" X="136" Y="61" FeatureType="FEATURE_DELICATE_ARCH" />
+		<Replace MapName="GiantEarth" X="136" Y="63" FeatureType="FEATURE_DELICATE_ARCH" />
 		<Replace MapName="GiantEarth" X="8" Y="43" FeatureType="FEATURE_EYE_OF_THE_SAHARA" TerrainType="TERRAIN_DESERT" />
 		
 		<!-- ****************** -->
