@@ -201,14 +201,11 @@
 		<Replace MapName="GiantEarth" X="88" Y="42"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="113" Y="10"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="36" Y="21"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="GiantEarth" X="48" Y="16"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="75" Y="29"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="84" Y="24"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="87" Y="24"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="GiantEarth" X="89" Y="41"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="89" Y="38"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="89" Y="32"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="GiantEarth" X="99" Y="33"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="102" Y="77"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="143" Y="46"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="111" Y="9"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
@@ -244,13 +241,565 @@
 		<Replace MapName="GiantEarth" X="98" Y="60"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="111" Y="73"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="113" Y="78"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="GiantEarth" X="154" Y="45"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="GiantEarth" X="161" Y="42"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="152" Y="39"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="155" Y="22"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="154" Y="34"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="115" Y="13"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="154" Y="11"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		
+	<!-- +++++++++++++++++++++++++++ -->
+	<!--      Giant Earth Reefs      -->
+	<!-- +++++++++++++++++++++++++++ -->
+	
+		<Replace MapName="GiantEarth" X="20" Y="51" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="11" Y="83" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="177" Y="57" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="177" Y="56" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="178" Y="56" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="179" Y="56" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="178" Y="55" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="3" Y="49" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="4" Y="48" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="2" Y="44" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="2" Y="45" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="2" Y="46" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="3" Y="46" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="0" Y="41" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="1" Y="40" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="16" Y="31" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="17" Y="30" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="16" Y="29" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="30" Y="9" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="31" Y="11" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="32" Y="13" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="32" Y="47" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="32" Y="48" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="33" Y="14" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="33" Y="15" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="33" Y="17" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="33" Y="46" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="34" Y="18" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="34" Y="44" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="35" Y="20" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="35" Y="22" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="35" Y="24" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="35" Y="25" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="35" Y="43" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="36" Y="27" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="36" Y="38" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="36" Y="40" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="37" Y="29" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="38" Y="23" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="38" Y="24" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="38" Y="25" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="40" Y="19" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="40" Y="21" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="41" Y="19" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="41" Y="20" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="42" Y="47" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="41" Y="35" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="43" Y="36" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="43" Y="37" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="43" Y="46" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="44" Y="37" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="45" Y="39" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="47" Y="15" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="48" Y="16" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="49" Y="18" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="56" Y="8" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="57" Y="8" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="47" Y="25" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="47" Y="27" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="47" Y="44" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="48" Y="26" TerrainType="TERRAIN_COAST" 	FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="56" Y="42" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="56" Y="41" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="56" Y="39" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="57" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="58" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="58" Y="35" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="58" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="59" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="75" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="77" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="78" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="69" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="57" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="58" Y="32" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="57" Y="31" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="59" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="60" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="60" Y="29" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="61" Y="31" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="60" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="63" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="64" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="62" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="63" Y="39" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="63" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="64" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="65" Y="31" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="68" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="65" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="66" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="66" Y="32" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="68" Y="45" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="69" Y="41" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="68" Y="39" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="68" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="68" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="71" Y="39" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="72" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="72" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="68" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="77" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="78" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="79" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="78" Y="29" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="79" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="80" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="80" Y="44" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="81" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="83" Y="45" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="80" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="80" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="81" Y="39" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="81" Y="42" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="85" Y="47" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="86" Y="48" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="86" Y="47" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="89" Y="46" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="90" Y="49" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="90" Y="50" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="51" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="88" Y="51" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="92" Y="51" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="93" Y="50" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="93" Y="61" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="93" Y="60" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="97" Y="51" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="98" Y="52" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="98" Y="53" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="97" Y="53" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="99" Y="49" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="100" Y="49" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="99" Y="48" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="99" Y="47" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="99" Y="45" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="101" Y="44" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="101" Y="42" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="100" Y="41" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="98" Y="41" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="81" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="71" Y="32" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="70" Y="31" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="71" Y="31" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="71" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="71" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="71" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="72" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="73" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="74" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="74" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="75" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="76" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="77" Y="24" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="77" Y="22" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="80" Y="23" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="81" Y="23" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="86" Y="22" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="22" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="85" Y="21" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="85" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="83" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="82" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="84" Y="20" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="83" Y="19" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="83" Y="18" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="83" Y="16" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="83" Y="13" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="84" Y="12" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="85" Y="10" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="88" Y="23" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="89" Y="23" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="90" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="92" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="94" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="93" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="95" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="96" Y="23" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="96" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="98" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="99" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="99" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="100" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="100" Y="24" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="100" Y="23" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="101" Y="22" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="102" Y="22" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="105" Y="17" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="106" Y="14" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="105" Y="11" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="104" Y="8" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="103" Y="6" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="105" Y="20" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="107" Y="18" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="108" Y="18" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="108" Y="17" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="109" Y="17" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="110" Y="16" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="108" Y="21" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="108" Y="22" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="106" Y="23" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="105" Y="22" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="106" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="107" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="106" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="107" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="105" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="105" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="104" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="103" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="103" Y="29" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="104" Y="29" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="104" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="102" Y="31" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="130" Y="58" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="132" Y="55" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="133" Y="54" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="133" Y="53" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="162" Y="68" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="131" Y="51" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="131" Y="52" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="130" Y="53" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="130" Y="54" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="136" Y="45" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="136" Y="46" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="135" Y="46" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="148" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="141" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="139" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="138" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="138" Y="44" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="100" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="96" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="95" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="94" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="93" Y="29" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="92" Y="29" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="92" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="88" Y="31" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="90" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="88" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="35" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="86" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="86" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="29" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="86" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="88" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="159" Y="5" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="163" Y="4" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="168" Y="20" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="167" Y="19" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="168" Y="19" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="170" Y="22" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="171" Y="24" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="170" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="168" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="173" Y="32" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="173" Y="31" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="170" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="166" Y="39" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="167" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="152" Y="3" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="152" Y="16" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="151" Y="13" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="148" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="147" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="148" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="148" Y="32" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="147" Y="40" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="146" Y="41" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="145" Y="42" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="144" Y="42" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="143" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="7" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="11" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="14" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="142" Y="50" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="143" Y="50" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="143" Y="51" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="144" Y="51" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="144" Y="50" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="146" Y="52" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="147" Y="52" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="149" Y="53" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="149" Y="54" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="151" Y="52" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="153" Y="52" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="153" Y="51" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="154" Y="50" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="155" Y="50" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="153" Y="53" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="154" Y="54" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="156" Y="51" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="157" Y="51" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="156" Y="49" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="157" Y="50" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="159" Y="48" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="160" Y="48" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="160" Y="47" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="161" Y="47" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="162" Y="46" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="162" Y="45" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="162" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="162" Y="42" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="161" Y="42" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="159" Y="42" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="158" Y="42" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="159" Y="44" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="159" Y="45" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="157" Y="42" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="152" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="151" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="150" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="151" Y="42" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="150" Y="45" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="150" Y="47" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="148" Y="47" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="149" Y="48" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="148" Y="49" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="151" Y="48" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="152" Y="48" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="80" Y="32" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="80" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="80" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="81" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="81" Y="35" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="83" Y="35" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="84" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="85" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="86" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="44" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="88" Y="44" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="89" Y="44" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="88" Y="41" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="89" Y="41" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="92" Y="39" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="93" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="93" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="92" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="94" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="94" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="94" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="93" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="94" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="96" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="99" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="99" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="100" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="100" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="101" Y="32" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="101" Y="35" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="102" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="104" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="105" Y="35" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="106" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="105" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="107" Y="32" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="108" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="109" Y="34" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="109" Y="35" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="111" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="112" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="109" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="109" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="108" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="107" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="106" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="103" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="104" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="103" Y="39" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="104" Y="41" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="105" Y="41" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="108" Y="40" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="108" Y="41" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="108" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="110" Y="43" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="112" Y="40" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="109" Y="39" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="110" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="111" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="110" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="112" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="111" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="113" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="112" Y="30" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="112" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="114" Y="33" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="116" Y="32" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="116" Y="31" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="115" Y="31" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="115" Y="29" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="116" Y="29" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="117" Y="29" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="114" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="115" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="118" Y="27" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="115" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="116" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="119" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="118" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="120" Y="24" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="122" Y="24" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="121" Y="23" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="124" Y="24" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="125" Y="23" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="125" Y="22" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="123" Y="21" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="121" Y="21" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="120" Y="20" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="118" Y="22" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="118" Y="21" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="117" Y="20" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="116" Y="21" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="115" Y="21" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="116" Y="20" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="117" Y="18" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="115" Y="23" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="130" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="133" Y="16" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="133" Y="18" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="136" Y="16" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="136" Y="14" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="135" Y="14" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="134" Y="14" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="127" Y="26" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="128" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="129" Y="25" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="127" Y="28" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="129" Y="29" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="120" Y="35" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="121" Y="35" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="122" Y="36" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="122" Y="37" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="123" Y="38" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="121" Y="39" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="119" Y="39" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="108" Y="47" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="108" Y="48" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="109" Y="49" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="118" Y="46" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="118" Y="45" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="119" Y="45" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="121" Y="45" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="122" Y="45" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="122" Y="47" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="122" Y="49" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="121" Y="51" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="118" Y="49" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="117" Y="48" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="115" Y="50" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="114" Y="50" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="112" Y="52" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="111" Y="53" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="110" Y="53" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="109" Y="54" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="109" Y="55" TerrainType="TERRAIN_COAST"  FeatureType="FEATURE_REEF" />
+		
+	<!-- +++++++++++++++++++++++++++ -->
+	<!--    Giant Earth Fissures     -->
+	<!-- +++++++++++++++++++++++++++ -->
+		
+		<!-- Guelma, Algeria -->
+		<Replace MapName="GiantEarth" X="15" Y="52" TerrainType="TERRAIN_PLAINS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Assal, Djibouti -->
+		<Replace MapName="GiantEarth" X="38" Y="35" TerrainType="TERRAIN_PLAINS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Aluto-Langano, Ethiopia -->
+		<Replace MapName="GiantEarth" X="34" Y="32" TerrainType="TERRAIN_PLAINS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Olkaria, Kenya -->
+		<Replace MapName="GiantEarth" X="32" Y="29" TerrainType="TERRAIN_PLAINS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Antsirabe, Madagascar -->
+		<Replace MapName="GiantEarth" X="37" Y="16" TerrainType="TERRAIN_PLAINS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Warmwaterberg, South Africa -->
+		<Replace MapName="GiantEarth" X="25" Y="7" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Yangbajain, Tibet, China -->
+		<Replace MapName="GiantEarth" X="68" Y="54" TerrainType="TERRAIN_SNOW"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Xianyang, Shaanxi, China -->
+		<Replace MapName="GiantEarth" X="77" Y="59" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Georgia, Caucasus -->
+		<Replace MapName="GiantEarth" X="41" Y="60" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Tatapani, India -->
+		<Replace MapName="GiantEarth" X="60" Y="55" TerrainType="TERRAIN_GRASS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Bakreshwar, India -->
+		<Replace MapName="GiantEarth" X="66" Y="48" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Sabalan, Iran -->
+		<Replace MapName="GiantEarth" X="45" Y="56" TerrainType="TERRAIN_PLAINS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Qingshui, Taiwan -->
+		<Replace MapName="GiantEarth" X="87" Y="49" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Fang, Thailand -->
+		<Replace MapName="GiantEarth" X="75" Y="44" TerrainType="TERRAIN_PLAINS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Miravalles, Costa Rica -->
+		<Replace MapName="GiantEarth" X="148" Y="42" TerrainType="TERRAIN_PLAINS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Chinameca, El Salvador -->
+		<Replace MapName="GiantEarth" X="146" Y="44" TerrainType="TERRAIN_GRASS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Braunau-Altheim, Austria -->
+		<Replace MapName="GiantEarth" X="22" Y="65" TerrainType="TERRAIN_PLAINS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Brest-Pripyat, Belarus -->
+		<Replace MapName="GiantEarth" X="31" Y="68" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Koprivnica, Croatia/Csurgo, Hungary -->
+		<Replace MapName="GiantEarth" X="24" Y="64" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Soultz-sous-Forets, France -->
+		<Replace MapName="GiantEarth" X="16" Y="66" TerrainType="TERRAIN_PLAINS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Krafla, Iceland -->
+		<Replace MapName="GiantEarth" X="4" Y="85" TerrainType="TERRAIN_SNOW"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Larderello-Travale/Radicondoli, Italy -->
+		<Replace MapName="GiantEarth" X="19" Y="60" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Lodz, Poland -->
+		<Replace MapName="GiantEarth" X="26" Y="70" TerrainType="TERRAIN_PLAINS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Chaves, Portugal -->
+		<Replace MapName="GiantEarth" X="5" Y="58" TerrainType="TERRAIN_GRASS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Mt. Meager/Knight Inlet, British Columbia, Canada -->
+		<Replace MapName="GiantEarth" X="132" Y="72" TerrainType="TERRAIN_GRASS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Cerro Prieto, Mexico -->
+		<Replace MapName="GiantEarth" X="132" Y="58" TerrainType="TERRAIN_PLAINS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Los Azufres/Las Tres Virgenes, Mexico -->
+		<Replace MapName="GiantEarth" X="132" Y="54" TerrainType="TERRAIN_DESERT"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Paralana, South Australia, Australia -->
+		<Replace MapName="GiantEarth" X="98" Y="12" TerrainType="TERRAIN_DESERT_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Hastings Caves, Tasmania, Australia -->
+		<Replace MapName="GiantEarth" X="100" Y="4" TerrainType="TERRAIN_TUNDRA"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Jailolo, Indonesia -->
+		<Replace MapName="GiantEarth" X="91" Y="33" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Ulubelu, Indonesia -->
+		<Replace MapName="GiantEarth" X="78" Y="27" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Tohoku Region, Japan -->
+		<Replace MapName="GiantEarth" X="98" Y="65" TerrainType="TERRAIN_PLAINS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Kyushu Region, Japan -->
+		<Replace MapName="GiantEarth" X="90" Y="55" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Efate, Vaunatu -->
+		<Replace MapName="GiantEarth" X="109" Y="24" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Copahue, Argentina -->
+		<Replace MapName="GiantEarth" X="156" Y="13" TerrainType="TERRAIN_PLAINS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Sud Lipez, Bolivia -->
+		<Replace MapName="GiantEarth" X="157" Y="20" TerrainType="TERRAIN_TUNDRA_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Tolhuaca, Chile -->
+		<Replace MapName="GiantEarth" X="154" Y="13" TerrainType="TERRAIN_PLAINS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Hot Springs, Arkansas, US -->
+		<Replace MapName="GiantEarth" X="144" Y="61" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Devil's Kitchen, California, US -->
+		<Replace MapName="GiantEarth" X="132" Y="64" TerrainType="TERRAIN_PLAINS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Verde Hot Springs, Arizona, US -->
+		<Replace MapName="GiantEarth" X="134" Y="59" TerrainType="TERRAIN_PLAINS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Conundrum Hot Springs, Colorado, US -->
+		<Replace MapName="GiantEarth" X="138" Y="64" TerrainType="TERRAIN_PLAINS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Yellowstone, Wyoming, US -->
+		<Replace MapName="GiantEarth" X="136" Y="70" TerrainType="TERRAIN_PLAINS_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Chena Hot Springs, Alaska, US -->
+		<Replace MapName="GiantEarth" X="122" Y="83" TerrainType="TERRAIN_TUNDRA_HILLS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		
 	</ExtraPlacement>
 	
 	<NaturalWonderPosition>
