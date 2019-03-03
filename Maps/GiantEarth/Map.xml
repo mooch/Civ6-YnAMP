@@ -195,7 +195,6 @@
 	<!--     Giant Earth Volcanos    -->
 	<!-- +++++++++++++++++++++++++++ -->
 
-
 		<Replace MapName="GiantEarth" X="35" Y="37"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="73" Y="32"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="88" Y="42"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
@@ -881,19 +880,19 @@
 		<!-- Rise and Fall NW -->
 		<!-- **************** -->		
 		
-		<Replace MapName="GiantEarth" X="161" Y="35" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_HILLS" />
-		<Replace MapName="GiantEarth" X="162" Y="36" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_HILLS" />
-		<Replace MapName="GiantEarth" X="161" Y="36" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_HILLS" />
-		<Replace MapName="GiantEarth" X="162" Y="37" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapName="GiantEarth" X="161" Y="35" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="GiantEarth" X="162" Y="36" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="GiantEarth" X="161" Y="36" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
+		<Replace MapName="GiantEarth" X="162" Y="37" FeatureType="FEATURE_RORAIMA" TerrainType="TERRAIN_GRASS_MOUNTAIN" />
 		
 		<Replace MapName="GiantEarth" X="75" Y="64" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
 		<Replace MapName="GiantEarth" X="76" Y="64" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
 		<Replace MapName="GiantEarth" X="77" Y="64" FeatureType="FEATURE_ZHANGYE_DANXIA" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
 		
-		<Replace MapName="GiantEarth" X="70" Y="72" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_GRASS" />
-		<Replace MapName="GiantEarth" X="71" Y="72" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_GRASS" />
-		<Replace MapName="GiantEarth" X="70" Y="73" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_GRASS" />
-		<Replace MapName="GiantEarth" X="71" Y="73" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="GiantEarth" X="68" Y="72" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="GiantEarth" X="69" Y="72" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="GiantEarth" X="68" Y="73" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="GiantEarth" X="69" Y="73" FeatureType="FEATURE_UBSUNUR_HOLLOW" TerrainType="TERRAIN_PLAINS" />
 		
 		<Replace MapName="GiantEarth" X="4" Y="39" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
 		<Replace MapName="GiantEarth" X="5" Y="39" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
