@@ -306,7 +306,7 @@
     </Replace>
 	
     <Replace Tag="LOC_MAP_CLOSED_BOSPHORUS_NAME" Language="en_US">
-      <Text>Close the Bosphorus Strait</Text>
+      <Text>Open the Bosphorus Strait</Text>
     </Replace>
     <Replace Tag="LOC_MAP_MONT_SAINT_MICHEL_MARSH_NAME" Language="en_US">
       <Text>Place marsh for Mont Saint Michel</Text>
