@@ -3467,6 +3467,9 @@ BuildRefXY()
 	currentTimer = os.clock() - g_startTimer
 	print("Intermediate timer = "..tostring(currentTimer).." seconds")
 	
+	-- The map may require some specific placement...
+	ExtraPlacement()
+	
 	if bRealDeposits then	
 		AddDeposits()
 		-- to do : how to balance with normal placement ?
@@ -3488,9 +3491,6 @@ BuildRefXY()
 		--print(" Adding Civ6 resource : Niter (TypeID = " .. tostring(resourceType)..")")
 		--PlaceStrategicResources(resourceType)
 	end
-	
-	-- The map may require some specific placement...
-	ExtraPlacement()
 	
 	AreaBuilder.Recalculate();
 	
