@@ -849,8 +849,8 @@
 		<Replace MapName="GiantEarth" X="36" Y="18" FeatureType="FEATURE_TSINGY" TerrainType="TERRAIN_GRASS" />
 		
 		<!-- FEATURE_YOSEMITE : 2 plots EAST-WEST, flat tundra/plains without features, 1st plot is WEST -->
-		<Replace MapName="GiantEarth" X="132" Y="62" FeatureType="FEATURE_YOSEMITE" TerrainType="TERRAIN_TUNDRA" />
-		<Replace MapName="GiantEarth" X="133" Y="62" FeatureType="FEATURE_YOSEMITE" TerrainType="TERRAIN_TUNDRA" />
+		<Replace MapName="GiantEarth" X="132" Y="62" FeatureType="FEATURE_YOSEMITE" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapName="GiantEarth" X="133" Y="62" FeatureType="FEATURE_YOSEMITE" TerrainType="TERRAIN_PLAINS" />
 		
 		<!-- **************** -->
 		<!--     DLC NW       -->
@@ -861,9 +861,9 @@
 		<Replace MapName="GiantEarth" X="3" Y="83" FeatureType="FEATURE_EYJAFJALLAJOKULL" TerrainType="TERRAIN_TUNDRA" />
 		
 		<!-- FEATURE_LYSEFJORDEN : 3 plots, , flat grass near coast, 1st plot is EAST -->
+		<Replace MapName="GiantEarth" X="18" Y="80" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="GiantEarth" X="17" Y="80" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_GRASS" />
 		<Replace MapName="GiantEarth" X="17" Y="79" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_GRASS" />
-		<Replace MapName="GiantEarth" X="18" Y="79" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_GRASS" />
-		<Replace MapName="GiantEarth" X="18" Y="78" FeatureType="FEATURE_LYSEFJORDEN" TerrainType="TERRAIN_GRASS" />
 		
 		<!-- FEATURE_GIANTS_CAUSEWAY : 2 plots, one on coastal land and one in water, 1st plot is land, SOUTHEAST -->
 		<Replace MapName="GiantEarth" X="6" Y="77" FeatureType="FEATURE_GIANTS_CAUSEWAY" TerrainType="TERRAIN_GRASS" />
