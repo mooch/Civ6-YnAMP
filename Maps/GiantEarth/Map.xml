@@ -751,7 +751,7 @@
 		<!-- Koprivnica, Croatia/Csurgo, Hungary -->
 		<Replace MapName="GiantEarth" X="24" Y="64" TerrainType="TERRAIN_GRASS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
 		<!-- Soultz-sous-Forets, France -->
-		<Replace MapName="GiantEarth" X="16" Y="66" TerrainType="TERRAIN_PLAINS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="16" Y="67" TerrainType="TERRAIN_PLAINS"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
 		<!-- Krafla, Iceland -->
 		<Replace MapName="GiantEarth" X="4" Y="85" TerrainType="TERRAIN_SNOW"  FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
 		<!-- Larderello-Travale/Radicondoli, Italy -->
