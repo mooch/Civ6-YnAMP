@@ -63,9 +63,9 @@
 	
 	<!-- Minors -->
 	<StartPosition>		
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_ANTIOCH"		X="37" Y="54" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_ANTIOCH"		X="36" Y="55" />		
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_AMSTERDAM"		X="15" Y="71" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_BABYLON"		X="40" Y="51" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_BABYLON"		X="39" Y="52" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_BRUSSELS"		X="15" Y="70" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_BUENOS_AIRES"	X="159" Y="15" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_CARTHAGE"		X="18" Y="52" />
@@ -73,31 +73,31 @@
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_HATTUSA"		X="37" Y="59" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_HONG_KONG"		X="84" Y="48" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_JAKARTA"		X="80" Y="26" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_JERUSALEM"		X="36" Y="51" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_KABUL"			X="53" Y="55" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_JERUSALEM"		X="36" Y="50" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_KABUL"			X="53" Y="54" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_KANDY"			X="62" Y="33" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_KUMASI"		X="11" Y="34" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_LA_VENTA"		X="143" Y="47" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_LA_VENTA"		X="142" Y="48" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_LISBON"		X="4" Y="56" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_MOHENJO_DARO"	X="55" Y="52" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_NAN_MADOL"		X="105" Y="31" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_PRESLAV"		X="29" Y="61" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_MOHENJO_DARO"	X="54" Y="50" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_NAN_MADOL"		X="108" Y="35" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_PRESLAV"		X="30" Y="63" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_SEOUL"			X="89" Y="61" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_STOCKHOLM"		X="24" Y="79" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_TORONTO"		X="152" Y="69" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_VALLETTA"		X="22" Y="51" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_VILNIUS"		X="29" Y="73" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_YEREVAN"		X="43" Y="58" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_VILNIUS"		X="30" Y="74" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_YEREVAN"		X="42" Y="57" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_ZANZIBAR"		X="33" Y="25" />
 		
 		<!-- DLC -->
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_AUCKLAND" 		X="112" Y="12" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_AUCKLAND" 		X="112" Y="11" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_ANTANANARIVO" 	X="37" Y="17" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_ARMAGH" 		X="6" Y="76" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_GRANADA" 		X="8" Y="54" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_ARMAGH" 		X="5" Y="75" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_GRANADA" 		X="8" Y="53" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_MUSCAT" 		X="45" Y="43" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_PALENQUE" 		X="144" Y="46" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_AKKAD"			X="42"	Y="52" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_PALENQUE" 		X="145" Y="47" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_AKKAD"			X="42"	Y="53" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_BOLOGNA"		X="19"	Y="61" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_CAHOKIA"		X="146"	Y="64" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_CARDIFF"		X="8"	Y="73" />
@@ -105,7 +105,7 @@
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_MEXICO_CITY"	X="138"	Y="49" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_NAZCA"			X="153"	Y="24" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_NGAZARGAMU"	X="21"	Y="39" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_RAPA_NUI"		X="7"	Y="49" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_RAPA_NUI"		X="134"	Y="17" />
 		
 	</StartPosition>
 
@@ -817,8 +817,8 @@
 		<Replace MapName="GiantEarth" X="131" Y="66" FeatureType="FEATURE_CRATER_LAKE" TerrainType="TERRAIN_COAST" />
 		
 		<!-- FEATURE_DEAD_SEA : 2 plots, flat desert surrounded by desert, 1st plot is SOUTHWEST -->
+		<Replace MapName="GiantEarth" X="36" Y="49" FeatureType="FEATURE_DEAD_SEA" TerrainType="TERRAIN_DESERT" />
 		<Replace MapName="GiantEarth" X="37" Y="50" FeatureType="FEATURE_DEAD_SEA" TerrainType="TERRAIN_DESERT" />
-		<Replace MapName="GiantEarth" X="37" Y="51" FeatureType="FEATURE_DEAD_SEA" TerrainType="TERRAIN_DESERT" />
 		
 		<!-- FEATURE_EVEREST : 3 plots, mountains, 1st plot is WEST -->
 		<Replace MapName="GiantEarth" X="64" Y="54" FeatureType="FEATURE_EVEREST" TerrainType="TERRAIN_TUNDRA_MOUNTAIN" />
