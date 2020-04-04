@@ -2,15 +2,23 @@
 ------------------------------------------------------------------------------
 include "MapEnums"
 include "MapUtilities"
+include "CoastalLowlands"
 
+------------------------------------------------------------------------------
+-- YnAMP <<<<<
 ------------------------------------------------------------------------------
 -- **************************** YnAMP globals ******************************
 ------------------------------------------------------------------------------
 
+print("------------------------------------------------------")
 print ("loading modded AssignStartingPlots")
 local YnAMP_Version = GameInfo.GlobalParameters["YNAMP_VERSION"].Value -- can't use GlobalParameters.YNAMP_VERSION ?
-print ("Yet (not) Another Maps Pack version " .. tostring(YnAMP_Version) .." (2016-2019) by Gedemon")
+print ("Yet (not) Another Maps Pack version " .. tostring(YnAMP_Version) .." (2016-2020) by Gedemon")
+
+include "YnAMP_Common"
+
 if ExposedMembers.YnAMP_Loading ~= nil then
+	print("------------------------------------------------------")
 	print ("Game version: ".. tostring(ExposedMembers.YnAMP_Loading.GameVersion))
 	print("Active mods:")
 	if ExposedMembers.YnAMP_Loading.ListMods then
@@ -21,14 +29,32 @@ if ExposedMembers.YnAMP_Loading ~= nil then
 end
 ExposedMembers.YnAMP_Loading = nil
 
+-- List the player slots
+local slotStatusString	= {}
+local civLevelString	= {}
+for key, v in pairs(SlotStatus) do
+	slotStatusString[v] = key
+end
+for key, v in pairs(CivilizationLevelTypes) do
+	civLevelString[v] = key
+end
+print("------------------------------------------------------")
+print("InGame Player slots :")
+for slotID = 0, 63 do
+	local playerConfig = PlayerConfigurations[slotID]
+	print(slotID, playerConfig and playerConfig:GetLeaderTypeName(), playerConfig and playerConfig:GetLeaderTypeName(), playerConfig and playerConfig:GetCivilizationTypeName(), playerConfig and playerConfig:GetSlotName(), playerConfig and (slotStatusString[playerConfig:GetSlotStatus()] or "UNK STATUS"))--, playerConfig and (civLevelString[playerConfig:GetCivilizationLevelTypeID()] or "UNK LEVEL"),  playerConfig and playerConfig:IsAI())
+end
+
+print("------------------------------------------------------")
 print ("Setting YnAMP globals and cache...")
 
 g_startTimer = os.clock()
 
 --ExposedMembers.HistoricalStartingPlots 	= nil
-ExposedMembers.YNAMP	= { RiverMap = {}, }
+ExposedMembers.YnAMP	= { RiverMap = {}, PlayerToRemove = {}}
 
-local RiverMap 			= ExposedMembers.YNAMP.RiverMap
+local YnAMP				= ExposedMembers.YnAMP
+local RiverMap 			= YnAMP.RiverMap
 local DefaultRiverID	= 9999
 local bExpansion2		= GameConfiguration.GetValue("RULESET") == "RULESET_EXPANSION_2"
 local IsOceanStart		= {}	-- table to list Civilization with a starting plot set on ocean (for not swapping them when doing culturally linked placement)
@@ -54,8 +80,10 @@ iIceNorth 			= MapConfiguration.GetValue("IceNorth")
 iIceSouth 			= MapConfiguration.GetValue("IceSouth")
 bAnalyseChokepoints	= not GameConfiguration.GetValue("FastLoad")
 bPlaceAllLuxuries	= MapConfiguration.GetValue("PlaceAllLuxuries") == "PLACEMENT_REQUEST"
+bPlaceAllStrategics	= MapConfiguration.GetValue("PlaceAllStrategics")
 bAlternatePlacement = MapConfiguration.GetValue("AlternatePlacement")
 
+--[[
 bUseRelativePlacement 	= MapConfiguration.GetValue("UseRelativePlacement")
 bUseRelativeFixedTable 	= bUseRelativePlacement and MapConfiguration.GetValue("UseRelativeFixedTable")
 g_ReferenceMapWidth 	= MapConfiguration.GetValue("ReferenceMapWidth") or 180
@@ -72,6 +100,7 @@ g_ReferenceWidthFactor  = 0
 g_ReferenceHeightFactor = 0
 g_ReferenceWidthRatio   = 0
 g_ReferenceHeightRatio  = 0
+--]]
 g_MapDataRiverIndex		= 4 -- Rivers entry in MapData, checked in GenerateImportedMap() based on the table passed (civ5 data or civ6 data)
 
 -- Create list of Civilizations and leaders in game
@@ -111,6 +140,9 @@ local bImportContinents = continentsPlacement == "PLACEMENT_IMPORT"
 local lowLandPlacement = MapConfiguration.GetValue("LowLandPlacement")
 print("- Lowland placement = "..tostring(lowLandPlacement))	
 local bDeepLowLand = lowLandPlacement == "PLACEMENT_DEEP"
+
+local floodPlainsPlacement = MapConfiguration.GetValue("FloodPlainsPlacement")
+print("- Flood Plains placement = "..tostring(FloodPlainsPlacement))
 
 ------------------------------------------------------------------------------
 -- http://lua-users.org/wiki/SortedIteration
@@ -164,7 +196,6 @@ end
 
 ------------------------------------------------------------------------------
 -- YnAMP >>>>>
-------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
 AssignStartingPlots = {};
@@ -213,8 +244,10 @@ function AssignStartingPlots.Create(args)
 		__AddLuxury							= AssignStartingPlots.__AddLuxury,
 		__AddBonus							= AssignStartingPlots.__AddBonus,
 		__IsContinentalDivide				= AssignStartingPlots.__IsContinentalDivide,
+		__RemoveBonus						= AssignStartingPlots.__RemoveBonus,
 
-		iNumMajorCivs = 0,
+		iNumMajorCivs = 0,	
+		iNumWaterMajorCivs = 0,
 		iResourceEraModifier = 1,
 		iNumMinorCivs = 0,			
 		iNumRegions		= 0,
@@ -227,13 +260,15 @@ function AssignStartingPlots.Create(args)
 		uiStartConfig = args.START_CONFIG or 2,
 		waterMap  = args.WATER or false,
 		landMap  = args.LAND or false,
+		noStartBiases = args.IGNORESTARTBIAS or false,
+		startAllOnLand = args.STARTALLONLAND or false,
+		startLargestLandmassOnly = args.START_LARGEST_LANDMASS_ONLY or false,
 		majorStartPlots = {},
 		majorCopy = {},
 		minorStartPlots = {},	
 		minorCopy = {},
 		majorList		= {},
 		minorList		= {},
-		player_ID_list	= {},
 		playerstarts = {},
 		sortedArray = {},
 		sortedFertilityArray = {},
@@ -249,12 +284,16 @@ function AssignStartingPlots.Create(args)
 	end
 	YnAMP_ApplySharedMapOptions()
 	YnAMP_StartPositions()
+	
+	-- Force a starting position on everyone
+	CheckAllCivilizationsStartingLocations()
 	-- YnAMP >>>>>					
 
 	return instance
 end
 ------------------------------------------------------------------------------
 function AssignStartingPlots:__InitStartingData()
+
 	if(self.uiMinMajorCivFertility <= 0) then
 		self.uiMinMajorCivFertility = 5;
 	end
@@ -262,15 +301,6 @@ function AssignStartingPlots:__InitStartingData()
 	if(self.uiMinMinorCivFertility <= 0) then
 		self.uiMinMinorCivFertility = 5;
 	end
-
-	self.iNumMajorCivs = PlayerManager.GetAliveMajorsCount();	
-	self.iNumMinorCivs = PlayerManager.GetAliveMinorsCount();
-	self.iNumRegions = self.iNumMajorCivs + self.iNumMinorCivs;
-	local iMinNumBarbarians = self.iNumMajorCivs / 2;
-
-	StartPositioner.DivideMapIntoMajorRegions(self.iNumMajorCivs, self.uiMinMajorCivFertility, self.uiMinMinorCivFertility);
-	
-	local iMajorCivStartLocs = StartPositioner.GetNumMajorCivStarts();
 
 	--Find Default Number
 	MapSizeTypes = {};
@@ -282,17 +312,51 @@ function AssignStartingPlots:__InitStartingData()
 	self.iDefaultNumberMajor = iDefaultNumberPlayers ;
 	self.iDefaultNumberMinor = math.floor(iDefaultNumberPlayers * 1.5);
 
-	self.iIndex = 0;
-	self.player_ID_list = {};
-	for i = 0, (self.iNumRegions) - 1 do
-		table.insert(self.player_ID_list, i);
+	-- See if there are any civs starting out in the water
+	local tempMajorList = {};
+	self.majorList = {};
+	self.waterMajorList = {};
+	self.iNumMajorCivs = 0;
+	self.iNumWaterMajorCivs = 0;
+
+	tempMajorList = PlayerManager.GetAliveMajorIDs();
+	for i = 1, PlayerManager.GetAliveMajorsCount() do
+		local leaderType = PlayerConfigurations[tempMajorList[i]]:GetLeaderTypeName();
+		if (not self.startAllOnLand and GameInfo.Leaders_XP2 and GameInfo.Leaders_XP2[leaderType] ~= nil and GameInfo.Leaders_XP2[leaderType].OceanStart == true) then
+			table.insert(self.waterMajorList, tempMajorList[i]);
+			self.iNumWaterMajorCivs = self.iNumWaterMajorCivs + 1;
+			print ("Found the Maori");
+		else
+			table.insert(self.majorList, tempMajorList[i]);
+			self.iNumMajorCivs = self.iNumMajorCivs + 1;
+		end
+	end 
+
+	-- Do we have enough water on this map for the number of water civs specified?
+	local TILES_NEEDED_FOR_WATER_START = 8;
+	if (self.waterMap == true) then
+		TILES_NEEDED_FOR_WATER_START = 1;
+	end
+	local iCandidateWaterTiles = StartPositioner.GetTotalOceanStartCandidates and StartPositioner.GetTotalOceanStartCandidates(self.waterMap) or 0;
+	if (iCandidateWaterTiles < (TILES_NEEDED_FOR_WATER_START * self.iNumWaterMajorCivs)) then
+
+		-- Not enough so reset so all civs start on land
+		self.iNumMajorCivs = 0;
+		self.majorList = {};
+		for i = 1, PlayerManager.GetAliveMajorsCount() do
+			table.insert(self.majorList, tempMajorList[i]);
+			self.iNumMajorCivs = self.iNumMajorCivs + 1;
+		end
 	end
 
-	self.majorList = {};
+	self.iNumMinorCivs = PlayerManager.GetAliveMinorsCount();
 	self.minorList = {};
-
-	self.majorList = PlayerManager.GetAliveMajorIDs();
 	self.minorList = PlayerManager.GetAliveMinorIDs();
+	self.iNumRegions = self.iNumMajorCivs + self.iNumMinorCivs;
+	local iMinNumBarbarians = self.iNumMajorCivs / 2;
+
+	StartPositioner.DivideMapIntoMajorRegions(self.iNumMajorCivs, self.uiMinMajorCivFertility, self.uiMinMinorCivFertility, self.startLargestLandmassOnly);
+	local iMajorCivStartLocs = StartPositioner.GetNumMajorCivStarts();
 
 	-- Place the major civ start plots in an array
 	self.majorStartPlots = {};
@@ -304,26 +368,29 @@ function AssignStartingPlots:__InitStartingData()
 			StartPositioner.MarkMajorRegionUsed(i);
 			table.insert(self.majorStartPlots, startPlot);
 			info = StartPositioner.GetMajorCivStartInfo(i);
-			print ("ContinentType: " .. tostring(info.ContinentType));
-			print ("LandmassID: " .. tostring(info.LandmassID));
-			print ("Fertility: " .. tostring(info.Fertility));
-			print ("TotalPlots: " .. tostring(info.TotalPlots));
-			print ("WestEdge: " .. tostring(info.WestEdge));
-			print ("EastEdge: " .. tostring(info.EastEdge));
-			print ("NorthEdge: " .. tostring(info.NorthEdge));
-			print ("SouthEdge: " .. tostring(info.SouthEdge));
+--			print ("ContinentType: " .. tostring(info.ContinentType));
+--			print ("LandmassID: " .. tostring(info.LandmassID));
+--			print ("Fertility: " .. tostring(info.Fertility));
+--			print ("TotalPlots: " .. tostring(info.TotalPlots));
+--			print ("WestEdge: " .. tostring(info.WestEdge));
+--			print ("EastEdge: " .. tostring(info.EastEdge));
+--			print ("NorthEdge: " .. tostring(info.NorthEdge));
+--			print ("SouthEdge: " .. tostring(info.SouthEdge));
 		else
 			failed = failed + 1;
 			info = StartPositioner.GetMajorCivStartInfo(i);
+			
 			print ("-- START FAILED MAJOR --");
-			print ("ContinentType: " .. tostring(info.ContinentType));
-			print ("LandmassID: " .. tostring(info.LandmassID));
-			print ("Fertility: " .. tostring(info.Fertility));
-			print ("TotalPlots: " .. tostring(info.TotalPlots));
-			print ("WestEdge: " .. tostring(info.WestEdge));
-			print ("EastEdge: " .. tostring(info.EastEdge));
-			print ("NorthEdge: " .. tostring(info.NorthEdge));
-			print ("SouthEdge: " .. tostring(info.SouthEdge));
+			if(info) then
+				print ("ContinentType: " .. tostring(info.ContinentType));
+				print ("LandmassID: " .. tostring(info.LandmassID));
+				print ("Fertility: " .. tostring(info.Fertility));
+				print ("TotalPlots: " .. tostring(info.TotalPlots));
+				print ("WestEdge: " .. tostring(info.WestEdge));
+				print ("EastEdge: " .. tostring(info.EastEdge));
+				print ("NorthEdge: " .. tostring(info.NorthEdge));
+				print ("SouthEdge: " .. tostring(info.SouthEdge));
+			end
 			print ("-- END FAILED MAJOR --");
 		end
 	end
@@ -332,7 +399,33 @@ function AssignStartingPlots:__InitStartingData()
 	end
 
 	--Begin Start Bias for major
-	self:__InitStartBias(false);
+	if (self.noStartBiases or (GameInfo.StartBiasResources() == nil and GameInfo.StartBiasFeatures() == nil and GameInfo.StartBiasTerrains() == nil and GameInfo.StartBiasRivers() == nil)) then
+		self.playerStarts = {};
+		for i = 1, self.iNumMajorCivs do
+			local playerStart = {}
+			for j, plot in ipairs(self.majorStartPlots) do
+				playerStart[j] = plot;
+			end
+			self.playerStarts[i] = playerStart;
+		end
+
+		for j, playerIndex in ipairs(self.majorList) do
+			local hasPlot = false;
+			local index = playerIndex + 1;
+
+			if(index > 0 and self:__ArraySize(self.playerStarts, index) > 1) then
+				for k, v in pairs(self.playerStarts[index]) do
+					if(v~= nil and hasPlot == false) then
+						hasPlot = true;
+						--Call Removal
+						self:__StartBiasPlotRemoval(v, false, index);
+					end
+				end
+			end
+		end
+	else
+		self:__InitStartBias(false);
+	end
 
 	if(self.uiStartConfig == 1 ) then
 		self:__AddResourcesBalanced();
@@ -340,6 +433,7 @@ function AssignStartingPlots:__InitStartingData()
 		self:__AddResourcesLegendary();
 	end
 
+	local aMajorStartPlotIndices = {};
 	for i = 1, self.iNumMajorCivs do
 		local player = Players[self.majorList[i]]
 		
@@ -351,6 +445,7 @@ function AssignStartingPlots:__InitStartingData()
 				if(v~= nil and hasPlot == false) then
 					hasPlot = true;
 					player:SetStartingPlot(v);
+					table.insert(aMajorStartPlotIndices, v:GetIndex());
 					print("Major Start X: ", v:GetX(), "Major Start Y: ", v:GetY());
 				end
 			end
@@ -368,14 +463,14 @@ function AssignStartingPlots:__InitStartingData()
 		info = StartPositioner.GetMinorCivStartInfo(i);
 		if(startPlot ~= nil) then
 			table.insert(self.minorStartPlots, startPlot);
-			print ("Minor ContinentType: " .. tostring(info.ContinentType));
-			print ("Minor LandmassID: " .. tostring(info.LandmassID));
-			print ("Minor Fertility: " .. tostring(info.Fertility));
-			print ("Minor TotalPlots: " .. tostring(info.TotalPlots));
-			print ("Minor WestEdge: " .. tostring(info.WestEdge));
-			print ("Minor EastEdge: " .. tostring(info.EastEdge));
-			print ("Minor NorthEdge: " .. tostring(info.NorthEdge));
-			print ("Minor SouthEdge: " .. tostring(info.SouthEdge));
+--			print ("Minor ContinentType: " .. tostring(info.ContinentType));
+--			print ("Minor LandmassID: " .. tostring(info.LandmassID));
+--			print ("Minor Fertility: " .. tostring(info.Fertility));
+--			print ("Minor TotalPlots: " .. tostring(info.TotalPlots));
+--			print ("Minor WestEdge: " .. tostring(info.WestEdge));
+--			print ("Minor EastEdge: " .. tostring(info.EastEdge));
+--			print ("Minor NorthEdge: " .. tostring(info.NorthEdge));
+--			print ("Minor SouthEdge: " .. tostring(info.SouthEdge));
 			valid = valid + 1;
 		else
 			print ("-- START FAILED MINOR --");
@@ -398,7 +493,33 @@ function AssignStartingPlots:__InitStartingData()
 	end
 
 	--Begin Start Bias for minor
-	self:__InitStartBias(true);
+	if (self.noStartBiases or (GameInfo.StartBiasResources() == nil and GameInfo.StartBiasFeatures() == nil and GameInfo.StartBiasTerrains() == nil and GameInfo.StartBiasRivers() == nil)) then
+		self.playerStarts = {};
+		for i = 1, self.iNumMinorCivs do
+			local playerStart = {}
+			for j, plot in ipairs(self.minorStartPlots) do
+				playerStart[j] = plot;
+			end
+			self.playerStarts[self.iNumMajorCivs + i] = playerStart
+		end
+
+		for j, playerIndex in ipairs(self.minorList) do
+			local hasPlot = false;
+			local index = playerIndex + 1;
+
+			if(index > 0 and self:__ArraySize(self.playerStarts, index) > 1) then
+				for k, v in pairs(self.playerStarts[index]) do
+					if(v~= nil and hasPlot == false) then
+						hasPlot = true;
+						--Call Removal
+						self:__StartBiasPlotRemoval(v, true, index);
+					end
+				end
+			end
+		end
+	else
+		self:__InitStartBias(true);
+	end
 
 	for i = 1, self.iNumMinorCivs do
 		local player = Players[self.minorList[i]]
@@ -418,6 +539,21 @@ function AssignStartingPlots:__InitStartingData()
 					print("Minor Start X: ", v:GetX(), "Minor Start Y: ", v:GetY());
 				end
 			end
+		end
+	end
+
+	-- Finally place the ocean civs
+	if (self.iNumWaterMajorCivs > 0) then
+		local iWaterCivs = StartPositioner.PlaceOceanStartCivs(self.waterMap, self.iNumWaterMajorCivs, aMajorStartPlotIndices);
+		for i = 1, iWaterCivs do
+			local waterPlayer = Players[self.waterMajorList[i]]
+			local iStartIndex = StartPositioner.GetOceanStartTile(i - 1);  -- Indices start at 0 here
+			local pStartPlot = Map.GetPlotByIndex(iStartIndex);
+			waterPlayer:SetStartingPlot(pStartPlot);
+			print("Water Start X: ", pStartPlot:GetX(), "Water Start Y: ", pStartPlot:GetY());
+		end
+		if (iWaterCivs < self.iNumWaterMajorCivs) then
+			print("FAILURE PLACING WATER CIVS - Missing civs: " .. tostring(self.iNumWaterMajorCivs - iWaterCivs));
 		end
 	end
 end
@@ -441,7 +577,7 @@ function AssignStartingPlots:__SetStartMajor(plots, iMajorIndex)
 
 	local iSize = #plots;
 	local iContinentIndex = 1;
-
+	
 	-- Nothing there?  Just exit, returing nil
 	if iSize == 0 then
 		return;
@@ -503,18 +639,18 @@ function AssignStartingPlots:__SetStartMajor(plots, iMajorIndex)
 				iFallBackScore = iFallBackScoreTemp;
 			end
 		end
-
+		
 		-- Checks to see if there are any major civs in the given distance
 		local bMajorCivCheck = self:__MajorCivBuffer(pTempPlot); 
 		if(bMajorCivCheck == false) then
-		       bValid = false;
+			bValid = false;
 		else
 			local iFallBackScoreTemp = 2;
 			if (iFallBackScore < iFallBackScoreTemp and bValid == true) then
 				pFallback = pTempPlot;
 				iFallBackScore = iFallBackScoreTemp;
-		    end
-		end
+			end
+		end	
 
 		-- Checks to see if there are luxuries
 		if (math.ceil(self.iDefaultNumberMajor * 1.25) + self.iDefaultNumberMinor > self.iNumMinorCivs + self.iNumMajorCivs) then
@@ -571,13 +707,13 @@ function AssignStartingPlots:__SetStartMajor(plots, iMajorIndex)
 				iFallBackScore = iFallBackScoreTemp;
 			end
 		end
-
+		
 		-- Checks to see if there are resources
 		if(pTempPlot:GetResourceCount() > 0) then
 		   local bValidResource = self:__BonusResource(pTempPlot);
 		    if(bValidResource == false) then
-			bValid = false;
-		end
+		       bValid = false;
+			end
 		else
 			local iFallBackScoreTemp = 7;
 			if (iFallBackScore < iFallBackScoreTemp and bValid == true) then
@@ -613,7 +749,7 @@ function AssignStartingPlots:__SetStartMinor(plots)
 	-- minimum food
 
 	sortedPlots ={};
-
+	
 	if plots == nil then
 		return;
 	end
@@ -667,7 +803,7 @@ function AssignStartingPlots:__SetStartMinor(plots)
 				iFallBackScore = iFallBackScoreTemp;
 			end
 		end
-
+		
 		-- Checks to see if there are any minor civs in the given distance
 		local bMinorCivCheck = self:__MinorMajorCivBuffer(pTempPlot); 
 		if(bMinorCivCheck == false) then
@@ -683,14 +819,14 @@ function AssignStartingPlots:__SetStartMinor(plots)
 		-- Checks to see if there are any minor civs in the given distance
 		local bMinorCivCheck = self:__MinorMinorCivBuffer(pTempPlot); 
 		if(bMinorCivCheck == false) then
-				bValid = false;
+			bValid = false;
 		else
 			local iFallBackScoreTemp = 3;
 			if (iFallBackScore < iFallBackScoreTemp and bValid == true) then
 				pFallback = pTempPlot;
 				iFallBackScore = iFallBackScoreTemp;
 			end
-		end
+		end		
 
 		local bValidAdjacentCheck = self:__GetValidAdjacent(pTempPlot, 2); 
 		if(bValidAdjacentCheck == false) then
@@ -719,8 +855,8 @@ function AssignStartingPlots:__SetStartMinor(plots)
 		if(pTempPlot:GetResourceCount() > 0) then
 			local bValidResource = self:__BonusResource(pTempPlot);
 			if(bValidResource == false) then
-			bValid = false;
-		end
+				bValid = false;
+			end
 		else
 			local iFallBackScoreTemp = 6;
 			if (iFallBackScore < iFallBackScoreTemp and bValid == true) then
@@ -788,7 +924,7 @@ function AssignStartingPlots:__GetValidAdjacent(plot, minor)
 		min = math.ceil(gridHeight * self.uiStartMinY / 100);
 	end
 
-	if(plot:GetY() <= min or plot:GetY() > gridHeight - max) then
+	if(plot:GetY() <= min or plot:GetY() > gridHeight - max or (max == 0 and min == 0)) then
 		return false;
 	end
 
@@ -862,7 +998,7 @@ function AssignStartingPlots:__BaseFertility(plot)
 	local pPlot = Map.GetPlotByIndex(plot);
 	local iFertility = StartPositioner.GetPlotFertility(pPlot:GetIndex(), -1);
 	return iFertility;
-end	
+end
 
 ------------------------------------------------------------------------------
 function AssignStartingPlots:__WeightedFertility(plot, iMajorIndex, bCheckOthers)
@@ -1052,11 +1188,11 @@ function AssignStartingPlots:__MinorMajorCivBuffer(plot)
 	local iMaxStart = GlobalParameters.START_DISTANCE_MINOR_MAJOR_CIVILIZATION or 7;
 
 	local iSourceIndex = plot:GetIndex();
-
+	
 	if(self.waterMap == true) then
-			iMaxStart = iMaxStart - 1;
-		end
-
+		iMaxStart = iMaxStart - 1;
+	end
+	
 	for i, majorPlot in ipairs(self.majorCopy) do
 		if(Map.GetPlotDistance(iSourceIndex, majorPlot:GetIndex()) <= iMaxStart) then
 			return false;
@@ -1134,7 +1270,7 @@ function AssignStartingPlots:__AddFood(plot)
 	aBonus = {};
 
 	for row in GameInfo.Resources() do
-		eResourceType[iResourcesInDB] = row.Index;
+		eResourceType[iResourcesInDB] = row.Hash;
 		eResourceClassType[iResourcesInDB] = row.ResourceClassType;
 	    iResourcesInDB = iResourcesInDB + 1;
 	end
@@ -1182,7 +1318,7 @@ function AssignStartingPlots:__AddProduction(plot)
 	aBonus = {};
 
 	for row in GameInfo.Resources() do
-		eResourceType[iResourcesInDB] = row.Index;
+		eResourceType[iResourcesInDB] = row.Hash;
 		eResourceClassType[iResourcesInDB] = row.ResourceClassType;
 	    iResourcesInDB = iResourcesInDB + 1;
 	end
@@ -1191,7 +1327,7 @@ function AssignStartingPlots:__AddProduction(plot)
 		if (eResourceClassType[row] == "RESOURCECLASS_BONUS") then
 			for row2 in GameInfo.TypeTags() do
 				if(GameInfo.Resources[row2.Type] ~= nil) then
-					if(GameInfo.Resources[row2.Type].Index== eResourceType[row] and row2.Tag=="CLASS_PRODUCTION") then
+					if(GameInfo.Resources[row2.Type].Hash == eResourceType[row] and row2.Tag=="CLASS_PRODUCTION") then
 						table.insert(aBonus, eResourceType[row]);
 					end
 				end
@@ -2313,6 +2449,8 @@ function AssignStartingPlots:__AddResourcesBalanced()
 
 	local iHighestFertility = 0;
 	for i, plot in ipairs(self.majorStartPlots) do
+		self:__RemoveBonus(plot);
+		
 		self:__BalancedStrategic(plot, iStartIndex);
 		
 		if(self:__BaseFertility(plot:GetIndex()) > iHighestFertility) then
@@ -2393,7 +2531,7 @@ function AssignStartingPlots:__BalancedStrategic(plot, iStartIndex)
 	local iRange = STRATEGIC_RESOURCE_FERTILITY_STARTING_ERA_RANGE or 1;
 
 	for row in GameInfo.Resources() do
-		eResourceType[iResourcesInDB] = row.Index;
+		eResourceType[iResourcesInDB] = row.Hash;
 		eResourceClassType[iResourcesInDB] = row.ResourceClassType;
 		eRevealedEra[iResourcesInDB] = row.RevealedEra;
 	    iResourcesInDB = iResourcesInDB + 1;
@@ -2441,6 +2579,19 @@ function AssignStartingPlots:__AddStrategic(eResourceType, plot)
 
 	local plotX = plot:GetX();
 	local plotY = plot:GetY();
+
+	for dx = -2, 2 do
+		for dy = -2,2 do
+			local otherPlot = Map.GetPlotXY(plotX, plotY, dx, dy, 2);
+			if(otherPlot) then
+				if(ResourceBuilder.CanHaveResource(otherPlot, eResourceType) and otherPlot:GetIndex() ~= plot:GetIndex()) then
+					ResourceBuilder.SetResourceType(otherPlot, eResourceType, 1);
+					return;
+				end
+			end
+		end
+	end 
+
 	for dx = -3, 3 do
 		for dy = -3,3 do
 			local otherPlot = Map.GetPlotXY(plotX, plotY, dx, dy, 3);
@@ -2466,7 +2617,7 @@ function AssignStartingPlots:__AddLuxury(plot)
 	eAddLux	= {};
 
 	for row in GameInfo.Resources() do
-		eResourceType[iResourcesInDB] = row.Index;
+		eResourceType[iResourcesInDB] = row.Hash;
 		eResourceClassType[iResourcesInDB] = row.ResourceClassType;
 		iResourcesInDB = iResourcesInDB + 1;
 	end
@@ -2518,7 +2669,7 @@ function AssignStartingPlots:__AddBonus(plot)
 	aBonus = {};
 
 	for row in GameInfo.Resources() do
-		eResourceType[iResourcesInDB] = row.Index;
+		eResourceType[iResourcesInDB] = row.Hash;
 		eResourceClassType[iResourcesInDB] = row.ResourceClassType;
 	    iResourcesInDB = iResourcesInDB + 1;
 	end
@@ -2583,6 +2734,45 @@ function AssignStartingPlots:__IsContinentalDivide(plot)
 	return false;
 end
 
+------------------------------------------------------------------------------
+function AssignStartingPlots:__RemoveBonus(plot)
+	local plotX = plot:GetX();
+	local plotY = plot:GetY();
+	local iResourcesInDB = 0;
+	eResourceType	= {};
+	eResourceClassType = {};
+	aBonus = {};
+
+	for row in GameInfo.Resources() do
+		eResourceType[iResourcesInDB] = row.Hash;
+		eResourceClassType[iResourcesInDB] = row.ResourceClassType;
+	    iResourcesInDB = iResourcesInDB + 1;
+	end
+
+	for row = 0, iResourcesInDB do
+		if (eResourceClassType[row] == "RESOURCECLASS_BONUS") then
+			for row2 in GameInfo.TypeTags() do
+				if(GameInfo.Resources[row2.Type] ~= nil) then
+					table.insert(aBonus, eResourceType[row]);
+				end
+			end
+		end
+	end
+
+	for i, resource in ipairs(eResourceType) do
+		for dx = -3, 3 do
+			for dy = -3,3 do
+				local otherPlot = Map.GetPlotXY(plotX, plotY, dx, dy, 3);
+				if(otherPlot) then
+					if(resource  == otherPlot:GetResourceTypeHash()) then
+						ResourceBuilder.SetResourceType(otherPlot, resource, -1);
+						return;
+					end
+				end
+			end
+		end
+	end 
+end
 
 ------------------------------------------------------------------------------
 -- **************************** YnAMP functions ******************************
@@ -2590,15 +2780,18 @@ end
 
 print ("Loading YnAMP functions ...")
 
+--[[
 local g_StartingPlotRange
 local g_MinStartDistanceMajor
 local g_MaxStartDistanceMajor
+--]]
 
 
 ------------------------------------------------------------------------------
 -- Helpers for x,y positions when using a reference or offset map
 ------------------------------------------------------------------------------
 
+--[[
 local XFromRefMapX 	= {}
 local YFromRefMapY 	= {}
 local RefMapXfromX 	= {}
@@ -2705,7 +2898,7 @@ end
 function GetPlotFromRefMap(x, y, bOnlyOffset)
 	return Map.GetPlot(GetXYFromRefMapXY(x,y, bOnlyOffset))
 end
-
+--]]
 
 ------------------------------------------------------------------------------
 -- Create Tables
@@ -2760,6 +2953,10 @@ function buildExclusionList()
 					local regionX, regionY 	= GetXYFromRefMapXY(RegionRow.X, RegionRow.Y)
 					local regionWidth 		= g_ReferenceWidthRatio * RegionRow.Width
 					local regionHeight 		= g_ReferenceHeightRatio * RegionRow.Height
+					
+					print ("    - Bottom Left (X,Y) = ", regionX, regionY)
+					print ("    - Width (used, default, map ratio) = ", regionWidth, RegionRow.Width, g_ReferenceWidthRatio)
+					print ("    - Height (used, default, map ratio) = ", regionHeight, RegionRow.Height, g_ReferenceHeightRatio)
 				
 					for x = regionX, regionX + regionWidth do
 						for y = regionY, regionY + regionHeight do
@@ -2777,13 +2974,13 @@ function buildExclusionList()
 					end
 				end
 				if (#resExclusionTable > 0) then
-					print("   - Exluded resources :")
+					print("   - Excluded resources :")
 					for i, resourceID in ipairs(resExclusionTable) do
 						print("      "..tostring(GameInfo.Resources[resourceID].ResourceType))
 					end
 				end
 				if (#resExclusiveTable > 0) then
-					print("   - Exlusive resources :")
+					print("   - Exclusive resources :")
 					for i, resourceID in ipairs(resExclusiveTable) do
 						print("      "..tostring(GameInfo.Resources[resourceID].ResourceType))
 					end	
@@ -3154,33 +3351,9 @@ end
 ------------------------------------------------------------------------------
 function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, width, height)
 
-include "CoastalLowlands"
-
 	-- Set globals
-	g_iW, g_iH 				= width, height --Map.GetGridSize()
-	g_UncutMapWidth 		= MapConfiguration.GetValue("UncutMapWidth") or g_iW
-	g_UncutMapHeight 		= MapConfiguration.GetValue("UncutMapHeight") or g_iH
-
-	g_OffsetX 				= MapConfiguration.GetValue("StartX") or 0
-	g_OffsetY 				= MapConfiguration.GetValue("StartY") or 0
-	bUseOffset				= (g_OffsetX + g_OffsetY > 0) and (MapConfiguration.GetValue("StartX") ~= MapConfiguration.GetValue("EndX")) and (MapConfiguration.GetValue("StartY") ~= MapConfiguration.GetValue("EndY"))
-
-print("bUseOffset", bUseOffset)	
-print("StartX", MapConfiguration.GetValue("StartX"))
-print("EndX", MapConfiguration.GetValue("EndX"))
-print("StartY", MapConfiguration.GetValue("StartY"))
-print("EndY", MapConfiguration.GetValue("EndY"))
-print("g_UncutMapWidth", g_UncutMapWidth)
-print("g_UncutMapHeight", g_UncutMapHeight)
-print("g_iW", g_iW)
-print("g_iH", g_iH)
-print("Map.GetGridSize()", Map.GetGridSize())
-BuildRefXY()
-
-	g_ReferenceWidthFactor  = g_ReferenceMapWidth / g_UncutMapWidth 
-	g_ReferenceHeightFactor = g_ReferenceMapHeight / g_UncutMapHeight
-	g_ReferenceWidthRatio   = g_UncutMapWidth / g_ReferenceMapWidth 
-	g_ReferenceHeightRatio  = g_UncutMapHeight / g_ReferenceMapHeight
+	SetGlobals()
+	BuildRefXY()
 
 	--local pPlot
 	--g_iFlags = TerrainBuilder.GetFractalFlags();
@@ -3294,7 +3467,6 @@ BuildRefXY()
 		end
 
 		function IsSWOfRiver(plot)
-			if not plot:IsRiver() then return false	end
 			local pAdjacentPlot = Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), DirectionTypes.DIRECTION_NORTHEAST)
 			if pAdjacentPlot and IsNEOfRiver(pAdjacentPlot) then return true end
 			return false
@@ -3333,13 +3505,18 @@ BuildRefXY()
 			local nextEdge 		= (edge + 1) % 6
 			local prevEdge 		= (edge - 1) % 6
 			
+			--print("Get River Neighbors from plot at ", plot:GetX(), plot:GetY(), " current edge = ", DirectionString[edge], " next edge = ", DirectionString[nextEdge], " previous edge = ", DirectionString[prevEdge])
+			
 			-- 
 			if change[nextEdge] and IsEdgeRiver(plot, nextEdge) then 
 				local newPlot 	= Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), nextEdge)
 				local newEdge	= (nextEdge + 3) % 6
 				table.insert( neighbors, plotToNode(newPlot, newEdge) )
+				--print(" - Find neighbor on next edge, converted to opposing plot at ", newPlot:GetX(), newPlot:GetY(), " with opposing edge = ", DirectionString[newEdge])
+
 			elseif IsEdgeRiver(plot, nextEdge) then
 				table.insert( neighbors, plotToNode(plot, nextEdge) )
+				--print(" - Find neighbor on next edge, same plot")
 			end
 			
 			-- 
@@ -3347,28 +3524,36 @@ BuildRefXY()
 				local newPlot 	= Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), prevEdge)
 				local newEdge	= (prevEdge + 3) % 6
 				table.insert( neighbors, plotToNode(newPlot, newEdge) )
+				--print(" - Find neighbor on previous edge, converted to opposing plot at ", newPlot:GetX(), newPlot:GetY(), " with opposing edge = ", DirectionString[newEdge])
 			elseif IsEdgeRiver(plot, prevEdge) then
 				table.insert( neighbors, plotToNode(plot, prevEdge) )
+				--print(" - Find neighbor on previous edge, same plot")
 			end
 			
 			-- Test diverging edge on next plot (clock direction)
 			local clockPlot, clockEdge	= GetNextClockRiverPlot(plot, nextEdge)
+			--print(" - Testing diverging edge on next plot (clock direction) at ", clockPlot and clockPlot:GetX(), clockPlot and clockPlot:GetY(), clockEdge and DirectionString[clockEdge])
 			if clockPlot and change[clockEdge] then
 				local newPlot 	= Map.GetAdjacentPlot(clockPlot:GetX(), clockPlot:GetY(), clockEdge)
 				local newEdge	= (clockEdge + 3) % 6
 				table.insert( neighbors, plotToNode(newPlot, newEdge) )
+				--print(" - Find diverging edge converted to opposing plot at ", newPlot:GetX(), newPlot:GetY(), " with opposing edge = ", DirectionString[newEdge])
 			elseif clockPlot then
 				table.insert( neighbors, plotToNode(clockPlot, clockEdge) )
+				--print(" - Find diverging edge on next plot (clock direction)")
 			end
 			
 			-- Test diverging edge on previous plot (counter-clock direction)
 			local counterPlot, counterEdge	= GetNextCounterClockRiverPlot(plot, prevEdge)
+			--print(" - Testing diverging edge on next plot (counter-clock direction) at ", counterPlot and counterPlot:GetX(), counterPlot and counterPlot:GetY(), counterEdge and DirectionString[counterEdge])
 			if counterPlot and change[counterEdge] then
 				local newPlot 	= Map.GetAdjacentPlot(counterPlot:GetX(), counterPlot:GetY(), counterEdge)
 				local newEdge	= (counterEdge + 3) % 6
 				table.insert( neighbors, plotToNode(newPlot, newEdge) )
+				--print(" - Find diverging edge converted to opposing plot at ", newPlot:GetX(), newPlot:GetY(), " with opposing edge = ", DirectionString[newEdge])
 			elseif counterPlot then
 				table.insert( neighbors, plotToNode(counterPlot, counterEdge) )
+				--print(" - Find diverging edge on next plot (counter-clock direction)")
 			end
 			
 			return neighbors
@@ -3439,7 +3624,7 @@ BuildRefXY()
 	end
 	
 	-- Add GS flood plains
-	if bExpansion2 then
+	if bExpansion2 and floodPlainsPlacement == "PLACEMENT_DEFAULT" then
 		print("Generate Floodplains...")
 
 		-- Remove map current flood plains
@@ -3492,13 +3677,15 @@ BuildRefXY()
 	end
 	
 	-- Low lands
+	--[[
 	if bExpansion2 then
 		if bDeepLowLand then
-			MarkDeepCoastalLowlands()
+			MarkDeepCoastalLowlands(g_iW, g_iH)
 		else
 			MarkCoastalLowlands()
 		end
 	end
+	--]]
 	
 	currentTimer = os.clock() - g_startTimer
 	print("Intermediate timer = "..tostring(currentTimer).." seconds")
@@ -3567,9 +3754,9 @@ BuildRefXY()
 	ResourcesValidation(g_iW, g_iH) -- before Civ specific resources may be added (we allow exclusion override then)
 
 	-- Check if all selected civs have been given a Starting Location
-	if not bTSL or bAlternatePlacement then
-		CheckAllCivilizationsStartingLocations()
-	end
+	--if not bTSL or bAlternatePlacement then
+	--	CheckAllCivilizationsStartingLocations()
+	--end
 		
 	if bRequestedResources and not bNoResources then
 		AddStartingLocationResources()
@@ -3651,12 +3838,24 @@ function CheckAllCivilizationsStartingLocations()
 		bExtraStartingPlotPlacement = true -- tell AssignStartingPlots:__SetStartMajor to use a different method for checking space between civs
 		local startPlotList = GetCustomStartingPlots()
 		for i, iPlayer in ipairs(toPlace) do
-			print("Searching custom starting plot for " .. PlayerConfigurations[iPlayer]:GetPlayerName())
-			local pPlot = GetBestStartingPlotFromList(startPlotList)
-			if pPlot then
-				local player = Players[iPlayer]
-				player:SetStartingPlot(pPlot)
-				bNeedPlacementUpdate = true
+			local player = Players[iPlayer]
+			if not bTSL or bAlternatePlacement then
+				print("Searching custom starting plot for " .. PlayerConfigurations[iPlayer]:GetPlayerName())
+				local pPlot = GetBestStartingPlotFromList(startPlotList)
+				if pPlot then
+					print("  - Set starting plot at ", pPlot:GetX(), pPlot:GetY())
+					player:SetStartingPlot(pPlot)
+					bNeedPlacementUpdate = true -- tell culturally linked scode to update
+				end
+			else
+				table.insert(YnAMP.PlayerToRemove, iPlayer)
+				print("Set temporary starting plot for " .. PlayerConfigurations[iPlayer]:GetPlayerName())
+				--local pPlot = Map.GetPlot(0,0)
+				local pPlot = GetBestStartingPlotFromList(startPlotList, true)
+				if pPlot then
+					print("  - Set starting plot at ", pPlot:GetX(), pPlot:GetY())
+					player:SetStartingPlot(pPlot)
+				end
 			end
 		end
 	end
@@ -3689,12 +3888,23 @@ function CheckAllCivilizationsStartingLocations()
 		bExtraStartingPlotPlacement = true -- tell AssignStartingPlots:__SetStartMajor to use a different method for checking space between civs
 		local startPlotList = GetCustomStartingPlots()
 		for i, iPlayer in ipairs(toPlace) do
-			print("Searching custom starting plot for " .. PlayerConfigurations[iPlayer]:GetPlayerName())
-			local pPlot = GetBestStartingPlotFromList(startPlotList, true)
-			if pPlot then
-				local player = Players[iPlayer]
-				player:SetStartingPlot(pPlot)
-				bNeedPlacementUpdate = true
+			local player = Players[iPlayer]
+			if (not bTSL) or bAlternatePlacement then
+				print("Searching custom starting plot for " .. PlayerConfigurations[iPlayer]:GetPlayerName())
+				local pPlot = GetBestStartingPlotFromList(startPlotList, true)
+				if pPlot then
+					player:SetStartingPlot(pPlot)
+					bNeedPlacementUpdate = true
+				end
+			else
+				table.insert(YnAMP.PlayerToRemove, iPlayer)
+				print("Set temporary starting plot for " .. PlayerConfigurations[iPlayer]:GetPlayerName())
+				--local pPlot = Map.GetPlot(0,0)
+				local pPlot = GetBestStartingPlotFromList(startPlotList, true)
+				if pPlot then
+					print("  - Set starting plot at ", pPlot:GetX(), pPlot:GetY())
+					player:SetStartingPlot(pPlot)
+				end
 			end
 		end
 	end
@@ -3816,10 +4026,10 @@ function GetCustomStartingPlots()
 			local index = (iY * g_iW) + iX;
 			pPlot = Map.GetPlotByIndex(index)
 			local fertility = GetPlotFertility(pPlot)
-			if fertility > 50 then
+			--if fertility > 50 then
 				--print("fertility = ", fertility)
 				table.insert(potentialPlots, { Plot = pPlot, Fertility = fertility} )
-			end
+			--end
 		end
 	end
 	print("GetCustomStartingPlots returns "..tostring(#potentialPlots).." plots")
@@ -4104,10 +4314,12 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				
 				-- Set terrain, remove features and resources for Civ6 NW
 				for k, data in ipairs(plotsList) do 
-					TerrainBuilder.SetTerrainType(data.Plot, data.Terrain)
-					TerrainBuilder.SetFeatureType(data.Plot, -1)
-					ResourceBuilder.SetResourceType(data.Plot, -1)
-					table.insert(plotsIndex, data.Plot:GetIndex())
+					if data.Plot then -- NW can be truncated by custom map regions
+						TerrainBuilder.SetTerrainType(data.Plot, data.Terrain)
+						TerrainBuilder.SetFeatureType(data.Plot, -1)
+						ResourceBuilder.SetResourceType(data.Plot, -1)
+						table.insert(plotsIndex, data.Plot:GetIndex())
+					end
 				end	
 
 				 -- now handling custom multiplots NW (terrain type and removing features/resources has already been handled for those)
@@ -4323,7 +4535,7 @@ function RemoveCliffs(plot)
 	TerrainBuilder.SetNEOfCliff(plot, false)
 end
 
-function MarkDeepCoastalLowlands()
+function MarkDeepCoastalLowlands(g_iW, g_iH)
 
 	-- Sea rising level can reach further in land, following flatlands
 	
@@ -4355,6 +4567,15 @@ function MarkDeepCoastalLowlands()
 			or (IsEOfCliff(plot))
 			or (IsSEOfCliff(plot))
 	end
+	
+	function IsNearOcean(plot)
+		for direction = 0, DirectionTypes.NUM_DIRECTION_TYPES - 1, 1 do
+			local adjacentPlot = Map.GetAdjacentPlot(pPlot:GetX(), pPlot:GetY(), direction);
+			if adjacentPlot and adjacentPlot:IsWater() and not adjacentPlot:IsLake() then
+				return true
+			end
+		end
+	end
 
 	local level1Plots	= {}
 	local level2Plots	= {}
@@ -4366,7 +4587,7 @@ function MarkDeepCoastalLowlands()
 			local index = (iY * g_iW) + iX;
 			pPlot = Map.GetPlotByIndex(index)
 			local fertility = GetPlotFertility(pPlot)
-			if pPlot:IsFlatlands() and pPlot:IsCoastalLand() and not IsCliff(pPlot) then
+			if pPlot:IsFlatlands() and IsNearOcean(pPlot) and not IsCliff(pPlot) then
 				TerrainBuilder.AddCoastalLowland(index, iElevation)
 				level1Plots[pPlot] =  true
 			end
@@ -4404,15 +4625,31 @@ end
 function YnAMP_ApplySharedMapOptions()
 	
 	-- Remove ice near land for navigation
-	local bNoIceAdjacentToLand = MapConfiguration.GetValue("NoIceAdjacentToLand");
-	if bNoIceAdjacentToLand then
-		print("Removing Ice adjacent to Land...")
-		local g_iW, g_iH = Map.GetGridSize()
-		for i = 0, (g_iW * g_iH) - 1, 1 do
-			plot = Map.GetPlotByIndex(i)
-			if plot:IsAdjacentToLand() and plot:GetFeatureType() == g_FEATURE_ICE then
-				TerrainBuilder.SetFeatureType(plot, -1);
-			end
+	local bNoIceAdjacentToLand 	= MapConfiguration.GetValue("NoIceAdjacentToLand")
+	local bRemoveLowLand		= bExpansion2 and lowLandPlacement ~= "PLACEMENT_IMPORT"
+	
+	if bNoIceAdjacentToLand then print("Removing Ice adjacent to Land...") end
+	print("Removing default LowLands...")
+	local g_iW, g_iH = Map.GetGridSize()
+	for plotIndex = 0, (g_iW * g_iH) - 1, 1 do
+		plot = Map.GetPlotByIndex(plotIndex)
+		if bNoIceAdjacentToLand and plot:IsAdjacentToLand() and plot:GetFeatureType() == g_FEATURE_ICE then
+			TerrainBuilder.SetFeatureType(plot, -1);
+		end
+		-- remove default lowland that may have been placed by non-WB map scripts
+		if bRemoveDefaultLowLand then
+			WorldBuilder.MapManager():SetCoastalLowland( plotIndex, -1 )
+		end
+	end
+	
+	-- Placing lowland now
+	if bExpansion2 then
+		if bDeepLowLand then
+			print("Placing LowLands matching FlatLands...")
+			MarkDeepCoastalLowlands(g_iW, g_iH)
+		elseif MarkCoastalLowlands and lowLandPlacement == "PLACEMENT_DEFAULT" then
+			print("Placing LowLands using map generator...")
+			MarkCoastalLowlands()
 		end
 	end
 end
@@ -4480,23 +4717,26 @@ function YnAMP_CanHaveResource(pPlot, eResourceType, bOverrideExclusion)
 end
 
 function placeExclusiveResources()
+	print("-------------------------------")
 	print("Placing Exclusive resources...")
-	print("-------------------------------")	
+	local IsRegionUndefined = {}
 	for row in GameInfo.ResourceRegionExclusive() do
 		local region = row.Region
-		local resource = row.Resource
-		print ("Trying to place ".. tostring(resource) .." in "..tostring(region))
-		
-		local eResourceType = nil
-		if GameInfo.Resources[resource] then
-			eResourceType = GameInfo.Resources[resource].Index
-		else
-			print (" - WARNING : can't find "..tostring(resource).." in Resources")
-		end	
-		
-		if region and eResourceType then
-			placeResourceInRegion(eResourceType, region, 5, true)
-		end		
+		if not IsRegionUndefined[region] then
+			local resource = row.Resource
+			print ("Trying to place ".. tostring(resource) .." in "..tostring(region))
+			
+			local eResourceType = nil
+			if GameInfo.Resources[resource] then
+				eResourceType = GameInfo.Resources[resource].Index
+			else
+				print (" - WARNING : can't find "..tostring(resource).." in Resources")
+			end	
+			
+			if region and eResourceType then
+				IsRegionUndefined[region] = placeResourceInRegion(eResourceType, region, 5, true) -- placeResourceInRegion returns "true" if the region doesn't exists for this map
+			end
+		end
 	end
 	print("-------------------------------")
 end
@@ -4524,6 +4764,7 @@ function AddDeposits()
 end
 
 function placeResourceInRegion(eResourceType, region, number, bNumberIsRatio)
+	local IsRegionUndefined = true
 	for Data in GameInfo.RegionPosition() do
 		if Data.MapName == mapName  then
 			if Data.Region == region then
@@ -4550,10 +4791,13 @@ function placeResourceInRegion(eResourceType, region, number, bNumberIsRatio)
 					local pPlot = shuffledPlotTable[i]
 					ResourceBuilder.SetResourceType(pPlot, eResourceType, 1)
 				end
-				--print (" - Asked for " .. toPlace .. ", placed " .. placed .. " (available plots = " .. #shuffledPlotTable .. ", total plots in region = ".. plotCount .." )" )
+				print (" - Asked for " .. toPlace .. ", placed " .. placed .. " (available plots = " .. #shuffledPlotTable .. ", total plots in region = ".. plotCount .." )" )
+				IsRegionUndefined = false
 			end
 		end
 	end
+	if IsRegionUndefined then print(" - This region ("..tostring(region)..") is not defined for the map : "..tostring(mapName)) end
+	return IsRegionUndefined
 end
 
 function getPlotsInAreaForResource(iX, iWidth, iY, iHeight, eResourceType)
@@ -4642,6 +4886,9 @@ function ResourcesValidation(g_iW, g_iH)
 
 	if bNoResources then return end
 
+	print("------------------------------------")
+	print("-- Resources Validation --")
+	
 	-- replacement tables
 	local resTable 		= {}
 	local luxTable 		= {}
@@ -4678,7 +4925,7 @@ function ResourcesValidation(g_iW, g_iH)
 				for newResourceType, value in pairs (curTable) do
 if type(newResourceType) == "string" then print("Error: newResourceType is string instead of index : "..newResourceType); return; end
 					if newResourceType ~= eResourceType and YnAMP_CanHaveResource(plot, newResourceType) then
-						--print(" - Found replacement resource for", GameInfo.Resources[eResourceType].ResourceType, "at", plot:GetX(), plot:GetY(), "by resource", GameInfo.Resources[newResourceType].ResourceType)
+						print(" - Found replacement resource for", GameInfo.Resources[eResourceType].ResourceType, "at", plot:GetX(), plot:GetY(), "by resource", GameInfo.Resources[newResourceType].ResourceType)
 						return newResourceType						
 					end
 				end
@@ -4693,7 +4940,7 @@ if type(newResourceType) == "string" then print("Error: newResourceType is strin
 		if (eResourceType ~= -1) then
 			if resTable[eResourceType] then
 				if not bImportResources and IsResourceExclusion(plot, eResourceType) then
-					--print("WARNING - Removing unauthorised resource at", plot:GetX(), plot:GetY(), GameInfo.Resources[eResourceType].ResourceType)
+					print("WARNING - Removing unauthorised resource at", plot:GetX(), plot:GetY(), GameInfo.Resources[eResourceType].ResourceType)
 					ResourceBuilder.SetResourceType(plot, -1)
 					-- find replacement
 					local newResourceType = FindReplacement(eResourceType, plot)
@@ -4745,7 +4992,7 @@ if type(newResourceType) == "string" then print("Error: newResourceType is strin
 		PlaceMissingResources(missingLuxuries)
 	end
 	
-	if #missingStrategics > 0 then
+	if bPlaceAllStrategics and #missingStrategics > 0 then
 		PlaceMissingResources(missingStrategics)
 	end
 
@@ -5311,9 +5558,10 @@ function ImportCiv6Map(MapToConvert, g_iW, g_iH, bDoTerrains, bImportRivers, bIm
 		local civ6TerrainType 	= MapToConvert[refX][refY][1]
 		local civ6FeatureType 	= MapToConvert[refX][refY][2]
 		local civ6ContinentType	= MapToConvert[refX][refY][3]
-		local Rivers 			= MapToConvert[refX][refY][4] -- = {{IsNEOfRiver, flow}, {IsWOfRiver, flow}, {IsNWOfRiver, flow}}
-		local resource 			= MapToConvert[refX][refY][5] -- = {Civ6ResourceType, num}
-		local Cliffs 			= MapToConvert[refX][refY][6] -- {IsNEOfCliff,IsWOfCliff,IsNWOfCliff}
+		local Rivers 			= MapToConvert[refX][refY][4] 		-- = {{IsNEOfRiver, flow}, {IsWOfRiver, flow}, {IsNWOfRiver, flow}}
+		local resource 			= MapToConvert[refX][refY][5] 		-- = {Civ6ResourceType, num}
+		local Cliffs 			= MapToConvert[refX][refY][6] 		-- {IsNEOfCliff,IsWOfCliff,IsNWOfCliff}
+		local lowlandType 		= MapToConvert[refX][refY][7] or -1	-- -1 = none
 		
 		-- Set terrain type
 		if bDoTerrains and GameInfo.Terrains[civ6TerrainType] then
@@ -5386,6 +5634,9 @@ function ImportCiv6Map(MapToConvert, g_iW, g_iH, bDoTerrains, bImportRivers, bIm
 		end
 		--]]
 		
+		if lowLandPlacement == "PLACEMENT_IMPORT" and bExpansion2 and lowlandType ~= -1 then
+			TerrainBuilder.AddCoastalLowland(plot:GetIndex(), lowlandType)
+		end
 	end	
 	
 	print("Placed terrain on "..tostring(count) .. " tiles")
@@ -5482,24 +5733,28 @@ function SetOceanStartingLocation()
 	for iPlayer = 0, PlayerManager.GetWasEverAliveCount() - 1 do
 		local player 			= Players[iPlayer]
 		local LeaderTypeName	= PlayerConfigurations[iPlayer]:GetLeaderTypeName()
-		if (GameInfo.Leaders_XP2 and GameInfo.Leaders_XP2[LeaderTypeName] ~= nil and GameInfo.Leaders_XP2[LeaderTypeName].OceanStart == true) then
+		if (LeaderTypeName and GameInfo.Leaders_XP2 and GameInfo.Leaders_XP2[LeaderTypeName] and GameInfo.Leaders_XP2[LeaderTypeName].OceanStart == true) then
 			local startingPlot 	= player:GetStartingPlot()
-			print ("- "..tostring(LeaderTypeName).." at "..tostring(startingPlot:GetX())..","..tostring(startingPlot:GetY()))
-			local bestPlot		= nil
-			local bestDistance	= 999
-			for _, plotId in ipairs(oceanStart) do
-				local distance = Map.GetPlotDistance(plotId, startingPlot:GetIndex())
-				if(distance < bestDistance) then
-					bestDistance 	= distance
-					bestPlot		= Map.GetPlotByIndex(plotId)
+			if startingPlot then
+				print ("- "..tostring(LeaderTypeName).." at "..tostring(startingPlot:GetX())..","..tostring(startingPlot:GetY()))
+				local bestPlot		= nil
+				local bestDistance	= 999
+				for _, plotId in ipairs(oceanStart) do
+					local distance = Map.GetPlotDistance(plotId, startingPlot:GetIndex())
+					if(distance < bestDistance) then
+						bestDistance 	= distance
+						bestPlot		= Map.GetPlotByIndex(plotId)
+					end
 				end
-			end
-			if bestPlot then
-				player:SetStartingPlot(bestPlot)
-				IsOceanStart[iPlayer]	= true
-				print ("   - Water Starting Position found at "..tostring(bestPlot:GetX())..","..tostring(bestPlot:GetY()))
+				if bestPlot then
+					player:SetStartingPlot(bestPlot)
+					IsOceanStart[iPlayer]	= true
+					print ("   - Water Starting Position found at "..tostring(bestPlot:GetX())..","..tostring(bestPlot:GetY()))
+				else
+					print ("WARNING ! Can't find a water Starting Position")
+				end
 			else
-				print ("WARNING ! Can't find a water Starting Position")
+				print ("- "..tostring(LeaderTypeName).." has no initial starting position, can't search for nearest ocean position !")
 			end
 		end
 	end

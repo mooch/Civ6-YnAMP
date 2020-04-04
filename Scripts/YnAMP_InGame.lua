@@ -7,6 +7,9 @@ local YnAMP_Version = GameInfo.GlobalParameters["YNAMP_VERSION"].Value
 print ("Yet (not) Another Maps Pack version " .. tostring(YnAMP_Version) .." (2016-2019) by Gedemon")
 print ("loading YnAMP_InGame.lua")
 
+-- Sharing UI/Gameplay context (ExposedMembers.YnAMP is initialized in YnAMP_Common.lua, included in YnAMP_Script.lua)
+local YnAMP = ExposedMembers.YnAMP
+
 local mods = Modding.GetActiveMods()
 if mods ~= nil then
 	print("Active mods:")
@@ -45,6 +48,8 @@ end
 --=====================================================================================--
 -- Export a complete civ6 map to Lua.log
 --=====================================================================================--
+-- now set in YnAMP_Script.lua and shared for InGame and WB context
+--[[
 function ExportMap()
 	local g_iW, g_iH = Map.GetGridSize()
 	for iY = 0, g_iH - 1 do
@@ -88,6 +93,7 @@ function ExportMap()
 		end
 	end
 end
+--]]
 
 --=====================================================================================--
 function ResourcesStatistics(g_iW, g_iH)
@@ -142,26 +148,87 @@ end
 
 
 --=====================================================================================--
--- Add "Export to Lua" button to the Option Menu
+-- Add "Export to Lua" button to the Option Menu and add keyboard shortcut (ctrl+alt+E)
 --=====================================================================================--
+function OnInputHandler( pInputStruct:table )
+	local uiMsg:number = pInputStruct:GetMessageType();
+	if uiMsg == KeyEvents.KeyUp then
+		if pInputStruct:GetKey() == Keys.E and pInputStruct:IsControlDown() and pInputStruct:IsAltDown() then
+			YnAMP.ExportMap()
+			UI.PlaySound("Alert_Neutral")
+		end
+		-- pInputStruct:IsShiftDown() and pInputStruct:IsAltDown() and  pInputStruct:IsControlDown()
+	end
+	return false
+end
+
 function OnEnterGame()
-	Controls.ExportMapToLua:RegisterCallback( Mouse.eLClick, ExportMap )
+	Controls.ExportMapToLua:RegisterCallback( Mouse.eLClick, YnAMP.ExportMap )
 	Controls.ExportMapToLua:SetHide( false )
 	Controls.ExportMapToLua:ChangeParent(ContextPtr:LookUpControl("/InGame/TopOptionsMenu/MainStack"))
+	--Automation.SetInputHandler( OnInputHandler )
+	--ContextPtr:SetInputHandler(OnInputHandler, true) -- still not working (16-sept-2019)
 end
 Events.LoadScreenClose.Add(OnEnterGame)
 
 
 --=====================================================================================--
+-- Updating Loading text
+--=====================================================================================--
+
+local sCurrentText = "test"
+function StartLoadingTextUpdate()
+	print("Starting Loading Text Update...")
+	Events.GameCoreEventPublishComplete.Add( CheckLoadingTextUpdate )
+end
+--Events.LoadScreenClose.Add( LaunchScriptWithPause ) -- launching the script when the load screen is closed, you can use your own events
+
+function StopLoadingTextUpdate() -- GameCoreEventPublishComplete is called frequently, keep it clean
+
+	print("Stopping Loading Text Update...")
+	Events.GameCoreEventPublishComplete.Remove( CheckLoadingTextUpdate )
+end
+Events.LoadScreenClose.Add( StopLoadingTextUpdate )
+
+function CheckLoadingTextUpdate()
+	if YnAMP and sCurrentText ~= YnAMP.LoadingText then
+		sCurrentText = YnAMP.LoadingText
+		print("LoadScreen LoadScreen Context = ", ContextPtr:LookUpControl("/LoadScreen/"))
+		print("LoadScreen InGame Context = ", ContextPtr:LookUpControl("/InGame/LoadScreen/"))
+		print("LoadScreen FrontEnd Context = ", ContextPtr:LookUpControl("/FrontEnd/LoadScreen/"))
+		print("FrontEnd Context = ", ContextPtr:LookUpControl("/FrontEnd/"))
+		print("InGame Context = ", ContextPtr:LookUpControl("/InGame/"))
+	end
+end
+
+--=====================================================================================--
+-- Sharing UI function with Gameplay context
+--=====================================================================================--
+
+function GetGrandStrategicAI(iPlayer)
+	local player = Players[iPlayer]
+	return player and player:GetGrandStrategicAI()
+end
+--YnAMP.GetGrandStrategicAI = GetGrandStrategicAI -- move to initialize
+
+--=====================================================================================--
 -- Cleaning on exit
 --=====================================================================================--
 function Cleaning()
-	print ("Cleaning YnAMP table on Leave Game...")
+	print ("Cleaning YnAMP table...")
 	-- 
-	ExposedMembers.YNAMP = nil
+	ExposedMembers.YnAMP = nil
+	--print ("Cleaning InputHandler...")
+	--Automation.RemoveInputHandler( OnInputHandler )
 end
 Events.LeaveGameComplete.Add(Cleaning)
 LuaEvents.RestartGame.Add(Cleaning)
+
+function Initialize()
+	StartLoadingTextUpdate()
+end
+Initialize()
+
 
 
 

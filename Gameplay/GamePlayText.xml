@@ -19,13 +19,13 @@
 		  <Text>Giant</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_GIANT_DESCRIPTION" Language="en_US">
-		  <Text>Giant Map for 20+ players (184x92)</Text>
+		  <Text>Giant Map for 20+ players (180x94)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_LUDICROUS_NAME" Language="en_US">
 		  <Text>Ludicrous</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_LUDICROUS_DESCRIPTION" Language="en_US">
-		  <Text>Will you stand the test of time while your computer try to load this ? (200x100)</Text>
+		  <Text>Will you stand the test of time while your computer try to load this ? (200x104)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_MAX_NAME" Language="en_US">
 		  <Text>Max</Text>
@@ -38,31 +38,31 @@
 		  <Text>Small (2:1)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_SMALL21_DESCRIPTION" Language="en_US">
-		  <Text>Small map for 6 players (84x42)</Text>
+		  <Text>Small map for 6 players (84x44)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_STANDARD21_NAME" Language="en_US">
 		  <Text>Standard (2:1)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_STANDARD21_DESCRIPTION" Language="en_US">
-		  <Text>Average-sized map for 8 players (96x48)</Text>
+		  <Text>Average-sized map for 8 players (96x50)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_LARGE21_NAME" Language="en_US">
 		  <Text>Large (2:1)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_LARGE21_DESCRIPTION" Language="en_US">
-		  <Text>Large map for 10 players (108x54)</Text>
+		  <Text>Large map for 10 players (108x56)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_HUGE21_NAME" Language="en_US">
 		  <Text>Huge (2:1)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_HUGE21_DESCRIPTION" Language="en_US">
-		  <Text>Huge map for 12 players (120x60)</Text>
+		  <Text>Huge map for 12 players (120x62)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_ENORMOUS21_NAME" Language="en_US">
 		  <Text>Enormous (2:1)</Text>
 		</Replace>
 		<Replace Tag="LOC_MAPSIZE_ENORMOUS21_DESCRIPTION" Language="en_US">
-		  <Text>Really Enormous Map for 16 players (148x74)</Text>
+		  <Text>Really Enormous Map for 16 players (140x74)</Text>
 		</Replace>
 
 	</LocalizedText>
@@ -115,6 +115,17 @@
 		</Replace>
 		<Replace Tag="LOC_GAME_MENU_EXPORT_TO_LUA_DESCRIPTION" Language="en_US">
 		  <Text>Export the Map in YnAMP format to the Lua.log file (in the "..\Documents\my games\Sid Meier's Civilization VI\Logs\" folder)</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_GAME_MENU_YNAMP_RESTART" Language="en_US">
+		  <Text>[ICON_Exclamation] RESTART MAP [ICON_Exclamation]</Text>
+		</Replace>
+		<Replace Tag="LOC_GAME_MENU_YNAMP_RESTART_TOOLTIP" Language="en_US">
+		  <Text>Press to restart the map using the same settings[NEWLINE][NEWLINE][COLOR_RED][ICON_Exclamation] WARNING [ICON_Exclamation][NEWLINE][NEWLINE]This option was disabled by Firaxis for the following reason:[ENDCOLOR][NEWLINE]"Restarting in worldbuilder can cause a bunch of problems, disabling for now."</Text>
+		</Replace>
+		
+		<Replace Tag="LOC_GAME_MENU_YNAMP_RESTART_TIMER" Language="en_US">
+		  <Text>Restart in {1Num}sec (Press to cancel)</Text>
 		</Replace>
 		
 		<Replace Tag="LOC_WORLD_BUILDER_BRUSH_SIZE" Text="Brush Size = {1_Num}" Language="en_US" />	
@@ -10530,7 +10541,7 @@
 		<Replace Tag="LOC_CITY_NAME_GOIANIA" Text="Goiânia" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_JATAI" Text="Jataí" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_OSORNO" Text="Osorno" Language="en_US" />
-		<Replace Tag="LOC_CITY_NAME_RIO_DE_JANIERO" Text="Rio de Janiero" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_RIO_DE_JANEIRO" Text="Rio de Janeiro" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VALDIVIA" Text="Valdivia" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VALPARAISO" Text="Valparaíso" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VITORIA_ESPIRITO_SANTO" Text="Vitória" Language="en_US" />

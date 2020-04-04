@@ -72,6 +72,12 @@ CREATE TABLE IF NOT EXISTS StartPosition
 		AlternateStart INT default 0,		
 		X INT default 0,
 		Y INT default 0);
+		
+-- Replaced civilization (Civilization type still exist, but is used to represent another Civilization, for example CIVILIZATION_JAKARTA is now representing Bandar Brunei)
+CREATE TABLE IF NOT EXISTS ReplacedCivilization
+	(	Civilization TEXT NOT NULL,
+		ReplacedBy TEXT NOT NULL,
+		WhenNameTag TEXT NOT NULL);
 
 -- Regions positions
 CREATE TABLE IF NOT EXISTS RegionPosition
@@ -107,6 +113,41 @@ CREATE TABLE IF NOT EXISTS ScenarioCivilizationsReplacement
 		CivilizationType TEXT NOT NULL,
 		BackupType TEXT,
 		PreferedType TEXT);
+		
+-- Scenario Civilizations
+CREATE TABLE IF NOT EXISTS ScenarioCivilizations
+	(	ScenarioName TEXT,
+		MapName TEXT,
+		SpecificEra TEXT,
+		CivilizationType TEXT NOT NULL,
+		Priority INT default 0, -- higher means first selected for placement in loops
+		CityPlacement TEXT,
+		MaxDistanceFromCapital INT, -- if OnlySameLandMass is true, then this is the land path distance, else it's the air distance
+		OnlySameLandMass BOOLEAN NOT NULL CHECK (OnlySameLandMass IN (0,1)) DEFAULT 0,
+		NumberOfCity INT,
+		CapitalSize INT,
+		OtherCitySize INT,
+		CitySizeDecrement INT,
+		NumCityPerSizeDecrement INT,
+		RoadPlacement TEXT,
+		RoadMaxDistance INT,
+		MaxRoadPerCity INT,
+		InternationalRoads TEXT,
+		InternationalRoadMaxDistance INT,
+		NationalRailPlacement TEXT,
+		InternationalRails TEXT,
+		RailsMaxDistance INT,
+		Improvments TEXT,
+		MaxNumImprovments INT,
+		ImprovmentsPerSize TEXT,
+		MaxImprovmentsDistance INT,
+		Districts TEXT,
+		MaxNumDistricts INT,
+		DistrictsPerSize TEXT,
+		MaxDistrictsDistance INT,
+		Buildings TEXT,
+		BuildingsPerSize TEXT,
+		MaxNumBuildings INT);
 		
 -- Scenario Cities
 CREATE TABLE IF NOT EXISTS ScenarioCities

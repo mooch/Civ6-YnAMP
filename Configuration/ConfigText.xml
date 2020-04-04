@@ -14,37 +14,37 @@
 	<!-- New entries -->
     
 	<Replace Tag="LOC_YNAGEM_NAME" Language="en_US">
-      <Text>[COLOR_RED]Giant Earth[ENDCOLOR]</Text>
+      <Text>[COLOR_Civ6Blue]YnAMP[ENDCOLOR] - [COLOR_RED]Giant Earth[ENDCOLOR]</Text>
     </Replace>
     <Replace Tag="LOC_YNAGEM_DESC" Language="en_US">
       <Text>Genghis Kai's GEM (Hormigas version) (180x94 - Giant)[NEWLINE][ICON_Exclamation] [COLOR_RED]UNSTABLE in late game[ENDCOLOR][NEWLINE]Lower your graphic options to reduce random crashes.[NEWLINE]6+ GB of VRAM recommended</Text>
     </Replace>
     <Replace Tag="LOC_GREATESTEARTH_NAME" Language="en_US">
-      <Text>Greatest Earth Map</Text>
+      <Text>[COLOR_Civ6Blue]YnAMP[ENDCOLOR] - Greatest Earth Map</Text>
     </Replace>
     <Replace Tag="LOC_GREATESTEARTH_DESC" Language="en_US">
       <Text>Greatest Earth Map by djvandyke (104x64 - Large)</Text>
     </Replace>
     <Replace Tag="LOC_PLAYEUROPEAGAIN_NAME" Language="en_US">
-      <Text>Play Europe Again</Text>
+      <Text>[COLOR_Civ6Blue]YnAMP[ENDCOLOR] - Play Europe Again</Text>
     </Replace>
     <Replace Tag="LOC_PLAYEUROPEAGAIN_DESC" Language="en_US">
       <Text>NiRv4n4's Europe(Hormigas version) (108x98 - Huge)</Text>
     </Replace>
 	<Replace Tag="LOC_LARGE_EUROPE_NAME" Language="en_US">
-      <Text>Large Europe</Text>
+      <Text>[COLOR_Civ6Blue]YnAMP[ENDCOLOR] - Large Europe</Text>
     </Replace>
     <Replace Tag="LOC_LARGE_EUROPE_DESC" Language="en_US">
       <Text>Dieter VonClam's Large Europe (79x73 - Large)</Text>
     </Replace>
     <Replace Tag="LOC_TERRAMAP_NAME" Language="en_US">
-      <Text>Terra Map for YnAMP</Text>
+      <Text>[COLOR_Civ6Blue]YnAMP[ENDCOLOR] - Terra Map</Text>
     </Replace>
     <Replace Tag="LOC_TERRAMAP_DESC" Language="en_US">
       <Text>A map with customizable landmass placement based on a scalable Earth</Text>
     </Replace>
 	<Replace Tag="LOC_LARGESTEARTHCUSTOM_NAME" Language="en_US">
-      <Text>[COLOR_RED]Largest Earth Custom[ENDCOLOR]</Text>
+      <Text>[COLOR_Civ6Blue]YnAMP[ENDCOLOR] - [COLOR_RED]Largest Earth Custom[ENDCOLOR]</Text>
     </Replace>
     <Replace Tag="LOC_LARGESTEARTHCUSTOM_DESC" Language="en_US">
       <Text>Largest Earth Custom (230x116 - Ludicrous)[NEWLINE][ICON_Exclamation] [COLOR_RED]WILL NOT LOAD AT FULL SIZE ![ENDCOLOR][NEWLINE]Use the custom options to set a game on smaller regions of the map.</Text>
@@ -75,6 +75,31 @@
       <Text>Try to regroup Civilizations by Ethnicity on the Starting Positions</Text>
     </Replace>
 	
+    <Replace Tag="LOC_MAP_ALTERNATE_TSL_RANGE_NAME" Language="en_US">
+      <Text>TSL Replacement Range</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ALTERNATE_TSL_RANGE_DESCRIPTION" Language="en_US">
+      <Text>Distance at which a TSL can be moved if the relative position is not good enough. This parameters scale with map size.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ALTERNATE_TSL_RANGE_SHORT_NAME" Language="en_US">
+      <Text>Short Range</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ALTERNATE_TSL_RANGE_SHORT_DESCRIPTION" Language="en_US">
+      <Text>Stay relatively close to the position from the reference map, but this may prevent a Civilization to be in game.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ALTERNATE_TSL_RANGE_MEDIUM_NAME" Language="en_US">
+      <Text>Medium Range</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ALTERNATE_TSL_RANGE_MEDIUM_DESCRIPTION" Language="en_US">
+      <Text>This will allow a TSL replacement for most cases.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ALTERNATE_TSL_RANGE_HIGH_NAME" Language="en_US">
+      <Text>High Range</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ALTERNATE_TSL_RANGE_HIGH_DESCRIPTION" Language="en_US">
+      <Text>A Civilization may get placed relatively far from its original region.</Text>
+    </Replace>
+	
     <Replace Tag="LOC_MAPSIZE_ENORMOUS_NAME" Language="en_US">
       <Text>Enormous</Text>
     </Replace>
@@ -85,13 +110,13 @@
       <Text>[COLOR_RED]Giant[ENDCOLOR]</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_GIANT_DESCRIPTION" Language="en_US">
-      <Text>Giant Map for 20+ players (184x92)[NEWLINE][ICON_Exclamation] [COLOR_RED]UNSTABLE in late game[ENDCOLOR][NEWLINE]Lower your graphic options to reduce random crashes.[NEWLINE]6+ GB of VRAM recommended</Text>
+      <Text>Giant Map for 20+ players (180x94)[NEWLINE][ICON_Exclamation] [COLOR_RED]UNSTABLE in late game[ENDCOLOR][NEWLINE]Lower your graphic options to reduce random crashes.[NEWLINE]6+ GB of VRAM recommended</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_LUDICROUS_NAME" Language="en_US">
       <Text>[COLOR_RED]Ludicrous[ENDCOLOR]</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_LUDICROUS_DESCRIPTION" Language="en_US">
-      <Text>Will you stand the test of time while the map is loading ? (200x100)[NEWLINE][ICON_Exclamation] [COLOR_RED]UNSTABLE in late game[ENDCOLOR][NEWLINE]Lower your graphic options to reduce random crashes.[NEWLINE]8+ GB of VRAM recommended</Text>
+      <Text>Will you stand the test of time while the map is loading ? (200x104)[NEWLINE][ICON_Exclamation] [COLOR_RED]UNSTABLE in late game[ENDCOLOR][NEWLINE]Lower your graphic options to reduce random crashes.[NEWLINE]8+ GB of VRAM recommended</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_MAX_NAME" Language="en_US">
       <Text>Max</Text>
@@ -104,31 +129,31 @@
       <Text>Small (2:1)</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_SMALL21_DESCRIPTION" Language="en_US">
-      <Text>Small map for 6 players (84x42)</Text>
+      <Text>Small map for 6 players (84x44)</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_STANDARD21_NAME" Language="en_US">
       <Text>Standard (2:1)</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_STANDARD21_DESCRIPTION" Language="en_US">
-      <Text>Average-sized map for 8 players (96x48)</Text>
+      <Text>Average-sized map for 8 players (96x50)</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_LARGE21_NAME" Language="en_US">
       <Text>Large (2:1)</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_LARGE21_DESCRIPTION" Language="en_US">
-      <Text>Large map for 10 players (108x54)</Text>
+      <Text>Large map for 10 players (108x56)</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_HUGE21_NAME" Language="en_US">
       <Text>Huge (2:1)</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_HUGE21_DESCRIPTION" Language="en_US">
-      <Text>Huge map for 12 players (120x60)</Text>
+      <Text>Huge map for 12 players (120x62)</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_ENORMOUS21_NAME" Language="en_US">
       <Text>Enormous (2:1)</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_ENORMOUS21_DESCRIPTION" Language="en_US">
-      <Text>Really Enormous Map for 16 players (148x74)</Text>
+      <Text>Really Enormous Map for 16 players (140x74)</Text>
     </Replace>
 	
     <Replace Tag="LOC_MAP_RESOURCES_PLACEMENT_NAME" Language="en_US">
@@ -177,7 +202,13 @@
       <Text>Place All Luxuries</Text>
     </Replace>
     <Replace Tag="LOC_MAP_ALL_LUXURIES_DESCRIPTION" Language="en_US">
-      <Text>Try to place at least a few of each luxuries on the map.</Text>
+      <Text>When this is activated, the mod tries to place at least a few of each Luxury Resource on the map.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ALL_STRATEGICS_NAME" Language="en_US">
+      <Text>Add Missing Strategics</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ALL_STRATEGICS_DESCRIPTION" Language="en_US">
+      <Text>When importing a resource map from civ5, you may miss some strategic resources, this option allows to force random placement of the missing resources.</Text>
     </Replace>
 	
     <Replace Tag="LOC_MAP_FEATURES_PLACEMENT_NAME" Language="en_US">
@@ -307,11 +338,33 @@
     <Replace Tag="LOC_MAP_LOWLAND_PLACEMENT_DEFAULT_DESCRIPTION" Language="en_US">
       <Text>Lowland plots are determined using the Civ6 Map Generator (random)</Text>
     </Replace>
+    <Replace Tag="LOC_MAP_LOWLAND_PLACEMENT_IMPORT_NAME" Language="en_US">
+      <Text>Import</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_LOWLAND_PLACEMENT_IMPORT_DESCRIPTION" Language="en_US">
+      <Text>Lowland plots are imported from the map data, if they exist</Text>
+    </Replace>
     <Replace Tag="LOC_MAP_LOWLAND_PLACEMENT_DEEP_NAME" Language="en_US">
       <Text>Matching flatland</Text>
     </Replace>
     <Replace Tag="LOC_MAP_LOWLAND_PLACEMENT_DEEP_DESCRIPTION" Language="en_US">
       <Text>Sea rising can reach further inland, following flatland plots</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_LOWLAND_PLACEMENT_EMPTY_DESCRIPTION" Language="en_US">
+      <Text>No lowland placement (no sea rising)</Text>
+    </Replace>
+
+	<Replace Tag="LOC_MAP_FLOODPLAINS_PLACEMENT_NAME" Language="en_US">
+      <Text>Rivers Flooding</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_FLOODPLAINS_PLACEMENT_DESCRIPTION" Language="en_US">
+      <Text>How special Floodplains (for rivers flooding) placement is determined.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_FLOODPLAINS_PLACEMENT_DEFAULT_DESCRIPTION" Language="en_US">
+      <Text>Special Floodplains are placed using the Civ6 Map Generator (random)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_FLOODPLAINS_PLACEMENT_EMPTY_DESCRIPTION" Language="en_US">
+      <Text>No special Floodplains (no rivers flooding)</Text>
     </Replace>
 	
     <Replace Tag="LOC_MAP_PLACEMENT_EMPTY_NAME" Language="en_US">
@@ -340,11 +393,17 @@
       <Text>Place cattle for Great Zimbabwe</Text>
     </Replace>
 	<Replace Tag="LOC_MAP_JEBEL_BARKAL_HILLS_NAME" Language="en_US">
-      <Text>Replace floodplains with desert hills for Jebel Barkal</Text>
+      <Text>Replace floodplains with hills for Jebel Barkal</Text>
+    </Replace>
+	<Replace Tag="LOC_MAP_PANAMA_CANAL_NAME" Language="en_US">
+      <Text>Replace hills with flatland for a canal in Panama</Text>
     </Replace>
 	
     <Replace Tag="LOC_MAP_NO_ICE_ADJACENT_TO_LAND_NAME" Language="en_US">
       <Text>No ice near land (to help circumnavigation)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_NO_ICE_ADJACENT_TO_LAND_DESC" Language="en_US">
+      <Text>This will delete Ice features placed near land tiles to help circumnavigation. This doesn't remove land tiles on the north and south edge of the map.</Text>
     </Replace>
     <Replace Tag="LOC_MAP_NO_CITY_STATE_NAME" Language="en_US">
       <Text>No City States</Text>
@@ -396,6 +455,16 @@
     </Replace>
 	<Replace Tag="LOC_MAP_ALTERNATE_PLACEMENT_NAME" Language="en_US">
       <Text>Allow random placement for civs without TSL</Text>
+    </Replace>
+	<Replace Tag="LOC_MAP_ALTERNATE_PLACEMENT_DESC" Language="en_US">
+      <Text>Civilizations without TSL will be placed randomly on the map. This allows all selected players to have a starting position, uncheck this when using Random slots if you want to have only TSL Civilizations in game and don't mind if the number of players is lower than what you've selected.</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_LAND_AROUND_TSL_NAME" Language="en_US">
+      <Text>More Land around TSL</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_LAND_AROUND_TSL_DESC" Language="en_US">
+      <Text>Try to raise the probability of having land around a Civilization relative TSL, except for Civilizations starting at sea.</Text>
     </Replace>
 	
 	<Replace Tag="LOC_MAP_HISTORICAL_SPAWN_NAME" Language="en_US">
@@ -490,19 +559,61 @@
       <Text>Pangea</Text>
     </Replace>
     <Replace Tag="LOC_MAP_PANGEA_DESCRIPTION" Language="en_US">
-      <Text>A Massive Continent</Text>
+      <Text>A Massive Continent for a large region of the map, with some rifts.[NEWLINE][NEWLINE]May generate straight coasts if used for a small region of the map.</Text>
+    </Replace>
+    <Replace Tag="LOC_YNAMP_PANGEA_REGION_NAME" Language="en_US">
+      <Text>Pangea (Region)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_PANGEA_REGION_DESCRIPTION" Language="en_US">
+      <Text>A Massive Continent for a small region of the map, with some rifts.</Text>
+    </Replace>
+    <Replace Tag="LOC_YNAMP_COMPACT_PANGEA_NAME" Language="en_US">
+      <Text>Compact Pangea</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_COMPACT_PANGEA_DESCRIPTION" Language="en_US">
+      <Text>A Massive Continent for a small region of the map, without rift.[NEWLINE][NEWLINE]May generate a very uniform landscape if used for a large region of the map.</Text>
     </Replace>
     <Replace Tag="LOC_YNAMP_CONTINENT_NAME" Language="en_US">
       <Text>Continent</Text>
     </Replace>
     <Replace Tag="LOC_MAP_CONTINENT_DESCRIPTION" Language="en_US">
-      <Text>A Continent with some possible smaller separated landmasses</Text>
+      <Text>A Continent with some possible smaller separated landmasses.[NEWLINE][NEWLINE]May generate a very fractionned landscape if used for a small region of the map.</Text>
+    </Replace>
+    <Replace Tag="LOC_YNAMP_MINI_CONTINENT_NAME" Language="en_US">
+      <Text>Continent (Region)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_MINI_CONTINENT_DESCRIPTION" Language="en_US">
+      <Text>A Continent for a small region of the map.[NEWLINE][NEWLINE]May generate a very uniform landscape if used for a large region of the map.</Text>
+    </Replace>
+    <Replace Tag="LOC_YNAMP_COMPACT_CONTINENT_NAME" Language="en_US">
+      <Text>Compact Continent (Region)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_COMPACT_CONTINENT_DESCRIPTION" Language="en_US">
+      <Text>A Continent for a small region of the map, without rift.[NEWLINE][NEWLINE]May generate a very uniform landscape if used for a large region of the map.</Text>
+    </Replace>
+    <Replace Tag="LOC_YNAMP_SLIM_CONTINENT_NAME" Language="en_US">
+      <Text>Tall Continent</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SLIM_CONTINENT_DESCRIPTION" Language="en_US">
+      <Text>A Continent for a large region of the map which has more height than width, where other Continent scripts may generate too much vertical rifts.</Text>
+    </Replace>
+    <Replace Tag="LOC_YNAMP_SLIM_CONTINENT_R_NAME" Language="en_US">
+      <Text>Tall Continent (Region)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SLIM_CONTINENT_R_DESCRIPTION" Language="en_US">
+      <Text>A Continent for a small region of the map which has more height than width.</Text>
     </Replace>
     <Replace Tag="LOC_YNAMP_SMALL_CONTINENT_NAME" Language="en_US">
       <Text>Small Continent</Text>
     </Replace>
     <Replace Tag="LOC_MAP_SMALL_CONTINENT_DESCRIPTION" Language="en_US">
-      <Text>Small Continent with some possible smaller separated landmasses</Text>
+      <Text>Small Continent with some possible smaller separated landmasses.[NEWLINE][NEWLINE]May generate a very fractionned landscape if used for a small region of the map.</Text>
+    </Replace>
+    <Replace Tag="LOC_YNAMP_SMALL_CONTINENT_R_NAME" Language="en_US">
+      <Text>Small Continent (Region)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SMALL_CONTINENT_R_DESCRIPTION" Language="en_US">
+      <Text>Small Continent for a small area of the map.</Text>
     </Replace>
     <Replace Tag="LOC_YNAMP_LARGE_ISLANDS_NAME" Language="en_US">
       <Text>Large Islands</Text>
@@ -528,6 +639,7 @@
     <Replace Tag="LOC_MAP_SEA_DESCRIPTION" Language="en_US">
       <Text>Isolated Small Islands</Text>
     </Replace>
+	
     <Replace Tag="LOC_YNAMP_RANDOM_NAME" Language="en_US">
       <Text>Random script</Text>
     </Replace>
@@ -569,7 +681,7 @@
       <Text>Rift Grain (0-4)</Text>
     </Replace>
     <Replace Tag="LOC_MAP_CUSTOM_RIFT_GRAIN_DESCRIPTION" Language="en_US">
-      <Text>good question !</Text>
+      <Text>What's this you ask ? That's a good question !</Text>
     </Replace>
     <Replace Tag="LOC_MAP_CUSTOM_FRACTX_EXP_NAME" Language="en_US">
       <Text>FracXExp</Text>
@@ -608,7 +720,63 @@
     </Replace>
     <Replace Tag="LOC_MAP_SELECT_LANDMASS_DESCRIPTION" Language="en_US">
       <Text>Select each landmass script. (add more options)</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_REAL_LAND_BLEND_NAME" Language="en_US">
+      <Text>[ICON_PressureHigh] Real Land Blending [ICON_PressureHigh]</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_REAL_LAND_BLEND_DESCRIPTION" Language="en_US">
+      <Text>Blend Real Land Shape over the selected script(s) (0 = no blending, 100 = real world shape)</Text>
     </Replace>	
+    <Replace Tag="LOC_MAP_REAL_SEA_BLEND_NAME" Language="en_US">
+      <Text>[ICON_PressureHigh] Real Sea Blending [ICON_PressureHigh]</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_REAL_SEA_BLEND_DESCRIPTION" Language="en_US">
+      <Text>Blend Real Sea Shape over the selected script(s) (0 = no blending, 100 = real world shape)</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_ADD_LAKES_NAME" Language="en_US">
+      <Text>Additional large lakes</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ADD_LAKES_DESC" Language="en_US">
+      <Text>Add a few large lakes on the map.[NEWLINE][NEWLINE]This parameter is not affected by the Real Land/Sea Shape Blending option.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ADD_ISLANDS_NAME" Language="en_US">
+      <Text>Allows islands</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ADD_ISLANDS_DESC" Language="en_US">
+      <Text>Allows islands placement on the map. This may raise a bit the probability of reaching the new world before Oceanic travel is available.[NEWLINE][NEWLINE]This parameter is affected by the Real Land/Sea Shape Blending option.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ADDITIONAL_SEAS_NAME" Language="en_US">
+      <Text>Additional seas</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ADDITIONAL_SEAS_DESC" Language="en_US">
+      <Text>Add randomly shaped seas at those locations (relative to real world):[NEWLINE][NEWLINE][ICON_BULLET]Sea of Okhotsk[NEWLINE][ICON_BULLET]North Sea[NEWLINE][ICON_BULLET]Baltic Sea[NEWLINE][ICON_BULLET]Bay of Bengal[NEWLINE][ICON_BULLET]Sea of Japan[NEWLINE][ICON_BULLET]Yellow Sea[NEWLINE][ICON_BULLET]Gulf of Mexico[NEWLINE][NEWLINE]The shape of those seas is influenced by the Real Land/Sea Shape Blending option.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_LIMIT_TUNDRA_NAME" Language="en_US">
+      <Text>Limit Tundra and Snow</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_LIMIT_TUNDRA_DESC" Language="en_US">
+      <Text>The map generator may place too much Tundra and Snow terrains types in some areas when using a land shape similar to the real world (especially in the south that is a bit cropped to save space on the reference map), when checked this option allows to limit Tundra and Snow latitudes to be relative to the real world reference map.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_LAND_ON_POLES_NAME" Language="en_US">
+      <Text>Allows Land tiles on Poles</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_LAND_ON_POLES_DESC" Language="en_US">
+      <Text>By default, the Terra Map scripts use a small buffer to the North and South to prevent land tiles blocking circumnavigation. When this option is checked, land tiles may be placed even on the North and South poles areas. But this doesn't force land tiles placement if the Fractal function has generated a landmass with no lands on poles.</Text>
+    </Replace>
+	<Replace Tag="LOC_MAP_REAL_TERRAIN_NAME" Language="en_US">
+      <Text>Use real terrain when possible</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_REAL_TERRAIN_DESC" Language="en_US">
+      <Text>Use the reference real World map to determine the terrain type (Grass, Plains, Desert, Tundra, Snow and Hills/mountains) of a land plot, based on its relative (to real Earth) position when possible.[NEWLINE][NEWLINE]This setting doesn't affect land plot that are generated where there is Water on the reference map.</Text>
+    </Replace>
+	<Replace Tag="LOC_MAP_REAL_FEATURES_NAME" Language="en_US">
+      <Text>Use real features when possible</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_REAL_FEATURES_DESC" Language="en_US">
+      <Text>Use the reference real World map to determine the feature type (Forest, Jungle, Oasis, ...) of a land plot, based on its relative (to real Earth) position when possible.[NEWLINE][NEWLINE]This setting doesn't affect land plot that are generated where there is Water on the reference map, and doesn't include Natural Wonders.</Text>
+    </Replace>
 	
     <Replace Tag="LOC_MAP_AUSTRALIA_NAME" 			Text="Australia" 			Language="en_US" /> 
     <Replace Tag="LOC_MAP_OCEANIA_NAME" 			Text="Oceania" 				Language="en_US" /> 
@@ -736,6 +904,42 @@
       <Text>Alps (West Italy)</Text>
     </Replace>
 	
+    <Replace Tag="LOC_CITYSTATES_OPTIONS" Language="en_US">
+      <Text>City States Options</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SELECT_CITY_STATES_NAME" Language="en_US">
+      <Text>Manual City States Selection</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SELECT_CITY_STATES_DESCRIPTION" Language="en_US">
+      <Text>When enabled you can manually select which City States you want to be placed on the map from a list.[NEWLINE][NEWLINE]Note that DLCs, Expansions, scenarios and mods can add or remove City States, the list does not reflect which ones are actually available.[NEWLINE][NEWLINE]When a City State is not available, its slot is free for a random CS.</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_XP1_CHECK_NAME" Language="en_US">
+      <Text>Update CS list for Rise and Fall</Text>
+    </Replace>
+    <Replace Tag="LOC_XP1_CHECK_DESCRIPTION" Language="en_US">
+      <Text>Check this if the Rise and Fall Expansion is active.[NEWLINE]Uncheck this if the Rise and Fall Expansion is not installed or inactive.[NEWLINE]The City State list will be updated based on your selection.</Text>
+    </Replace>
+    <Replace Tag="LOC_XP2_CHECK_NAME" Language="en_US">
+      <Text>Update CS list for Gathering Storm</Text>
+    </Replace>
+    <Replace Tag="LOC_XP2_CHECK_DESCRIPTION" Language="en_US">
+      <Text>Check this if the Gathering Storm Expansion is active.[NEWLINE]Uncheck this if the Gathering Storm Expansion is not installed or inactive.[NEWLINE]The City State list will be updated based on your selection.</Text>
+    </Replace>
+    <Replace Tag="LOC_DLC2_CHECK_NAME" Language="en_US">
+      <Text>Update CS list for the Viking DLC</Text>
+    </Replace>
+    <Replace Tag="LOC_DLC2_CHECK_DESCRIPTION" Language="en_US">
+      <Text>Check this if the Viking DLC is active.[NEWLINE]Uncheck this if the Viking DLC is not installed or inactive.[NEWLINE]The City State list will be updated based on your selection.</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_SCENARIO_OPTIONS" Language="en_US">
+      <Text>[ICON_DownloadContent][ICON_DownloadContent][ICON_DownloadContent][ICON_DownloadContent] SCENARIO OPTIONS [ICON_DownloadContent][ICON_DownloadContent][ICON_DownloadContent][ICON_DownloadContent]</Text>
+    </Replace>
+    <Replace Tag="LOC_SCENARIO_OPTIONS_DESCRIPTION" Language="en_US">
+      <Text>Scenario Options Below[NEWLINE][ICON_Exclamation][COLOR_RED] Alpha Testing [ENDCOLOR][ICON_Exclamation]</Text>
+    </Replace>
+	
     <Replace Tag="LOC_MAP_SCENARIO_TYPE_NAME" Language="en_US">
       <Text>Scenario</Text>
     </Replace>
@@ -743,30 +947,374 @@
       <Text>None</Text>
     </Replace>
     <Replace Tag="LOC_MAP_SCENARIO_NONE_DESCRIPTION" Language="en_US">
-      <Text>No Scenario</Text>
+      <Text>Do not allow any Scenario placement</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SCENARIO_DEFAULT_NAME" Language="en_US">
+      <Text>Default</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SCENARIO_DEFAULT_DESCRIPTION" Language="en_US">
+      <Text>Scenario imported from Database when available</Text>
     </Replace>
     <Replace Tag="LOC_MAP_SCENARIO_GENERATED_NAME" Language="en_US">
-      <Text>Generated</Text>
+      <Text>Generated/Mixed (Beta Testing)</Text>
     </Replace>
     <Replace Tag="LOC_MAP_SCENARIO_GENERATED_DESCRIPTION" Language="en_US">
-      <Text>Scenario generated automatically</Text>
+      <Text>Scenario generated automatically and/or imported from Database</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_GENERATED_NAME" Language="en_US">
+      <Text>Generated</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_GENERATED_DESCRIPTION" Language="en_US">
+      <Text>Automatic placement by the Scenario Generator</Text>
+    </Replace>
+    <Replace Tag="LOC_YNAMP_GENERATED_PRESET_NAME" Language="en_US">
+      <Text>YnAMP generated placement</Text>
+    </Replace>
+    <Replace Tag="LOC_YNAMP_GENERATED_PRESET_DESC" Language="en_US">
+      <Text>Placement presets to generate starting Civilizations[NEWLINE]This scenario replaces the setup screen default values to civ-specific values for the following settings:[NEWLINE][ICON_BULLET]Cities Placement[NEWLINE][ICON_BULLET]Number of Cities[NEWLINE][ICON_BULLET]Max. Distance From Capital[NEWLINE][ICON_BULLET]Only on the same landmass[NEWLINE][NEWLINE]Custom Civilizations will use the default settings (unless added separatly by the custom civ mod)[NEWLINE][NEWLINE]The settings are optimized for the Giant Earth map (or regions of it) but can be used with any map.</Text>
     </Replace>
 	
     <Replace Tag="LOC_MAP_CITY_PLACEMENT_NAME" Language="en_US">
       <Text>Cities Placement</Text>
     </Replace>
     <Replace Tag="LOC_MAP_CITY_PLACEMENT_TERRAIN_NAME" Language="en_US">
-      <Text>Terrain</Text>
+      <Text>Default: Terrain</Text>
     </Replace>
     <Replace Tag="LOC_MAP_CITY_PLACEMENT_TERRAIN_DESCRIPTION" Language="en_US">
-      <Text>Use game's suggestion for best city placement</Text>
+      <Text>Use terrain's Fertility values for city placement for Civilization that don't have a placement type defined in the ScenarioCivilizations table.</Text>
     </Replace>
     <Replace Tag="LOC_MAP_CITY_PLACEMENT_CITY_MAP_NAME" Language="en_US">
-      <Text>City Map</Text>
+      <Text>Default: City Map</Text>
     </Replace>
     <Replace Tag="LOC_MAP_CITY_PLACEMENT_CITY_MAP_DESCRIPTION" Language="en_US">
-      <Text>Get cities position from the CityMap table</Text>
+      <Text>Get cities position from the CityMap table for Civilization that don't have a placement type defined in the ScenarioCivilizations table.</Text>
     </Replace>
+    <Replace Tag="LOC_MAP_CITY_PLACEMENT_MIXED_NAME" Language="en_US">
+      <Text>Default: Mixed</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CITY_PLACEMENT_MIXED_DESCRIPTION" Language="en_US">
+      <Text>Get cities position from all possible sources (ScenarioCities first, then CityMap, then Fertility values) for Civilization that don't have a placement type defined in the ScenarioCivilizations table.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CITY_PLACEMENT_IMPORT_NAME" Language="en_US">
+      <Text>Default: Import</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CITY_PLACEMENT_IMPORT_DESCRIPTION" Language="en_US">
+      <Text>Get cities position from the ScenarioCities table for Civilization that don't have a placement type defined in the ScenarioCivilizations table.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CITY_PLACEMENT_TERRAIN_ONLY_NAME" Language="en_US">
+      <Text>Restricted: Terrain</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CITY_PLACEMENT_TERRAIN_ONLY_DESCRIPTION" Language="en_US">
+      <Text>Only use terrain's Fertility values for city placement, overriding all the placement types from the ScenarioCivilizations table.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CITY_PLACEMENT_CITY_MAP_ONLY_NAME" Language="en_US">
+      <Text>Restricted: City Map</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CITY_PLACEMENT_CITY_MAP_ONLY_DESCRIPTION" Language="en_US">
+      <Text>Only get cities position from the CityMap table, overriding all the placement types from the ScenarioCivilizations table.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CITY_PLACEMENT_IMPORT_ONLY_NAME" Language="en_US">
+      <Text>Restricted: Import</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CITY_PLACEMENT_IMPORT_ONLY_DESCRIPTION" Language="en_US">
+      <Text>Only place cities defined in the ScenarioCities table, overriding all the placement types from the ScenarioCivilizations table.</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_CUSTOM_SCENARIO_VALUES_NAME" Language="en_US">
+      <Text>Use input boxes ([ICON_Exclamation] reset values !)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CUSTOM_SCENARIO_VALUES_DESCRIPTION" Language="en_US">
+      <Text>Use input boxes instead of dropdown menu for scenario parameters when possible</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_NUMBER_OF_CITY_NAME" Language="en_US">
+      <Text>Max. Num. of Cities (Major)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_NUMBER_OF_CITY_DESCRIPTION" Language="en_US">
+      <Text>The Scenario Generator will try to place this number of cities for Major Civilizations</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_NUMBER_OF_MINOR_CITY_NAME" Language="en_US">
+      <Text>Max. Num. of Cities (Minor)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_NUMBER_OF_MINOR_CITY_DESCRIPTION" Language="en_US">
+      <Text>The Scenario Generator will try to place this number of cities for Minor Civilizations</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_CAPITAL_SIZE_NAME" Language="en_US">
+      <Text>Capital city size</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CAPITAL_SIZE_DESCRIPTION" Language="en_US">
+      <Text>Size of the Capitals</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_OTHER_CITY_SIZE_NAME" Language="en_US">
+      <Text>Other cities size</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_OTHER_CITY_SIZE_DESCRIPTION" Language="en_US">
+      <Text>Maximum size of the other cities</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_DECREASE_OTHER_CITY_SIZE" Language="en_US">
+      <Text>Decrease other city sizes</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_DECREASE_OTHER_CITY_SIZE_DESCRIPTION" Language="en_US">
+      <Text>When checked, first placed cities are bigger than last placed cities, initial cities use the "Other cities size" values, then the size is reduced using the "Reduction by placed cities" ratio.</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_CITY_SIZE_DECREMENT" Language="en_US">
+      <Text>Size Decrement</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CITY_SIZE_DECREMENT_DESCRIPTION" Language="en_US">
+      <Text>Decrement City Size by this value</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_NUM_CITY_PER_DECREMENT" Language="en_US">
+      <Text>Cities per Decrement</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_NUM_CITY_PER_DECREMENT_DESCRIPTION" Language="en_US">
+      <Text>Number of cities placed for each size decrement</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_MAX_CAPITAL_DISTANCE" Language="en_US">
+      <Text>Max. Distance from Capital</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_MAX_CAPITAL_DISTANCE_DESCRIPTION" Language="en_US">
+      <Text>Maximum distance from Capital for the other cities (this is not checked for cities imported from the ScenarioCities table)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SAME_LANDMASS" Language="en_US">
+      <Text>Only on the same landmass</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SAME_LANDMASS_DESCRIPTION" Language="en_US">
+      <Text>Cities must be placed on the same landmass as the capital (this is not checked for cities imported from the ScenarioCities table)</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_RATIO_2_PER_1" Language="en_US">
+      <Text>2 per 1</Text>
+    </Replace>
+    <Replace Tag="LOC_RATIO_2_PER_1_DESCRIPTION" Language="en_US">
+      <Text>Use a 2/1 ratio for changing that value</Text>
+    </Replace>	
+    <Replace Tag="LOC_RATIO_1_PER_1" Language="en_US">
+      <Text>1 per 1</Text>
+    </Replace>
+    <Replace Tag="LOC_RATIO_1_PER_1_DESCRIPTION" Language="en_US">
+      <Text>Use a 1/1 ratio for changing that value</Text>
+    </Replace>
+    <Replace Tag="LOC_RATIO_1_PER_2" Language="en_US">
+      <Text>1 per 2</Text>
+    </Replace>
+    <Replace Tag="LOC_RATIO_1_PER_2_DESCRIPTION" Language="en_US">
+      <Text>Use a 1/2 ratio for changing that value</Text>
+    </Replace>
+    <Replace Tag="LOC_RATIO_1_PER_3" Language="en_US">
+      <Text>1 per 3</Text>
+    </Replace>
+    <Replace Tag="LOC_RATIO_1_PER_3_DESCRIPTION" Language="en_US">
+      <Text>Use a 1/3 ratio for changing that value</Text>
+    </Replace>
+    <Replace Tag="LOC_RATIO_1_PER_6" Language="en_US">
+      <Text>1 per 6</Text>
+    </Replace>
+    <Replace Tag="LOC_RATIO_1_PER_6_DESCRIPTION" Language="en_US">
+      <Text>Use a 1/6 ratio for changing that value</Text>
+    </Replace>
+    <Replace Tag="LOC_RATIO_1_PER_10_DESCRIPTION" Language="en_US">
+      <Text>Use a 1/10 ratio for changing that value</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_RATIO_PLACEMENT_DESCRIPTION" Language="en_US">
+      <Text>Use a 1/X ratio for that value. Higher X means less placed</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_RATIO_PER_CITY_DESCRIPTION" Language="en_US">
+      <Text>Use a X/Y ratio for that value. Higher Y means that later placed city sizes decrease slower.</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_BORDER_PLACEMENT_NAME" Language="en_US">
+      <Text>Borders Placement</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_BORDER_PLACEMENT_DESCRIPTION" Language="en_US">
+      <Text>How to place the borders on the map</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_BORDER_DISTANCE_NAME" Language="en_US">
+      <Text>Borders max. distance</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_BORDER_DISTANCE_DESCRIPTION" Language="en_US">
+      <Text>Maximum distance from a city center for the territory border.</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_PLACEMENT_EXPAND_NAME" Language="en_US">
+      <Text>Expansion</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_PLACEMENT_EXPAND_DESCRIPTION" Language="en_US">
+      <Text>Expansion on free territory in rings from each city center, until the maximum distance is reached</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_INFRASTRUCTURE_NAME" Language="en_US">
+      <Text>Infrastructure Placement</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_INFRASTRUCTURE_DESCRIPTION" Language="en_US">
+      <Text>How to place the infrastructure (roads, rails, improvments, districts, buildings) on the map</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_ROAD_PLACEMENT_NAME" Language="en_US">
+      <Text>Roads Placement</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ROAD_PLACEMENT_DESCRIPTION" Language="en_US">
+      <Text>How to place the roads on the map</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_ROAD_DISTANCE_NAME" Language="en_US">
+      <Text>Unlimited roads length</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ROAD_DISTANCE_DESCRIPTION" Language="en_US">
+      <Text>No distance limit between two Cities to try to place a road</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_ROAD_DISTANCE_NAME" Language="en_US">
+      <Text>Max. distance for roads</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_ROAD_DISTANCE_DESCRIPTION" Language="en_US">
+      <Text>Maximum distance between two Cities to try to place a road</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_MAX_ROAD_PER_CITY_NAME" Language="en_US">
+      <Text>Max. roads per City</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_MAX_ROAD_PER_CITY_DESCRIPTION" Language="en_US">
+      <Text>Maximum number of Roads going out of a City</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_PLACEMENT_CENTRALIZED_NAME" Language="en_US">
+      <Text>Centralized</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_PLACEMENT_CENTRALIZED_DESCRIPTION" Language="en_US">
+      <Text>From Capitals to all other cities</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_PLACEMENT_PER_CITY_NAME" Language="en_US">
+      <Text>City to City</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_PLACEMENT_PER_CITY_DESCRIPTION" Language="en_US">
+      <Text>Each City to the closest cities</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_INTERNATIONAL_ROADS_NAME" Language="en_US">
+      <Text>International Roads</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_INTERNATIONAL_ROADS_DESCRIPTION" Language="en_US">
+      <Text>When checked, allows roads placement to foreign cities (only Capital to Capital when the "Centralized" Road Placement option is chosen).</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_UNLIMITED_ROAD_DISTANCE_NAME" Language="en_US">
+      <Text>Unlimited Road Distance</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_UNLIMITED_ROAD_DISTANCE_DESCRIPTION" Language="en_US">
+      <Text>When checked, no distance limit is used when trying to place a road between two cities. May slow down Scenario Generation on larger maps.</Text>
+    </Replace>
+	
+	<!--City-States-->
+	<Replace Tag="LOC_CIVILIZATION_AKKAD_NAME" Language="en_US">
+		<Text>Akkad</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_AKKAD_DESCRIPTION" Language="en_US">
+		<Text>Akkad city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_BOLOGNA_NAME" Language="en_US">
+		<Text>Bologna</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_BOLOGNA_DESCRIPTION" Language="en_US">
+		<Text>Bologna city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_CAHOKIA_NAME" Language="en_US">
+		<Text>Cahokia</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_CAHOKIA_DESCRIPTION" Language="en_US">
+		<Text>Cahokia city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_CARDIFF_NAME" Language="en_US">
+		<Text>Cardiff</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_CARDIFF_DESCRIPTION" Language="en_US">
+		<Text>Cardiff city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_FEZ_NAME" Language="en_US">
+		<Text>Fez</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_FEZ_DESCRIPTION" Language="en_US">
+		<Text>Fez city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_MEXICO_CITY_NAME" Language="en_US">
+		<Text>Mexico City</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_MEXICO_CITY_DESCRIPTION" Language="en_US">
+		<Text>Mexico City city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_NAZCA_NAME" Language="en_US">
+		<Text>Nazca</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_NAZCA_DESCRIPTION" Language="en_US">
+		<Text>Nazca city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_NGAZARGAMU_NAME" Language="en_US">
+		<Text>Ngazargamu</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_NGAZARGAMU_DESCRIPTION" Language="en_US">
+		<Text>Ngazargamu city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_RAPA_NUI_NAME" Language="en_US">
+		<Text>Rapa Nui</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_RAPA_NUI_DESCRIPTION" Language="en_US">
+		<Text>Rapa Nui city-state</Text>
+	</Replace>
+	
+	<Replace Tag="LOC_CIVILIZATION_ANTIOCH_NAME" Language="en_US">
+		<Text>Antioch</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_ANTIOCH_DESCRIPTION" Language="en_US">
+		<Text>Antioch city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_BABYLON_NAME" Language="en_US">
+		<Text>Babylon</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_BABYLON_DESCRIPTION" Language="en_US">
+		<Text>Babylon city-state</Text>
+	</Replace>
+	
+	<Replace Tag="LOC_CIVILIZATION_AUCKLAND_NAME" Language="en_US">
+		<Text>Auckland</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_ANTANANARIVO_NAME" Language="en_US">
+		<Text>Antananarivo</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_ARMAGH_NAME" Language="en_US">
+		<Text>Armagh</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_GRANADA_NAME" Language="en_US">
+		<Text>Granada</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_MUSCAT_NAME" Language="en_US">
+		<Text>Muscat</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_PALENQUE_NAME" Language="en_US">
+		<Text>Palenque</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_AUCKLAND_DESCRIPTION" Language="en_US">
+		<Text>Auckland city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_ANTANANARIVO_DESCRIPTION" Language="en_US">
+		<Text>Antananarivo city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_ARMAGH_DESCRIPTION" Language="en_US">
+		<Text>Armagh city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_GRANADA_DESCRIPTION" Language="en_US">
+		<Text>Granada city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_MUSCAT_DESCRIPTION" Language="en_US">
+		<Text>Muscat city-state</Text>
+	</Replace>
+	<Replace Tag="LOC_CIVILIZATION_PALENQUE_DESCRIPTION" Language="en_US">
+		<Text>Palenque city-state</Text>
+	</Replace>
+
 	
   </LocalizedText>
 </GameData>
