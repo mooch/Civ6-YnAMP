@@ -8,7 +8,7 @@
 	<StartPosition>
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_AMERICA"		X="206" Y="80" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ARABIA"		X="48" Y="52" />
-		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ARABIA"		X="40" Y="59" Leader="LEADER_SALADIN" DisabledByCivilization="CIVILIZATION_EGYPT" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ARABIA"		X="41" Y="58" Leader="LEADER_SALADIN" DisabledByCivilization="CIVILIZATION_EGYPT" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ARABIA"		X="48" Y="52" Leader="LEADER_SALADIN" AlternateStart="1" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_AUSTRALIA"		X="135" Y="11" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_AZTEC"			X="184" Y="61" />
@@ -34,21 +34,41 @@
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_NUBIA"			X="43" Y="47" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ROME"			X="26" Y="73" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_RUSSIA"		X="47" Y="93" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_RUSSIA"		X="39" Y="97" Leader="LEADER_PETER_GREAT" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_SCYTHIA"		X="62" Y="87" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_SPAIN"			X="10" Y="71" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_SUMERIA"		X="53" Y="63" />
-		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_PERSIA"		X="61" Y="68" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_PERSIA"		X="59" Y="61" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_POLAND"		X="33" Y="89" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_INDONESIA"		X="112" Y="30" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_KHMER"			X="102" Y="51" />
+		<!-- Rise and Fall -->
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_CREE"			X="185" Y="90" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_NETHERLANDS"	X="20" Y="90" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_GEORGIA"		X="56" Y="75" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_KOREA"			X="120" Y="75" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_MONGOLIA"		X="100" Y="88" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_SCOTLAND"		X="11" Y="99" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ZULU"			X="38" Y="13" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_MAPUCHE"		X="205" Y="21" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_INDIA"			X="86" Y="61" Leader="LEADER_CHANDRAGUPTA" />
+	
+
 		<!-- Gathering Storm -->
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_SWEDEN"	X="32"	Y="99" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_MALI"		X="9" 	Y="47" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_MAORI"		X="162"	Y="17" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_HUNGARY"	X="32"	Y="81" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_CANADA"	X="206"	Y="87" />
-		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_FRANCE"	X="13"	Y="80" Leader="LEADER_ELEANOR" />
-		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_PHOENICIA"	X="47"	Y="64" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_FRANCE"	X="13"	Y="80" Leader="LEADER_ELEANOR_FRANCE" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ENGLAND"	X="13"	Y="80" Leader="LEADER_ELEANOR_ENGLAND" />
+		<!--
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_PHOENICIA"	X="47"	Y="64" DisabledByCivilization="CIVILIZATION_ARABIA" />
+		-->
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_PHOENICIA"	X="23"	Y="64"/>
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_INCA"		X="203"	Y="31" />
-		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_OTTOMAN"	X="41"	Y="74" />		
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_OTTOMAN"	X="41"	Y="74" DisabledByCivilization="CIVILIZATION_BYZANTIUM" />			
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_OTTOMAN"	X="45"	Y="72" AlternateStart="1" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_AKKAD"			X="55"	Y="65" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_BOLOGNA"		X="25"	Y="77" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_CAHOKIA"		X="194"	Y="80" />
@@ -58,11 +78,20 @@
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_NAZCA"			X="203"	Y="30" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_NGAZARGAMU"	X="28"	Y="47" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_RAPA_NUI"		X="179"	Y="22" />
+		<!-- New Horizon -->
+		<Replace MapName="LargestEarthCustom.lua" Civilization="CIVILIZATION_GRAN_COLOMBIA"	X="202"	Y="48" />
+		<Replace MapName="LargestEarthCustom.lua" Civilization="CIVILIZATION_MAYA"	X="193"	Y="58" Leader="LEADER_LADY_SIX_SKY" />
+		<Replace MapName="LargestEarthCustom.lua" Civilization="CIVILIZATION_ETHIOPIA"	X="44"	Y="42" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_BYZANTIUM"	X="41"	Y="74" />	
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_GAUL"	X="20"	Y="87" Leader="LEADER_AMBIORIX" DisabledByCivilization="CIVILIZATION_NETHERLANDS" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_GAUL"			X="18"	Y="79"  Leader="LEADER_AMBIORIX" AlternateStart="1"/>
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_GAUL"	X="18"	Y="79" />	
 	</StartPosition>
 		
 	<!-- Minors from Civ6 -->
 	<StartPosition>		
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_AMSTERDAM"		X="20" Y="90" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ANTIOCH"		X="36" Y="37" /> <!-- Changed to Venice -->
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_BRUSSELS"		X="19" Y="87" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_BUENOS_AIRES"	X="209" Y="12" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_CARTHAGE"		X="23" Y="64" />
@@ -85,7 +114,22 @@
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_VALLETTA"		X="28" Y="64" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_VILNIUS"		X="37" Y="92" />
 		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_YEREVAN"		X="55" Y="73" />
-		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ZANZIBAR"		X="45" Y="31" />		
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ZANZIBAR"		X="45" Y="31" />	
+
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_AUCKLAND" 		X="148" Y="15" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ANTANANARIVO" 	X="49" Y="21" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_ARMAGH" 		X="7" Y="97" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_GRANADA" 		X="10" Y="66" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_MUSCAT" 		X="60" Y="53" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_PALENQUE" 		X="188" Y="58" /> <!-- Moved to Mitla-->	
+
+		<!-- New Horizon DLC -->
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_CAGUANA" 		X="211" Y="58" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_HUNZA" 		X="202" Y="49" DisabledByLeader="LEADER_SIMON_BOLIVAR"/>
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_LAHORE" 		X="77" Y="69" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_SINGAPORE" 	X="103" Y="39" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_TARUGA" 		X="24" Y="47" />
+		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_VATICAN_CITY" 	X="26" Y="73" DisabledByLeader="LEADER_TRAJAN" />
 	</StartPosition>
 
 	<!-- ++++++++++++++++++++++++++++++ -->
@@ -159,97 +203,238 @@
 	
 	<ExtraPlacement>
 	
-		<Replace MapName="LargestEarthCustom" Civilization="CIVILIZATION_OTTOMAN"		X="41"	Y="74" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapScript="LargestEarthCustom.lua" Civilization="CIVILIZATION_OTTOMAN"		X="41"	Y="74" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapScript="LargestEarthCustom.lua" Civilization="CIVILIZATION_BYZANTIUM"	X="41"	Y="74" TerrainType="TERRAIN_PLAINS" />
 
 		<!-- +++++++++++++++++++++++++++ -->
 		<!-- LargestEarthCustom Volcanos -->
 		<!-- +++++++++++++++++++++++++++ -->
 
-		<Replace MapName="LargestEarthCustom" X="46" Y="46"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="98" Y="40"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="116" Y="52"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="150" Y="13"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="48" Y="26"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="62" Y="21"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="101" Y="34"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="111" Y="31"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="116" Y="30"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="118" Y="52"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="118" Y="47"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="118" Y="40"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="132" Y="41"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="142" Y="97"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="191" Y="58"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="148" Y="12"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="187" Y="59"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="206" Y="10"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="56" Y="77"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="50" Y="69"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="159" Y="100"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="206" Y="24"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="27" Y="65"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="39" Y="68"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="174" Y="89"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="182" Y="61"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="160" Y="60"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="159" Y="60"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="200" Y="46"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="192" Y="57"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="1" Y="55"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="38" Y="35"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="120" Y="66"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="110" Y="30"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="136" Y="39"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="117" Y="50"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="142" Y="94"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="120" Y="83"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="174" Y="87"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="54" Y="77"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="28" Y="68"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="117" Y="31"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="185" Y="60"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="201" Y="42"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="104" Y="21"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="55" Y="72"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="130" Y="74"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="152" Y="97"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="157" Y="98"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="193" Y="56"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="215" Y="54"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="200" Y="47"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="206" Y="28"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="205" Y="30"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="206" Y="16"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		<Replace MapName="LargestEarthCustom" X="206" Y="15"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="46" Y="46"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="98" Y="40"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="116" Y="52"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="150" Y="13"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="48" Y="26"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="62" Y="21"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="101" Y="34"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="111" Y="31"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="116" Y="30"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="118" Y="52"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="118" Y="47"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="118" Y="40"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="132" Y="41"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="142" Y="97"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="191" Y="58"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="148" Y="12"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="187" Y="59"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="206" Y="10"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="56" Y="77"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="50" Y="69"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="159" Y="100"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="206" Y="24"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="27" Y="65"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="39" Y="68"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="174" Y="89"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="182" Y="61"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="160" Y="60"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="159" Y="60"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="200" Y="46"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="192" Y="57"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="1" Y="55"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="38" Y="35"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="120" Y="66"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="110" Y="30"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="136" Y="39"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="117" Y="50"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="142" Y="94"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="120" Y="83"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="174" Y="87"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="54" Y="77"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="28" Y="68"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="117" Y="31"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="185" Y="60"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="201" Y="42"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="104" Y="31"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" DisabledByFeature="FEATURE_KRAKATOA"/>
+		<Replace MapScript="LargestEarthCustom.lua" X="55" Y="72"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="130" Y="74"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="152" Y="97"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="157" Y="98"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="193" Y="56"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="215" Y="54"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="201" Y="48"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="206" Y="28"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="205" Y="30"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="206" Y="16"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapScript="LargestEarthCustom.lua" X="206" Y="15"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+
+		<!-- +++++++++++++++++++++++++++ -->
+		<!--   Giant Earth Geothermal    -->
+		<!-- +++++++++++++++++++++++++++ -->
+
+		<Replace MapScript="LargestEarthCustom.lua" X="172" Y="81"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="176" Y="72"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="44" Y="36"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="25" Y="74"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="175" Y="73"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="98" Y="37"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="117" Y="50"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="2" Y="104"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="107" Y="32"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="121" Y="47"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="150" Y="12"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="40" Y="69"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="177" Y="81"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="121" Y="68"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="194" Y="55"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="197" Y="52"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="46" Y="42"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="90" Y="67"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="39" Y="36"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="163" Y="106"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="130" Y="83"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="58" Y="72"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="207" Y="23"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="206" Y="19"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="131" Y="17"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="133" Y="19"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="131" Y="22"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="174" Y="92"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapScript="LargestEarthCustom.lua" X="97" Y="58"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+
+		<Replace MapScript="LargestEarthCustom.lua" X="45" Y="30" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="45" Y="29" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="47" Y="36" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="45" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="42" Y="22" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="47" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="46" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="50" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="45" Y="19" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="61" Y="21" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="66" Y="22" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="66" Y="20" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="63" Y="33" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="63" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="219" Y="47" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="220" Y="46" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="220" Y="45" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="221" Y="44" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="76" Y="47" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="77" Y="46" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="77" Y="43" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="78" Y="42" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="77" Y="41" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="116" Y="48" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="196" Y="62" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="81" Y="41" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="196" Y="61" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="196" Y="60" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="104" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="104" Y="36" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="113" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="112" Y="32" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="115" Y="42" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="113" Y="45" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="115" Y="48" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="115" Y="49" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="117" Y="48" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="115" Y="43" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="120" Y="40" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="119" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="115" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="116" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="118" Y="50" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="122" Y="40" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="126" Y="40" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="127" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="125" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="131" Y="31" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="132" Y="30" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="132" Y="29" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="133" Y="28" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="134" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="162" Y="46" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="151" Y="68" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="193" Y="64" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="158" Y="49" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="141" Y="24" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="136" Y="41" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="222" Y="43" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="196" Y="58" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="202" Y="67" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="153" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="110" Y="42" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="140" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="140" Y="28" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="144" Y="23" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="112" Y="24" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="111" Y="17" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="115" Y="58" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="45" Y="56" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="47" Y="48" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="48" Y="49" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="203" Y="65" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="200" Y="61" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="91" Y="45" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="116" Y="46" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="213" Y="58" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="190" Y="67" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="190" Y="60" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="200" Y="57" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="57" Y="55" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="200" Y="59" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="74" Y="54" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="82" Y="42" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="45" Y="59" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="110" Y="46" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="109" Y="54" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="139" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapScript="LargestEarthCustom.lua" X="119" Y="62" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+
 	</ExtraPlacement>
 	
 	<!--     Natural Wonders    -->
 	<NaturalWonderPosition>
+	
+		<!-- ****************** -->
+		<!-- Gathering Storm NW -->
+		<!-- ****************** -->
+		
+		<Replace MapScript="LargestEarthCustom.lua" X="103" Y="57" FeatureType="FEATURE_HA_LONG_BAY" />
+		<Replace MapScript="LargestEarthCustom.lua" X="104" Y="58" FeatureType="FEATURE_HA_LONG_BAY" />
 		
 		<!-- ****************** -->
 		<!-- Gathering Storm NW -->
 		<!-- ****************** -->
 		
-		<Replace MapName="LargestEarthCustom" X="118" Y="48" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
-		<Replace MapName="LargestEarthCustom" X="119" Y="49" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
-		<Replace MapName="LargestEarthCustom" X="119" Y="48" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
-		<Replace MapName="LargestEarthCustom" X="119" Y="47" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapScript="LargestEarthCustom.lua" X="118" Y="48" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapScript="LargestEarthCustom.lua" X="119" Y="49" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapScript="LargestEarthCustom.lua" X="119" Y="48" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapScript="LargestEarthCustom.lua" X="119" Y="47" FeatureType="FEATURE_CHOCOLATEHILLS" TerrainType="TERRAIN_GRASS_HILLS" />
 		
-		<Replace MapName="LargestEarthCustom" X="57" Y="75" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" />
-		<Replace MapName="LargestEarthCustom" X="57" Y="76" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" />
-		<Replace MapName="LargestEarthCustom" X="58" Y="75" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapScript="LargestEarthCustom.lua" X="57" Y="75" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapScript="LargestEarthCustom.lua" X="57" Y="76" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" />
+		<Replace MapScript="LargestEarthCustom.lua" X="58" Y="76" FeatureType="FEATURE_GOBUSTAN" TerrainType="TERRAIN_PLAINS" />
 		
-		<Replace MapName="LargestEarthCustom" X="41" Y="70" FeatureType="FEATURE_PAMUKKALE" TerrainType="TERRAIN_PLAINS_HILLS" />
-		<Replace MapName="LargestEarthCustom" X="42" Y="70" FeatureType="FEATURE_PAMUKKALE" TerrainType="TERRAIN_PLAINS_HILLS" />
+		<Replace MapScript="LargestEarthCustom.lua" X="41" Y="70" FeatureType="FEATURE_PAMUKKALE" TerrainType="TERRAIN_PLAINS_HILLS" />
+		<Replace MapScript="LargestEarthCustom.lua" X="42" Y="70" FeatureType="FEATURE_PAMUKKALE" TerrainType="TERRAIN_PLAINS_HILLS" />
 		
-		<Replace MapName="LargestEarthCustom" X="38" Y="56" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
-		<Replace MapName="LargestEarthCustom" X="39" Y="56" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
-		<Replace MapName="LargestEarthCustom" X="39" Y="57" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
-		<Replace MapName="LargestEarthCustom" X="40" Y="57" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapScript="LargestEarthCustom.lua" X="38" Y="56" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapScript="LargestEarthCustom.lua" X="39" Y="56" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapScript="LargestEarthCustom.lua" X="39" Y="57" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
+		<Replace MapScript="LargestEarthCustom.lua" X="40" Y="57" FeatureType="FEATURE_WHITEDESERT" TerrainType="TERRAIN_DESERT" />
 		
-		<Replace MapName="LargestEarthCustom" X="182" Y="84" FeatureType="FEATURE_DEVILSTOWER" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
-		<Replace MapName="LargestEarthCustom" X="195" Y="62" FeatureType="FEATURE_IKKIL"  />
-		<Replace MapName="LargestEarthCustom" X="29" Y="70" FeatureType="FEATURE_VESUVIUS" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		<Replace MapScript="LargestEarthCustom.lua" X="182" Y="84" FeatureType="FEATURE_DEVILSTOWER" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+		<Replace MapScript="LargestEarthCustom.lua" X="195" Y="62" FeatureType="FEATURE_IKKIL"  />
+		<Replace MapScript="LargestEarthCustom.lua" X="29" Y="70" FeatureType="FEATURE_VESUVIUS" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+
+		<!-- ****************** -->
+		<!-- New Horizon Pack   -->
+		<!-- ****************** -->
+
+		<Replace MapScript="LargestEarthCustom.lua" X="206" Y="66" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+		<Replace MapScript="LargestEarthCustom.lua" X="207" Y="66" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+		<Replace MapScript="LargestEarthCustom.lua" X="206" Y="67" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
 	</NaturalWonderPosition>
 	
 </GameData>

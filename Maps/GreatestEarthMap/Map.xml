@@ -12,7 +12,7 @@
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_ARABIA"		X="58" Y="35" Leader="LEADER_SALADIN" DisabledByCivilization="CIVILIZATION_EGYPT" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_ARABIA"		X="64" Y="33" Leader="LEADER_SALADIN" AlternateStart="1" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_ASSYRIA"		X="65" Y="41" />
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_AUSTRALIA"	X="100" Y="10" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_AUSTRALIA"	X="101" Y="11" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_AUSTRIA"		X="54" Y="49" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_AZTEC"		X="11" Y="34" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_BABYLON"		X="66" Y="38" />
@@ -27,8 +27,10 @@
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_EGYPT"		X="58" Y="35" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_EGYPT"		X="57" Y="36" Leader="LEADER_CLEOPATRA" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_ENGLAND"		X="40" Y="52" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_ENGLAND"		X="39" Y="46" Leader="LEADER_ELEANOR_ENGLAND" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_ETHIOPIA" 	X="64" Y="26" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_FRANCE"		X="42" Y="48" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_FRANCE"		X="39" Y="46" Leader="LEADER_ELEANOR_FRANCE" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_GEORGIA"		X="64" Y="46" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_GERMANY"		X="51" Y="53" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_GREECE"		X="58" Y="42" Leader="LEADER_PERICLES" DisabledByLeader="LEADER_GORGO" />
@@ -38,12 +40,12 @@
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_INCA"		X="23" Y="17" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_INDIA"		X="75" Y="40" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_INDIA"		X="78" Y="38" Leader="LEADER_CHANDRAGUPTA" />
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_INDONESIA"	X="85" Y="24" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_INDONESIA"	X="86" Y="24" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_IROQUOIS" 	X="19" Y="51" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_JAPAN"		X="98" Y="48" />
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_KHMER"		X="83" Y="39" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_KHMER"		X="83" Y="37" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_KONGO"		X="57" Y="17" />
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_KOREA"		X="92" Y="52" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_KOREA"		X="93" Y="50" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_MACEDON"		X="56" Y="44" DisabledByLeader="LEADER_PERICLES" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_MACEDON"		X="60" Y="45" AlternateStart="1" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_MAPUCHE"		X="25" Y="8" />
@@ -53,33 +55,32 @@
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_NETHERLANDS" 	X="43" Y="53" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_NORWAY"		X="44" Y="60" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_NUBIA"		X="60" Y="29" />
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_OTTOMAN"		X="62" Y="44" />
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_PERSIA"		X="67" Y="43" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_PERSIA"		X="67" Y="41" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_POLAND"		X="56" Y="55" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_POLYNESIA" 	X="102" Y="36" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_PORTUGAL"	X="33" Y="37" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_ROME"		X="50" Y="42" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_RUSSIA"		X="63" Y="56" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_RUSSIA"		X="60" Y="60" Leader="LEADER_PETER_GREAT" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_SCOTLAND"	X="37" Y="57" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_SCYTHIA"		X="68" Y="51" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_SHOSHONE"	X="5" Y="51" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_SIAM"		X="83" Y="38" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_SONGHAI"		X="47" Y="26" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_SPAIN"		X="37" Y="38" />
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_SUMERIA"		X="67" Y="39" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_SUMERIA"		X="66" Y="39" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_SWEDEN"		X="52" Y="61" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_VENICE"		X="51" Y="47" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_ZULU"		X="59" Y="6" />
 		<!-- Gathering Storm -->
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_SWEDEN"		X="53"	Y="62" />
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_MALI"		X="41" 	Y="24" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_MALI"		X="43" 	Y="27" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_MAORI"		X="8"	Y="15" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_HUNGARY"		X="54"	Y="49" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_CANADA"		X="20"	Y="54" />
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_FRANCE"		X="39"	Y="45" Leader="LEADER_ELEANOR" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_PHOENICIA"	X="62"	Y="39" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_INCA"		X="23"	Y="17" />
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_OTTOMAN"		X="58"	Y="45" />		
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_OTTOMAN"		X="58"	Y="45" DisabledByCivilization="CIVILIZATION_BYZANTIUM" />		
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_OTTOMAN"		X="62"	Y="44" AlternateStart="1" />	
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_AKKAD"			X="65"	Y="41" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_BOLOGNA"			X="50"	Y="46" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_CAHOKIA"			X="13"	Y="47" />
@@ -89,13 +90,20 @@
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_NAZCA"			X="22"	Y="15" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_NGAZARGAMU"		X="49"	Y="26" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_RAPA_NUI"		X="15"	Y="9" />
+		<!-- New Horizon -->
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_GRAN_COLOMBIA"	X="23"	Y="23" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_MAYA"		X="16"	Y="32" Leader="LEADER_LADY_SIX_SKY" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_GAUL"		X="44"	Y="51" Leader="LEADER_AMBIORIX" DisabledByCivilization="CIVILIZATION_NETHERLANDS"/>
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_GAUL"			X="43"	Y="44"  Leader="LEADER_AMBIORIX" AlternateStart="1"/>
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_GAUL"		X="43"	Y="44" />
 	</StartPosition>
 	
 	<!-- City States -->
 	<StartPosition>
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_ANTIOCH"		X="63" Y="41" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_ANTIOCH"		X="51" Y="47" /> <!-- Changed to Venice -->
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_AMSTERDAM"	X="44" Y="53" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_BABYLON"		X="66" Y="39" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_BRUSSELS"		X="43" Y="51" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_BUENOS_AIRES"	X="27" Y="7" DisabledByLeader="LEADER_LAUTARO" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_BUENOS_AIRES"	X="28" Y="6" AlternateStart="1" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_CAPE_TOWN"	X="54" Y="4" />
@@ -130,7 +138,15 @@
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_ARMAGH" 		X="33" Y="55" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_GRANADA" 	X="38" Y="34" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_MUSCAT" 		X="70" Y="33" />
-		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_PALENQUE" 	X="18" Y="35" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_PALENQUE" 	X="14" Y="31" /> <!-- Moved to Mitla-->
+
+		<!-- New Horizon DLC -->
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_CAGUANA" 	X="29" Y="32" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_HUNZA" 		X="23" Y="23" DisabledByLeader="LEADER_SIMON_BOLIVAR"/>
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_LAHORE" 		X="74" Y="41" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_SINGAPORE" 	X="83" Y="33" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_TARUGA" 		X="51" Y="22" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_VATICAN_CITY" 	X="50" Y="42" DisabledByLeader="LEADER_TRAJAN" />
 	</StartPosition>
 	
 	<!--     Regions Positions    -->	
@@ -165,6 +181,7 @@
 	<ExtraPlacement>
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_RAPA_NUI"	X="15"	Y="9" TerrainType="TERRAIN_GRASS" />
 		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_OTTOMAN"		X="58"	Y="45" TerrainType="TERRAIN_GRASS" />
+		<Replace MapName="GreatestEarthMap" Civilization="CIVILIZATION_BYZANTIUM"	X="58"	Y="45" TerrainType="TERRAIN_GRASS" />
 		
 		<!-- +++++++++++++++++++++++++++ -->
 		<!--  GreatestEarthMap Volcanos  -->
@@ -210,6 +227,109 @@
 		<Replace MapName="GreatestEarthMap" X="23" Y="15"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GreatestEarthMap" X="25" Y="7"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GreatestEarthMap" X="26" Y="8"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+
+	<!-- +++++++++++++++++++++++++++ -->
+	<!--   Giant Earth Geothermal    -->
+	<!-- +++++++++++++++++++++++++++ -->
+
+		<Replace MapName="GreatestEarthMap" X="1" Y="47"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="4" Y="42"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="62" Y="18"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="49" Y="44"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="4" Y="43"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="82" Y="29"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="89" Y="34"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="4" Y="47"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="93" Y="44"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="17" Y="30"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="18" Y="28"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="63" Y="25"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="76" Y="43"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="71" Y="54"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="58" Y="19"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="100" Y="55"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="25" Y="7"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GreatestEarthMap" X="99" Y="15"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+
+		<Replace MapName="GreatestEarthMap" X="63" Y="13" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="63" Y="15" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="65" Y="18" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="62" Y="8" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="62" Y="11" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="64" Y="13" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="65" Y="11" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="64" Y="6" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="69" Y="8" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="73" Y="10" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="73" Y="8" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="70" Y="14" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="70" Y="12" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="29" Y="24" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="29" Y="23" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="30" Y="23" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="31" Y="22" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="74" Y="33" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="74" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="74" Y="31" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="75" Y="30" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="88" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="19" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="77" Y="30" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="19" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="18" Y="33" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="84" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="85" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="89" Y="28" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="87" Y="25" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="86" Y="31" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="88" Y="32" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="87" Y="32" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="89" Y="31" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="93" Y="26" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="94" Y="30" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="91" Y="26" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="94" Y="26" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="96" Y="25" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="95" Y="22" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="101" Y="18" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="101" Y="17" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="102" Y="16" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="5" Y="20" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="98" Y="38" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="16" Y="37" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="4" Y="19" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="0" Y="15" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="100" Y="25" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="32" Y="22" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="19" Y="32" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="20" Y="39" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="2" Y="15" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="1" Y="16" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="2" Y="14" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="91" Y="15" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="91" Y="12" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="89" Y="38" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="63" Y="33" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="64" Y="29" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="65" Y="30" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="21" Y="38" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="23" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="82" Y="32" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="89" Y="33" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="30" Y="31" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="14" Y="38" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="13" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="23" Y="31" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="69" Y="36" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="23" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="74" Y="36" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="77" Y="31" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="62" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="87" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="86" Y="39" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="100" Y="21" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GreatestEarthMap" X="92" Y="40" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+
 	</ExtraPlacement>
 
 	
@@ -249,5 +369,13 @@
 		<Replace MapName="GreatestEarthMap" X="8" Y="50" FeatureType="FEATURE_DEVILSTOWER" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
 		<Replace MapName="GreatestEarthMap" X="18" Y="36" FeatureType="FEATURE_IKKIL"  />
 		<Replace MapName="GreatestEarthMap" X="52" Y="40" FeatureType="FEATURE_VESUVIUS" TerrainType="TERRAIN_PLAINS_MOUNTAIN" />
+
+		<!-- ****************** -->
+		<!-- New Horizon Pack   -->
+		<!-- ****************** -->
+
+		<Replace MapName="GreatestEarthMap" X="23" Y="40" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+		<Replace MapName="GreatestEarthMap" X="24" Y="40" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+		<Replace MapName="GreatestEarthMap" X="23" Y="41" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
 	</NaturalWonderPosition>
 </GameData>

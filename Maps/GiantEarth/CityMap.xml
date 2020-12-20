@@ -90,38 +90,32 @@
 
 		<!-- FRANCE & SWITZERLAND -->
 		<Replace MapName="GiantEarth" X="12" Y="60" CityLocaleName="LOC_CITY_NAME_PERPIGNAN" Area="0" />
-		<Replace MapName="GiantEarth" X="15" Y="60" CityLocaleName="LOC_CITY_NAME_MARSEILLE" Area="0" />
+		<Replace MapName="GiantEarth" X="15" Y="60" CityLocaleName="LOC_CITY_NAME_TOULON" Area="0" />
 		<Replace MapName="GiantEarth" X="16" Y="60" CityLocaleName="LOC_CITY_NAME_NICE" Area="0" />
 
 		<Replace MapName="GiantEarth" X="9" Y="61" CityLocaleName="LOC_CITY_NAME_BAYONNE" Area="0" />
-		<Replace MapName="GiantEarth" X="10" Y="61" CityLocaleName="LOC_CITY_NAME_TOULOUSE" Area="0" />
-		<Replace MapName="GiantEarth" X="11" Y="61" CityLocaleName="LOC_CITY_NAME_TOULOUSE" Area="0" />
+		<Replace MapName="GiantEarth" X="11" Y="61" CityLocaleName="LOC_CITY_NAME_TOULOUSE" Area="1" />
 		<Replace MapName="GiantEarth" X="12" Y="61" CityLocaleName="LOC_CITY_NAME_MONTPELLIER" Area="0" />
 		<Replace MapName="GiantEarth" X="13" Y="61" CityLocaleName="LOC_CITY_NAME_MONTPELLIER" Area="0" />
-		<Replace MapName="GiantEarth" X="14" Y="61" CityLocaleName="LOC_CITY_NAME_MARSEILLE" Area="0" />
-		<Replace MapName="GiantEarth" X="15" Y="61" CityLocaleName="LOC_CITY_NAME_AIX_EN_PROVENCE" Area="0" />
+		<Replace MapName="GiantEarth" X="14" Y="61" CityLocaleName="LOC_CITY_NAME_MARSEILLE" Area="1" />
+		<Replace MapName="GiantEarth" X="15" Y="62" CityLocaleName="LOC_CITY_NAME_AIX_EN_PROVENCE" Area="0" />
 		<Replace MapName="GiantEarth" X="16" Y="61" CityLocaleName="LOC_CITY_NAME_NICE" Area="0" />
 
-		<Replace MapName="GiantEarth" X="10" Y="62" CityLocaleName="LOC_CITY_NAME_BORDEAUX" Area="0" />
-		<Replace MapName="GiantEarth" X="11" Y="62" CityLocaleName="LOC_CITY_NAME_BORDEAUX" Area="0" />
+		<Replace MapName="GiantEarth" X="10" Y="62" CityLocaleName="LOC_CITY_NAME_BORDEAUX" Area="1" />
 		<Replace MapName="GiantEarth" X="12" Y="62" CityLocaleName="LOC_CITY_NAME_MENDE" Area="0" />
 		<Replace MapName="GiantEarth" X="13" Y="62" CityLocaleName="LOC_CITY_NAME_MENDE" Area="0" />
 		<Replace MapName="GiantEarth" X="14" Y="62" CityLocaleName="LOC_CITY_NAME_AVIGNON" Area="0" />
-		<Replace MapName="GiantEarth" X="15" Y="62" CityLocaleName="LOC_CITY_NAME_AVIGNON" Area="0" />
 
-		<Replace MapName="GiantEarth" X="10" Y="63" CityLocaleName="LOC_CITY_NAME_BORDEAUX" Area="0" />
 		<Replace MapName="GiantEarth" X="11" Y="63" CityLocaleName="LOC_CITY_NAME_ANGOULEME" Area="0" />
 		<Replace MapName="GiantEarth" X="12" Y="63" CityLocaleName="LOC_CITY_NAME_LIMOGES" Area="0" />
 		<Replace MapName="GiantEarth" X="13" Y="63" CityLocaleName="LOC_CITY_NAME_SAINT_ETIENNE" Area="0" />
-		<Replace MapName="GiantEarth" X="14" Y="63" CityLocaleName="LOC_CITY_NAME_LYON" Area="0" />
 		<Replace MapName="GiantEarth" X="15" Y="63" CityLocaleName="LOC_CITY_NAME_GENEVA" Area="0" />
 
 		<Replace MapName="GiantEarth" X="10" Y="64" CityLocaleName="LOC_CITY_NAME_LA_ROCHELLE" Area="0" />
 		<Replace MapName="GiantEarth" X="11" Y="64" CityLocaleName="LOC_CITY_NAME_POITIERS" Area="0" />
 		<Replace MapName="GiantEarth" X="12" Y="64" CityLocaleName="LOC_CITY_NAME_CHATEAUROUX" Area="0" />
 		<Replace MapName="GiantEarth" X="13" Y="64" CityLocaleName="LOC_CITY_NAME_SAINT_ETIENNE" Area="0" />
-		<Replace MapName="GiantEarth" X="14" Y="64" CityLocaleName="LOC_CITY_NAME_LYON" Area="0" />
-		<Replace MapName="GiantEarth" X="15" Y="64" CityLocaleName="LOC_CITY_NAME_LYON" Area="0" />
+		<Replace MapName="GiantEarth" X="15" Y="64" CityLocaleName="LOC_CITY_NAME_LYON" Area="1" />
 		<Replace MapName="GiantEarth" X="16" Y="64" CityLocaleName="LOC_CITY_NAME_BERN" Area="0" />
 		<Replace MapName="GiantEarth" X="18" Y="64" CityLocaleName="LOC_CITY_NAME_LUGANO" Area="0" />
 
@@ -135,36 +129,35 @@
 		<Replace MapName="GiantEarth" X="16" Y="65" CityLocaleName="LOC_CITY_NAME_BASEL" Area="0" />
 		<Replace MapName="GiantEarth" X="17" Y="65" CityLocaleName="LOC_CITY_NAME_ZURICH" Area="0" />
 
+		<Replace MapName="GiantEarth" X="18" Y="65" CityLocaleName="LOC_CITY_NAME_VADUZ" Area="0" />
+
 		<Replace MapName="GiantEarth" X="8" Y="66" CityLocaleName="LOC_CITY_NAME_QUIMPER" Area="0" />
 		<Replace MapName="GiantEarth" X="9" Y="66" CityLocaleName="LOC_CITY_NAME_SAINT_NAZAIRE" Area="0" />
 		<Replace MapName="GiantEarth" X="10" Y="66" CityLocaleName="LOC_CITY_NAME_NANTES" Area="0" />
 		<Replace MapName="GiantEarth" X="11" Y="66" CityLocaleName="LOC_CITY_NAME_TOURS" Area="0" />
 		<Replace MapName="GiantEarth" X="12" Y="66" CityLocaleName="LOC_CITY_NAME_ORLEANS" Area="0" />
-		<Replace MapName="GiantEarth" X="13" Y="66" CityLocaleName="LOC_CITY_NAME_ORLEANS" Area="0" />
 		<Replace MapName="GiantEarth" X="14" Y="66" CityLocaleName="LOC_CITY_NAME_TROYES" Area="0" />
 		<Replace MapName="GiantEarth" X="15" Y="66" CityLocaleName="LOC_CITY_NAME_TROYES" Area="0" />
-		<Replace MapName="GiantEarth" X="15" Y="66" CityLocaleName="LOC_CITY_NAME_STRASBOURG" Area="0" />
 
 		<Replace MapName="GiantEarth" X="7" Y="67" CityLocaleName="LOC_CITY_NAME_BREST" Area="0" />
 		<Replace MapName="GiantEarth" X="8" Y="67" CityLocaleName="LOC_CITY_NAME_SAINT_BRIEUC" Area="0" />
 		<Replace MapName="GiantEarth" X="9" Y="67" CityLocaleName="LOC_CITY_NAME_SAINT_BRIEUC" Area="0" />
 		<Replace MapName="GiantEarth" X="10" Y="67" CityLocaleName="LOC_CITY_NAME_SAINT_MALO" Area="0" />
 		<Replace MapName="GiantEarth" X="11" Y="67" CityLocaleName="LOC_CITY_NAME_LE_MANS" Area="0" />
-		<Replace MapName="GiantEarth" X="12" Y="67" CityLocaleName="LOC_CITY_NAME_PARIS" Area="0" />
-		<Replace MapName="GiantEarth" X="13" Y="67" CityLocaleName="LOC_CITY_NAME_PARIS" Area="0" />
+		<Replace MapName="GiantEarth" X="13" Y="67" CityLocaleName="LOC_CITY_NAME_PARIS" Area="1" />
 		<Replace MapName="GiantEarth" X="14" Y="67" CityLocaleName="LOC_CITY_NAME_REIMS" Area="0" />
 		<Replace MapName="GiantEarth" X="15" Y="67" CityLocaleName="LOC_CITY_NAME_METZ" Area="0" />
-		<Replace MapName="GiantEarth" X="16" Y="67" CityLocaleName="LOC_CITY_NAME_STRASBOURG" Area="0" />
+		<Replace MapName="GiantEarth" X="16" Y="67" CityLocaleName="LOC_CITY_NAME_STRASBOURG" Area="1" />
 
 		<Replace MapName="GiantEarth" X="11" Y="68" CityLocaleName="LOC_CITY_NAME_CAEN" Area="0" />
 		<Replace MapName="GiantEarth" X="12" Y="68" CityLocaleName="LOC_CITY_NAME_CAEN" Area="0" />
-		<Replace MapName="GiantEarth" X="13" Y="68" CityLocaleName="LOC_CITY_NAME_PARIS" Area="0" />
 		<Replace MapName="GiantEarth" X="14" Y="68" CityLocaleName="LOC_CITY_NAME_LILLE" Area="0" />
 		<Replace MapName="GiantEarth" X="15" Y="68" CityLocaleName="LOC_CITY_NAME_REIMS" Area="0" />
 
 		<Replace MapName="GiantEarth" X="10" Y="69" CityLocaleName="LOC_CITY_NAME_CHERBOURG_OCTEVILLE" Area="0" />
-		<Replace MapName="GiantEarth" X="12" Y="69" CityLocaleName="LOC_CITY_NAME_ROUEN" Area="0" />
+		<Replace MapName="GiantEarth" X="13" Y="68" CityLocaleName="LOC_CITY_NAME_ROUEN" Area="0" />
 		<Replace MapName="GiantEarth" X="13" Y="69" CityLocaleName="LOC_CITY_NAME_CALAIS" Area="0" />
+		<Replace MapName="GiantEarth" X="12" Y="69" CityLocaleName="LOC_CITY_NAME_LE_HAVRE" Area="0" />
 
 		<!-- BENELUX -->
 		<Replace MapName="GiantEarth" X="16" Y="68" CityLocaleName="LOC_CITY_NAME_LUXEMBOURG" Area="0" />
@@ -220,16 +213,13 @@
 		<Replace MapName="GiantEarth" X="22" Y="55" CityLocaleName="LOC_CITY_NAME_CORIGLIANO_CALABRO" Area="0" />
 		<Replace MapName="GiantEarth" X="24" Y="55" CityLocaleName="LOC_CITY_NAME_LECCE" Area="0" />
 
-		<Replace MapName="GiantEarth" X="22" Y="56" CityLocaleName="LOC_CITY_NAME_NAPOLI" Area="0" />
+		<Replace MapName="GiantEarth" X="22" Y="56" CityLocaleName="LOC_CITY_NAME_NAPLES" Area="1" />
 		<Replace MapName="GiantEarth" X="23" Y="56" CityLocaleName="LOC_CITY_NAME_BARI" Area="0" />
 		<Replace MapName="GiantEarth" X="24" Y="56" CityLocaleName="LOC_CITY_NAME_BRINDISI" Area="0" />
 
-		<Replace MapName="GiantEarth" X="20" Y="57" CityLocaleName="LOC_CITY_NAME_ROMA" Area="0" />
-		<Replace MapName="GiantEarth" X="21" Y="57" CityLocaleName="LOC_CITY_NAME_NAPOLI" Area="0" />
 		<Replace MapName="GiantEarth" X="22" Y="57" CityLocaleName="LOC_CITY_NAME_FOGGIA" Area="0" />
 
-		<Replace MapName="GiantEarth" X="20" Y="58" CityLocaleName="LOC_CITY_NAME_ROMA" Area="0" />
-		<Replace MapName="GiantEarth" X="21" Y="58" CityLocaleName="LOC_CITY_NAME_ROMA" Area="0" />
+		<Replace MapName="GiantEarth" X="20" Y="58" CityLocaleName="LOC_CITY_NAME_ROME" Area="1" />
 		<Replace MapName="GiantEarth" X="22" Y="58" CityLocaleName="LOC_CITY_NAME_PESCARA" Area="0" />
 
 		<Replace MapName="GiantEarth" X="19" Y="59" CityLocaleName="LOC_CITY_NAME_PISA" Area="0" />
@@ -246,16 +236,15 @@
 		<Replace MapName="GiantEarth" X="20" Y="61" CityLocaleName="LOC_CITY_NAME_RAVENNA" Area="0" />
 
 		<Replace MapName="GiantEarth" X="17" Y="62" CityLocaleName="LOC_CITY_NAME_TORINO" Area="0" />
-		<Replace MapName="GiantEarth" X="18" Y="62" CityLocaleName="LOC_CITY_NAME_MILANO" Area="0" />
 		<Replace MapName="GiantEarth" X="19" Y="62" CityLocaleName="LOC_CITY_NAME_CREMONA" Area="0" />
 		<Replace MapName="GiantEarth" X="20" Y="62" CityLocaleName="LOC_CITY_NAME_PADOVA" Area="0" />
-		<Replace MapName="GiantEarth" X="21" Y="62" CityLocaleName="LOC_CITY_NAME_VENETIA" Area="0" />
+		<Replace MapName="GiantEarth" X="21" Y="62" CityLocaleName="LOC_CITY_NAME_VENICE" Area="0" />
 
 		<Replace MapName="GiantEarth" X="17" Y="63" CityLocaleName="LOC_CITY_NAME_TORINO" Area="0" />
-		<Replace MapName="GiantEarth" X="18" Y="63" CityLocaleName="LOC_CITY_NAME_MILANO" Area="0" />
+		<Replace MapName="GiantEarth" X="18" Y="63" CityLocaleName="LOC_CITY_NAME_MILAN" Area="1" />
 		<Replace MapName="GiantEarth" X="19" Y="63" CityLocaleName="LOC_CITY_NAME_VERONA" Area="0" />
 		<Replace MapName="GiantEarth" X="20" Y="63" CityLocaleName="LOC_CITY_NAME_VICENZA" Area="0" />
-		<Replace MapName="GiantEarth" X="21" Y="63" CityLocaleName="LOC_CITY_NAME_VENETIA" Area="0" />
+		<Replace MapName="GiantEarth" X="21" Y="63" CityLocaleName="LOC_CITY_NAME_VENICE" Area="0" />
 		<Replace MapName="GiantEarth" X="22" Y="63" CityLocaleName="LOC_CITY_NAME_TRIESTE" Area="0" />
 
 	</CityMap>
@@ -276,8 +265,7 @@
 
 		<Replace MapName="GiantEarth" X="9" Y="72" CityLocaleName="LOC_CITY_NAME_GLOUCESTER" Area="0" />
 		<Replace MapName="GiantEarth" X="10" Y="72" CityLocaleName="LOC_CITY_NAME_OXFORD" Area="0" />
-		<Replace MapName="GiantEarth" X="11" Y="72" CityLocaleName="LOC_CITY_NAME_LONDON" Area="0" />
-		<Replace MapName="GiantEarth" X="12" Y="72" CityLocaleName="LOC_CITY_NAME_LONDON" Area="0" />
+		<Replace MapName="GiantEarth" X="12" Y="72" CityLocaleName="LOC_CITY_NAME_LONDON" Area="1" />
 
 		<Replace MapName="GiantEarth" X="7" Y="73" CityLocaleName="LOC_CITY_NAME_CARMARTHEN" Area="0" />
 		<Replace MapName="GiantEarth" X="8" Y="73" CityLocaleName="LOC_CITY_NAME_CARDIFF" Area="0" />
@@ -328,6 +316,11 @@
 		<Replace MapName="GiantEarth" X="12" Y="84" CityLocaleName="LOC_CITY_NAME_SCALLOWAY" Area="0" />
 
 		<Replace MapName="GiantEarth" X="12" Y="85" CityLocaleName="LOC_CITY_NAME_LERWICK" Area="0" />
+
+		<Replace MapName="GiantEarth" X="8" Y="76" CityLocaleName="LOC_CITY_NAME_CASTLETOWN" Area="0" />
+
+		<Replace MapName="GiantEarth" X="8" Y="90" CityLocaleName="LOC_CITY_NAME_TORSHAVN" Area="0" />
+		
 
 		<!-- IRELAND -->
 		<Replace MapName="GiantEarth" X="3" Y="73" CityLocaleName="LOC_CITY_NAME_CORK" Area="0" />
@@ -413,8 +406,8 @@
 		<Replace MapName="GiantEarth" X="31" Y="80" CityLocaleName="LOC_CITY_NAME_PRIOZERSK" Area="0" />
 		<Replace MapName="GiantEarth" X="32" Y="80" CityLocaleName="LOC_CITY_NAME_PETROZAVODSK" Area="0" />
 
-		<Replace MapName="GiantEarth" X="17" Y="81" CityLocaleName="LOC_CITY_NAME_BERGEN" Area="0" />
-		<Replace MapName="GiantEarth" X="18" Y="81" CityLocaleName="LOC_CITY_NAME_BERGEN" Area="0" />
+		<Replace MapName="GiantEarth" X="17" Y="81" CityLocaleName="LOC_CITY_NAME_BERGEN" Area="1" />
+		<!--Replace MapName="GiantEarth" X="18" Y="81" CityLocaleName="LOC_CITY_NAME_BERGEN" Area="0" /-->
 
 		<Replace MapName="GiantEarth" X="20" Y="81" CityLocaleName="LOC_CITY_NAME_OSLO" Area="0" />
 		<Replace MapName="GiantEarth" X="21" Y="81" CityLocaleName="LOC_CITY_NAME_KARLSTAD" Area="0" />
@@ -424,10 +417,10 @@
 		<Replace MapName="GiantEarth" X="26" Y="81" CityLocaleName="LOC_CITY_NAME_RAUMA" Area="0" />
 		<Replace MapName="GiantEarth" X="28" Y="81" CityLocaleName="LOC_CITY_NAME_TAMPERE" />
 		<Replace MapName="GiantEarth" X="30" Y="81" CityLocaleName="LOC_CITY_NAME_JOENSUU" Area="0" />
-		<Replace MapName="GiantEarth" X="31" Y="81" CityLocaleName="LOC_CITY_NAME_JOENSUU" Area="0" />
+		<Replace MapName="GiantEarth" X="31" Y="81" CityLocaleName="LOC_CITY_NAME_JOENSUU" Area="1" />
 		<Replace MapName="GiantEarth" X="32" Y="81" CityLocaleName="LOC_CITY_NAME_PETROZAVODSK" Area="0" />
 
-		<Replace MapName="GiantEarth" X="18" Y="82" CityLocaleName="LOC_CITY_NAME_BERGEN" Area="0" />
+		<!--Replace MapName="GiantEarth" X="18" Y="82" CityLocaleName="LOC_CITY_NAME_BERGEN" Area="0" /-->
 		<Replace MapName="GiantEarth" X="19" Y="82" CityLocaleName="LOC_CITY_NAME_NORDFJORDEID" Area="0" />
 		<Replace MapName="GiantEarth" X="20" Y="82" CityLocaleName="LOC_CITY_NAME_NORDFJORDEID" Area="0" />
 		<Replace MapName="GiantEarth" X="21" Y="82" CityLocaleName="LOC_CITY_NAME_LILLEHAMMER" Area="0" />
@@ -435,7 +428,6 @@
 		<Replace MapName="GiantEarth" X="23" Y="82" CityLocaleName="LOC_CITY_NAME_MORA" Area="0" />
 		<Replace MapName="GiantEarth" X="24" Y="82" CityLocaleName="LOC_CITY_NAME_HUDIKSVAL" Area="0" />
 
-		<Replace MapName="GiantEarth" X="27" Y="82" CityLocaleName="LOC_CITY_NAME_VAASA" Area="0" />
 		<Replace MapName="GiantEarth" X="32" Y="82" CityLocaleName="LOC_CITY_NAME_JOENSUU" Area="0" />
 		<Replace MapName="GiantEarth" X="33" Y="82" CityLocaleName="LOC_CITY_NAME_MEDVEZHYEGORSK" Area="0" />
 
@@ -444,25 +436,24 @@
 
 		<Replace MapName="GiantEarth" X="21" Y="83" CityLocaleName="LOC_CITY_NAME_LILLEHAMMER" Area="0" />
 		<Replace MapName="GiantEarth" X="22" Y="83" CityLocaleName="LOC_CITY_NAME_ROEROS" Area="0" />
-		<Replace MapName="GiantEarth" X="23" Y="83" CityLocaleName="LOC_CITY_NAME_OESTERSUND" Area="0" />
+		<Replace MapName="GiantEarth" X="23" Y="83" CityLocaleName="LOC_CITY_NAME_OSTERSUND" Area="0" />
 		<Replace MapName="GiantEarth" X="24" Y="83" CityLocaleName="LOC_CITY_NAME_SUNDSVALL" Area="0" />
 
-		<Replace MapName="GiantEarth" X="27" Y="83" CityLocaleName="LOC_CITY_NAME_VAASA" Area="0" />
+		<Replace MapName="GiantEarth" X="27" Y="83" CityLocaleName="LOC_CITY_NAME_VAASA" Area="1" />
 		<Replace MapName="GiantEarth" X="28" Y="83" CityLocaleName="LOC_CITY_NAME_VIMPELI" Area="0" />
-		<Replace MapName="GiantEarth" X="30" Y="83" CityLocaleName="LOC_CITY_NAME_KUOPIO" />
+		<Replace MapName="GiantEarth" X="29" Y="83" CityLocaleName="LOC_CITY_NAME_KUOPIO" />
 		<Replace MapName="GiantEarth" X="32" Y="83" CityLocaleName="LOC_CITY_NAME_SEGEZHA" Area="0" />
 
 		<Replace MapName="GiantEarth" X="20" Y="84" CityLocaleName="LOC_CITY_NAME_TRONDHEIM" Area="0" />
 		<Replace MapName="GiantEarth" X="21" Y="84" CityLocaleName="LOC_CITY_NAME_TRONDHEIM" Area="0" />
 
 		<Replace MapName="GiantEarth" X="23" Y="84" CityLocaleName="LOC_CITY_NAME_ARE" Area="0" />
-		<Replace MapName="GiantEarth" X="24" Y="84" CityLocaleName="LOC_CITY_NAME_OESTERSUND" Area="0" />
+		<Replace MapName="GiantEarth" X="24" Y="84" CityLocaleName="LOC_CITY_NAME_OSTERSUND" Area="0" />
 		<Replace MapName="GiantEarth" X="25" Y="84" CityLocaleName="LOC_CITY_NAME_SUNDSVALL" Area="0" />
 
 		<Replace MapName="GiantEarth" X="28" Y="84" CityLocaleName="LOC_CITY_NAME_JAKOBSTAD" Area="0" />
 		<Replace MapName="GiantEarth" X="29" Y="84" CityLocaleName="LOC_CITY_NAME_VIMPELI" Area="0" />
-		<Replace MapName="GiantEarth" X="32" Y="84" CityLocaleName="LOC_CITY_NAME_KEM" Area="0" />
-		<Replace MapName="GiantEarth" X="33" Y="84" CityLocaleName="LOC_CITY_NAME_KEM" Area="0" />
+		<Replace MapName="GiantEarth" X="32" Y="84" CityLocaleName="LOC_CITY_NAME_KEM" Area="1" />
 
 		<Replace MapName="GiantEarth" X="21" Y="85" CityLocaleName="LOC_CITY_NAME_TRONDHEIM" Area="0" />
 
@@ -470,11 +461,10 @@
 		<Replace MapName="GiantEarth" X="24" Y="85" CityLocaleName="LOC_CITY_NAME_UMEA" Area="0" />
 		<Replace MapName="GiantEarth" X="25" Y="85" CityLocaleName="LOC_CITY_NAME_UMEA" Area="0" />
 
-		<Replace MapName="GiantEarth" X="28" Y="85" CityLocaleName="LOC_CITY_NAME_OULU" Area="0" />
+		<Replace MapName="GiantEarth" X="29" Y="89" CityLocaleName="LOC_CITY_NAME_INARI" Area="0" />
 		<Replace MapName="GiantEarth" X="29" Y="85" CityLocaleName="LOC_CITY_NAME_KAJAANI" Area="0" />
 		<Replace MapName="GiantEarth" X="30" Y="85" CityLocaleName="LOC_CITY_NAME_KOSTOMUKSHA" Area="0" />
 		<Replace MapName="GiantEarth" X="31" Y="85" CityLocaleName="LOC_CITY_NAME_KOSTOMUKSHA" Area="0" />
-		<Replace MapName="GiantEarth" X="32" Y="85" CityLocaleName="LOC_CITY_NAME_KEM" Area="0" />
 
 		<Replace MapName="GiantEarth" X="22" Y="86" CityLocaleName="LOC_CITY_NAME_NAMSOS" Area="0" />
 
@@ -482,7 +472,7 @@
 		<Replace MapName="GiantEarth" X="25" Y="86" CityLocaleName="LOC_CITY_NAME_BODEN" Area="0" />
 		<Replace MapName="GiantEarth" X="26" Y="86" CityLocaleName="LOC_CITY_NAME_LULEA" Area="0" />
 
-		<Replace MapName="GiantEarth" X="28" Y="86" CityLocaleName="LOC_CITY_NAME_OULU" Area="0" />
+		<Replace MapName="GiantEarth" X="28" Y="86" CityLocaleName="LOC_CITY_NAME_OULU" Area="1" />
 		<Replace MapName="GiantEarth" X="29" Y="86" CityLocaleName="LOC_CITY_NAME_KUUSAMO" Area="0" />
 		<Replace MapName="GiantEarth" X="30" Y="86" CityLocaleName="LOC_CITY_NAME_KUUSAMO" Area="0" />
 		<Replace MapName="GiantEarth" X="31" Y="86" CityLocaleName="LOC_CITY_NAME_KOSTOMUKSHA" Area="0" />
@@ -516,7 +506,7 @@
 		<Replace MapName="GiantEarth" X="33" Y="88" CityLocaleName="LOC_CITY_NAME_KRASNOSHCHELYE" Area="0" />
 		<Replace MapName="GiantEarth" X="34" Y="88" CityLocaleName="LOC_CITY_NAME_KRASNOSHCHELYE" Area="0" />
 		<Replace MapName="GiantEarth" X="35" Y="88" CityLocaleName="LOC_CITY_NAME_KANEVKA" Area="0" />
-		<Replace MapName="GiantEarth" X="36" Y="88" CityLocaleName="LOC_CITY_NAME_SVYATOY_NOS" Area="0" />
+		<!--Replace MapName="GiantEarth" X="36" Y="88" CityLocaleName="LOC_CITY_NAME_SVYATOY_NOS" Area="0" /-->
 
 		<Replace MapName="GiantEarth" X="23" Y="89" CityLocaleName="LOC_CITY_NAME_TROMSO" Area="0" />
 		<Replace MapName="GiantEarth" X="24" Y="89" CityLocaleName="LOC_CITY_NAME_TROMSO" Area="0" />
@@ -526,8 +516,8 @@
 		<Replace MapName="GiantEarth" X="29" Y="89" CityLocaleName="LOC_CITY_NAME_KAKSLAUTTANEN" Area="0" />
 		<Replace MapName="GiantEarth" X="30" Y="89" CityLocaleName="LOC_CITY_NAME_KAKSLAUTTANEN" Area="0" />
 		<Replace MapName="GiantEarth" X="33" Y="89" CityLocaleName="LOC_CITY_NAME_KRASNOSHCHELYE" Area="0" />
-		<Replace MapName="GiantEarth" X="34" Y="89" CityLocaleName="LOC_CITY_NAME_SVYATOY_NOS" Area="0" />
-		<Replace MapName="GiantEarth" X="35" Y="89" CityLocaleName="LOC_CITY_NAME_SVYATOY_NOS" Area="0" />
+		<!--Replace MapName="GiantEarth" X="34" Y="89" CityLocaleName="LOC_CITY_NAME_SVYATOY_NOS" Area="0" /-->
+		<Replace MapName="GiantEarth" X="36" Y="89" CityLocaleName="LOC_CITY_NAME_SVYATOY_NOS" Area="2" />
 
 		<Replace MapName="GiantEarth" X="25" Y="90" CityLocaleName="LOC_CITY_NAME_TROMSO" Area="0" />
 		<Replace MapName="GiantEarth" X="26" Y="90" CityLocaleName="LOC_CITY_NAME_KAUTOKEINO" Area="0" />
@@ -584,6 +574,8 @@
 		<Replace MapName="GiantEarth" X="19" Y="67" CityLocaleName="LOC_CITY_NAME_HEIDENHEIM" Area="0" />
 		<Replace MapName="GiantEarth" X="20" Y="67" CityLocaleName="LOC_CITY_NAME_MUNICH" Area="0" />
 		<Replace MapName="GiantEarth" X="21" Y="67" CityLocaleName="LOC_CITY_NAME_REGENSBURG" Area="0" />
+		
+		<Replace MapName="GiantEarth" X="18" Y="68" CityLocaleName="LOC_CITY_NAME_FRANKFURT" Area="1" /> <!-- For <CityNames> cross-reference in Scenario Generation -->
 
 		<Replace MapName="GiantEarth" X="17" Y="68" CityLocaleName="LOC_CITY_NAME_MAINZ" Area="0" />
 		<Replace MapName="GiantEarth" X="18" Y="68" CityLocaleName="LOC_CITY_NAME_FRANKFURT_AM_MAIN" Area="0" />
@@ -614,6 +606,7 @@
 		<Replace MapName="GiantEarth" X="22" Y="71" CityLocaleName="LOC_CITY_NAME_BERLIN" Area="0" />
 		<Replace MapName="GiantEarth" X="23" Y="71" CityLocaleName="LOC_CITY_NAME_FRANKFURT_AN_DER_ODER" Area="0" />
 
+		<Replace MapName="GiantEarth" X="17" Y="72" CityLocaleName="LOC_CITY_NAME_EMDEN" Area="0" />
 		<Replace MapName="GiantEarth" X="18" Y="72" CityLocaleName="LOC_CITY_NAME_WILHELMSHAVEN" Area="0" />
 		<Replace MapName="GiantEarth" X="19" Y="72" CityLocaleName="LOC_CITY_NAME_HAMBURG" Area="0" />
 		<Replace MapName="GiantEarth" X="20" Y="72" CityLocaleName="LOC_CITY_NAME_LUBECK" Area="0" />
@@ -626,7 +619,7 @@
 		<!-- DENMARK -->
 		<Replace MapName="GiantEarth" X="19" Y="74" CityLocaleName="LOC_CITY_NAME_ESBJERG" Area="0" />
 		<Replace MapName="GiantEarth" X="20" Y="74" CityLocaleName="LOC_CITY_NAME_ODENSE" Area="0" />
-		<Replace MapName="GiantEarth" X="21" Y="74" CityLocaleName="LOC_CITY_NAME_KOBENHAVN" Area="0" />
+		<Replace MapName="GiantEarth" X="21" Y="75" CityLocaleName="LOC_CITY_NAME_COPENHAGEN" Area="1" />
 
 		<Replace MapName="GiantEarth" X="19" Y="75" CityLocaleName="LOC_CITY_NAME_ESBJERG" Area="0" />
 		<Replace MapName="GiantEarth" X="20" Y="75" CityLocaleName="LOC_CITY_NAME_AARHUS" Area="0" />
@@ -712,8 +705,7 @@
 		<Replace MapName="GiantEarth" X="32" Y="63" CityLocaleName="LOC_CITY_NAME_CONSTANTA" Area="0" />
 
 		<Replace MapName="GiantEarth" X="24" Y="64" CityLocaleName="LOC_CITY_NAME_SZOMBATHELY" Area="0" />
-		<Replace MapName="GiantEarth" X="25" Y="64" CityLocaleName="LOC_CITY_NAME_BUDAPEST" Area="0" />
-		<Replace MapName="GiantEarth" X="26" Y="64" CityLocaleName="LOC_CITY_NAME_BUDAPEST" Area="0" />
+		<Replace MapName="GiantEarth" X="26" Y="64" CityLocaleName="LOC_CITY_NAME_BUDAPEST" Area="1" />
 		<Replace MapName="GiantEarth" X="27" Y="64" CityLocaleName="LOC_CITY_NAME_SZEGED" Area="0" />
 		<Replace MapName="GiantEarth" X="28" Y="64" CityLocaleName="LOC_CITY_NAME_DEBRECEN" Area="0" />
 		<Replace MapName="GiantEarth" X="30" Y="64" CityLocaleName="LOC_CITY_NAME_CLUJ_NAPOCA" Area="0" />
@@ -722,8 +714,6 @@
 		<Replace MapName="GiantEarth" X="33" Y="64" CityLocaleName="LOC_CITY_NAME_GALATI" Area="0" />
 
 		<Replace MapName="GiantEarth" X="24" Y="65" CityLocaleName="LOC_CITY_NAME_GYOR" Area="0" />
-		<Replace MapName="GiantEarth" X="25" Y="65" CityLocaleName="LOC_CITY_NAME_BUDAPEST" Area="0" />
-		<Replace MapName="GiantEarth" X="26" Y="65" CityLocaleName="LOC_CITY_NAME_BUDAPEST" Area="0" />
 		<Replace MapName="GiantEarth" X="27" Y="65" CityLocaleName="LOC_CITY_NAME_DEBRECEN" Area="0" />
 		<Replace MapName="GiantEarth" X="28" Y="65" CityLocaleName="LOC_CITY_NAME_DEBRECEN" Area="0" />
 		<Replace MapName="GiantEarth" X="29" Y="65" CityLocaleName="LOC_CITY_NAME_CLUJ_NAPOCA" Area="0" />
@@ -747,28 +737,24 @@
 		<Replace MapName="GiantEarth" X="32" Y="67" CityLocaleName="LOC_CITY_NAME_CHISINAU" Area="0" />
 		<Replace MapName="GiantEarth" X="33" Y="67" CityLocaleName="LOC_CITY_NAME_UMAN" Area="0" />
 
-		<Replace MapName="GiantEarth" X="26" Y="68" CityLocaleName="LOC_CITY_NAME_KRAKOW" Area="0" />
-		<Replace MapName="GiantEarth" X="27" Y="68" CityLocaleName="LOC_CITY_NAME_KRAKOW" Area="0" />
+		<Replace MapName="GiantEarth" X="27" Y="68" CityLocaleName="LOC_CITY_NAME_KRAKOW" Area="1" />
 		<Replace MapName="GiantEarth" X="28" Y="68" CityLocaleName="LOC_CITY_NAME_RZESZOW" Area="0" />
 		<Replace MapName="GiantEarth" X="29" Y="68" CityLocaleName="LOC_CITY_NAME_LVIV" Area="0" />
 		<Replace MapName="GiantEarth" X="30" Y="68" CityLocaleName="LOC_CITY_NAME_LVIV" Area="0" />
 		<Replace MapName="GiantEarth" X="31" Y="68" CityLocaleName="LOC_CITY_NAME_ZHYTOMYR" Area="0" />
 		<Replace MapName="GiantEarth" X="32" Y="68" CityLocaleName="LOC_CITY_NAME_ZHYTOMYR" Area="0" />
 
-		<Replace MapName="GiantEarth" X="24" Y="69" CityLocaleName="LOC_CITY_NAME_WROCLAW" Area="0" />
+		<Replace MapName="GiantEarth" X="24" Y="69" CityLocaleName="LOC_CITY_NAME_WROCLAW" Area="1" />
 		<Replace MapName="GiantEarth" X="25" Y="69" CityLocaleName="LOC_CITY_NAME_KATOWICE" Area="0" />
-		<Replace MapName="GiantEarth" X="26" Y="69" CityLocaleName="LOC_CITY_NAME_KRAKOW" Area="0" />
 		<Replace MapName="GiantEarth" X="27" Y="69" CityLocaleName="LOC_CITY_NAME_RADOM" Area="0" />
 		<Replace MapName="GiantEarth" X="28" Y="69" CityLocaleName="LOC_CITY_NAME_LUBLIN" Area="0" />
 		<Replace MapName="GiantEarth" X="29" Y="69" CityLocaleName="LOC_CITY_NAME_RIVNE" Area="0" />
 		<Replace MapName="GiantEarth" X="30" Y="69" CityLocaleName="LOC_CITY_NAME_RIVNE" Area="0" />
 		<Replace MapName="GiantEarth" X="31" Y="69" CityLocaleName="LOC_CITY_NAME_ZHYTOMYR" Area="0" />
 		<Replace MapName="GiantEarth" X="33" Y="69" CityLocaleName="LOC_CITY_NAME_KIEV" />
+		<Replace MapName="GiantEarth" X="36" Y="69" CityLocaleName="LOC_CITY_NAME_KHARKOV" />
 
-		<Replace MapName="GiantEarth" X="24" Y="70" CityLocaleName="LOC_CITY_NAME_WROCLAW" Area="0" />
-		<Replace MapName="GiantEarth" X="25" Y="70" CityLocaleName="LOC_CITY_NAME_WROCLAW" Area="0" />
 		<Replace MapName="GiantEarth" X="26" Y="70" CityLocaleName="LOC_CITY_NAME_LODZ" Area="0" />
-		<Replace MapName="GiantEarth" X="27" Y="70" CityLocaleName="LOC_CITY_NAME_RADOM" Area="0" />
 		<Replace MapName="GiantEarth" X="28" Y="70" CityLocaleName="LOC_CITY_NAME_LUBLIN" Area="0" />
 		<Replace MapName="GiantEarth" X="29" Y="70" CityLocaleName="LOC_CITY_NAME_LUBLIN" Area="0" />
 		<Replace MapName="GiantEarth" X="30" Y="70" CityLocaleName="LOC_CITY_NAME_BREST_LITOVSK" Area="0" />
@@ -777,8 +763,8 @@
 
 		<Replace MapName="GiantEarth" X="24" Y="71" CityLocaleName="LOC_CITY_NAME_GORZOW_WIELKOPOLSI" Area="0" />
 		<Replace MapName="GiantEarth" X="25" Y="71" CityLocaleName="LOC_CITY_NAME_POZNAN" Area="0" />
-		<Replace MapName="GiantEarth" X="26" Y="71" CityLocaleName="LOC_CITY_NAME_WARSZAWA" Area="0" />
-		<Replace MapName="GiantEarth" X="27" Y="71" CityLocaleName="LOC_CITY_NAME_WARSZAWA" Area="0" />
+		<Replace MapName="GiantEarth" X="26" Y="71" CityLocaleName="LOC_CITY_NAME_WARSZAW" Area="0" />
+		<Replace MapName="GiantEarth" X="27" Y="71" CityLocaleName="LOC_CITY_NAME_WARSZAW" Area="1" />
 		<Replace MapName="GiantEarth" X="28" Y="71" CityLocaleName="LOC_CITY_NAME_BIALYSTOCK" Area="0" />
 		<Replace MapName="GiantEarth" X="29" Y="71" CityLocaleName="LOC_CITY_NAME_BREST_LITOVSK" Area="0" />
 		<Replace MapName="GiantEarth" X="30" Y="71" CityLocaleName="LOC_CITY_NAME_BREST_LITOVSK" Area="0" />
@@ -789,22 +775,19 @@
 		<Replace MapName="GiantEarth" X="24" Y="72" CityLocaleName="LOC_CITY_NAME_GORZOW_WIELKOPOLSI" Area="0" />
 		<Replace MapName="GiantEarth" X="25" Y="72" CityLocaleName="LOC_CITY_NAME_POZNAN" Area="0" />
 		<Replace MapName="GiantEarth" X="26" Y="72" CityLocaleName="LOC_CITY_NAME_BYDGOSZCZ" Area="0" />
-		<Replace MapName="GiantEarth" X="27" Y="72" CityLocaleName="LOC_CITY_NAME_WARSZAWA" Area="0" />
+		<Replace MapName="GiantEarth" X="27" Y="72" CityLocaleName="LOC_CITY_NAME_WARSZAW" Area="0" />
 		<Replace MapName="GiantEarth" X="28" Y="72" CityLocaleName="LOC_CITY_NAME_BIALYSTOCK" Area="0" />
 		<Replace MapName="GiantEarth" X="29" Y="72" CityLocaleName="LOC_CITY_NAME_BIALYSTOCK" Area="0" />
-		<Replace MapName="GiantEarth" X="30" Y="72" CityLocaleName="LOC_CITY_NAME_MINSK" Area="0" />
-		<Replace MapName="GiantEarth" X="31" Y="72" CityLocaleName="LOC_CITY_NAME_MINSK" Area="0" />
+		<Replace MapName="GiantEarth" X="31" Y="72" CityLocaleName="LOC_CITY_NAME_MINSK" Area="1" />
 		<Replace MapName="GiantEarth" X="32" Y="72" CityLocaleName="LOC_CITY_NAME_VITEBSK" Area="0" />
 
 		<Replace MapName="GiantEarth" X="22" Y="73" CityLocaleName="LOC_CITY_NAME_SZCZECIN" Area="0" />
 		<Replace MapName="GiantEarth" X="23" Y="73" CityLocaleName="LOC_CITY_NAME_SZCZECIN" Area="0" />
 		<Replace MapName="GiantEarth" X="24" Y="73" CityLocaleName="LOC_CITY_NAME_KOSZALIN" Area="0" />
-		<Replace MapName="GiantEarth" X="25" Y="73" CityLocaleName="LOC_CITY_NAME_GDANSK" Area="0" />
-		<Replace MapName="GiantEarth" X="26" Y="73" CityLocaleName="LOC_CITY_NAME_GDANSK" Area="0" />
+		<Replace MapName="GiantEarth" X="25" Y="73" CityLocaleName="LOC_CITY_NAME_GDANSK" Area="1" />
 		<Replace MapName="GiantEarth" X="27" Y="73" CityLocaleName="LOC_CITY_NAME_OLSZYTN" Area="0" />
 		<Replace MapName="GiantEarth" X="28" Y="73" CityLocaleName="LOC_CITY_NAME_KAUNAS" Area="0" />
 		<Replace MapName="GiantEarth" X="29" Y="73" CityLocaleName="LOC_CITY_NAME_VILNIUS" Area="0" />
-		<Replace MapName="GiantEarth" X="30" Y="73" CityLocaleName="LOC_CITY_NAME_MINSK" Area="0" />
 		<Replace MapName="GiantEarth" X="31" Y="73" CityLocaleName="LOC_CITY_NAME_VITEBSK" Area="0" />
 		<Replace MapName="GiantEarth" X="33" Y="73" CityLocaleName="LOC_CITY_NAME_SMOLENSK" />
 
@@ -867,57 +850,59 @@
 		<Replace MapName="GiantEarth" X="38" Y="67" CityLocaleName="LOC_CITY_NAME_DONETSK" Area="0" />
 		<Replace MapName="GiantEarth" X="41" Y="67" CityLocaleName="LOC_CITY_NAME_VOLGODONSK" Area="0" />
 		<Replace MapName="GiantEarth" X="49" Y="67" CityLocaleName="LOC_CITY_NAME_AKTOBE" />
-		<Replace MapName="GiantEarth" X="51" Y="67" CityLocaleName="LOC_CITY_NAME_ARALSK" Area="0" />
+		<Replace MapName="GiantEarth" X="51" Y="67" CityLocaleName="LOC_CITY_NAME_ARALSK" Area="1" />
 
 		<Replace MapName="GiantEarth" X="36" Y="68" CityLocaleName="LOC_CITY_NAME_DNIPROPETROVSK" />
 		<Replace MapName="GiantEarth" X="40" Y="68" CityLocaleName="LOC_CITY_NAME_TAMBOV" Area="0" />
 		<Replace MapName="GiantEarth" X="41" Y="68" CityLocaleName="LOC_CITY_NAME_TAMBOV" Area="0" />
 		<Replace MapName="GiantEarth" X="43" Y="68" CityLocaleName="LOC_CITY_NAME_VOLGOGRAD" />
-		<Replace MapName="GiantEarth" X="45" Y="68" CityLocaleName="LOC_CITY_NAME_URALSK" Area="0" />
-		<Replace MapName="GiantEarth" X="47" Y="68" CityLocaleName="LOC_CITY_NAME_ORENBURG" />
-		<Replace MapName="GiantEarth" X="51" Y="68" CityLocaleName="LOC_CITY_NAME_ARALSK" Area="0" />
+		<Replace MapName="GiantEarth" X="47" Y="68" CityLocaleName="LOC_CITY_NAME_URALSK" Area="1" />
+		<!--Replace MapName="GiantEarth" X="47" Y="68" CityLocaleName="LOC_CITY_NAME_ORENBURG" /-->
+		<!--Replace MapName="GiantEarth" X="51" Y="68" CityLocaleName="LOC_CITY_NAME_ARALSK" Area="0" /-->
 
 		<Replace MapName="GiantEarth" X="38" Y="69" CityLocaleName="LOC_CITY_NAME_VORONEZH" />
 		<Replace MapName="GiantEarth" X="40" Y="69" CityLocaleName="LOC_CITY_NAME_TAMBOV" Area="0" />
 		<Replace MapName="GiantEarth" X="41" Y="69" CityLocaleName="LOC_CITY_NAME_PENZA" Area="0" />
 		<Replace MapName="GiantEarth" X="43" Y="69" CityLocaleName="LOC_CITY_NAME_SAMARA" Area="0" /> <!--OVERLAP-->
-		<Replace MapName="GiantEarth" X="45" Y="69" CityLocaleName="LOC_CITY_NAME_URALSK" Area="0" />
-		<Replace MapName="GiantEarth" X="50" Y="69" CityLocaleName="LOC_CITY_NAME_YASNY" Area="0" />
+		<!--Replace MapName="GiantEarth" X="45" Y="69" CityLocaleName="LOC_CITY_NAME_URALSK" Area="0" /-->
+		<Replace MapName="GiantEarth" X="50" Y="69" CityLocaleName="LOC_CITY_NAME_ORSK" Area="1" />
 		<Replace MapName="GiantEarth" X="51" Y="69" CityLocaleName="LOC_CITY_NAME_YASNY" Area="0" />
 
 		<Replace MapName="GiantEarth" X="35" Y="70" CityLocaleName="LOC_CITY_NAME_BRYANSK" Area="0" />
 		<Replace MapName="GiantEarth" X="42" Y="70" CityLocaleName="LOC_CITY_NAME_PENZA" Area="0" />
 		<Replace MapName="GiantEarth" X="44" Y="70" CityLocaleName="LOC_CITY_NAME_SAMARA" />
-		<Replace MapName="GiantEarth" X="49" Y="70" CityLocaleName="LOC_CITY_NAME_STERLITAMAK" Area="0" />
-		<Replace MapName="GiantEarth" X="51" Y="70" CityLocaleName="LOC_CITY_NAME_YASNY" Area="0" />
+		<Replace MapName="GiantEarth" X="46" Y="70" CityLocaleName="LOC_CITY_NAME_BUZULUK" Area="1" />
+		<!--Replace MapName="GiantEarth" X="49" Y="70" CityLocaleName="LOC_CITY_NAME_STERLITAMAK" Area="0" /-->
+		<Replace MapName="GiantEarth" X="49" Y="70" CityLocaleName="LOC_CITY_NAME_ORENBURG" Area="1" />
+		<!--Replace MapName="GiantEarth" X="51" Y="70" CityLocaleName="LOC_CITY_NAME_YASNY" Area="0" /-->
 
 		<Replace MapName="GiantEarth" X="34" Y="71" CityLocaleName="LOC_CITY_NAME_KALUGA" Area="0" />
 		<Replace MapName="GiantEarth" X="36" Y="71" CityLocaleName="LOC_CITY_NAME_TULA" />
 		<Replace MapName="GiantEarth" X="38" Y="71" CityLocaleName="LOC_CITY_NAME_RYAZAN" Area="0" />
 		<Replace MapName="GiantEarth" X="40" Y="71" CityLocaleName="LOC_CITY_NAME_SARANSK" />
 		<Replace MapName="GiantEarth" X="42" Y="71" CityLocaleName="LOC_CITY_NAME_PENZA" Area="0" />
-		<Replace MapName="GiantEarth" X="46" Y="71" CityLocaleName="LOC_CITY_NAME_UFA" />
+		<Replace MapName="GiantEarth" X="48" Y="71" CityLocaleName="LOC_CITY_NAME_UFA" Area="1" />
 		<Replace MapName="GiantEarth" X="50" Y="71" CityLocaleName="LOC_CITY_NAME_MIASS" Area="0" />
 
 		<Replace MapName="GiantEarth" X="35" Y="72" CityLocaleName="LOC_CITY_NAME_KALUGA" Area="0" />
 		<Replace MapName="GiantEarth" X="38" Y="72" CityLocaleName="LOC_CITY_NAME_RYAZAN" Area="0" />
 		<Replace MapName="GiantEarth" X="39" Y="72" CityLocaleName="LOC_CITY_NAME_RYAZAN" Area="0" />
 		<Replace MapName="GiantEarth" X="42" Y="72" CityLocaleName="LOC_CITY_NAME_ULYANOVSK" Area="0" />
-		<Replace MapName="GiantEarth" X="45" Y="72" CityLocaleName="LOC_CITY_NAME_NIZHNEKAMSK" Area="0" />
+		<Replace MapName="GiantEarth" X="46" Y="72" CityLocaleName="LOC_CITY_NAME_NIZHNEKAMSK" Area="1" />
 		<Replace MapName="GiantEarth" X="48" Y="72" CityLocaleName="LOC_CITY_NAME_BELORETSK" Area="0" />
 
 		<Replace MapName="GiantEarth" X="37" Y="73" CityLocaleName="LOC_CITY_NAME_VLADIMIR" Area="0" />
 		<Replace MapName="GiantEarth" X="38" Y="73" CityLocaleName="LOC_CITY_NAME_VLADIMIR" Area="0" />
 		<Replace MapName="GiantEarth" X="41" Y="73" CityLocaleName="LOC_CITY_NAME_CHEBOKSARY" Area="0" />
 		<Replace MapName="GiantEarth" X="43" Y="73" CityLocaleName="LOC_CITY_NAME_KAZAN" />
-		<Replace MapName="GiantEarth" X="45" Y="73" CityLocaleName="LOC_CITY_NAME_NIZHNEKAMSK" Area="0" />
+		<!--Replace MapName="GiantEarth" X="45" Y="73" CityLocaleName="LOC_CITY_NAME_NIZHNEKAMSK" Area="0" /-->
 		<Replace MapName="GiantEarth" X="49" Y="73" CityLocaleName="LOC_CITY_NAME_KUNGUR" />
 
 		<Replace MapName="GiantEarth" X="36" Y="74" CityLocaleName="LOC_CITY_NAME_MOSCOW" />
 		<Replace MapName="GiantEarth" X="38" Y="74" CityLocaleName="LOC_CITY_NAME_VLADIMIR" Area="0" />
 		<Replace MapName="GiantEarth" X="40" Y="74" CityLocaleName="LOC_CITY_NAME_NIZHNY_NOVGOROD" />
 		<Replace MapName="GiantEarth" X="42" Y="74" CityLocaleName="LOC_CITY_NAME_CHEBOKSARY" Area="0" />
-		<Replace MapName="GiantEarth" X="45" Y="74" CityLocaleName="LOC_CITY_NAME_NIZHNEKAMSK" Area="0" />
+		<!--Replace MapName="GiantEarth" X="45" Y="74" CityLocaleName="LOC_CITY_NAME_NIZHNEKAMSK" Area="0" /-->
 		<Replace MapName="GiantEarth" X="47" Y="74" CityLocaleName="LOC_CITY_NAME_PERM" />
 
 		<Replace MapName="GiantEarth" X="35" Y="75" CityLocaleName="LOC_CITY_NAME_MOSCOW" Area="0" /> <!--OVERLAP-->
@@ -946,8 +931,8 @@
 		<Replace MapName="GiantEarth" X="40" Y="78" CityLocaleName="LOC_CITY_NAME_VELIKY_USTYUG" />
 		<Replace MapName="GiantEarth" X="42" Y="78" CityLocaleName="LOC_CITY_NAME_KORYAZHMA" Area="0" />
 		<Replace MapName="GiantEarth" X="43" Y="78" CityLocaleName="LOC_CITY_NAME_KORYAZHMA" Area="0" />
-		<Replace MapName="GiantEarth" X="50" Y="78" CityLocaleName="LOC_CITY_NAME_VELS" Area="0" />
-		<Replace MapName="GiantEarth" X="51" Y="78" CityLocaleName="LOC_CITY_NAME_VELS" Area="0" />
+		<!--Replace MapName="GiantEarth" X="50" Y="78" CityLocaleName="LOC_CITY_NAME_VELS" Area="0" /-->
+		<!--Replace MapName="GiantEarth" X="51" Y="78" CityLocaleName="LOC_CITY_NAME_VELS" Area="0" /-->
 
 		<Replace MapName="GiantEarth" X="32" Y="79" CityLocaleName="LOC_CITY_NAME_VYTEGRA" Area="0" />
 		<Replace MapName="GiantEarth" X="33" Y="79" CityLocaleName="LOC_CITY_NAME_VYTEGRA" Area="0" />
@@ -955,8 +940,8 @@
 		<Replace MapName="GiantEarth" X="41" Y="79" CityLocaleName="LOC_CITY_NAME_KORYAZHMA" Area="0" />
 		<Replace MapName="GiantEarth" X="42" Y="79" CityLocaleName="LOC_CITY_NAME_KORYAZHMA" Area="0" />
 		<Replace MapName="GiantEarth" X="46" Y="79" CityLocaleName="LOC_CITY_NAME_SYKTYVKAR" />
-		<Replace MapName="GiantEarth" X="50" Y="79" CityLocaleName="LOC_CITY_NAME_VELS" Area="0" />
-		<Replace MapName="GiantEarth" X="51" Y="79" CityLocaleName="LOC_CITY_NAME_VELS" Area="0" />
+		<Replace MapName="GiantEarth" X="50" Y="79" CityLocaleName="LOC_CITY_NAME_VELS" Area="1" />
+		<!--Replace MapName="GiantEarth" X="51" Y="79" CityLocaleName="LOC_CITY_NAME_VELS" Area="0" /-->
 
 		<Replace MapName="GiantEarth" X="34" Y="80" CityLocaleName="LOC_CITY_NAME_VYTEGRA" Area="0" />
 		<Replace MapName="GiantEarth" X="35" Y="80" CityLocaleName="LOC_CITY_NAME_CHEREPOVETS" Area="0" /> <!--OVERLAP-->
@@ -969,7 +954,7 @@
 		<Replace MapName="GiantEarth" X="46" Y="80" CityLocaleName="LOC_CITY_NAME_SYKTYVKAR" Area="0" /> <!--OVERLAP-->
 		<Replace MapName="GiantEarth" X="47" Y="80" CityLocaleName="LOC_CITY_NAME_SYKTYVKAR" Area="0" /> <!--OVERLAP-->
 		<Replace MapName="GiantEarth" X="49" Y="80" CityLocaleName="LOC_CITY_NAME_NYROB" />
-		<Replace MapName="GiantEarth" X="51" Y="80" CityLocaleName="LOC_CITY_NAME_VELS" Area="0" />
+		<!--Replace MapName="GiantEarth" X="51" Y="80" CityLocaleName="LOC_CITY_NAME_VELS" Area="0" /-->
 
 		<Replace MapName="GiantEarth" X="33" Y="81" CityLocaleName="LOC_CITY_NAME_PETROZAVODSK" Area="0" />
 		<Replace MapName="GiantEarth" X="35" Y="81" CityLocaleName="LOC_CITY_NAME_ONEGA" />
@@ -1028,6 +1013,10 @@
 
 		<Replace MapName="GiantEarth" X="52" Y="92" CityLocaleName="LOC_CITY_NAME_SEVERNY_ISLAND" />
 		<Replace MapName="GiantEarth" X="55" Y="92" CityLocaleName="LOC_CITY_NAME_GORA_SEVERNY_NUNATAK" />
+		
+		<Replace MapName="GiantEarth" X="57" Y="74" CityLocaleName="LOC_CITY_NAME_OMSK" Area="1" />
+		<Replace MapName="GiantEarth" X="53" Y="74" CityLocaleName="LOC_CITY_NAME_YEKATERINBURG" Area="1" />
+		<Replace MapName="GiantEarth" X="63" Y="74" CityLocaleName="LOC_CITY_NAME_NOVOSIBIRSK" Area="2" />
 
 	</CityMap>
 
@@ -1129,7 +1118,7 @@
 		<Replace MapName="GiantEarth" X="41" Y="52" CityLocaleName="LOC_CITY_NAME_BAGHDAD" Area="0" />
 		<Replace MapName="GiantEarth" X="42" Y="52" CityLocaleName="LOC_CITY_NAME_BAGHDAD" Area="0" />
 		<Replace MapName="GiantEarth" X="43" Y="52" CityLocaleName="LOC_CITY_NAME_KERMANSHAH" Area="0" />
-		<Replace MapName="GiantEarth" X="46" Y="52" CityLocaleName="LOC_CITY_NAME_QOM" Area="0" />
+		<!--Replace MapName="GiantEarth" X="46" Y="52" CityLocaleName="LOC_CITY_NAME_QOM" Area="0" /-->
 
 		<Replace MapName="GiantEarth" X="33" Y="53" CityLocaleName="LOC_CITY_NAME_PAPHOS" Area="0" />
 		<Replace MapName="GiantEarth" X="34" Y="53" CityLocaleName="LOC_CITY_NAME_NICOSIA" Area="0" />
@@ -1387,6 +1376,7 @@
 		<Replace MapName="GiantEarth" X="30" Y="22" CityLocaleName="LOC_CITY_NAME_CHIPATA" Area="0" />
 		<Replace MapName="GiantEarth" X="31" Y="22" CityLocaleName="LOC_CITY_NAME_LILONGWE" Area="0" />
 		<Replace MapName="GiantEarth" X="33" Y="22" CityLocaleName="LOC_CITY_NAME_PEMBA" Area="0" />
+		<Replace MapName="GiantEarth" X="36" Y="22" CityLocaleName="LOC_CITY_NAME_MORONI" Area="0" />
 
 		<Replace MapName="GiantEarth" X="20" Y="23" CityLocaleName="LOC_CITY_NAME_LUANDA" Area="0" />
 		<Replace MapName="GiantEarth" X="21" Y="23" CityLocaleName="LOC_CITY_NAME_DONDO" Area="0" />
@@ -1637,6 +1627,9 @@
 		<Replace MapName="GiantEarth" X="32" Y="36" CityLocaleName="LOC_CITY_NAME_RENK" Area="0" />
 		<Replace MapName="GiantEarth" X="30" Y="36" CityLocaleName="LOC_CITY_NAME_GONDAR" Area="0" />
 		<Replace MapName="GiantEarth" X="30" Y="36" CityLocaleName="LOC_CITY_NAME_TADJOURA" Area="0" />
+		<Replace MapName="GiantEarth" X="33" Y="36" CityLocaleName="LOC_CITY_NAME_AD_DAMAZIN" Area="0" />
+		<Replace MapName="GiantEarth" X="34" Y="36" CityLocaleName="LOC_CITY_NAME_GONDAR" Area="0" />
+		<Replace MapName="GiantEarth" X="36" Y="36" CityLocaleName="LOC_CITY_NAME_ASSAB" Area="0" />
 
 		<Replace MapName="GiantEarth" X="19" Y="37" CityLocaleName="LOC_CITY_NAME_ABUJA" Area="0" />
 		<Replace MapName="GiantEarth" X="20" Y="37" CityLocaleName="LOC_CITY_NAME_LAFIA" Area="0" />
@@ -1693,6 +1686,7 @@
 
 	<!-- WEST AFRICA -->
 	<CityMap>
+		<Replace MapName="GiantEarth" X="17" Y="31" CityLocaleName="LOC_CITY_NAME_SAO_TOME" Area="0" />
 
 		<Replace MapName="GiantEarth" X="8" Y="32" CityLocaleName="LOC_CITY_NAME_SAN_PEDRO" Area="0" />
 		<Replace MapName="GiantEarth" X="9" Y="32" CityLocaleName="LOC_CITY_NAME_ABIDJAN" Area="0" />
@@ -2469,6 +2463,61 @@
 
 	</CityMap>
 
+	<!-- JAPAN & NEW ZEALAND -->
+	<CityMap>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_REKOHU" Y="6" X="118" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_OGASAWARA" Y="50" X="100" MapName="GiantEarth"/>
+	</CityMap>
+
+	<!-- MICRONESIA -->
+	<CityMap>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_NAURU" Y="35" X="108" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_PALAU" Y="36" X="95" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_CHUUK" Y="37" X="101" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_TARAWA" Y="37" X="111" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_KIRITIMATI" Y="37" X="120" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_NAN_MADOL" Y="38" X="106" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_MARSHALL_ISLANDS" Y="40" X="110" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_GUAM" Y="41" X="99" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_SAIPAN" Y="43" X="99" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_JOHNSTON_ATOLL" Y="48" X="109" MapName="GiantEarth"/>
+	</CityMap>
+
+	<!-- PAPUA NEW GUINEA & SOLOMON ISLANDS -->
+	<CityMap>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_HONIARA" Y="29" X="106" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_ARAWA" Y="30" X="105" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_KIMBE" Y="31" X="102" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_KOKOPO" Y="31" X="103" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_LORENGAU" Y="33" X="101" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_KAVIENG" Y="33" X="104" MapName="GiantEarth"/>
+	</CityMap>
+	
+	<!-- POLYNESIA AND SOUTHERN MELANESIA -->
+	<CityMap>
+		<Replace Area="1" CityLocaleName="LOC_CITY_NAME_HANGA_ROA" Y="17" X="134" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_PITCAIRN_ISLANDS" Y="18" X="130" MapName="GiantEarth"/>
+		<Replace Area="1" CityLocaleName="LOC_CITY_NAME_NOUMEA" Y="19" X="107" MapName="GiantEarth"/>
+		<Replace Area="1" CityLocaleName="LOC_CITY_NAME_KONE_NCD" Y="21" X="106" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_TONGA" Y="21" X="114" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_PORT_VILA" Y="22" X="110" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_RAROTONGA" Y="22" X="120" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_NIUE" Y="23" X="117" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_TAHITI" Y="23" X="123" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_MALEKULA" Y="24" X="109" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_LAUTOKA" Y="24" X="112" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_SUVA" Y="24" X="113" MapName="GiantEarth"/>
+		<Replace Area="1" CityLocaleName="LOC_CITY_NAME_VANUATU" Y="25" X="108" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_ESPIRITU_SANTO" Y="25" X="108" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_LABASA" Y="25" X="112" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_RAIATEA" Y="25" X="122" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_UVEA_WALLIS_AND_FUTUNA" Y="26" X="114" MapName="GiantEarth"/>
+		<Replace Area="1" CityLocaleName="LOC_CITY_NAME_SAMOA" Y="26" X="116" MapName="GiantEarth"/>
+		<Replace Area="0" CityLocaleName="LOC_CITY_NAME_NUKU_HIVA" Y="27" X="128" MapName="GiantEarth"/>
+		<Replace Area="1" CityLocaleName="LOC_CITY_NAME_TUVALU" Y="31" X="113" MapName="GiantEarth"/>
+	</CityMap>
+	
+	
 	<!-- SOUTH EAST ASIA -->
 	<CityMap>
 
@@ -2578,7 +2627,7 @@
 		<Replace MapName="GiantEarth" X="83" Y="31" CityLocaleName="LOC_CITY_NAME_KALIMANTAN" />
 		<Replace MapName="GiantEarth" X="84" Y="31" CityLocaleName="LOC_CITY_NAME_SAMARINDA" Area="0" />
 		<Replace MapName="GiantEarth" X="85" Y="31" CityLocaleName="LOC_CITY_NAME_SAMARINDA" Area="0" />
-		<Replace MapName="GiantEarth" X="73" Y="30" CityLocaleName="LOC_CITY_NAME_PADANG" />
+		<Replace MapName="GiantEarth" X="74" Y="30" CityLocaleName="LOC_CITY_NAME_PADANG" />
 		<Replace MapName="GiantEarth" X="75" Y="30" CityLocaleName="LOC_CITY_NAME_PEKANBARU" Area="0" />
 		<Replace MapName="GiantEarth" X="76" Y="30" CityLocaleName="LOC_CITY_NAME_JAMBI" Area="0" />
 		<Replace MapName="GiantEarth" X="76" Y="29" CityLocaleName="LOC_CITY_NAME_JAMBI" Area="0" />
@@ -2587,7 +2636,7 @@
 		<Replace MapName="GiantEarth" X="82" Y="30" CityLocaleName="LOC_CITY_NAME_SINTANG" Area="0" />
 		<Replace MapName="GiantEarth" X="84" Y="30" CityLocaleName="LOC_CITY_NAME_BALIKPAPAN" Area="0" />
 		<Replace MapName="GiantEarth" X="85" Y="30" CityLocaleName="LOC_CITY_NAME_BALIKPAPAN" Area="0" />
-		<Replace MapName="GiantEarth" X="87" Y="30" CityLocaleName="LOC_CITY_NAME_PALU" Area="0" />
+		<Replace MapName="GiantEarth" X="88" Y="30" CityLocaleName="LOC_CITY_NAME_PALU" Area="0" />
 		<Replace MapName="GiantEarth" X="91" Y="30" CityLocaleName="LOC_CITY_NAME_BANGGAI_REGENCY" />
 
 		<Replace MapName="GiantEarth" X="72" Y="29" CityLocaleName="LOC_CITY_NAME_PULAU_NIAS" />
@@ -2679,6 +2728,7 @@
 		<Replace MapName="GiantEarth" X="69" Y="52" CityLocaleName="LOC_CITY_NAME_THIMPHU" Area="0" />
 		<Replace MapName="GiantEarth" X="70" Y="52" CityLocaleName="LOC_CITY_NAME_ITANAGAR" Area="0" />
 		<Replace MapName="GiantEarth" X="71" Y="52" CityLocaleName="LOC_CITY_NAME_ITANAGAR" Area="0" />
+		<Replace MapName="GiantEarth" X="72" Y="52" CityLocaleName="LOC_CITY_NAME_TINSUKIA" Area="0" />
 
 		<Replace MapName="GiantEarth" X="54" Y="51" CityLocaleName="LOC_CITY_NAME_LARKANA" />
 		<Replace MapName="GiantEarth" X="55" Y="51" CityLocaleName="LOC_CITY_NAME_SUKKUR" Area="0" />
@@ -2741,6 +2791,8 @@
 		<Replace MapName="GiantEarth" X="59" Y="47" CityLocaleName="LOC_CITY_NAME_INDORE" Area="0" />
 		<Replace MapName="GiantEarth" X="59" Y="46" CityLocaleName="LOC_CITY_NAME_INDORE" Area="0" />
 		<Replace MapName="GiantEarth" X="60" Y="46" CityLocaleName="LOC_CITY_NAME_INDORE" Area="0" />
+		<Replace MapName="GiantEarth" X="60" Y="47" CityLocaleName="LOC_CITY_NAME_SEHORE" Area="0" />
+		<Replace MapName="GiantEarth" X="61" Y="46" CityLocaleName="LOC_CITY_NAME_SEHORE" Area="0" />
 		<Replace MapName="GiantEarth" X="61" Y="47" CityLocaleName="LOC_CITY_NAME_BHOPAL" Area="0" />
 		<Replace MapName="GiantEarth" X="62" Y="47" CityLocaleName="LOC_CITY_NAME_JABALPUR" Area="0" />
 		<Replace MapName="GiantEarth" X="63" Y="47" CityLocaleName="LOC_CITY_NAME_AMBIKAPUR" Area="0" />
@@ -2785,7 +2837,7 @@
 		<Replace MapName="GiantEarth" X="62" Y="42" CityLocaleName="LOC_CITY_NAME_VIJAYAWADA" Area="0" />
 		<Replace MapName="GiantEarth" X="62" Y="41" CityLocaleName="LOC_CITY_NAME_VIJAYAWADA" Area="0" />
 		<Replace MapName="GiantEarth" X="65" Y="42" CityLocaleName="LOC_CITY_NAME_VISAKHAPATNAM" />
-		<Replace MapName="GiantEarth" X="57" Y="41" CityLocaleName="LOC_CITY_NAME_MUMBAI" />
+		<Replace MapName="GiantEarth" X="58" Y="41" CityLocaleName="LOC_CITY_NAME_MUMBAI" />
 		<Replace MapName="GiantEarth" X="59" Y="41" CityLocaleName="LOC_CITY_NAME_PUNE" Area="0" />
 		<Replace MapName="GiantEarth" X="59" Y="40" CityLocaleName="LOC_CITY_NAME_PUNE" Area="0" />
 		<Replace MapName="GiantEarth" X="60" Y="41" CityLocaleName="LOC_CITY_NAME_HYDERABAD" />
@@ -2802,7 +2854,7 @@
 		<Replace MapName="GiantEarth" X="61" Y="35" CityLocaleName="LOC_CITY_NAME_THOOTHUKUDI" Area="0" />
 		<Replace MapName="GiantEarth" X="61" Y="34" CityLocaleName="LOC_CITY_NAME_NAGERCOIL" Area="0" />
 		<Replace MapName="GiantEarth" X="63" Y="34" CityLocaleName="LOC_CITY_NAME_JAFFNA" Area="0" />
-		<Replace MapName="GiantEarth" X="62" Y="32" CityLocaleName="LOC_CITY_NAME_COLOMBO" />
+		<Replace MapName="GiantEarth" X="62" Y="33" CityLocaleName="LOC_CITY_NAME_COLOMBO" />
 		<Replace MapName="GiantEarth" X="64" Y="32" CityLocaleName="LOC_CITY_NAME_BATTICOLOA" Area="0" />
 		<Replace MapName="GiantEarth" X="58" Y="31" CityLocaleName="LOC_CITY_NAME_MALDIVES" />
 
@@ -2819,7 +2871,8 @@
 		<Replace MapName="GiantEarth" X="82" Y="48" CityLocaleName="LOC_CITY_NAME_YANGJIANG" Area="0" />
 		<Replace MapName="GiantEarth" X="83" Y="48" CityLocaleName="LOC_CITY_NAME_MACAU" Area="0" />
 		<Replace MapName="GiantEarth" X="84" Y="48" CityLocaleName="LOC_CITY_NAME_HONG_KONG" Area="0" />
-		<Replace MapName="GiantEarth" X="88" Y="48" CityLocaleName="LOC_CITY_NAME_KAOHSIUNG" Area="0" />
+		<Replace MapName="GiantEarth" X="87" Y="47" CityLocaleName="LOC_CITY_NAME_KAOHSIUNG" Area="0" />
+		<Replace MapName="GiantEarth" X="87" Y="48" CityLocaleName="LOC_CITY_NAME_TAINAN" Area="0" />
 
 		<Replace MapName="GiantEarth" X="76" Y="49" CityLocaleName="LOC_CITY_NAME_WENSHAN" Area="0" />
 		<Replace MapName="GiantEarth" X="77" Y="50" CityLocaleName="LOC_CITY_NAME_WENSHAN" Area="0" />
@@ -2857,6 +2910,7 @@
 		<Replace MapName="GiantEarth" X="86" Y="52" CityLocaleName="LOC_CITY_NAME_WENZHOU" Area="0" />
 
 		<Replace MapName="GiantEarth" X="73" Y="53" CityLocaleName="LOC_CITY_NAME_DEQEN" />
+		<Replace MapName="GiantEarth" X="75" Y="53" CityLocaleName="LOC_CITY_NAME_LESHAN" />
 		<Replace MapName="GiantEarth" X="76" Y="53" CityLocaleName="LOC_CITY_NAME_NEIJIANG" Area="0" />
 		<Replace MapName="GiantEarth" X="77" Y="53" CityLocaleName="LOC_CITY_NAME_LUZHOU" Area="0" />
 		<Replace MapName="GiantEarth" X="82" Y="53" CityLocaleName="LOC_CITY_NAME_CHANGSHA" />
@@ -2903,6 +2957,7 @@
 
 		<Replace MapName="GiantEarth" X="69" Y="58" CityLocaleName="LOC_CITY_NAME_NAGQU" />
 		<Replace MapName="GiantEarth" X="73" Y="58" CityLocaleName="LOC_CITY_NAME_GARZE" />
+		<Replace MapName="GiantEarth" X="77" Y="58" CityLocaleName="LOC_CITY_NAME_HANZHONG" />
 		<Replace MapName="GiantEarth" X="79" Y="58" CityLocaleName="LOC_CITY_NAME_SHANGLUO" />
 		<Replace MapName="GiantEarth" X="81" Y="58" CityLocaleName="LOC_CITY_NAME_NANYANG" />
 
@@ -2927,6 +2982,7 @@
 		<Replace MapName="GiantEarth" X="84" Y="60" CityLocaleName="LOC_CITY_NAME_QINGDAO" Area="0" />
 		<Replace MapName="GiantEarth" X="85" Y="60" CityLocaleName="LOC_CITY_NAME_QINGDAO" Area="0" />
 
+		<Replace MapName="GiantEarth" X="62" Y="61" CityLocaleName="LOC_CITY_NAME_TUMXUK" />
 		<Replace MapName="GiantEarth" X="69" Y="61" CityLocaleName="LOC_CITY_NAME_HAIXI_TIBETAN" />
 		<Replace MapName="GiantEarth" X="74" Y="61" CityLocaleName="LOC_CITY_NAME_GOLOG" />
 		<Replace MapName="GiantEarth" X="76" Y="61" CityLocaleName="LOC_CITY_NAME_LANZHOU" Area="0" />
@@ -2957,8 +3013,7 @@
 		<Replace MapName="GiantEarth" X="63" Y="64" CityLocaleName="LOC_CITY_NAME_AKSU" Area="2" />
 		<Replace MapName="GiantEarth" X="66" Y="64" CityLocaleName="LOC_CITY_NAME_BAYINGOL" />
 		<Replace MapName="GiantEarth" X="74" Y="64" CityLocaleName="LOC_CITY_NAME_HAIBEI" />
-		<Replace MapName="GiantEarth" X="76" Y="64" CityLocaleName="LOC_CITY_NAME_YINCHUAN" Area="0" />
-		<Replace MapName="GiantEarth" X="76" Y="65" CityLocaleName="LOC_CITY_NAME_YINCHUAN" Area="0" />
+		<Replace MapName="GiantEarth" X="75" Y="62" CityLocaleName="LOC_CITY_NAME_YINCHUAN" Area="1" />
 		<Replace MapName="GiantEarth" X="78" Y="64" CityLocaleName="LOC_CITY_NAME_YULIN" />
 		<Replace MapName="GiantEarth" X="80" Y="64" CityLocaleName="LOC_CITY_NAME_SHIJIAZHUANG" />
 
@@ -2966,9 +3021,7 @@
 		<Replace MapName="GiantEarth" X="66" Y="65" CityLocaleName="LOC_CITY_NAME_YANQI" Area="0" />
 		<Replace MapName="GiantEarth" X="68" Y="65" CityLocaleName="LOC_CITY_NAME_XINJIANG" Area="2" />
 		<Replace MapName="GiantEarth" X="71" Y="65" CityLocaleName="LOC_CITY_NAME_HAIXI_MONGOL" />
-		<Replace MapName="GiantEarth" X="75" Y="65" CityLocaleName="LOC_CITY_NAME_WUWEI" Area="0" />
-		<Replace MapName="GiantEarth" X="75" Y="66" CityLocaleName="LOC_CITY_NAME_WUWEI" Area="0" />
-		<Replace MapName="GiantEarth" X="76" Y="66" CityLocaleName="LOC_CITY_NAME_WUWEI" Area="0" />
+		<Replace MapName="GiantEarth" X="75" Y="65" CityLocaleName="LOC_CITY_NAME_WUWEI" Area="1" />
 		<Replace MapName="GiantEarth" X="84" Y="65" CityLocaleName="LOC_CITY_NAME_TANGSHAN" Area="0" />
 		<Replace MapName="GiantEarth" X="85" Y="65" CityLocaleName="LOC_CITY_NAME_TANGSHAN" Area="0" />
 		<Replace MapName="GiantEarth" X="85" Y="66" CityLocaleName="LOC_CITY_NAME_TANGSHAN" Area="0" />
@@ -3058,21 +3111,21 @@
 		<Replace MapName="GiantEarth" X="90" Y="52" CityLocaleName="LOC_CITY_NAME_KUMAMOTO" />
 		<Replace MapName="GiantEarth" X="90" Y="53" CityLocaleName="LOC_CITY_NAME_KUMAMOTO" Area="0" />
 		<Replace MapName="GiantEarth" X="91" Y="52" CityLocaleName="LOC_CITY_NAME_KAGOSHIMA" />
-		<Replace MapName="GiantEarth" X="99" Y="52" CityLocaleName="LOC_CITY_NAME_OSHIMA" />
 		<Replace MapName="GiantEarth" X="91" Y="53" CityLocaleName="LOC_CITY_NAME_MIYAZAKI" Area="0" />
-		<Replace MapName="GiantEarth" X="93" Y="53" CityLocaleName="LOC_CITY_NAME_MATSUYAMA" Area="0" />
 
 		<Replace MapName="GiantEarth" X="91" Y="54" CityLocaleName="LOC_CITY_NAME_FUKUOKA" />
 		<Replace MapName="GiantEarth" X="93" Y="54" CityLocaleName="LOC_CITY_NAME_MATSUYAMA" Area="0" />
-		<Replace MapName="GiantEarth" X="95" Y="54" CityLocaleName="LOC_CITY_NAME_KOCHI" Area="0"/>
+		<Replace MapName="GiantEarth" X="94" Y="54" CityLocaleName="LOC_CITY_NAME_KOCHI" Area="1"/>
 
+		<Replace MapName="GiantEarth" X="90" Y="54" CityLocaleName="LOC_CITY_NAME_NAGASAKI" />
 		<Replace MapName="GiantEarth" X="90" Y="55" CityLocaleName="LOC_CITY_NAME_KITAKYUSHU" Area="0" />
 		<Replace MapName="GiantEarth" X="91" Y="56" CityLocaleName="LOC_CITY_NAME_KITAKYUSHU" Area="0" />
-		<Replace MapName="GiantEarth" X="93" Y="55" CityLocaleName="LOC_CITY_NAME_TAKAMATSU" />
+		<Replace MapName="GiantEarth" X="92" Y="56" CityLocaleName="LOC_CITY_NAME_IWAKUNI" Area="0" />
+		<Replace MapName="GiantEarth" X="94" Y="55" CityLocaleName="LOC_CITY_NAME_TAKAMATSU" Area="0"/>
 		<Replace MapName="GiantEarth" X="96" Y="55" CityLocaleName="LOC_CITY_NAME_SAKAI" Area="0" />
 		<Replace MapName="GiantEarth" X="97" Y="55" CityLocaleName="LOC_CITY_NAME_WAKAYAMA" Area="0" />
 
-		<Replace MapName="GiantEarth" X="93" Y="56" CityLocaleName="LOC_CITY_NAME_HIROSHIMA" />
+		<Replace MapName="GiantEarth" X="93" Y="57" CityLocaleName="LOC_CITY_NAME_HIROSHIMA" />
 		<Replace MapName="GiantEarth" X="97" Y="56" CityLocaleName="LOC_CITY_NAME_OSAKA" />
 		<Replace MapName="GiantEarth" X="98" Y="56" CityLocaleName="LOC_CITY_NAME_NARA" Area="0" />
 
@@ -3098,7 +3151,7 @@
 		<Replace MapName="GiantEarth" X="95" Y="59" CityLocaleName="LOC_CITY_NAME_MAIZURU" Area="0" />
 		<Replace MapName="GiantEarth" X="96" Y="59" CityLocaleName="LOC_CITY_NAME_KYOTO" />
 		<Replace MapName="GiantEarth" X="97" Y="59" CityLocaleName="LOC_CITY_NAME_MATSUMOTO" Area="0" />
-		<Replace MapName="GiantEarth" X="99" Y="59" CityLocaleName="LOC_CITY_NAME_TOKYO" />
+		<Replace MapName="GiantEarth" X="99" Y="60" CityLocaleName="LOC_CITY_NAME_TOKYO" />
 
 		<Replace MapName="GiantEarth" X="90" Y="60" CityLocaleName="LOC_CITY_NAME_JEONJU" Area="0" />
 		<Replace MapName="GiantEarth" X="97" Y="60" CityLocaleName="LOC_CITY_NAME_TOYAMA" Area="0" />
@@ -3194,16 +3247,16 @@
 		<Replace MapName="GiantEarth" X="73" Y="73" CityLocaleName="LOC_CITY_NAME_SLYUDYANKA" Area="0" />
 		<Replace MapName="GiantEarth" X="74" Y="73" CityLocaleName="LOC_CITY_NAME_BABUSHKIN" Area="0" />
 		<Replace MapName="GiantEarth" X="75" Y="73" CityLocaleName="LOC_CITY_NAME_KABANSK" Area="0" />
-		<Replace MapName="GiantEarth" X="76" Y="73" CityLocaleName="LOC_CITY_NAME_ULAN_UDE" Area="0" />
-		<Replace MapName="GiantEarth" X="77" Y="73" CityLocaleName="LOC_CITY_NAME_ULAN_UDE" Area="0" />
+		<!--Replace MapName="GiantEarth" X="76" Y="73" CityLocaleName="LOC_CITY_NAME_ULAN_UDE" Area="0" /-->
+		<Replace MapName="GiantEarth" X="77" Y="74" CityLocaleName="LOC_CITY_NAME_ULAN_UDE" Area="1" />
 		<Replace MapName="GiantEarth" X="80" Y="73" CityLocaleName="LOC_CITY_NAME_BAYAN_UUL" Area="0" />
 		
 		<Replace MapName="GiantEarth" X="73" Y="74" CityLocaleName="LOC_CITY_NAME_SLYUDYANKA" Area="0" />
-		<Replace MapName="GiantEarth" X="76" Y="74" CityLocaleName="LOC_CITY_NAME_UST_BARGUZIN" Area="0" />
+		<Replace MapName="GiantEarth" X="77" Y="75" CityLocaleName="LOC_CITY_NAME_UST_BARGUZIN" Area="0" />
 		
-		<Replace MapName="GiantEarth" X="72" Y="75" CityLocaleName="LOC_CITY_NAME_TURT" Area="0" />
-		<Replace MapName="GiantEarth" X="73" Y="75" CityLocaleName="LOC_CITY_NAME_IRKUTSK" Area="0" />
-		<Replace MapName="GiantEarth" X="74" Y="75" CityLocaleName="LOC_CITY_NAME_IRKUTSK" Area="0" />
+		<!--Replace MapName="GiantEarth" X="72" Y="75" CityLocaleName="LOC_CITY_NAME_TURT" Area="0" /-->
+		<Replace MapName="GiantEarth" X="73" Y="75" CityLocaleName="LOC_CITY_NAME_IRKUTSK" Area="1" />
+		<!--Replace MapName="GiantEarth" X="74" Y="75" CityLocaleName="LOC_CITY_NAME_IRKUTSK" Area="0" /-->
 
 	</CityMap>
 	
@@ -3215,6 +3268,8 @@
 		<Replace CityLocaleName="LOC_CITY_NAME_YUZHNO_SAKHALINSK" Y="75" X="97" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_PETROPAVLOVSK" Y="75" X="103" MapName="GiantEarth" Area="1"/>
 		
+		<Replace MapName="GiantEarth" X="102" Y="75" CityLocaleName="LOC_CITY_NAME_PETROPAVLOVSK_KAMCHATSKIY" Area="2" /> <!-- For <CityNames> cross-reference in Scenario Generation -->
+		
 		<Replace CityLocaleName="LOC_CITY_NAME_OKHA" Y="76" X="97" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_UST_BOLSHERETSK" Y="76" X="101" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_YELIZOVO" Y="76" X="102" MapName="GiantEarth" Area="0"/>
@@ -3224,12 +3279,12 @@
 		
 		<Replace CityLocaleName="LOC_CITY_NAME_AYAN" Y="78" X="95" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_OKHOTSK" Y="78" X="96" MapName="GiantEarth" Area="1"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_MAGADAN" Y="78" X="98" MapName="GiantEarth" Area="1"/>
+		<Replace CityLocaleName="LOC_CITY_NAME_MAGADAN" Y="79" X="98" MapName="GiantEarth" Area="1"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_OSSORA" Y="78" X="104" MapName="GiantEarth" Area="1"/>
 		
 		<Replace CityLocaleName="LOC_CITY_NAME_TAKHTOYAMSK" Y="79" X="99" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_EVENSK" Y="79" X="100" MapName="GiantEarth" Area="1"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_PALANA" Y="79" X="101" MapName="GiantEarth" Area="1"/>
+		<Replace CityLocaleName="LOC_CITY_NAME_PALANA" Y="78" X="102" MapName="GiantEarth" Area="1"/>
 		
 		<Replace CityLocaleName="LOC_CITY_NAME_ARKA" Y="80" X="95" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_ARKA" Y="80" X="96" MapName="GiantEarth" Area="0"/>
@@ -3247,25 +3302,18 @@
 		<Replace CityLocaleName="LOC_CITY_NAME_KHATYRKA" Y="81" X="106" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_SAVOONGA" Y="81" X="110" MapName="GiantEarth" Area="0"/>
 		
-		<Replace CityLocaleName="LOC_CITY_NAME_UST_NERA" Y="82" X="96" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_UST_NERA" Y="82" X="97" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_OMOLON" Y="82" X="101" MapName="GiantEarth" Area="1"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_SLAUTNOYE" Y="82" X="103" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_MARKOVO" Y="82" X="105" MapName="GiantEarth" Area="1"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_BERINGOVSKY" Y="82" X="109" MapName="GiantEarth" Area="0"/>
 		
-		<Replace CityLocaleName="LOC_CITY_NAME_BATAGAY" Y="83" X="95" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_UST_NERA" Y="83" X="96" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_KHONUU" Y="83" X="97" MapName="GiantEarth" Area="0"/>
+		<Replace CityLocaleName="LOC_CITY_NAME_UST_NERA" Y="83" X="96" MapName="GiantEarth" Area="1"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_ZYRYANKA" Y="83" X="98" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_ZYRYANKA" Y="83" X="99" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_VESENNY" Y="83" X="102" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_VAYEGI" Y="83" X="106" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_ANADYR" Y="83" X="108" MapName="GiantEarth" Area="1"/>
+		<Replace CityLocaleName="LOC_CITY_NAME_ANADYR" Y="83" X="107" MapName="GiantEarth" Area="1"/>
 		
-		<Replace CityLocaleName="LOC_CITY_NAME_BATAGAY" Y="84" X="95" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_DEPUTATSKY" Y="84" X="96" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_KHONUU" Y="84" X="97" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_BELAYA_GORA" Y="84" X="98" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_BELAYA_GORA" Y="84" X="99" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_SREDNEKOLYMSK" Y="84" X="100" MapName="GiantEarth" Area="0"/>
@@ -3275,10 +3323,6 @@
 		<Replace CityLocaleName="LOC_CITY_NAME_EGVEKINOT" Y="84" X="108" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_LAVRENTIYA" Y="84" X="110" MapName="GiantEarth" Area="0"/>
 		
-		<Replace CityLocaleName="LOC_CITY_NAME_UST_KUYGA" Y="85" X="95" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_DEPUTATSKY" Y="85" X="96" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_CHOKURDAKH" Y="85" X="97" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_CHOKURDAKH" Y="85" X="98" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_SREDNEKOLYMSK" Y="85" X="99" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_CHERSKY" Y="85" X="100" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_CHERSKY" Y="85" X="101" MapName="GiantEarth" Area="0"/>
@@ -3287,9 +3331,6 @@
 		<Replace CityLocaleName="LOC_CITY_NAME_AMGUEMA" Y="85" X="107" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_NESHKAN" Y="85" X="108" MapName="GiantEarth" Area="0"/>
 		
-		<Replace CityLocaleName="LOC_CITY_NAME_KAZACHYE" Y="86" X="95" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_TUMAT" Y="86" X="96" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_RUSSKOYE_USTYE" Y="86" X="98" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_AMBARCHIK" Y="86" X="101" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_BILIBINO" Y="86" X="102" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_BILIBINO" Y="86" X="103" MapName="GiantEarth" Area="0"/>
@@ -3297,18 +3338,24 @@
 		<Replace CityLocaleName="LOC_CITY_NAME_ILIRNEY" Y="86" X="105" MapName="GiantEarth" Area="0"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_MYS_SHMIDTA" Y="86" X="106" MapName="GiantEarth" Area="0"/>
 		
-		<Replace CityLocaleName="LOC_CITY_NAME_NIZHNEYANSK" Y="87" X="95" MapName="GiantEarth" Area="0"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_YUKAGIR" Y="87" X="97" MapName="GiantEarth" Area="1"/>
-		<Replace CityLocaleName="LOC_CITY_NAME_KRESTOVAYA" Y="87" X="99" MapName="GiantEarth" Area="1"/>
+		<Replace CityLocaleName="LOC_CITY_NAME_KRESTOVAYA" Y="86" X="99" MapName="GiantEarth" Area="1"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_AMBARCHIK" Y="87" X="101" MapName="GiantEarth" Area="0"/>
 		
 		<Replace CityLocaleName="LOC_CITY_NAME_AYON" Y="88" X="103" MapName="GiantEarth" Area="1"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_PEVEK" Y="88" X="105" MapName="GiantEarth" Area="1"/>
 		<Replace CityLocaleName="LOC_CITY_NAME_LENINGRADSKY" Y="88" X="107" MapName="GiantEarth" Area="1"/>
 		
-		<Replace CityLocaleName="LOC_CITY_NAME_KOTELNY" Y="89" X="92" MapName="GiantEarth" Area="1"/>
+		<Replace CityLocaleName="LOC_CITY_NAME_KOTELNY" Y="89" X="93" MapName="GiantEarth" Area="1"/>
 		
 		<Replace CityLocaleName="LOC_CITY_NAME_NOVAYA_SIBIR" Y="90" X="96" MapName="GiantEarth" Area="0"/>
+		
+		<Replace MapName="GiantEarth" X="68" Y="78" CityLocaleName="LOC_CITY_NAME_KRASNOYARSK" Area="1" />
+		<Replace MapName="GiantEarth" X="64" Y="85" CityLocaleName="LOC_CITY_NAME_NORILSK" Area="2" />
+		<Replace MapName="GiantEarth" X="55" Y="83" CityLocaleName="LOC_CITY_NAME_SALEKHARD" Area="1" />
+		<Replace MapName="GiantEarth" X="94" Y="69" CityLocaleName="LOC_CITY_NAME_VLADIVOSTOK" Area="2" />
+		<Replace MapName="GiantEarth" X="84" Y="81" CityLocaleName="LOC_CITY_NAME_YAKUTSK" Area="2" />
+		<Replace MapName="GiantEarth" X="84" Y="78" CityLocaleName="LOC_CITY_NAME_NERYUNGRI" Area="2" />
+		<Replace MapName="GiantEarth" X="93" Y="75" CityLocaleName="LOC_CITY_NAME_CHUMIKAN" Area="1" />
 
 	</CityMap>
 
@@ -3456,7 +3503,7 @@
 		<Replace MapName="GiantEarth" X="141" Y="85" CityLocaleName="LOC_CITY_NAME_UMINGMAKTOK" Area="0" />
 		<Replace MapName="GiantEarth" X="142" Y="85" CityLocaleName="LOC_CITY_NAME_MACALPINE_LAKE" Area="1" />
 		<Replace MapName="GiantEarth" X="143" Y="85" CityLocaleName="LOC_CITY_NAME_MACALPINE_LAKE" Area="0" />
-		<Replace MapName="GiantEarth" X="147" Y="85" CityLocaleName="LOC_CITY_NAME_REPULSE_BAY" Area="2" />
+		<Replace MapName="GiantEarth" X="147" Y="85" CityLocaleName="LOC_CITY_NAME_NAUJAAT" Area="2" />
 		<Replace MapName="GiantEarth" X="152" Y="85" CityLocaleName="LOC_CITY_NAME_CAPE_DORSET" Area="2" />
 		<Replace MapName="GiantEarth" X="155" Y="85" CityLocaleName="LOC_CITY_NAME_AMADJUAK" Area="1" />
 		<Replace MapName="GiantEarth" X="157" Y="85" CityLocaleName="LOC_CITY_NAME_IQALUIT" Area="0" />
@@ -3538,7 +3585,7 @@
 		<Replace MapName="GiantEarth" X="157" Y="70" CityLocaleName="LOC_CITY_NAME_SHERBROOKE" Area="0" />
 		
 		<Replace MapName="GiantEarth" X="154" Y="71" CityLocaleName="LOC_CITY_NAME_GATINEAU" Area="0" />
-		<Replace MapName="GiantEarth" X="155" Y="71" CityLocaleName="LOC_CITY_NAME_MONTREAL" Area="0" />
+		<Replace MapName="GiantEarth" X="155" Y="71" CityLocaleName="LOC_CITY_NAME_MONTREAL" Area="1" />
 		<Replace MapName="GiantEarth" X="156" Y="71" CityLocaleName="LOC_CITY_NAME_TROIS_RIVIERES" Area="0" />
 		<Replace MapName="GiantEarth" X="157" Y="71" CityLocaleName="LOC_CITY_NAME_QUEBEC_CITY" Area="0" />
 		<Replace MapName="GiantEarth" X="158" Y="71" CityLocaleName="LOC_CITY_NAME_GASPE" Area="0" />
@@ -3619,22 +3666,20 @@
 		<Replace MapName="GiantEarth" X="152" Y="68" CityLocaleName="LOC_CITY_NAME_CAN_LONDON" Area="0" />
 		<Replace MapName="GiantEarth" X="153" Y="68" CityLocaleName="LOC_CITY_NAME_CAN_HAMILTON" Area="0" />
 		
-		<Replace MapName="GiantEarth" X="152" Y="69" CityLocaleName="LOC_CITY_NAME_TORONTO" Area="0" />
+		<Replace MapName="GiantEarth" X="152" Y="69" CityLocaleName="LOC_CITY_NAME_TORONTO" Area="1" />
 		
 		<Replace MapName="GiantEarth" X="149" Y="70" CityLocaleName="LOC_CITY_NAME_SAULT_STE_MARIE" Area="1" />
 		<Replace MapName="GiantEarth" X="151" Y="70" CityLocaleName="LOC_CITY_NAME_SUDBURY" Area="0" />
 		<Replace MapName="GiantEarth" X="152" Y="70" CityLocaleName="LOC_CITY_NAME_BARRIE" Area="0" />
-		<Replace MapName="GiantEarth" X="153" Y="70" CityLocaleName="LOC_CITY_NAME_TORONTO" Area="0" />
 		<Replace MapName="GiantEarth" X="154" Y="70" CityLocaleName="LOC_CITY_NAME_CAN_KINGSTON" Area="0" />
-		<Replace MapName="GiantEarth" X="155" Y="70" CityLocaleName="LOC_CITY_NAME_CAN_KINGSTON" Area="0" />
+		<Replace MapName="GiantEarth" X="154" Y="69" CityLocaleName="LOC_CITY_NAME_CAN_KINGSTON" Area="0" />
 		
 		<Replace MapName="GiantEarth" X="145" Y="71" CityLocaleName="LOC_CITY_NAME_FORT_FRANCES" Area="0" />
-		<Replace MapName="GiantEarth" X="147" Y="71" CityLocaleName="LOC_CITY_NAME_THUNDER_BAY" Area="1" />
+		<Replace MapName="GiantEarth" X="147" Y="72" CityLocaleName="LOC_CITY_NAME_THUNDER_BAY" Area="1" />
 		<Replace MapName="GiantEarth" X="148" Y="71" CityLocaleName="LOC_CITY_NAME_SAULT_STE_MARIE" Area="0" />
 		<Replace MapName="GiantEarth" X="150" Y="71" CityLocaleName="LOC_CITY_NAME_SUDBURY" Area="0" />
 		<Replace MapName="GiantEarth" X="151" Y="71" CityLocaleName="LOC_CITY_NAME_NORTH_BAY" Area="0" />
-		<Replace MapName="GiantEarth" X="152" Y="71" CityLocaleName="LOC_CITY_NAME_OTTAWA" Area="0" />
-		<Replace MapName="GiantEarth" X="153" Y="71" CityLocaleName="LOC_CITY_NAME_OTTAWA" Area="0" />
+		<Replace MapName="GiantEarth" X="153" Y="71" CityLocaleName="LOC_CITY_NAME_OTTAWA" Area="1" />
 		
 		<Replace MapName="GiantEarth" X="145" Y="72" CityLocaleName="LOC_CITY_NAME_KENORA" Area="0" />
 		<Replace MapName="GiantEarth" X="146" Y="72" CityLocaleName="LOC_CITY_NAME_FORT_FRANCES" Area="0" />
@@ -3643,8 +3688,6 @@
 		
 		<Replace MapName="GiantEarth" X="144" Y="73" CityLocaleName="LOC_CITY_NAME_KENORA" Area="0" />
 		<Replace MapName="GiantEarth" X="145" Y="73" CityLocaleName="LOC_CITY_NAME_DRYDEN" Area="1" />
-		<Replace MapName="GiantEarth" X="146" Y="73" CityLocaleName="LOC_CITY_NAME_THUNDER_BAY" Area="0" />
-		<Replace MapName="GiantEarth" X="147" Y="73" CityLocaleName="LOC_CITY_NAME_THUNDER_BAY" Area="0" />
 		<Replace MapName="GiantEarth" X="148" Y="73" CityLocaleName="LOC_CITY_NAME_KAPUSKASING" Area="0" />
 		<Replace MapName="GiantEarth" X="149" Y="73" CityLocaleName="LOC_CITY_NAME_KAPUSKASING" Area="0" />
 		<Replace MapName="GiantEarth" X="150" Y="73" CityLocaleName="LOC_CITY_NAME_FORT_ALBANY" Area="0" />
@@ -3835,7 +3878,7 @@
 		<Replace MapName="GiantEarth" X="114" Y="81" CityLocaleName="LOC_CITY_NAME_BETHEL" Area="1" />
 		<Replace MapName="GiantEarth" X="115" Y="80" CityLocaleName="LOC_CITY_NAME_DILLINGHAM" Area="0" />
 		<Replace MapName="GiantEarth" X="115" Y="84" CityLocaleName="LOC_CITY_NAME_KOTZEBUE" Area="0" />			
-		<Replace MapName="GiantEarth" X="116" Y="78" CityLocaleName="LOC_CITY_NAME_KODIAK" Area="0" />
+		<Replace MapName="GiantEarth" X="116" Y="78" CityLocaleName="LOC_CITY_NAME_KODIAK" Area="1" />
 		<Replace MapName="GiantEarth" X="116" Y="84" CityLocaleName="LOC_CITY_NAME_GALENA" Area="0" />			
 		<Replace MapName="GiantEarth" X="116" Y="85" CityLocaleName="LOC_CITY_NAME_AMBLER" Area="0" />	
 		<Replace MapName="GiantEarth" X="116" Y="86" CityLocaleName="LOC_CITY_NAME_POINT_HOPE" Area="1" />	
@@ -4151,7 +4194,7 @@
 		<Replace MapName="GiantEarth" X="130" Y="64" CityLocaleName="LOC_CITY_NAME_SAN_FRANCISCO" Area="1" />
 		<Replace MapName="GiantEarth" X="131" Y="64" CityLocaleName="LOC_CITY_NAME_SACRAMENTO" Area="0" />
 		
-		<Replace MapName="GiantEarth" X="130" Y="65" CityLocaleName="LOC_CITY_NAME_EUREKA" Area="0" />
+		<Replace MapName="GiantEarth" X="129" Y="65" CityLocaleName="LOC_CITY_NAME_EUREKA" Area="0" />
 		<Replace MapName="GiantEarth" X="131" Y="65" CityLocaleName="LOC_CITY_NAME_REDDING" Area="0" />
 		
 		<!-- MISSOURI -->
@@ -4251,6 +4294,8 @@
 		
 		<Replace MapName="GiantEarth" X="139" Y="65" CityLocaleName="LOC_CITY_NAME_BOULDER" Area="0" />
 		<Replace MapName="GiantEarth" X="138" Y="65" CityLocaleName="LOC_CITY_NAME_BOULDER" Area="0" />
+
+		<Replace MapName="GiantEarth" X="136" Y="65" CityLocaleName="LOC_CITY_NAME_CRAIG" Area="0" />
 		
 		<!-- KANSAS -->
 		<Replace MapName="GiantEarth" X="140" Y="63" CityLocaleName="LOC_CITY_NAME_WICHITA" Area="0" />
@@ -4330,6 +4375,7 @@
 		<Replace MapName="GiantEarth" X="138" Y="50" CityLocaleName="LOC_CITY_NAME_ACOLMAN" Area="0" />
 		<Replace MapName="GiantEarth" X="139" Y="50" CityLocaleName="LOC_CITY_NAME_TEXCOCO" Area="0" />
 		<Replace MapName="GiantEarth" X="146" Y="50" CityLocaleName="LOC_CITY_NAME_MERIDA" Area="0" />
+		<Replace MapName="GiantEarth" X="147" Y="50" CityLocaleName="LOC_CITY_NAME_CANCUN" Area="0" />
 		
 		<Replace MapName="GiantEarth" X="136" Y="51" CityLocaleName="LOC_CITY_NAME_MEX_LEON" Area="0" />
 		<Replace MapName="GiantEarth" X="137" Y="51" CityLocaleName="LOC_CITY_NAME_SAN_LUIS_POTOSI" Area="0" />
@@ -4362,10 +4408,10 @@
 		<Replace MapName="GiantEarth" X="136" Y="56" CityLocaleName="LOC_CITY_NAME_HERMOSILLO" Area="0" />
 		<Replace MapName="GiantEarth" X="137" Y="56" CityLocaleName="LOC_CITY_NAME_CHIHUAHUA" Area="1" />
 		
-		<Replace MapName="GiantEarth" X="131" Y="57" CityLocaleName="LOC_CITY_NAME_TIJUANA" Area="0" />
+		<Replace MapName="GiantEarth" X="132" Y="58" CityLocaleName="LOC_CITY_NAME_TIJUANA" Area="0" />
 		<Replace MapName="GiantEarth" X="133" Y="57" CityLocaleName="LOC_CITY_NAME_MEXICALI" Area="0" />
 		
-		<Replace MapName="GiantEarth" X="131" Y="58" CityLocaleName="LOC_CITY_NAME_ENSENDA" Area="0" />
+		<Replace MapName="GiantEarth" X="131" Y="57" CityLocaleName="LOC_CITY_NAME_ENSENDA" Area="0" />
 		<Replace MapName="GiantEarth" X="133" Y="58" CityLocaleName="LOC_CITY_NAME_MEXICALI" Area="0" />
 		
 		<!-- CENTRAL AMERICA -->
@@ -4619,7 +4665,7 @@
 		<Replace MapName="GiantEarth" X="156" Y="29" CityLocaleName="LOC_CITY_NAME_LABREA" Area="0" />
 		<Replace MapName="GiantEarth" X="157" Y="29" CityLocaleName="LOC_CITY_NAME_COARI" Area="0" />
 		<Replace MapName="GiantEarth" X="158" Y="29" CityLocaleName="LOC_CITY_NAME_MANICORE" Area="0" />
-		<Replace MapName="GiantEarth" X="160" Y="29" CityLocaleName="LOC_CITY_NAME_MANAUS" Area="0" />
+		<Replace MapName="GiantEarth" X="160" Y="29" CityLocaleName="LOC_CITY_NAME_MANAUS" Area="1" />
 		<Replace MapName="GiantEarth" X="162" Y="29" CityLocaleName="LOC_CITY_NAME_ALTA_FLORESTA" Area="0" />
 		<Replace MapName="GiantEarth" X="163" Y="29" CityLocaleName="LOC_CITY_NAME_ARAGUAINA" Area="0" />
 		<Replace MapName="GiantEarth" X="164" Y="29" CityLocaleName="LOC_CITY_NAME_SERRA_TALHADA" Area="0" />
@@ -4628,6 +4674,7 @@
 		<Replace MapName="GiantEarth" X="167" Y="29" CityLocaleName="LOC_CITY_NAME_SANTA_CRUZ_DO_CAPIBARIBE" Area="0" />
 		<Replace MapName="GiantEarth" X="168" Y="29" CityLocaleName="LOC_CITY_NAME_CUMARU" Area="0" />
 		<Replace MapName="GiantEarth" X="169" Y="29" CityLocaleName="LOC_CITY_NAME_CARPINA" Area="0" />
+		<Replace MapName="GiantEarth" X="170" Y="29" CityLocaleName="LOC_CITY_NAME_CARUARU" Area="0" />
 		<Replace MapName="GiantEarth" X="171" Y="29" CityLocaleName="LOC_CITY_NAME_RECIFE" Area="0" />
 
 		<Replace MapName="GiantEarth" X="151" Y="30" CityLocaleName="LOC_CITY_NAME_TARAPOTO" Area="0" />
@@ -4771,7 +4818,7 @@
 		<Replace MapName="GiantEarth" X="164" Y="38" CityLocaleName="LOC_CITY_NAME_CAIENA" Area="0" />
 
 		<Replace MapName="GiantEarth" X="151" Y="39" CityLocaleName="LOC_CITY_NAME_SALAQUI" Area="0" />
-		<Replace MapName="GiantEarth" X="153" Y="39" CityLocaleName="LOC_CITY_NAME_BUCARAMANGA" Area="0" />
+		<Replace MapName="GiantEarth" X="153" Y="39" CityLocaleName="LOC_CITY_NAME_BOGOTA" Area="0" /> <!-- Changed here from Bucaramanga -->
 		<Replace MapName="GiantEarth" X="155" Y="39" CityLocaleName="LOC_CITY_NAME_PUERTO_CARRENO" Area="0" />
 		<Replace MapName="GiantEarth" X="156" Y="39" CityLocaleName="LOC_CITY_NAME_CANAIMA" Area="0" />
 		<Replace MapName="GiantEarth" X="157" Y="39" CityLocaleName="LOC_CITY_NAME_LAS_CLARITAS" Area="0" />
@@ -4806,7 +4853,7 @@
 
 		<Replace MapName="GiantEarth" X="152" Y="49" CityLocaleName="LOC_CITY_NAME_LAS_TUNAS" Area="0" />
 
-		<Replace MapName="GiantEarth" X="151" Y="50" CityLocaleName="LOC_CITY_NAME_MATANZAS" Area="0" />
+		<Replace MapName="GiantEarth" X="151" Y="50" CityLocaleName="LOC_CITY_NAME_MORON_CUBA" Area="0" />
 		<Replace MapName="GiantEarth" X="152" Y="50" CityLocaleName="LOC_CITY_NAME_VARADERO" Area="0" />
 
 		<Replace MapName="GiantEarth" X="149" Y="51" CityLocaleName="LOC_CITY_NAME_HAVANA" Area="1" />
@@ -4830,6 +4877,220 @@
 
 		<Replace MapName="GiantEarth" X="154" Y="51" CityLocaleName="LOC_CITY_NAME_BAHAMAS" Area="0" />
 		<Replace MapName="GiantEarth" X="154" Y="51" CityLocaleName="LOC_CITY_NAME_INAGUA_ISLANDS" Area="0" />
+
+		<Replace MapName="GiantEarth" X="172" Y="2" CityLocaleName="LOC_CITY_NAME_GRYTVIKEN" Area="0" />
+
+
+		<!-- IRAN AND CENTRAL ASIA -->
+
+		<Replace MapName="GiantEarth" X="95" Y="75" CityLocaleName="LOC_CITY_NAME_NIKOLAYEVSK_ON_AMUR" Area="1" />
+		<Replace MapName="GiantEarth" X="92" Y="72" CityLocaleName="LOC_CITY_NAME_BIROBIDZHAN" Area="1" />
+		<Replace MapName="GiantEarth" X="93" Y="73" CityLocaleName="LOC_CITY_NAME_KOMSOMOLSK_ON_AMUR" Area="1" />
+		<Replace MapName="GiantEarth" X="95" Y="72" CityLocaleName="LOC_CITY_NAME_KHABAROVSK" Area="1" />
+		<Replace MapName="GiantEarth" X="90" Y="73" CityLocaleName="LOC_CITY_NAME_BLAGOVESHCHENSK" Area="1" />
+		<Replace MapName="GiantEarth" X="92" Y="74" CityLocaleName="LOC_CITY_NAME_FEVRALSK" Area="1" />
+		<Replace MapName="GiantEarth" X="93" Y="77" CityLocaleName="LOC_CITY_NAME_DZHANA" Area="1" />
+		<Replace MapName="GiantEarth" X="47" Y="57" CityLocaleName="LOC_CITY_NAME_GORGAN" Area="1" />
+		<Replace MapName="GiantEarth" X="50" Y="46" CityLocaleName="LOC_CITY_NAME_CHABAHAR" Area="1" />
+		<Replace MapName="GiantEarth" X="51" Y="47" CityLocaleName="LOC_CITY_NAME_GWADAR" Area="1" />
+		<Replace MapName="GiantEarth" X="52" Y="49" CityLocaleName="LOC_CITY_NAME_TURBAT" Area="0" />
+		<Replace MapName="GiantEarth" X="47" Y="46" CityLocaleName="LOC_CITY_NAME_MINAB" Area="0" />
+		<Replace MapName="GiantEarth" X="49" Y="46" CityLocaleName="LOC_CITY_NAME_KERETI" Area="0" />
+		<Replace MapName="GiantEarth" X="48" Y="46" CityLocaleName="LOC_CITY_NAME_JASK" Area="0" />
+		<Replace MapName="GiantEarth" X="50" Y="49" CityLocaleName="LOC_CITY_NAME_IRANSHAHR" Area="1" />
+		<Replace MapName="GiantEarth" X="47" Y="52" CityLocaleName="LOC_CITY_NAME_KHOR" Area="2" />
+		<Replace MapName="GiantEarth" X="50" Y="50" CityLocaleName="LOC_CITY_NAME_BAM" Area="0" />
+		<Replace MapName="GiantEarth" X="49" Y="50" CityLocaleName="LOC_CITY_NAME_SIRJAN" Area="0" />
+		<Replace MapName="GiantEarth" X="49" Y="51" CityLocaleName="LOC_CITY_NAME_KERMAN" Area="0" />
+		<Replace MapName="GiantEarth" X="49" Y="52" CityLocaleName="LOC_CITY_NAME_ZARAND" Area="0" />
+		<Replace MapName="GiantEarth" X="47" Y="48" CityLocaleName="LOC_CITY_NAME_DARAB" Area="1" />
+		<Replace MapName="GiantEarth" X="51" Y="52" CityLocaleName="LOC_CITY_NAME_ZAHEDAN" Area="1" />
+		<Replace MapName="GiantEarth" X="52" Y="54" CityLocaleName="LOC_CITY_NAME_ZABOL" Area="1" />
+		<Replace MapName="GiantEarth" X="53" Y="54" CityLocaleName="LOC_CITY_NAME_ZARANJ" Area="0" />
+		<Replace MapName="GiantEarth" X="53" Y="55" CityLocaleName="LOC_CITY_NAME_KANDAHAR" Area="1" />
+		<Replace MapName="GiantEarth" X="54" Y="57" CityLocaleName="LOC_CITY_NAME_KABUL" Area="1" />
+		<Replace MapName="GiantEarth" X="49" Y="48" CityLocaleName="LOC_CITY_NAME_JIROFT" Area="1" />
+		<Replace MapName="GiantEarth" X="51" Y="57" CityLocaleName="LOC_CITY_NAME_HERAT" Area="1" />
+		<Replace MapName="GiantEarth" X="50" Y="56" CityLocaleName="LOC_CITY_NAME_MASHHAD" Area="1" />
+		<Replace MapName="GiantEarth" X="48" Y="55" CityLocaleName="LOC_CITY_NAME_SABZEVAR" Area="1" />
+		<Replace MapName="GiantEarth" X="50" Y="54" CityLocaleName="LOC_CITY_NAME_BIRJAND" Area="1" />
+		<Replace MapName="GiantEarth" X="54" Y="59" CityLocaleName="LOC_CITY_NAME_KUNDUZ" Area="0" />
+		<Replace MapName="GiantEarth" X="55" Y="59" CityLocaleName="LOC_CITY_NAME_DUSHANBE" Area="1" />
+		<Replace MapName="GiantEarth" X="55" Y="60" CityLocaleName="LOC_CITY_NAME_SAMARKAND" Area="1" />
+		<Replace MapName="GiantEarth" X="53" Y="58" CityLocaleName="LOC_CITY_NAME_CHAGCHARAN" Area="0" />
+		<Replace MapName="GiantEarth" X="51" Y="59" CityLocaleName="LOC_CITY_NAME_TURKMENABAT" Area="1" />
+		<Replace MapName="GiantEarth" X="53" Y="59" CityLocaleName="LOC_CITY_NAME_MAZARI_SHARIF" Area="0" />
+		<Replace MapName="GiantEarth" X="50" Y="59" CityLocaleName="LOC_CITY_NAME_MERV" Area="1" />
+		<Replace MapName="GiantEarth" X="49" Y="58" CityLocaleName="LOC_CITY_NAME_ASHGABAT" Area="1" />
+		<Replace MapName="GiantEarth" X="47" Y="60" CityLocaleName="LOC_CITY_NAME_TURKMENBASHI" Area="1" />
+		<Replace MapName="GiantEarth" X="46" Y="63" CityLocaleName="LOC_CITY_NAME_AKTAU" Area="1" />
+		<Replace MapName="GiantEarth" X="48" Y="65" CityLocaleName="LOC_CITY_NAME_KULSARY" Area="0" />
+		<Replace MapName="GiantEarth" X="48" Y="64" CityLocaleName="LOC_CITY_NAME_BEYNEU" Area="1" />
+		<Replace MapName="GiantEarth" X="52" Y="61" CityLocaleName="LOC_CITY_NAME_BUKHARA" Area="1" />
+		<Replace MapName="GiantEarth" X="50" Y="61" CityLocaleName="LOC_CITY_NAME_URGENCH" Area="1" />
+		<Replace MapName="GiantEarth" X="51" Y="62" CityLocaleName="LOC_CITY_NAME_NUKUS" Area="1" />
+		<Replace MapName="GiantEarth" X="49" Y="60" CityLocaleName="LOC_CITY_NAME_DARVAZA" Area="0" />
+		<Replace MapName="GiantEarth" X="48" Y="61" CityLocaleName="LOC_CITY_NAME_KAPLANKYR" Area="1" />
+		<Replace MapName="GiantEarth" X="49" Y="63" CityLocaleName="LOC_CITY_NAME_KUNGIROT" Area="0" />
+		<Replace MapName="GiantEarth" X="50" Y="65" CityLocaleName="LOC_CITY_NAME_JASLIQ" Area="1" />
+		<Replace MapName="GiantEarth" X="51" Y="64" CityLocaleName="LOC_CITY_NAME_MOYNOQ" Area="0" />
+		<Replace MapName="GiantEarth" X="51" Y="63" CityLocaleName="LOC_CITY_NAME_CHIMBOY" Area="0" />
+		<Replace MapName="GiantEarth" X="53" Y="64" CityLocaleName="LOC_CITY_NAME_BAIKONUR" Area="1" />
+		<Replace MapName="GiantEarth" X="53" Y="63" CityLocaleName="LOC_CITY_NAME_KYZYLORDA" Area="1" />
+		<Replace MapName="GiantEarth" X="55" Y="62" CityLocaleName="LOC_CITY_NAME_TURKISTAN" Area="0" />
+		<Replace MapName="GiantEarth" X="55" Y="61" CityLocaleName="LOC_CITY_NAME_TASHKENT" Area="0" />
+		<Replace MapName="GiantEarth" X="56" Y="60" CityLocaleName="LOC_CITY_NAME_KHUJAND" Area="0" />
+		<Replace MapName="GiantEarth" X="58" Y="60" CityLocaleName="LOC_CITY_NAME_FERGANA" Area="1" />
+		<Replace MapName="GiantEarth" X="59" Y="60" CityLocaleName="LOC_CITY_NAME_OSH" Area="1" />
+		<Replace MapName="GiantEarth" X="60" Y="66" CityLocaleName="LOC_CITY_NAME_ALMATY" Area="1" />
+		<Replace MapName="GiantEarth" X="58" Y="65" CityLocaleName="LOC_CITY_NAME_BISHKEK" Area="1" />
+		<Replace MapName="GiantEarth" X="55" Y="63" CityLocaleName="LOC_CITY_NAME_KENTAU" Area="1" />
+		<Replace MapName="GiantEarth" X="56" Y="65" CityLocaleName="LOC_CITY_NAME_TARAZ" Area="1" />
+		<Replace MapName="GiantEarth" X="57" Y="62" CityLocaleName="LOC_CITY_NAME_SHYMKENT" Area="1" />
+
+		<Replace MapName="GiantEarth" X="52" Y="71" CityLocaleName="LOC_CITY_NAME_CHELYABINSK" Area="1" />
+		<Replace MapName="GiantEarth" X="51" Y="70" CityLocaleName="LOC_CITY_NAME_MAGNITOGORSK" Area="1" />
+		<Replace MapName="GiantEarth" X="59" Y="70" CityLocaleName="LOC_CITY_NAME_BALKHASH" Area="2" />
+		<Replace MapName="GiantEarth" X="61" Y="68" CityLocaleName="LOC_CITY_NAME_TALDYKORGAN" Area="1" />
+		<Replace MapName="GiantEarth" X="61" Y="67" CityLocaleName="LOC_CITY_NAME_ZHARKENT" Area="0" />
+		<Replace MapName="GiantEarth" X="63" Y="69" CityLocaleName="LOC_CITY_NAME_URZHAR" Area="1" />
+		<Replace MapName="GiantEarth" X="54" Y="67" CityLocaleName="LOC_CITY_NAME_BETPAK_DALA" Area="2" />
+		<Replace MapName="GiantEarth" X="55" Y="68" CityLocaleName="LOC_CITY_NAME_ZHEZQAZGHAN" Area="1" />
+		<Replace MapName="GiantEarth" X="58" Y="68" CityLocaleName="LOC_CITY_NAME_SARYSHAGAN" Area="1" />
+		<Replace MapName="GiantEarth" X="62" Y="70" CityLocaleName="LOC_CITY_NAME_AYAGOZ" Area="0" />
+		<Replace MapName="GiantEarth" X="45" Y="68" CityLocaleName="LOC_CITY_NAME_ALEXANDROV_GAY" Area="1" />
+		<Replace MapName="GiantEarth" X="42" Y="69" CityLocaleName="LOC_CITY_NAME_SARATOV" Area="0" />
+		<Replace MapName="GiantEarth" X="51" Y="76" CityLocaleName="LOC_CITY_NAME_LYSVA" Area="1" />
+		<Replace MapName="GiantEarth" X="58" Y="72" CityLocaleName="LOC_CITY_NAME_PAVLODAR" Area="1" />
+		<Replace MapName="GiantEarth" X="57" Y="71" CityLocaleName="LOC_CITY_NAME_AKSU" Area="0" />
+		<Replace MapName="GiantEarth" X="61" Y="72" CityLocaleName="LOC_CITY_NAME_SEMEY" Area="1" />
+		<Replace MapName="GiantEarth" X="63" Y="72" CityLocaleName="LOC_CITY_NAME_UST_KAMENOGORSK" Area="1" />
+		<Replace MapName="GiantEarth" X="64" Y="71" CityLocaleName="LOC_CITY_NAME_ZYRYANOVSK" Area="1" />
+		<Replace MapName="GiantEarth" X="59" Y="71" CityLocaleName="LOC_CITY_NAME_KURCHATOV" Area="1" />
+		<Replace MapName="GiantEarth" X="55" Y="74" CityLocaleName="LOC_CITY_NAME_TYUMEN" Area="1" />
+		<Replace MapName="GiantEarth" X="54" Y="73" CityLocaleName="LOC_CITY_NAME_KURGAN" Area="1" />
+		<Replace MapName="GiantEarth" X="56" Y="72" CityLocaleName="LOC_CITY_NAME_PETROPAVL" Area="1" />
+		<Replace MapName="GiantEarth" X="56" Y="71" CityLocaleName="LOC_CITY_NAME_ASTANA" Area="1" />
+		<Replace MapName="GiantEarth" X="57" Y="70" CityLocaleName="LOC_CITY_NAME_KARAGANDY" Area="1" />
+		<Replace MapName="GiantEarth" X="55" Y="70" CityLocaleName="LOC_CITY_NAME_KOSTANAY" Area="1" />
+		<Replace MapName="GiantEarth" X="53" Y="70" CityLocaleName="LOC_CITY_NAME_TROITSK" Area="1" />
+
+		<Replace MapName="GiantEarth" X="55" Y="87" CityLocaleName="LOC_CITY_NAME_BOVANENKOVO" Area="2" />
+		<Replace MapName="GiantEarth" X="56" Y="87" CityLocaleName="LOC_CITY_NAME_SABETTA" Area="2" />
+		<Replace MapName="GiantEarth" X="54" Y="85" CityLocaleName="LOC_CITY_NAME_AMDERMA" Area="1" />
+		<Replace MapName="GiantEarth" X="54" Y="83" CityLocaleName="LOC_CITY_NAME_KHARP" Area="1" />
+		<Replace MapName="GiantEarth" X="56" Y="85" CityLocaleName="LOC_CITY_NAME_YAR_SALE" Area="0" />
+		<Replace MapName="GiantEarth" X="57" Y="83" CityLocaleName="LOC_CITY_NAME_YAMBURG" Area="1" />
+		<Replace MapName="GiantEarth" X="58" Y="82" CityLocaleName="LOC_CITY_NAME_NOVY_URENGOY" Area="1" />
+		<Replace MapName="GiantEarth" X="58" Y="80" CityLocaleName="LOC_CITY_NAME_SURGUT" Area="1" />
+		<Replace MapName="GiantEarth" X="55" Y="79" CityLocaleName="LOC_CITY_NAME_KHANTY_MANSIYSK" Area="1" />
+		<Replace MapName="GiantEarth" X="53" Y="79" CityLocaleName="LOC_CITY_NAME_YUGORSK" Area="2" />
+		<Replace MapName="GiantEarth" X="53" Y="83" CityLocaleName="LOC_CITY_NAME_INTA" Area="1" />
+		<Replace MapName="GiantEarth" X="55" Y="80" CityLocaleName="LOC_CITY_NAME_NYAGAN" Area="1" />
+		<Replace MapName="GiantEarth" X="57" Y="81" CityLocaleName="LOC_CITY_NAME_NOYABRSK" Area="1" />
+		<Replace MapName="GiantEarth" X="55" Y="77" CityLocaleName="LOC_CITY_NAME_TOBOLSK" Area="1" />
+		<Replace MapName="GiantEarth" X="57" Y="77" CityLocaleName="LOC_CITY_NAME_NIZHNY_TAGIL" Area="1" />
+		<Replace MapName="GiantEarth" X="59" Y="75" CityLocaleName="LOC_CITY_NAME_KUYBYSHEV" Area="1" />
+		<Replace MapName="GiantEarth" X="59" Y="73" CityLocaleName="LOC_CITY_NAME_KARASUK" Area="0" />
+		<Replace MapName="GiantEarth" X="65" Y="73" CityLocaleName="LOC_CITY_NAME_BARNAUL" Area="1" />
+		<Replace MapName="GiantEarth" X="59" Y="78" CityLocaleName="LOC_CITY_NAME_NIZHNEVARTOVSK" Area="1" />
+		<Replace MapName="GiantEarth" X="57" Y="78" CityLocaleName="LOC_CITY_NAME_PYT_YAKH" Area="1" />
+		<Replace MapName="GiantEarth" X="64" Y="89" CityLocaleName="LOC_CITY_NAME_DIKSON" Area="2" />
+		<Replace MapName="GiantEarth" X="59" Y="87" CityLocaleName="LOC_CITY_NAME_GYDA" Area="3" />
+		<Replace MapName="GiantEarth" X="70" Y="74" CityLocaleName="LOC_CITY_NAME_KYZYL" Area="1" />
+		<Replace MapName="GiantEarth" X="70" Y="76" CityLocaleName="LOC_CITY_NAME_ABAKAN" Area="1" />
+		<Replace MapName="GiantEarth" X="67" Y="75" CityLocaleName="LOC_CITY_NAME_NOVOKUZNETSK" Area="1" />
+		<Replace MapName="GiantEarth" X="67" Y="73" CityLocaleName="LOC_CITY_NAME_KOSH_AGACH" Area="0" />
+		<Replace MapName="GiantEarth" X="72" Y="75" CityLocaleName="LOC_CITY_NAME_TUNGUSKA" Area="1" />
+		<Replace MapName="GiantEarth" X="72" Y="79" CityLocaleName="LOC_CITY_NAME_BRATSK" Area="1" />
+		<Replace MapName="GiantEarth" X="71" Y="77" CityLocaleName="LOC_CITY_NAME_TULUN" Area="1" />
+		<Replace MapName="GiantEarth" X="70" Y="78" CityLocaleName="LOC_CITY_NAME_KANSK" Area="1" />
+
+		<Replace MapName="GiantEarth" X="43" Y="49" CityLocaleName="LOC_CITY_NAME_YASUJ" Area="0" />
+		<Replace MapName="GiantEarth" X="42" Y="50" CityLocaleName="LOC_CITY_NAME_KUT" Area="0" />
+		<Replace MapName="GiantEarth" X="45" Y="74" CityLocaleName="LOC_CITY_NAME_MOZHGA" Area="0" />
+		<Replace MapName="GiantEarth" X="53" Y="77" CityLocaleName="LOC_CITY_NAME_SEROV" Area="1" />
+		<Replace MapName="GiantEarth" X="75" Y="77" CityLocaleName="LOC_CITY_NAME_SEVEROBAYKALSK" Area="1" />
+		<Replace MapName="GiantEarth" X="71" Y="81" CityLocaleName="LOC_CITY_NAME_UST_ILIMSK" Area="1" />
+		<Replace MapName="GiantEarth" X="67" Y="81" CityLocaleName="LOC_CITY_NAME_LESOSIBIRSK" Area="1" />
+		<Replace MapName="GiantEarth" X="69" Y="81" CityLocaleName="LOC_CITY_NAME_KODINSK" Area="1" />
+		<Replace MapName="GiantEarth" X="66" Y="77" CityLocaleName="LOC_CITY_NAME_ACHINSK" Area="1" />
+		<Replace MapName="GiantEarth" X="65" Y="75" CityLocaleName="LOC_CITY_NAME_KEMEROVO" Area="1" />
+		<Replace MapName="GiantEarth" X="65" Y="78" CityLocaleName="LOC_CITY_NAME_TOMSK" Area="1" />
+		<Replace MapName="GiantEarth" X="64" Y="80" CityLocaleName="LOC_CITY_NAME_KOLPASHEVO" Area="2" />
+		<Replace MapName="GiantEarth" X="79" Y="75" CityLocaleName="LOC_CITY_NAME_CHITA" Area="1" />
+		<Replace MapName="GiantEarth" X="82" Y="75" CityLocaleName="LOC_CITY_NAME_NERCHINSK" Area="1" />
+		<Replace MapName="GiantEarth" X="85" Y="76" CityLocaleName="LOC_CITY_NAME_SKOVORODINO" Area="0" />
+		<Replace MapName="GiantEarth" X="91" Y="77" CityLocaleName="LOC_CITY_NAME_BOMNAK" Area="1" />
+		<Replace MapName="GiantEarth" X="89" Y="77" CityLocaleName="LOC_CITY_NAME_ZEYA" Area="1" />
+		<Replace MapName="GiantEarth" X="151" Y="49" CityLocaleName="LOC_CITY_NAME_CAMAGUEY" Area="0" />
+		<Replace MapName="GiantEarth" X="154" Y="49" CityLocaleName="LOC_CITY_NAME_COCKBURN_TOWN" Area="0" />
+		<Replace MapName="GiantEarth" X="130" Y="61" CityLocaleName="LOC_CITY_NAME_MONTEREY" Area="1" />
+		<Replace MapName="GiantEarth" X="83" Y="87" CityLocaleName="LOC_CITY_NAME_TIKSI" Area="1" />
+		<Replace MapName="GiantEarth" X="88" Y="86" CityLocaleName="LOC_CITY_NAME_KHAYYR" Area="1" />
+		<Replace MapName="GiantEarth" X="81" Y="88" CityLocaleName="LOC_CITY_NAME_NORDVIK" Area="2" />
+		<Replace MapName="GiantEarth" X="78" Y="88" CityLocaleName="LOC_CITY_NAME_SYNNDASKO" Area="2" />
+
+		<Replace MapName="GiantEarth" X="62" Y="78" CityLocaleName="LOC_CITY_NAME_BAKCHAR" Area="1" />
+		<Replace MapName="GiantEarth" X="61" Y="76" CityLocaleName="LOC_CITY_NAME_KARGAT" Area="1" />
+		<Replace MapName="GiantEarth" X="65" Y="76" CityLocaleName="LOC_CITY_NAME_YURGA" Area="0" />
+		<Replace MapName="GiantEarth" X="63" Y="77" CityLocaleName="LOC_CITY_NAME_KOZHEVNIKOVO" Area="0" />
+		<Replace MapName="GiantEarth" X="66" Y="79" CityLocaleName="LOC_CITY_NAME_ASINO" Area="0" />
+		<Replace MapName="GiantEarth" X="66" Y="81" CityLocaleName="LOC_CITY_NAME_YENISEYSK" Area="1" />
+		<Replace MapName="GiantEarth" X="65" Y="83" CityLocaleName="LOC_CITY_NAME_BAKHTA" Area="1" />
+		<Replace MapName="GiantEarth" X="60" Y="81" CityLocaleName="LOC_CITY_NAME_VERKHNE_TAZOVSKY" Area="2" />
+		<Replace MapName="GiantEarth" X="62" Y="83" CityLocaleName="LOC_CITY_NAME_KRASNOSELKUP" Area="1" />
+		<Replace MapName="GiantEarth" X="74" Y="79" CityLocaleName="LOC_CITY_NAME_UST_KUT" Area="1" />
+		<Replace MapName="GiantEarth" X="86" Y="77" CityLocaleName="LOC_CITY_NAME_TYNDA" Area="1" />
+		<Replace MapName="GiantEarth" X="83" Y="84" CityLocaleName="LOC_CITY_NAME_ZHIGANSK" Area="2" />
+		<Replace MapName="GiantEarth" X="91" Y="86" CityLocaleName="LOC_CITY_NAME_NIZHNEYAMSK" Area="2" />
+		<Replace MapName="GiantEarth" X="86" Y="86" CityLocaleName="LOC_CITY_NAME_NAYBA" Area="1" />
+		<Replace MapName="GiantEarth" X="86" Y="83" CityLocaleName="LOC_CITY_NAME_BATAGAY_ALYTA" Area="1" />
+		<Replace MapName="GiantEarth" X="84" Y="85" CityLocaleName="LOC_CITY_NAME_KYUSYUR" Area="1" />
+		<Replace MapName="GiantEarth" X="93" Y="87" CityLocaleName="LOC_CITY_NAME_YUKAGIR" Area="1" />
+		<Replace MapName="GiantEarth" X="96" Y="87" CityLocaleName="LOC_CITY_NAME_RUSSKOYE_USTYE" Area="1" />
+		<Replace MapName="GiantEarth" X="95" Y="85" CityLocaleName="LOC_CITY_NAME_CHOKHURDAKH" Area="1" />
+
+		<Replace MapName="GiantEarth" X="97" Y="85" CityLocaleName="LOC_CITY_NAME_ANDRYUSHKINO" Area="1" />
+		<Replace MapName="GiantEarth" X="94" Y="83" CityLocaleName="LOC_CITY_NAME_ELGINSKY" Area="1" />
+		<Replace MapName="GiantEarth" X="93" Y="85" CityLocaleName="LOC_CITY_NAME_DEPUTATSKY" Area="1" />
+		<Replace MapName="GiantEarth" X="91" Y="83" CityLocaleName="LOC_CITY_NAME_BATAGAY" Area="1" />
+		<Replace MapName="GiantEarth" X="94" Y="80" CityLocaleName="LOC_CITY_NAME_SOLNECHNY" Area="1" />
+		<Replace MapName="GiantEarth" X="92" Y="80" CityLocaleName="LOC_CITY_NAME_KESKIL" Area="1" />
+		<Replace MapName="GiantEarth" X="87" Y="80" CityLocaleName="LOC_CITY_NAME_AMGA" Area="1" />
+		<Replace MapName="GiantEarth" X="89" Y="81" CityLocaleName="LOC_CITY_NAME_CHURAPCHA" Area="1" />
+		<Replace MapName="GiantEarth" X="89" Y="79" CityLocaleName="LOC_CITY_NAME_UST_MAYA" Area="1" />
+		<Replace MapName="GiantEarth" X="81" Y="74" CityLocaleName="LOC_CITY_NAME_MOGOYTUY" Area="0" />
+		<Replace MapName="GiantEarth" X="79" Y="87" CityLocaleName="LOC_CITY_NAME_YURYUNG_KHAYA" Area="1" />
+		<Replace MapName="GiantEarth" X="79" Y="85" CityLocaleName="LOC_CITY_NAME_SASKYLAKH" Area="1" />
+		<Replace MapName="GiantEarth" X="79" Y="81" CityLocaleName="LOC_CITY_NAME_MIRNY" Area="1" />
+		<Replace MapName="GiantEarth" X="79" Y="83" CityLocaleName="LOC_CITY_NAME_EYIK" Area="1" />
+		<Replace MapName="GiantEarth" X="75" Y="83" CityLocaleName="LOC_CITY_NAME_AYKHAL" Area="0" />
+		<Replace MapName="GiantEarth" X="81" Y="81" CityLocaleName="LOC_CITY_NAME_VILYUYSK" Area="1" />
+		<Replace MapName="GiantEarth" X="81" Y="79" CityLocaleName="LOC_CITY_NAME_OLYOKMINSK" Area="1" />
+		<Replace MapName="GiantEarth" X="78" Y="77" CityLocaleName="LOC_CITY_NAME_SEVEROMUYSK" Area="1" />
+		<Replace MapName="GiantEarth" X="80" Y="77" CityLocaleName="LOC_CITY_NAME_CHARA" Area="1" />
+		<Replace MapName="GiantEarth" X="68" Y="87" CityLocaleName="LOC_CITY_NAME_VOLOCHANKA" Area="3" />
+		<Replace MapName="GiantEarth" X="75" Y="91" CityLocaleName="LOC_CITY_NAME_TAYMYR" Area="2" />
+		<Replace MapName="GiantEarth" X="72" Y="90" CityLocaleName="LOC_CITY_NAME_MIDDENDORFF_BAY" Area="2" />
+		<Replace MapName="GiantEarth" X="68" Y="90" CityLocaleName="LOC_CITY_NAME_PYASINO_GULF" Area="1" />
+		<Replace MapName="GiantEarth" X="74" Y="86" CityLocaleName="LOC_CITY_NAME_KHATANGA" Area="2" />
+		<Replace MapName="GiantEarth" X="68" Y="83" CityLocaleName="LOC_CITY_NAME_POLIGUS" Area="1" />
+		<Replace MapName="GiantEarth" X="75" Y="81" CityLocaleName="LOC_CITY_NAME_KIRENSK" Area="1" />
+		<Replace MapName="GiantEarth" X="71" Y="84" CityLocaleName="LOC_CITY_NAME_VANAVARA" Area="1" />
+		<Replace MapName="GiantEarth" X="73" Y="83" CityLocaleName="LOC_CITY_NAME_YERBOGACHEN" Area="1" />
+		<Replace MapName="GiantEarth" X="73" Y="81" CityLocaleName="LOC_CITY_NAME_NOVAYA_IGIRMA" Area="0" />
+		<Replace MapName="GiantEarth" X="78" Y="80" CityLocaleName="LOC_CITY_NAME_PELEDUY" Area="1" />
+		<Replace MapName="GiantEarth" X="76" Y="78" CityLocaleName="LOC_CITY_NAME_ANGOYA" Area="1" />
+		<Replace MapName="GiantEarth" X="79" Y="79" CityLocaleName="LOC_CITY_NAME_LENSK" Area="1" />
+		<Replace MapName="GiantEarth" X="77" Y="84" CityLocaleName="LOC_CITY_NAME_OLENYOK" Area="1" />
+		<Replace MapName="GiantEarth" X="77" Y="82" CityLocaleName="LOC_CITY_NAME_MORKOKA" Area="1" />
+
+
+
+
+
+
 
 	</CityMap>
 

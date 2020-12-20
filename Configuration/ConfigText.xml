@@ -62,7 +62,7 @@
     <Replace Tag="LOC_CULTURALLY_LINKED_START_DESCRIPTION" Language="en_US">
       <Text>Culturally Linked Starting Positions</Text>
     </Replace>
-    <Replace Tag="LOC_MAP_LINKED_PLACEMENT_DEFAULT_NAME" Language="en_US">
+    <Replace Tag="LOC_MAP_PLACEMENT_RANDOM_NAME" Language="en_US">
       <Text>Random</Text>
     </Replace>
     <Replace Tag="LOC_MAP_LINKED_PLACEMENT_DEFAULT_DESCRIPTION" Language="en_US">
@@ -122,7 +122,13 @@
       <Text>Max</Text>
     </Replace>
     <Replace Tag="LOC_MAPSIZE_MAX_DESCRIPTION" Language="en_US">
-      <Text>Max working size on my PC (i7 4770K + MSI GTX 1080 Ti + 16GB Ram) (215x112)</Text>
+      <Text>Max working size on my PC (i7 4770K + MSI GTX 1080 Ti + 16GB Ram) (215x112) (I should have put the date of the test here, because it was a long time ago...)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAPSIZE_OVERSIZED_NAME" Language="en_US">
+      <Text>Oversized</Text>
+    </Replace>
+    <Replace Tag="LOC_MAPSIZE_OVERSIZED_DESCRIPTION" Language="en_US">
+      <Text>Oversized (230x116)</Text>
     </Replace>
 	
     <Replace Tag="LOC_MAPSIZE_SMALL21_NAME" Language="en_US">
@@ -443,9 +449,15 @@
 	<Replace Tag="LOC_MAP_AUTO_CITY_NAMING_NAME" Language="en_US">
       <Text>Real City Naming</Text>
     </Replace>
+	<Replace Tag="LOC_MAP_AUTO_CITY_NAMING_DESC" Language="en_US">
+      <Text>When checked the mod will try to set the name of a city based on the real world names relative to its location. Uncheck this to use the default city list for each Civilizations.</Text>
+    </Replace>
 	<Replace Tag="LOC_MAP_ONLY_GENERIC_CITY_NAMES_NAME" Language="en_US">
       <Text>Use only generic city names</Text>
-    </Replace>	
+    </Replace>
+	<Replace Tag="LOC_MAP_ONLY_GENERIC_CITY_NAMES_DESC" Language="en_US">
+      <Text>When unchecked the mod will try to set the name of a city based on what would be the real world name of a city created by a Civilization at its location. Check this to use the default (ie english) city name at the city's location.</Text>
+    </Replace>
 	
 	<Replace Tag="LOC_MAP_LEADER_TSL_NAME" Language="en_US">
       <Text>Use Leaders TSL when available</Text>
@@ -478,6 +490,39 @@
       <Text>Minimum number of turns before allowing Barbarian Scouts</Text>
     </Replace>
 	
+    <Replace Tag="LOC_MAJOR_CIVILIZATION_COUNT_NAME" Language="en_US">
+      <Text>Civilizations Slots</Text>
+    </Replace>
+    <Replace Tag="LOC_MAJOR_CIVILIZATION_COUNT_DESCRIPTION" Language="en_US">
+      <Text>Number of Major Civilization slots.[NEWLINE][NEWLINE]To prevent User Interface lag or accidental change when using the mouse wheel in the menu, this setting is not immediatly applied.[NEWLINE][NEWLINE]Usage: set a higher number and click on the "+" (Add) button or set a lower number and click on one of the "X" (Delete) buttons in the "Players" section.</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_BAN_LEADERS_NAME" Language="en_US">
+      <Text>Leaders Ban List for Random Slots</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_BAN_LEADERS_DESCRIPTION" Language="en_US">
+      <Text>Select Leaders to ban for Random slots, you can still select them manually for the player or the AI.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_TSL_LEADERS_NAME" Language="en_US">
+      <Text>Only Civilizations/CityStates with TSL</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_TSL_LEADERS_DESCRIPTION" Language="en_US">
+      <Text>Only Leaders of Civilizations/CityStates with TSL for the selected map are valid when this is checked.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_TSL_LEADERS_NEED_DB_DESCRIPTION" Language="en_US">
+      <Text>Only Leaders of Civilizations/CityStates with TSL for the selected map are valid when this is checked.[NEWLINE][NEWLINE]A game need to be launched to get the GamePlay Database which is required to activate this option, you can click the "Load Database" button to launch a quick game in 2D mode and return to Main Menu, then you can navigate back to this screen and activate the option.</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_DIMENSION_NAME" Language="en_US">
+      <Text> </Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_DIMENSION_DESCRIPTION" Language="en_US">
+      <Text>Map Dimensions as known in the setup screen. In game dimensions can be different, as Worldbuilder Maps and Maps Script can both use different size that the one they are configured to use.[NEWLINE][NEWLINE]When used with YnAMP maps allowing custom sections (like the Giant Earth or the Largest Earth Custom), the dimensions are accurate.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_DIMENSION_STRING" Language="en_US">
+      <Text>Size: {1_Num}x{2_Num} ({3_Num : number #,###} tiles)</Text>
+    </Replace>
+	
     <Replace Tag="LOC_MAP_REFERENCE_DB_NAME" Language="en_US">
       <Text>Reference Database</Text>
     </Replace>
@@ -488,10 +533,23 @@
       <Text>LargestEarth Database</Text>
     </Replace>
     <Replace Tag="LOC_MAP_GIANT_DB_DESCRIPTION" Language="en_US">
-      <Text>Use the GiantEarth Database to get City names, custom Civilizations TSL, custom NW positions, ...[NEWLINE]Less precision for placement but a lot more data available</Text>
+      <Text>Use the GiantEarth Database to get City names, custom Civilizations TSL, custom NW positions, ...[NEWLINE][NEWLINE]Less precision for placement but a lot more data available</Text>
     </Replace>
     <Replace Tag="LOC_MAP_LARGESTEARTH_DB_DESCRIPTION" Language="en_US">
       <Text>Use the LargestEarth Database[NEWLINE]Perfect placement, but less data available.</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_MAP_SCRIPT_REF_FOR_NW_NAME" Language="en_US">
+      <Text>Direct Reference for Natural Wonders</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SCRIPT_REF_FOR_NW_DESC" Language="en_US">
+      <Text>Do not use a relative Database to get Natural Wonders placement, only get them from direct reference to the LargestEarth MapScript.[NEWLINE][NEWLINE]You may miss some Natural Wonders without relative reference, but all that have a direct reference should have perfect placement</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SCRIPT_REF_FOR_XT_NAME" Language="en_US">
+      <Text>Direct Reference for Extra placement</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_SCRIPT_REF_FOR_XT_DESC" Language="en_US">
+      <Text>Do not use a relative Database to get Extra Placement (conditional changes to Terrain, Features, Resources,... like Volcanoes when Gathering Storm is active), only get them from direct reference to the LargestEarth MapScript.</Text>
     </Replace>
 	
 	<!--
@@ -821,6 +879,14 @@
     <Replace Tag="LOC_MAP_SECTION_COLONIZATION_DESCRIPTION" Text="Play on a Map of the Atlantic Ocean, with parts of Europe and Americas"		Language="en_US"/>
     <Replace Tag="LOC_MAP_SECTION_OLD_WORLD_NAME" 			Text="Old World" 																	Language="en_US"/>
     <Replace Tag="LOC_MAP_SECTION_OLD_WORLD_DESCRIPTION" 	Text="Play on the Old World (Europe, Africa, Asia)"									Language="en_US"/>
+    <Replace Tag="LOC_MAP_SECTION_AFRICA_NAME" 				Text="Africa" 																		Language="en_US"/>
+    <Replace Tag="LOC_MAP_SECTION_AFRICA_DESCRIPTION" 		Text="Play on Africa"																Language="en_US"/>
+    <Replace Tag="LOC_MAP_SECTION_LARGE_ASIA_NAME" 			Text="Large Asia" 																	Language="en_US"/>
+    <Replace Tag="LOC_MAP_SECTION_LARGE_ASIA_DESCRIPTION" 	Text="Play on all Asia, from Middle-East to Japan, including Australia"				Language="en_US"/>
+    <Replace Tag="LOC_MAP_SECTION_SOUTH_EAST_ASIA_NAME" 	Text="South East Asia" 																Language="en_US"/>
+    <Replace Tag="LOC_MAP_SECTION_SOUTH_EAST_ASIA_DESCRIPTION" 	Text="Play on a smaller version of Asia, excluding most part of Australia"		Language="en_US"/>
+    <Replace Tag="LOC_MAP_SECTION_PACIFIC_NAME" 			Text="Pacific" 																		Language="en_US"/>
+    <Replace Tag="LOC_MAP_SECTION_PACIFIC_DESCRIPTION" 		Text="Play on a map centered on the Pacific, including parts of Asia and America"	Language="en_US"/>
 	
     <Replace Tag="LOC_MAP_STARTX_NAME" Language="en_US">
       <Text>WEST Border</Text>
@@ -904,14 +970,45 @@
       <Text>Alps (West Italy)</Text>
     </Replace>
 	
-    <Replace Tag="LOC_CITYSTATES_OPTIONS" Language="en_US">
-      <Text>City States Options</Text>
-    </Replace>
     <Replace Tag="LOC_MAP_SELECT_CITY_STATES_NAME" Language="en_US">
       <Text>Manual City States Selection</Text>
     </Replace>
     <Replace Tag="LOC_MAP_SELECT_CITY_STATES_DESCRIPTION" Language="en_US">
       <Text>When enabled you can manually select which City States you want to be placed on the map from a list.[NEWLINE][NEWLINE]Note that DLCs, Expansions, scenarios and mods can add or remove City States, the list does not reflect which ones are actually available.[NEWLINE][NEWLINE]When a City State is not available, its slot is free for a random CS.</Text>
+    </Replace>
+    <Replace Tag="LOC_FAKE_SELECT_CITY_STATES_DESCRIPTION" Language="en_US">
+      <Text>When enabled you can manually select which City States you want to be placed on the map from a list.[NEWLINE][NEWLINE]A game need to be launched to update the GamePlay Database which is required to activate this option, you can click the "Load Database" button to launch a quick game in 2D mode and return to Main Menu, then you can navigate back to this screen and activate the option.</Text>
+    </Replace>
+	
+    <Replace Tag="LOC_CITYSTATES_OPTIONS_NAME" Language="en_US">
+      <Text>City States Selection</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CS_OPTION_DEFAULT_DESCRIPTION" Language="en_US">
+      <Text>City States are selected by the Civ6 Map Generator (random)</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CS_OPTION_SELECTION_NAME" Language="en_US">
+      <Text>Selection and Random</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CS_OPTION_SELECTION_DESCRIPTION" Language="en_US">
+      <Text>Select which City States you want to be placed, the total number of CS will still be capped at the slider value and when you select less CS in the list than the slider value, the empty slots will be filled with random CS. If you select more CS than the slider value, the mod will pick a limited random list from your selection.[NEWLINE][NEWLINE]Note that DLCs, Expansions, scenarios and mods can add or remove City States, the list does not reflect which ones are actually available.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CS_OPTION_UNCAPPED_SELECTION_NAME" Language="en_US">
+      <Text>Uncapped Selection</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CS_OPTION_UNCAPPED_SELECTION_DESCRIPTION" Language="en_US">
+      <Text>Select which City States you want to be placed on the map from a list, the mod will try to find a slot for all selected City States, ignoring the slider value when you select more. When you select less CS in the list than the slider value, the empty slots will be filled with random CS.[NEWLINE][NEWLINE]Note that DLCs, Expansions, scenarios and mods can add or remove City States, the list does not reflect which ones are actually available.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CS_OPTION_ONLY_SELECTION_NAME" Language="en_US">
+      <Text>Only Selection</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CS_OPTION_ONLY_SELECTION_DESCRIPTION" Language="en_US">
+      <Text>Select which City States you want to be placed on the map from a list, the mod will try to find a slot only for the selected City States, ignoring the slider value when you select more or less.[NEWLINE][NEWLINE]Note that DLCs, Expansions, scenarios and mods can add or remove City States, the list does not reflect which ones are actually available.</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CS_OPTION_EXCLUSION_NAME" Language="en_US">
+      <Text>Exclusion List</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_CS_OPTION_EXCLUSION_DESCRIPTION" Language="en_US">
+      <Text>The Selection will be used in exclusion mode, YnAMP will try to find a slot only for the unselected City States, up to the slider value.[NEWLINE][NEWLINE]Note that DLCs, Expansions, scenarios and mods can add or remove City States, the list does not reflect which ones are actually available.</Text>
     </Replace>
 	
     <Replace Tag="LOC_XP1_CHECK_NAME" Language="en_US">
@@ -934,7 +1031,7 @@
     </Replace>
 	
     <Replace Tag="LOC_SCENARIO_OPTIONS" Language="en_US">
-      <Text>[ICON_DownloadContent][ICON_DownloadContent][ICON_DownloadContent][ICON_DownloadContent] SCENARIO OPTIONS [ICON_DownloadContent][ICON_DownloadContent][ICON_DownloadContent][ICON_DownloadContent]</Text>
+      <Text>[ICON_DownloadContent] SCENARIO OPTIONS [ICON_DownloadContent]</Text>
     </Replace>
     <Replace Tag="LOC_SCENARIO_OPTIONS_DESCRIPTION" Language="en_US">
       <Text>Scenario Options Below[NEWLINE][ICON_Exclamation][COLOR_RED] Alpha Testing [ENDCOLOR][ICON_Exclamation]</Text>
@@ -971,7 +1068,13 @@
       <Text>YnAMP generated placement</Text>
     </Replace>
     <Replace Tag="LOC_YNAMP_GENERATED_PRESET_DESC" Language="en_US">
-      <Text>Placement presets to generate starting Civilizations[NEWLINE]This scenario replaces the setup screen default values to civ-specific values for the following settings:[NEWLINE][ICON_BULLET]Cities Placement[NEWLINE][ICON_BULLET]Number of Cities[NEWLINE][ICON_BULLET]Max. Distance From Capital[NEWLINE][ICON_BULLET]Only on the same landmass[NEWLINE][NEWLINE]Custom Civilizations will use the default settings (unless added separatly by the custom civ mod)[NEWLINE][NEWLINE]The settings are optimized for the Giant Earth map (or regions of it) but can be used with any map.</Text>
+      <Text>Placement presets to generate starting Civilizations[NEWLINE][NEWLINE]This scenario replaces the setup screen default values to civ-specific values for the following settings:[NEWLINE][ICON_BULLET]Cities Placement[NEWLINE][ICON_BULLET]Number of Cities[NEWLINE][ICON_BULLET]Max. Distance From Capital[NEWLINE][ICON_BULLET]Only on the same landmass[NEWLINE][NEWLINE]Custom Civilizations will use the default settings (unless added separatly by the custom civ mod)[NEWLINE][NEWLINE]The settings are optimized for the Giant Earth map (or regions of it) but can be used with any map.</Text>
+    </Replace>
+    <Replace Tag="LOC_YNAMP_CITYMAP_PRESET_NAME" Language="en_US">
+      <Text>YnAMP CityMap placement</Text>
+    </Replace>
+    <Replace Tag="LOC_YNAMP_CITYMAP_PRESET_DESC" Language="en_US">
+      <Text>Placement presets to generate starting Civilizations with the City Names Database (originally used for Automatic City Naming based on position)[NEWLINE][NEWLINE]This scenario replaces the setup screen default values to civ-specific values for the following settings:[NEWLINE][ICON_BULLET]Cities Placement[NEWLINE][ICON_BULLET]Number of Cities[NEWLINE][ICON_BULLET]Max. Distance From Capital[NEWLINE][ICON_BULLET]Only on the same landmass[NEWLINE][NEWLINE]Custom Civilizations will use the default settings (unless added separatly by the custom civ mod)[NEWLINE][NEWLINE]The settings are optimized for the Giant Earth map (or regions of it) but can be used with other maps with a CityName database (like "Play Europe Again", "Largest Earth Map" with GiantEarth database reference or even "Terra Map" with a high real land blending ratio).[NEWLINE][NEWLINE]This scenario shouldn't be available for map without associated City Names</Text>
     </Replace>
 	
     <Replace Tag="LOC_MAP_CITY_PLACEMENT_NAME" Language="en_US">
@@ -1080,6 +1183,12 @@
     <Replace Tag="LOC_MAP_MAX_CAPITAL_DISTANCE_DESCRIPTION" Language="en_US">
       <Text>Maximum distance from Capital for the other cities (this is not checked for cities imported from the ScenarioCities table)</Text>
     </Replace>
+    <Replace Tag="LOC_MAP_MIN_CITY_SEPARATION" Language="en_US">
+      <Text>Min. Cities Separation</Text>
+    </Replace>
+    <Replace Tag="LOC_MAP_MIN_CITY_SEPARATION_DESCRIPTION" Language="en_US">
+      <Text>Minimum distance between cities (this is not checked for cities imported from the ScenarioCities table and is ignored when lower than the core game limit)</Text>
+    </Replace>
     <Replace Tag="LOC_MAP_SAME_LANDMASS" Language="en_US">
       <Text>Only on the same landmass</Text>
     </Replace>
@@ -1153,7 +1262,7 @@
       <Text>Infrastructure Placement</Text>
     </Replace>
     <Replace Tag="LOC_MAP_INFRASTRUCTURE_DESCRIPTION" Language="en_US">
-      <Text>How to place the infrastructure (roads, rails, improvments, districts, buildings) on the map</Text>
+      <Text>How to place the infrastructure (roads, rails, improvements, districts, buildings) on the map</Text>
     </Replace>
 	
     <Replace Tag="LOC_MAP_ROAD_PLACEMENT_NAME" Language="en_US">
@@ -1266,10 +1375,10 @@
 	</Replace>
 	
 	<Replace Tag="LOC_CIVILIZATION_ANTIOCH_NAME" Language="en_US">
-		<Text>Antioch</Text>
+		<Text>Venice</Text>
 	</Replace>
 	<Replace Tag="LOC_CIVILIZATION_ANTIOCH_DESCRIPTION" Language="en_US">
-		<Text>Antioch city-state</Text>
+		<Text>Venice city-state</Text>
 	</Replace>
 	<Replace Tag="LOC_CIVILIZATION_BABYLON_NAME" Language="en_US">
 		<Text>Babylon</Text>
@@ -1294,7 +1403,7 @@
 		<Text>Muscat</Text>
 	</Replace>
 	<Replace Tag="LOC_CIVILIZATION_PALENQUE_NAME" Language="en_US">
-		<Text>Palenque</Text>
+		<Text>Mitla</Text>
 	</Replace>
 	<Replace Tag="LOC_CIVILIZATION_AUCKLAND_DESCRIPTION" Language="en_US">
 		<Text>Auckland city-state</Text>
@@ -1312,9 +1421,138 @@
 		<Text>Muscat city-state</Text>
 	</Replace>
 	<Replace Tag="LOC_CIVILIZATION_PALENQUE_DESCRIPTION" Language="en_US">
-		<Text>Palenque city-state</Text>
+		<Text>Mitla city-state</Text>
 	</Replace>
-
 	
+  <Replace Tag="LOC_CIVILIZATION_CAGUANA_NAME" Language="en_US">
+    <Text>Caguana</Text>
+  </Replace>
+  <Replace Tag="LOC_CIVILIZATION_HUNZA_NAME" Language="en_US">
+    <Text>Hunza</Text>
+  </Replace>
+  <Replace Tag="LOC_CIVILIZATION_LAHORE_NAME" Language="en_US">
+    <Text>Lahore</Text>
+  </Replace>
+  <Replace Tag="LOC_CIVILIZATION_SINGAPORE_NAME" Language="en_US">
+    <Text>Singapore</Text>
+  </Replace>
+  <Replace Tag="LOC_CIVILIZATION_TARUGA_NAME" Language="en_US">
+    <Text>Taruga</Text>
+  </Replace>
+  <Replace Tag="LOC_CIVILIZATION_VATICAN_CITY_NAME" Language="en_US">
+    <Text>Vatican City</Text>
+  </Replace>
+  <Replace Tag="LOC_CIVILIZATION_CAGUANA_DESCRIPTION" Language="en_US">
+    <Text>Caguana city-state</Text>
+  </Replace>
+  <Replace Tag="LOC_CIVILIZATION_HUNZA_DESCRIPTION" Language="en_US">
+    <Text>Hunza city-state</Text>
+  </Replace>
+  <Replace Tag="LOC_CIVILIZATION_LAHORE_DESCRIPTION" Language="en_US">
+    <Text>Lahore city-state</Text>
+  </Replace>
+  <Replace Tag="LOC_CIVILIZATION_SINGAPORE_DESCRIPTION" Language="en_US">
+    <Text>Singapore city-state</Text>
+  </Replace>
+  <Replace Tag="LOC_CIVILIZATION_TARUGA_DESCRIPTION" Language="en_US">
+    <Text>Taruga city-state</Text>
+  </Replace>
+  <Replace Tag="LOC_CIVILIZATION_VATICAN_CITY_DESCRIPTION" Language="en_US">
+    <Text>Vatican City city-state</Text>
+  </Replace>
+
+    <Replace Tag="LOC_SETUP_CREATE_MAP" Language="en_US">
+      <Text>Create Map</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_YNAMP_REPORT" Language="en_US">
+      <Text>Settings validation report:</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_SEVERITY_YNAMP" Language="en_US">
+      <Text>(severity = {1_Num})</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_BLOCKING_YNAMP" Language="en_US">
+      <Text>(blocking Start)</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_IGNORE_BLOCK_YNAMP" Language="en_US">
+      <Text>(block overriden by user)</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_DATABASE_LOADED_YNAMP" Language="en_US">
+      <Text>Database loaded</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_DATABASE_LOADED_YNAMP_TT" Language="en_US">
+      <Text>The GamePlay Database has been loaded and is available for YnAMP Advanced Setup Options.</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_DATABASE_NOT_LOADED_YNAMP" Language="en_US">
+      <Text>Database not loaded</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_DATABASE_NOT_LOADED_YNAMP_TT" Language="en_US">
+      <Text>The Gameplay Database has not been loaded yet during this session, a game need to be launched to get the data required for some of YnAMP advanced options.[NEWLINE][NEWLINE]You can click the "Load Database" button to launch a quick game in 2D mode, or you can launch your game as usual if you don't need the new options.</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_DATABASE_CHANGED_YNAMP" Language="en_US">
+      <Text>Database changed</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_DATABASE_CHANGED_YNAMP_TT" Language="en_US">
+      <Text>The Gameplay Database has changed (by activating Mods, DLCs or Expansions), a new empty game have to be launched to update the data required for some of YnAMP advanced options.[NEWLINE][NEWLINE]You can click the "Load Database" button to launch a quick game in 2D mode, or you can launch your game as usual if you don't need the new options.</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_RULESET_CHANGED_YNAMP" Language="en_US">
+      <Text>Ruleset changed</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_RULESET_CHANGED_YNAMP_TT" Language="en_US">
+      <Text>The Ruleset used when loading the Gameplay Database  has been changed, a new empty game has to be launched to update the data required by some of YnAMP advanced options.[NEWLINE][NEWLINE]You can click the "Load Database" button to launch a quick game in 2D mode and use the active Ruleset, switch back to the previous Ruleset, or you can launch your game as usual if you don't need the new options.</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_MAP_SIZE_UNOFFICIAL_YNAMP" Language="en_US">
+      <Text>Map Size unofficial</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_MAP_SIZE_UNOFFICIAL_YNAMP_TT" Language="en_US">
+      <Text>This map size is bigger than the official maps.[NEWLINE][NEWLINE]It will load, but you may get random crashes in late game.[NEWLINE][NEWLINE]It was not reported at this kind of sizes, but please note that with Gathering Storm, water level rising may cause an unrecoverable crash on maps a bit larger.</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_MAP_SIZE_LOCK_YNAMP" Language="en_US">
+      <Text>Map size unsupported</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_MAP_SIZE_LOCK_YNAMP_TT" Language="en_US">
+      <Text>This map size is bigger than the biggest known map that can be played for 500 turns. If the map allows it, you can select a smaller section to play on, that will adjust the size.[NEWLINE][NEWLINE]It may load, but you will surely get random crashes in late game, you should save often.[NEWLINE][NEWLINE]With Gathering Storm, water level rising will cause an unrecoverable crash.</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_MAP_OVERSIZE_YNAMP_TT" Language="en_US">
+      <Text>This map size is bigger than the biggest known map that can be started without crashing on load. If the map allows it, you can select a smaller section to play on, that will adjust the size.</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_MAP_SIZE_UNKNOWN_YNAMP" Language="en_US">
+      <Text>Map size unknown</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_MAP_SIZE_UNKNOWN_YNAMP_TT" Language="en_US">
+      <Text>This Map size in unknowkn, YnAMP can't detect if it will allow a stable game yet, this can be fixed by loading the Database.</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_LOAD_DATA_YNAMP" Language="en_US">
+      <Text>Load Database</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_LOAD_DATA_YNAMP_TT" Language="en_US">
+      <Text>Launch a quick game in 2D mode to load all data used by YnAMP for the setting menu then quit automatically and return to the Main Menu.[NEWLINE][NEWLINE]Navigate back to this setup screen, it should then show "Database Loaded" and activate the related YnAMP advanced options.[NEWLINE][NEWLINE]A saved file of the current settings named "AutoSaveYnAMP" should be available to reload if needed, but the suggested order of action should be:[NEWLINE][ICON_BULLET] Activate mods[NEWLINE][ICON_BULLET] Load the database[NEWLINE][ICON_BULLET] Change your settings[NEWLINE][NEWLINE]This is optional and you can launch your game as usual if you don't need the new options.</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_IGNORE_WARNING_YNAMP" Language="en_US">
+      <Text>Ignore Warning</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_IGNORE_WARNING_YNAMP_TT" Language="en_US">
+      <Text>Click the "Ignore" button if you understand the issue and want to ignore it.</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_MAJOR_COUNT_DIFFERENCE" Language="en_US">
+      <Text>Apply Civilizations count</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_MAJOR_COUNT_DIFFERENCE_TT" Language="en_US">
+      <Text>The actual number of Player slots and the Civilizations Slots slider value doesn't match.[NEWLINE][NEWLINE]To prevent User Interface lag or accidental change when using the mouse wheel in the menu, the slider value is not immediatly applied. It may also have been changed by exiting and going back to the setup screen.[NEWLINE][NEWLINE]If you want to apply the slider value, click on the "+" (Add) button or one of the "X" (Delete) buttons in the "Players" section.</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_ERROR_NO_TSL" Language="en_US">
+      <Text>No TSL for this map</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_ERROR_NO_TSL_IN_SECTION" Language="en_US">
+      <Text>No TSL for this map section</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_ARTICLE_TITLE_YNAMP" Language="en_US">
+      <Text>[ICON_Whisper] "At this time we don’t have plans to release the DLL source code"</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_ARTICLE_RESUME_YNAMP" Language="en_US">
+      <Text>[NEWLINE]Firaxis doesn't plan to release the tools to support Vox Populi or any full overhaul mods for Civilization VI[NEWLINE]I have no interest in such a game, so this is my last update for [COLOR_Civ6Blue]YnAMP[ENDCOLOR], thank you for your support so far.[NEWLINE](Quote from pcgamesn.com interview with Anton Strenger, lead designer)</Text>
+    </Replace>
+    <Replace Tag="LOC_SETUP_ARTICLE_RESUME_STEAM_ON_YNAMP" Language="en_US">
+      <Text>[NEWLINE]Firaxis doesn't plan to release the tools to support Vox Populi or any full overhaul mods for Civilization VI[NEWLINE]I have no interest in such a game, so this is my last update for [COLOR_Civ6Blue]YnAMP[ENDCOLOR], thank you for your support so far.[NEWLINE](left click here for the article about the DLL Source on pcgamesn.com, right click for the interview)</Text>
+    </Replace>
   </LocalizedText>
 </GameData>

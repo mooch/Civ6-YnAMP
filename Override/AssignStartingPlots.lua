@@ -9,25 +9,21 @@ include "CoastalLowlands"
 ------------------------------------------------------------------------------
 -- **************************** YnAMP globals ******************************
 ------------------------------------------------------------------------------
-
 print("------------------------------------------------------")
 print ("loading modded AssignStartingPlots")
 local YnAMP_Version = GameInfo.GlobalParameters["YNAMP_VERSION"].Value -- can't use GlobalParameters.YNAMP_VERSION ?
 print ("Yet (not) Another Maps Pack version " .. tostring(YnAMP_Version) .." (2016-2020) by Gedemon")
 
-include "YnAMP_Common"
+include ("YnAMP_Common")
 
-if ExposedMembers.YnAMP_Loading ~= nil then
-	print("------------------------------------------------------")
-	print ("Game version: ".. tostring(ExposedMembers.YnAMP_Loading.GameVersion))
-	print("Active mods:")
-	if ExposedMembers.YnAMP_Loading.ListMods then
-		for i,v in ipairs(ExposedMembers.YnAMP_Loading.ListMods) do
-			print(" - ".. Locale.Lookup(v.Name))
-		end
+print("------------------------------------------------------")
+print ("Game version: ".. tostring(YnAMP_Loading.GameVersion))
+print("Active mods:")
+if YnAMP_Loading.ListMods then
+	for i,v in ipairs(YnAMP_Loading.ListMods) do
+		print(" - ".. Locale.Lookup(v.Name))
 	end
 end
-ExposedMembers.YnAMP_Loading = nil
 
 -- List the player slots
 local slotStatusString	= {}
@@ -42,7 +38,9 @@ print("------------------------------------------------------")
 print("InGame Player slots :")
 for slotID = 0, 63 do
 	local playerConfig = PlayerConfigurations[slotID]
-	print(slotID, playerConfig and playerConfig:GetLeaderTypeName(), playerConfig and playerConfig:GetLeaderTypeName(), playerConfig and playerConfig:GetCivilizationTypeName(), playerConfig and playerConfig:GetSlotName(), playerConfig and (slotStatusString[playerConfig:GetSlotStatus()] or "UNK STATUS"))--, playerConfig and (civLevelString[playerConfig:GetCivilizationLevelTypeID()] or "UNK LEVEL"),  playerConfig and playerConfig:IsAI())
+	if playerConfig then
+		print(slotID, Indentation(playerConfig and playerConfig:GetLeaderTypeName(),20), Indentation(playerConfig and playerConfig:GetCivilizationTypeName(),25), Indentation(playerConfig and playerConfig:GetSlotName(),25), Indentation(playerConfig and (slotStatusString[playerConfig:GetSlotStatus()] or "UNK STATUS"),15))--, playerConfig and (civLevelString[playerConfig:GetCivilizationLevelTypeID()] or "UNK LEVEL"),  playerConfig and playerConfig:IsAI())
+	end
 end
 
 print("------------------------------------------------------")
@@ -60,48 +58,34 @@ local bExpansion2		= GameConfiguration.GetValue("RULESET") == "RULESET_EXPANSION
 local IsOceanStart		= {}	-- table to list Civilization with a starting plot set on ocean (for not swapping them when doing culturally linked placement)
 
 -- Globals, can be called from the mapscript
-mapName = MapConfiguration.GetValue("ReferenceMap") or MapConfiguration.GetValue("MapName")
-print ("Map Name 		= ", MapConfiguration.GetValue("MapName"))
-print ("Reference Map	= ", MapConfiguration.GetValue("ReferenceMap"))
-getTSL 					= {} -- primary TSL for each civilization
-isInGame 				= {} -- Civilization/Leaders type in game
-tempStartingPlots 		= {} -- Temporary table for starting plots used when Historical Spawn Dates is set.
-isResourceExcludedXY 	= {}
-isResourceExclusiveXY 	= {}
-isResourceExclusive 	= {}
+mapName		= MapConfiguration.GetValue("MapName")
+mapScript	= MapConfiguration.GetValue("MAP_SCRIPT") --MapConfiguration.GetScript()) is nil in this context
+print ("Map Name 		= ", mapName)
+print ("MapScript		= ", mapScript)
+getTSL 							= {} -- primary TSL for each civilization
+isInGame 						= {} -- Civilization/Leaders type in game
+tempStartingPlots 				= {} -- Temporary table for starting plots used when Historical Spawn Dates is set.
+isResourceExcludedXY 			= {}
+isResourceExclusiveXY 			= {}
+isResourceExclusive 			= {}
+YnAMP_Loading.IsAlternateStart	= {}
 -- get options
-bCulturallyLinked 	= MapConfiguration.GetValue("CulturallyLinkedStart") == "PLACEMENT_ETHNIC";
-bTSL 				= MapConfiguration.GetValue("CivilizationPlacement") == "PLACEMENT_TSL";
-bResourceExclusion 	= MapConfiguration.GetValue("ResourcesExclusion") == "PLACEMENT_EXCLUDE";
-bRequestedResources = MapConfiguration.GetValue("RequestedResources") == "PLACEMENT_REQUEST";
-bRealDeposits 		= MapConfiguration.GetValue("RealDeposits") == "PLACEMENT_DEPOSIT";
-bImportResources	= MapConfiguration.GetValue("ResourcesPlacement") == "PLACEMENT_IMPORT"
-iIceNorth 			= MapConfiguration.GetValue("IceNorth")
-iIceSouth 			= MapConfiguration.GetValue("IceSouth")
-bAnalyseChokepoints	= not GameConfiguration.GetValue("FastLoad")
-bPlaceAllLuxuries	= MapConfiguration.GetValue("PlaceAllLuxuries") == "PLACEMENT_REQUEST"
-bPlaceAllStrategics	= MapConfiguration.GetValue("PlaceAllStrategics")
-bAlternatePlacement = MapConfiguration.GetValue("AlternatePlacement")
+bCulturallyLinked 		= MapConfiguration.GetValue("CulturallyLinkedStart") == "PLACEMENT_ETHNIC";
+bTSL 					= MapConfiguration.GetValue("CivilizationPlacement") == "PLACEMENT_TSL";
+bResourceExclusion 		= MapConfiguration.GetValue("ResourcesExclusion") == "PLACEMENT_EXCLUDE";
+bRequestedResources 	= MapConfiguration.GetValue("RequestedResources") == "PLACEMENT_REQUEST";
+bRealDeposits 			= MapConfiguration.GetValue("RealDeposits") == "PLACEMENT_DEPOSIT";
+bImportResources		= MapConfiguration.GetValue("ResourcesPlacement") == "PLACEMENT_IMPORT"
+iIceNorth 				= MapConfiguration.GetValue("IceNorth")
+iIceSouth 				= MapConfiguration.GetValue("IceSouth")
+bAnalyseChokepoints		= not GameConfiguration.GetValue("FastLoad")
+bPlaceAllLuxuries		= MapConfiguration.GetValue("PlaceAllLuxuries") == "PLACEMENT_REQUEST"
+bPlaceAllStrategics		= MapConfiguration.GetValue("PlaceAllStrategics")
+bAlternatePlacement 	= MapConfiguration.GetValue("AlternatePlacement")
+bMapScriptRefForNW		= MapConfiguration.GetValue("MapScriptRefForNW")
+bMapScriptRefForExtra	= MapConfiguration.GetValue("MapScriptRefForExtra")
 
---[[
-bUseRelativePlacement 	= MapConfiguration.GetValue("UseRelativePlacement")
-bUseRelativeFixedTable 	= bUseRelativePlacement and MapConfiguration.GetValue("UseRelativeFixedTable")
-g_ReferenceMapWidth 	= MapConfiguration.GetValue("ReferenceMapWidth") or 180
-g_ReferenceMapHeight 	= MapConfiguration.GetValue("ReferenceMapHeight") or 94
-
-g_iW, g_iH 	= 0, 0
-
-g_UncutMapWidth 		= 0
-g_UncutMapHeight 		= 0
-g_OffsetX 				= 0
-g_OffsetY 				= 0
-bUseOffset				= false
-g_ReferenceWidthFactor  = 0
-g_ReferenceHeightFactor = 0
-g_ReferenceWidthRatio   = 0
-g_ReferenceHeightRatio  = 0
---]]
-g_MapDataRiverIndex		= 4 -- Rivers entry in MapData, checked in GenerateImportedMap() based on the table passed (civ5 data or civ6 data)
+g_MapDataRiverIndex	= 4 -- Rivers entry in MapData, checked in GenerateImportedMap() based on the table passed (civ5 data or civ6 data)
 
 -- Create list of Civilizations and leaders in game
 for iPlayer = 0, PlayerManager.GetWasEverAliveCount() - 1 do
@@ -113,36 +97,32 @@ end
 
 print ("YnAMP Options:")
 print ("- Culturally Linked = " .. tostring(bCulturallyLinked) ..", TSL = " .. tostring(bTSL) ..", Exclusion Zones = " .. tostring(bResourceExclusion) ..", Requested Resources = " .. tostring(bRequestedResources)..", Real Deposits = " .. tostring(bRealDeposits) .. ", Place All Luxuries = ".. tostring(bPlaceAllLuxuries) ) 
-	
+print ("- bImportResources = " .. tostring(bImportResources) ..", bPlaceAllStrategics = " .. tostring(bPlaceAllStrategics) ..", bAlternatePlacement = " .. tostring(bAlternatePlacement) ..", bMapScriptRefForNW = " .. tostring(bMapScriptRefForNW)..", bMapScriptRefForExtra = " .. tostring(bMapScriptRefForExtra) ) 
+
 local featuresPlacement = MapConfiguration.GetValue("FeaturesPlacement")
-print("- Features placement = "..tostring(featuresPlacement))	
 local bImportFeatures = featuresPlacement == "PLACEMENT_IMPORT"
 local bNoFeatures = featuresPlacement == "PLACEMENT_EMPTY"
 
 local riversPlacement = MapConfiguration.GetValue("RiversPlacement")
-print("- Rivers Placement = "..tostring(riversPlacement))	
 local bImportRivers = riversPlacement == "PLACEMENT_IMPORT"
 local bNoRivers = riversPlacement == "PLACEMENT_EMPTY"
 
 local resourcePlacement = MapConfiguration.GetValue("ResourcesPlacement")
-print("- Resource placement = "..tostring(resourcePlacement))	
 local bNoResources = resourcePlacement == "PLACEMENT_EMPTY"
 
 local naturalWondersPlacement = MapConfiguration.GetValue("NaturalWondersPlacement")
-print("- Natural Wonders placement = "..tostring(naturalWondersPlacement))	
 local bImportNaturalWonders = naturalWondersPlacement == "PLACEMENT_IMPORT"
 local bNoNaturalWonders = naturalWondersPlacement == "PLACEMENT_EMPTY"
 
 local continentsPlacement = MapConfiguration.GetValue("ContinentsPlacement")
-print("- Continents naming = "..tostring(continentsPlacement))	
 local bImportContinents = continentsPlacement == "PLACEMENT_IMPORT"
 
 local lowLandPlacement = MapConfiguration.GetValue("LowLandPlacement")
-print("- Lowland placement = "..tostring(lowLandPlacement))	
 local bDeepLowLand = lowLandPlacement == "PLACEMENT_DEEP"
 
 local floodPlainsPlacement = MapConfiguration.GetValue("FloodPlainsPlacement")
-print("- Flood Plains placement = "..tostring(FloodPlainsPlacement))
+
+print("- Features placement = "..tostring(featuresPlacement),", Rivers Placement = "..tostring(riversPlacement),", Resource placement = "..tostring(resourcePlacement),", Natural Wonders placement = "..tostring(naturalWondersPlacement),", Continents naming = "..tostring(continentsPlacement),", Lowland placement = "..tostring(lowLandPlacement),", Flood Plains placement = "..tostring(FloodPlainsPlacement))
 
 ------------------------------------------------------------------------------
 -- http://lua-users.org/wiki/SortedIteration
@@ -241,6 +221,7 @@ function AssignStartingPlots.Create(args)
 		__BalancedStrategic					= AssignStartingPlots.__BalancedStrategic,
 		__FindSpecificStrategic				= AssignStartingPlots.__FindSpecificStrategic,
 		__AddStrategic						= AssignStartingPlots.__AddStrategic,
+		__AddLeyLine						= AssignStartingPlots.__AddLeyLine,
 		__AddLuxury							= AssignStartingPlots.__AddLuxury,
 		__AddBonus							= AssignStartingPlots.__AddBonus,
 		__IsContinentalDivide				= AssignStartingPlots.__IsContinentalDivide,
@@ -444,6 +425,7 @@ function AssignStartingPlots:__InitStartingData()
 			for k, v in pairs(self.playerStarts[i]) do
 				if(v~= nil and hasPlot == false) then
 					hasPlot = true;
+					self:__AddLeyLine(v);
 					player:SetStartingPlot(v);
 					table.insert(aMajorStartPlotIndices, v:GetIndex());
 					print("Major Start X: ", v:GetX(), "Major Start Y: ", v:GetY());
@@ -1169,6 +1151,9 @@ function AssignStartingPlots:__MajorCivBuffer(plot)
 	-- Checks to see if there are major civs in the given distance for this major civ
 
 	local iMaxStart = GlobalParameters.START_DISTANCE_MAJOR_CIVILIZATION or 9;
+	if(self.waterMap == true) then
+		iMaxStart = iMaxStart - 3;
+	end
 	--iMaxStart = iMaxStart - GlobalParameters.START_DISTANCE_RANGE_MAJOR or 2;
 
 	local iSourceIndex = plot:GetIndex();
@@ -1356,6 +1341,46 @@ function AssignStartingPlots:__AddProduction(plot)
 			dir = dir + 1;
 		end
 	end
+end
+
+------------------------------------------------------------------------------
+function AssignStartingPlots:__AddLeyLine(plot)
+	local iResourcesInDB = 0;
+	eResourceType	= {};
+	eResourceClassType = {};
+	aBonus = {};
+
+	for row in GameInfo.Resources() do
+		eResourceType[iResourcesInDB] = row.Hash;
+		eResourceClassType[iResourcesInDB] = row.ResourceClassType;
+	    iResourcesInDB = iResourcesInDB + 1;
+	end
+
+	for row = 0, iResourcesInDB do
+		if (eResourceClassType[row] == "RESOURCECLASS_LEY_LINE") then
+			if(eResourceType[row] ~= nil) then
+				table.insert(aBonus, eResourceType[row]);
+			end
+		end
+	end
+
+	local plotX = plot:GetX();
+	local plotY = plot:GetY();
+	
+	aShuffledBonus =  GetShuffledCopyOfTable(aBonus);
+	for i, resource in ipairs(aShuffledBonus) do
+		for dx = -2, 2, 1 do
+			for dy = -2,2, 1 do
+				local otherPlot = Map.GetPlotXY(plotX, plotY, dx, dy, 2);
+				if(otherPlot) then
+					if(ResourceBuilder.CanHaveResource(otherPlot, resource) and otherPlot:GetIndex() ~= plot:GetIndex()) then
+						ResourceBuilder.SetResourceType(otherPlot, resource, 1);
+						return;
+					end
+				end
+			end
+		end
+	end 
 end
 
 ------------------------------------------------------------------------------
@@ -2780,126 +2805,6 @@ end
 
 print ("Loading YnAMP functions ...")
 
---[[
-local g_StartingPlotRange
-local g_MinStartDistanceMajor
-local g_MaxStartDistanceMajor
---]]
-
-
-------------------------------------------------------------------------------
--- Helpers for x,y positions when using a reference or offset map
-------------------------------------------------------------------------------
-
---[[
-local XFromRefMapX 	= {}
-local YFromRefMapY 	= {}
-local RefMapXfromX 	= {}
-local RefMapYfromY 	= {}
-local sX, sY 		= 0, 0
-local lX, lY 		= 0, 0
-local skipX, skipY	= MapConfiguration.GetValue("RescaleSkipX") or 999, MapConfiguration.GetValue("RescaleSkipY") or 999
-
-function BuildRefXY()
-	if bUseRelativeFixedTable then
-		for x = 0, g_UncutMapWidth, 1 do
-			--MapToConvert[x] = {}
-			for y = 0, g_UncutMapHeight, 1 do
-				--print (x, y, sX, sY, lX, lY)
-				XFromRefMapX[x] = sX
-				YFromRefMapY[y] = sY
-				
-				RefMapXfromX[sX] = x
-				RefMapYfromY[sY] = y
-				--MapToConvert[x][y] = SmallMap[sX][sY]
-				lY = lY + 1
-				if lY == skipY then
-					lY = 0
-				else
-					sY = sY +1
-				end
-			end
-			sY = 0
-			lX = lX + 1
-			if lX == skipX then
-				lX = 0
-			else
-				sX = sX +1
-			end
-		end
-	end
-end
-
--- Convert current map position to the corresponding position on the reference map
-function GetRefMapXY(mapX, mapY, bOnlyOffset)
-	local refMapX, refMapY = mapX, mapY
-	if bUseRelativePlacement and (not bOnlyOffset) then
-		if bUseRelativeFixedTable then
-			refMapX 	= XFromRefMapX[mapX] --Round(g_ReferenceWidthFactor * mapX)
-			refMapY 	= YFromRefMapY[mapY] --Round(g_ReferenceHeightFactor * mapY)
-			if refMapX == nil or refMapY == nil then
-				return -1, -1
-			end
-		else
-			refMapX 	= Round(g_ReferenceWidthFactor * mapX)
-			refMapY 	= Round(g_ReferenceHeightFactor * mapY)		
-		end
-	end
-	if bUseOffset then
-		refMapX = refMapX + g_OffsetX
-		refMapY = refMapY + g_OffsetY
-		
-		-- the code below assume that the reference map is wrapX
-		if refMapY >= g_UncutMapHeight then
-			--refMapY = refMapY - g_UncutMapHeight
-			refMapY = (2*g_UncutMapHeight) - refMapY - 1
-			refMapX = refMapX + Round(g_UncutMapWidth / 2)
-		end
-		if refMapX >= g_UncutMapWidth then
-			refMapX = refMapX - g_UncutMapWidth -- -1 ?
-		end
-	end
-	return refMapX, refMapY
-end
-
--- Convert the reference map position to the current map position
-function GetXYFromRefMapXY(x, y, bOnlyOffset)
-	if bUseRelativePlacement and (not bOnlyOffset) then
-		if bUseRelativeFixedTable then
-			x = RefMapXfromX[x]--Round( g_ReferenceWidthRatio * x)
-			y = RefMapYfromY[y]--Round( g_ReferenceHeightRatio * y)
-			if x == nil or y == nil then
-				return -1, -1
-			end
-		else
-			x = Round( g_ReferenceWidthRatio * x)
-			y = Round( g_ReferenceHeightRatio * y)		
-		end
-	end
-	if bUseOffset then
-		x = x - g_OffsetX
-		y = y - g_OffsetY
-		
-		-- the code below assume that the reference map is wrapX
-		if y < 0 then 
-			--y = y + g_iH - 1
-			--y = y + g_iH
-			--x = x + Round(g_iW / 2)
-		end
-		--if x < 0 then x = x + g_iW - 1 end
-		--if x < 0 and Map.IsWrapX() then x = x + g_iW end
-		if x < 0 then
-			x = x + g_UncutMapWidth
-		end
-	end
-	return x, y
-end
-
-function GetPlotFromRefMap(x, y, bOnlyOffset)
-	return Map.GetPlot(GetXYFromRefMapXY(x,y, bOnlyOffset))
-end
---]]
-
 ------------------------------------------------------------------------------
 -- Create Tables
 ------------------------------------------------------------------------------
@@ -2910,7 +2815,7 @@ function buildExclusionList()
 	for RegionRow in GameInfo.RegionPosition() do
 		if RegionRow.MapName == mapName  then
 			local region = RegionRow.Region
-			print ("  - Exclusion list for "..tostring(region))
+			--print ("  - Exclusion list for "..tostring(region))
 			if region then
 				local resExclusionTable = {}
 				local resExclusiveTable = {}
@@ -2922,10 +2827,10 @@ function buildExclusionList()
 							if GameInfo.Resources[exclusionList.Resource] then
 								table.insert(resExclusionTable, GameInfo.Resources[exclusionList.Resource].Index)
 							else
-								print ("  - WARNING : can't find "..tostring(exclusionList.Resource).." in Resources")
+								print ("  - WARNING : can't find "..tostring(exclusionList.Resource).." in Resources for "..tostring(region))
 							end
 						else
-							print ("  - WARNING : found nil Resource")
+							print ("  - WARNING : Resource column is NIL in ResourceRegionExclude for "..tostring(region))
 						end
 					end
 				end
@@ -2954,9 +2859,9 @@ function buildExclusionList()
 					local regionWidth 		= g_ReferenceWidthRatio * RegionRow.Width
 					local regionHeight 		= g_ReferenceHeightRatio * RegionRow.Height
 					
-					print ("    - Bottom Left (X,Y) = ", regionX, regionY)
-					print ("    - Width (used, default, map ratio) = ", regionWidth, RegionRow.Width, g_ReferenceWidthRatio)
-					print ("    - Height (used, default, map ratio) = ", regionHeight, RegionRow.Height, g_ReferenceHeightRatio)
+					--print ("    - Bottom Left (X,Y) = ", regionX, regionY)
+					--print ("    - Width (used, default, map ratio) = ", regionWidth, RegionRow.Width, g_ReferenceWidthRatio)
+					--print ("    - Height (used, default, map ratio) = ", regionHeight, RegionRow.Height, g_ReferenceHeightRatio)
 				
 					for x = regionX, regionX + regionWidth do
 						for y = regionY, regionY + regionHeight do
@@ -2974,26 +2879,26 @@ function buildExclusionList()
 					end
 				end
 				if (#resExclusionTable > 0) then
-					print("   - Excluded resources :")
+					--print("   - Excluded resources :")
 					for i, resourceID in ipairs(resExclusionTable) do
-						print("      "..tostring(GameInfo.Resources[resourceID].ResourceType))
+						--print("      "..tostring(GameInfo.Resources[resourceID].ResourceType))
 					end
 				end
 				if (#resExclusiveTable > 0) then
-					print("   - Exclusive resources :")
+					--print("   - Exclusive resources :")
 					for i, resourceID in ipairs(resExclusiveTable) do
-						print("      "..tostring(GameInfo.Resources[resourceID].ResourceType))
+						--print("      "..tostring(GameInfo.Resources[resourceID].ResourceType))
 					end	
 				end			
 			else
-				print ("  - WARNING : found nil region")
+				print ("  - WARNING : found nil region at RegionRow#", RegionRow.Index)
 			end
 		end
 	end
 	hasBuildExclusionList = true
 end
 
-function buidTSL()
+function buildTSL()
 	print ("------------------------------------------------------------------------------")
 	print ("Building TSL list for "..tostring(mapName).."...")
 	
@@ -3030,49 +2935,69 @@ function buidTSL()
 	end
 	
 	-- local function to check distance between a new TSL and those already reserved if AlternateStart are used
-	local function InRangeCurrentTSL(row, currentTSL)
+	local function InRangeCurrentTSL(row, currentTSL, iPlayer)
 		local MinDistance = GlobalParameters.CITY_MIN_RANGE
-		for iPlayer, position in pairs(currentTSL) do
-		
-			local player 		= Players[iPlayer]			
-			local rowX, rowY	= GetXYFromRefMapXY(row.X, row.Y)
-			
-			if Map.GetPlotDistance(rowX, rowY, position.X, position.Y) <= MinDistance then
-				return true
+		for iOtherPlayer, position in pairs(currentTSL) do
+			if iPlayer ~= iOtherPlayer then
+				--local player 		= Players[iPlayer]			
+				local rowX, rowY	= GetXYFromRefMapXY(row.X, row.Y)
+				
+				if Map.GetPlotDistance(rowX, rowY, position.X, position.Y) <= MinDistance then
+					return true
+				end
 			end
 		end
 		return false
 	end
 	
+	local function MarkAlternateStart(CivilizationType, x, y, bIsAlternate) -- row.Civilization
+		local plotKey = string.format("%i,%i", x,y)
+		YnAMP_Loading.IsAlternateStart[plotKey] = YnAMP_Loading.IsAlternateStart[plotKey] or {}
+		YnAMP_Loading.IsAlternateStart[plotKey][CivilizationType] = bIsAlternate
+	end
+	
 	-- Reserve TSL for each civ
 	for row in GameInfo.StartPosition() do
-		if row.MapName == mapName and not(row.AlternateStart and row.AlternateStart == 1) then -- Alternate TSL are already in their own table, to be used if the normal TSL is unavailable
+		local bOverride 			= row.MapScript == mapScript
+		local bCanUseAlternateTSL	= bAlternateTSL	and (not bOverride)
+		local bDuplicate			= false
+		if (bOverride or row.MapName == mapName) and not(row.AlternateStart and row.AlternateStart == 1) then -- Alternate TSL are already in their own table, to be used if the normal TSL is unavailable
 			for iPlayer = 0, PlayerManager.GetWasEverAliveCount() - 1 do -- players can share a Civilization/Leader, so we can't assume "one TSL by Civilization/Leader" and need to loop the players table
-				local CivilizationTypeName = PlayerConfigurations[iPlayer]:GetCivilizationTypeName()
+				local CivilizationTypeName 	= PlayerConfigurations[iPlayer]:GetCivilizationTypeName()
 				if row.Civilization == CivilizationTypeName then
 					local LeaderTypeName	= PlayerConfigurations[iPlayer]:GetLeaderTypeName()
 					local bCanPlaceHere 	= true
-					local sWarning 			= ""
-					local rowX, rowY		= GetXYFromRefMapXY(row.X, row.Y)
+					local sWarning 			= "no warnings"
+					local bOnlyOffset		= bOverride
+					local rowX, rowY		= GetXYFromRefMapXY(row.X, row.Y, bOnlyOffset)
 					local plot 				= Map.GetPlot(rowX,rowY)
 					
-					if row.DisabledByCivilization and isInGame[row.DisabledByCivilization] then
+					if plot == nil then
+						sWarning = "plot is out of map !"
+						bCanPlaceHere = false
+					elseif row.DisabledByCivilization and isInGame[row.DisabledByCivilization] then
 						sWarning = "position disabled by " .. tostring(row.DisabledByCivilization)
 						bCanPlaceHere = false
 					elseif row.DisabledByLeader and isInGame[row.DisabledByLeader] then
 						sWarning = "position disabled by " .. tostring(row.DisabledByLeader)
 						bCanPlaceHere = false
-					elseif InRangeCurrentTSL(row, getTSL) then
+					elseif getTSL[iPlayer] and not bOverride then
+						sWarning = "player has already a TSL reserved"
+						bCanPlaceHere 		= false
+						bDuplicate 			= true
+						bCanUseAlternateTSL	= false
+					elseif InRangeCurrentTSL(row, getTSL, bOverride and iPlayer) then  -- don't check for existing iPlayer TSL when using a MapScript override
 						sWarning = "too close from another TSL"
 						bCanPlaceHere = false
 					elseif plot and (plot:IsWater() or plot:IsImpassable()) then
 						if plot:IsWater() and (GameInfo.Leaders_XP2 and GameInfo.Leaders_XP2[LeaderTypeName] ~= nil and GameInfo.Leaders_XP2[LeaderTypeName].OceanStart == true) then
-							print ("   - plot is water, but Leader has <OceanStart> at "..tostring(rowX)..","..tostring(rowY))
+							--print ("   - plot is water, but Leader has <OceanStart> at "..tostring(rowX)..","..tostring(rowY))
+							sWarning = "plot is water, but Leader has <OceanStart>"-- at "..tostring(rowX)..","..tostring(rowY)
 						else
 					
 							sWarning = "plot is impassable or water"
 							bCanPlaceHere = false
-							if bUseRelativePlacement then
+							if bUseRelativePlacement and (not bOverride) then -- don't correct position when using a MapScript override this entry should have been correct, so report for fixing
 								-- try to find a suitable replacement plot when relative placement has a bad offset
 								local bestPlot 		= nil
 								local bestFertility = 0
@@ -3088,9 +3013,9 @@ function buidTSL()
 								end
 								if bestPlot then
 									rowX, rowY		= bestPlot:GetX(), bestPlot:GetY()
-									sWarning 		= ""
+									sWarning 		= "plot was impassable or water, found replacement"-- at "..tostring(rowX)..","..tostring(rowY)"
 									bCanPlaceHere 	= true
-									print ("   - plot was impassable or water, found replacement at "..tostring(rowX)..","..tostring(rowY))
+									--print ("   - plot was impassable or water, found replacement at "..tostring(rowX)..","..tostring(rowY))
 								end
 							end
 						end
@@ -3099,15 +3024,16 @@ function buidTSL()
 					if row.Leader then -- Leaders TSL are exclusive
 						if bLeaderTSL and row.Leader == LeaderTypeName then
 							print ("- Checking Leader specific TSL for "..tostring(LeaderTypeName).." of "..tostring(CivilizationTypeName).." at "..tostring(row.X)..","..tostring(row.Y))
-							if bAlternateTSL and not bCanPlaceHere then
+							if bCanUseAlternateTSL and (not bCanPlaceHere) then -- don't look for alternate when using a MapScript override
 								local bFound = false
 								if tAlternateTSL[row.Civilization] then
 									for _, alternateRow in ipairs(tAlternateTSL[row.Civilization]) do
 									
-										local alternateRowX, alternateRowY = GetXYFromRefMapXY(alternateRow.X, alternateRow.Y)
-					
-										if (not bFound) and alternateRow.Leader and (alternateRow.Leader == LeaderTypeName) then
+										local alternateRowX, alternateRowY 	= GetXYFromRefMapXY(alternateRow.X, alternateRow.Y)
+										local alternatePlot 				= Map.GetPlot(alternateRowX, alternateRowY)
+										if (not bFound) and alternateRow.Leader and (alternateRow.Leader == LeaderTypeName) and alternatePlot then
 											print ("   - Reserving alternative TSL at "..tostring(alternateRowX)..","..tostring(alternateRowY).." (initial TSL "..sWarning..")")
+											MarkAlternateStart(row.Civilization, alternateRowX, alternateRowY, true) 
 											getTSL[iPlayer] = {X = alternateRowX, Y = alternateRowY}
 											bFound = true
 										end										
@@ -3115,29 +3041,36 @@ function buidTSL()
 								end
 								if (not bFound) then
 									print ("   - Reserving TSL with WARNING ("..sWarning.." and no alternative TSL found) at "..tostring(rowX)..","..tostring(rowY))
+									MarkAlternateStart(row.Civilization, rowX, rowY, false)
 									getTSL[iPlayer] = {X = rowX, Y = rowY}										
 								end
 							else
 								if bCanPlaceHere then
-									print ("   - Reserving TSL at "..tostring(rowX)..","..tostring(rowY))
-								else
+									print ("   - Reserving TSL ("..sWarning..") at "..tostring(rowX)..","..tostring(rowY))
+									MarkAlternateStart(row.Civilization, rowX, rowY, false)
+									getTSL[iPlayer] = {X = rowX, Y = rowY}	
+								elseif (not bDuplicate) then
 									print ("   - Reserving TSL with WARNING ("..sWarning.." and no alternative TSL allowed) at "..tostring(rowX)..","..tostring(rowY))
-								end
-								getTSL[iPlayer] = {X = rowX, Y = rowY}								
+									MarkAlternateStart(row.Civilization, rowX, rowY, false)
+									getTSL[iPlayer] = {X = rowX, Y = rowY}	
+								else
+									print ("   - TSL not reserved at "..tostring(rowX)..","..tostring(rowY).." ("..sWarning.."), MapScript override was =", bOverride)
+								end							
 							end
 						end
 						
 					elseif (not bLeaderTSL) or (not tHasSpecificTSL[LeaderTypeName]) then -- If a Leaders has a specific TSL available, it will never use generic TSL for its Civilization
 						print ("- Checking generic civilization TSL for "..tostring(LeaderTypeName).." of "..tostring(CivilizationTypeName).." at "..tostring(row.X)..","..tostring(row.Y))						
-						if bAlternateTSL and not bCanPlaceHere then
+						if bCanUseAlternateTSL and (not bCanPlaceHere) then -- don't look for alternate when using a MapScript override
 							local bFound = false
 							if tAlternateTSL[row.Civilization] then
 								for _, alternateRow in ipairs(tAlternateTSL[row.Civilization]) do
 									
 									local alternateRowX, alternateRowY = GetXYFromRefMapXY(alternateRow.X, alternateRow.Y)
-										
-									if (not bFound) and not alternateRow.Leader then
+									local alternatePlot 				= Map.GetPlot(alternateRowX, alternateRowY)
+									if (not bFound) and (not alternateRow.Leader) and alternatePlot then
 										print ("   - Reserving alternative TSL at "..tostring(alternateRowX)..","..tostring(alternateRowY).." (initial TSL "..sWarning..")")
+										MarkAlternateStart(row.Civilization, alternateRowX, alternateRowY, true)
 										getTSL[iPlayer] = {X = alternateRowX, Y = alternateRowY}
 										bFound = true
 									end										
@@ -3145,15 +3078,21 @@ function buidTSL()
 							end
 							if (not bFound) then
 								print ("   - Reserving TSL with WARNING ("..sWarning.." and no alternative TSL found) at "..tostring(rowX)..","..tostring(rowY))
-								getTSL[iPlayer] = {X = rowX, Y = rowY}										
+								MarkAlternateStart(row.Civilization, rowX, rowY, false)
+								getTSL[iPlayer] = {X = rowX, Y = rowY}
 							end
 						else
 							if bCanPlaceHere then
-								print ("   - Reserving TSL at "..tostring(rowX)..","..tostring(rowY))
+								print ("   - Reserving TSL ("..sWarning..") at "..tostring(rowX)..","..tostring(rowY)..", MapScript override was =", bOverride)
+								MarkAlternateStart(row.Civilization, rowX, rowY, false)
+								getTSL[iPlayer] = {X = rowX, Y = rowY}	
+							elseif not bDuplicate then
+								print ("   - Reserving TSL with WARNING ("..sWarning.." and no alternative TSL allowed) at "..tostring(rowX)..","..tostring(rowY)..", MapScript override was =", bOverride)
+								MarkAlternateStart(row.Civilization, rowX, rowY, false)
+								getTSL[iPlayer] = {X = rowX, Y = rowY}
 							else
-								print ("   - Reserving TSL with WARNING ("..sWarning.." and no alternative TSL allowed) at "..tostring(rowX)..","..tostring(rowY))
+								print ("   - TSL not reserved at "..tostring(rowX)..","..tostring(rowY).." ("..sWarning.."), MapScript override was =", bOverride)
 							end
-							getTSL[iPlayer] = {X = rowX, Y = rowY}								
 						end						
 					end
 				end
@@ -3179,66 +3118,35 @@ end
 -----------------------------------------------------------------------------------------
 local DirectionString = {
 	[DirectionTypes.DIRECTION_NORTHEAST] 	= "NORTHEAST",
-	[DirectionTypes.DIRECTION_EAST] 		= "EAST",
+	[DirectionTypes.DIRECTION_EAST] 		= "EAST.....",
 	[DirectionTypes.DIRECTION_SOUTHEAST] 	= "SOUTHEAST",
     [DirectionTypes.DIRECTION_SOUTHWEST] 	= "SOUTHWEST",
+	[DirectionTypes.DIRECTION_WEST] 		= "WEST.....",
+	[DirectionTypes.DIRECTION_NORTHWEST] 	= "NORTHWEST"
+	}
+	
+local FlowDirectionString = {
+	[FlowDirectionTypes.FLOWDIRECTION_SOUTHEAST]	= "SOUTHEAST",
+	[FlowDirectionTypes.FLOWDIRECTION_NORTHEAST]	= "NORTHEAST",
+	[FlowDirectionTypes.FLOWDIRECTION_SOUTH]		= "SOUTH....",
+	[FlowDirectionTypes.FLOWDIRECTION_SOUTHWEST] 	= "SOUTHWEST",
+	[FlowDirectionTypes.FLOWDIRECTION_NORTHWEST] 	= "NORTHWEST",
+	[FlowDirectionTypes.FLOWDIRECTION_NORTH] 		= "NORTH...."
+	}
+
+local EdgeString = {
+	[DirectionTypes.DIRECTION_NORTHEAST] 	= "NORTHEAST",
+	[DirectionTypes.DIRECTION_EAST] 		= "IsWOfRiver....",
+	[DirectionTypes.DIRECTION_SOUTHEAST] 	= "IsNWOfRiver...",
+    [DirectionTypes.DIRECTION_SOUTHWEST] 	= "IsNEOfRiver...",
 	[DirectionTypes.DIRECTION_WEST] 		= "WEST",
 	[DirectionTypes.DIRECTION_NORTHWEST] 	= "NORTHWEST"
 	}
-
---[[
-function IsEOfRiver(plot)
-	if not plot:IsRiver() then return false	end
-	local pAdjacentPlot = Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), DirectionTypes.DIRECTION_WEST)
-	if pAdjacentPlot and pAdjacentPlot:IsWOfRiver() then return true end
-	return false
-end
-
-function IsSEOfRiver(plot)
-	if not plot:IsRiver() then return false	end
-	local pAdjacentPlot = Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), DirectionTypes.DIRECTION_NORTHWEST)
-	if pAdjacentPlot and pAdjacentPlot:IsNWOfRiver() then return true end
-	return false
-end
-
-function IsSWOfRiver(plot)
-	if not plot:IsRiver() then return false	end
-	local pAdjacentPlot = Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), DirectionTypes.DIRECTION_NORTHEAST)
-	if pAdjacentPlot and pAdjacentPlot:IsNEOfRiver() then return true end
-	return false
-end
---]]
 
 function GetOppositeFlowDirection(dir)
 	local numTypes = FlowDirectionTypes.NUM_FLOWDIRECTION_TYPES;
 	return ((dir + 3) % numTypes);
 end
---[[
-function IsEdgeRiver(plot, edge)
-	return (edge == DirectionTypes.DIRECTION_NORTHEAST 	and IsSWOfRiver(plot)) 
-		or (edge == DirectionTypes.DIRECTION_EAST 		and plot:IsWOfRiver())
-		or (edge == DirectionTypes.DIRECTION_SOUTHEAST 	and plot:IsNWOfRiver())
-		or (edge == DirectionTypes.DIRECTION_SOUTHWEST 	and plot:IsNEOfRiver())
-		or (edge == DirectionTypes.DIRECTION_WEST	 	and IsEOfRiver(plot))
-		or (edge == DirectionTypes.DIRECTION_NORTHWEST 	and IsSEOfRiver(plot))
-end
-
-function GetNextClockRiverPlot(plot, edge)
-	local nextPlotEdge 	= (edge + 3 + 1) % 6
-	local nextPlot		= Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), edge)
-	if nextPlot then	
-		if IsEdgeRiver(nextPlot, nextPlotEdge) then return nextPlot, nextPlotEdge end
-	end
-end
-
-function GetNextCounterClockRiverPlot(plot, edge)
-	local nextPlotEdge 	= (edge + 3 - 1) % 6
-	local nextPlot		= Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), edge)
-	if nextPlot then
-		if IsEdgeRiver(nextPlot, nextPlotEdge) then return nextPlot, nextPlotEdge end
-	end
-end
---]]
 
 function plotToNode(plot, edge)
 	return tostring(plot:GetIndex()) .."," .. tostring(edge)
@@ -3256,64 +3164,6 @@ function nodeToPlotEdge(node)
 	local edge = tonumber(string.sub(node, pos +1))
 	return Map.GetPlotByIndex(plotIndex), edge
 end
-
---[[
-function CheckValidRiver(plot, edge)
-	if edge == DirectionTypes.DIRECTION_EAST 		and plot:GetRiverEFlowDirection() 	then return true end
-	if edge == DirectionTypes.DIRECTION_SOUTHEAST 	and plot:GetRiverSEFlowDirection() 	then return true end
-	if edge == DirectionTypes.DIRECTION_SOUTHWEST	and plot:GetRiverSWFlowDirection()	then return true end
-	print("invalid river in direction ".. tostring(DirectionString[edge]) .." for plot"..string.format("(%i, %i)", plot:GetX(), plot:GetY()))
-end
-
-function GetRiverNeighbors(node)
-
-	local neighbors 	= {}
-	local change 		= { [DirectionTypes.DIRECTION_WEST] = true, [DirectionTypes.DIRECTION_NORTHEAST] = true, [DirectionTypes.DIRECTION_NORTHWEST] = true }
-	local plot, edge	= nodeToPlotEdge(node)
-	local nextEdge 		= (edge + 1) % 6
-	local prevEdge 		= (edge - 1) % 6
-	
-	-- 
-	if change[nextEdge] and IsEdgeRiver(plot, nextEdge) then 
-		local newPlot 	= Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), nextEdge)
-		local newEdge	= (nextEdge + 3) % 6
-		if CheckValidRiver(newPlot, newEdge) then table.insert( neighbors, plotToNode(newPlot, newEdge) ) end
-	elseif IsEdgeRiver(plot, nextEdge) then
-		if CheckValidRiver(plot, nextEdge) then table.insert( neighbors, plotToNode(plot, nextEdge) ) end
-	end
-	
-	-- 
-	if change[prevEdge] and IsEdgeRiver(plot, prevEdge) then 
-		local newPlot 	= Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), prevEdge)
-		local newEdge	= (prevEdge + 3) % 6
-		if CheckValidRiver(newPlot, newEdge) then table.insert( neighbors, plotToNode(newPlot, newEdge) ) end
-	elseif IsEdgeRiver(plot, prevEdge) then
-		if CheckValidRiver(plot, prevEdge) then table.insert( neighbors, plotToNode(plot, prevEdge) ) end
-	end
-	
-	-- Test diverging edge on next plot (clock direction)
-	local clockPlot, clockEdge	= GetNextClockRiverPlot(plot, nextEdge)
-	if clockPlot and change[clockEdge] then
-		local newPlot 	= Map.GetAdjacentPlot(clockPlot:GetX(), clockPlot:GetY(), clockEdge)
-		local newEdge	= (clockEdge + 3) % 6
-		if CheckValidRiver(newPlot, newEdge) then table.insert( neighbors, plotToNode(newPlot, newEdge) ) end
-	elseif clockPlot then
-		if CheckValidRiver(clockPlot, clockEdge) then table.insert( neighbors, plotToNode(clockPlot, clockEdge) ) end
-	end
-	
-	-- Test diverging edge on previous plot (counter-clock direction)
-	local counterPlot, counterEdge	= GetNextCounterClockRiverPlot(plot, prevEdge)
-	if counterPlot and change[counterEdge] then
-		local newPlot 	= Map.GetAdjacentPlot(counterPlot:GetX(), counterPlot:GetY(), counterEdge)
-		local newEdge	= (counterEdge + 3) % 6
-		if CheckValidRiver(newPlot, newEdge) then table.insert( neighbors, plotToNode(newPlot, newEdge) ) end
-	elseif counterPlot then
-		if CheckValidRiver(counterPlot, counterEdge) then table.insert( neighbors, plotToNode(counterPlot, counterEdge) ) end
-	end
-	
-	return neighbors
-end
---]]
 
 function GetRiverIdForNode(plot, edge)
 	local node = plotToNode(plot, edge)
@@ -3353,19 +3203,16 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 
 	-- Set globals
 	SetGlobals()
-	BuildRefXY()
-
-	--local pPlot
-	--g_iFlags = TerrainBuilder.GetFractalFlags();
 	
 	g_MaxStartDistanceMajor = math.sqrt(g_iW * g_iH / PlayerManager.GetWasEverAliveMajorsCount())
 	g_MinStartDistanceMajor = g_MaxStartDistanceMajor / 3
-	print("g_MaxStartDistanceMajor = ", g_MaxStartDistanceMajor)
-	print("g_MinStartDistanceMajor = ", g_MinStartDistanceMajor)
-	
+	print("g_MaxStartDistanceMajor, g_MinStartDistanceMajor = ", g_MaxStartDistanceMajor, g_MinStartDistanceMajor)
+
 	local bIsCiv5Map = (#MapToConvert[0][0][6] == 2) -- 6th entry is resource for civ5 data ( = 2 : type and number), cliffs positions for civ6 data ( = 3 : all possible positions on a hexagon side)
-	
+
+	print("------------------------------------------------------------------------------")
 	print("Importing Map Data (Civ5 = "..tostring(bIsCiv5Map)..")")
+	print("------------------------------------------------------------------------------")	
 
 	g_MapDataRiverIndex = (bIsCiv5Map and 5) or 4 -- Rivers are 5th entry for civ5 data and 4th entry for civ6 data
 	
@@ -3396,15 +3243,15 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 		ImportCiv6Map(MapToConvert, g_iW, g_iH, true, 			false, 			bImportFeatures, 	false, 			false)	
 	end
 	currentTimer = os.clock() - g_startTimer
-	print("Intermediate timer = "..tostring(currentTimer).." seconds")
+	--print("Intermediate timer = "..tostring(currentTimer).." seconds")
 
 	-- Temp
 	AreaBuilder.Recalculate();
 	local biggest_area = Areas.FindBiggestArea(false);
-	print("After Adding Hills: ", biggest_area:GetPlotCount());
+	--print("After Adding Hills: ", biggest_area:GetPlotCount());
 	
 	currentTimer = os.clock() - g_startTimer
-	print("Intermediate timer = "..tostring(currentTimer).." seconds")		
+	--print("Intermediate timer = "..tostring(currentTimer).." seconds")		
 	
 	-- River generation is affected by plot types, originating from highlands and preferring to traverse lowlands.
 	if not (bImportRivers or bNoRivers)  then
@@ -3497,6 +3344,33 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 			end
 		end
 		
+		local NextFlowValid = {
+			[FlowDirectionTypes.FLOWDIRECTION_SOUTHEAST]	= {[FlowDirectionTypes.FLOWDIRECTION_SOUTH] 	= true, [FlowDirectionTypes.FLOWDIRECTION_NORTHEAST]	= true },
+			[FlowDirectionTypes.FLOWDIRECTION_NORTHEAST]	= {[FlowDirectionTypes.FLOWDIRECTION_NORTH] 	= true, [FlowDirectionTypes.FLOWDIRECTION_SOUTHEAST]	= true },
+			[FlowDirectionTypes.FLOWDIRECTION_SOUTH]		= {[FlowDirectionTypes.FLOWDIRECTION_SOUTHEAST] = true, [FlowDirectionTypes.FLOWDIRECTION_SOUTHWEST] 	= true },
+			[FlowDirectionTypes.FLOWDIRECTION_SOUTHWEST] 	= {[FlowDirectionTypes.FLOWDIRECTION_SOUTH] 	= true, [FlowDirectionTypes.FLOWDIRECTION_NORTHWEST] 	= true },
+			[FlowDirectionTypes.FLOWDIRECTION_NORTHWEST] 	= {[FlowDirectionTypes.FLOWDIRECTION_NORTH] 	= true, [FlowDirectionTypes.FLOWDIRECTION_SOUTHWEST] 	= true },
+			[FlowDirectionTypes.FLOWDIRECTION_NORTH] 		= {[FlowDirectionTypes.FLOWDIRECTION_SOUTHWEST] = true, [FlowDirectionTypes.FLOWDIRECTION_NORTHEAST]	= true }		
+		}
+		
+		function GetFlowDirection(plot, edge)
+			if edge == DirectionTypes.DIRECTION_EAST then
+				return GetRiverEFlowDirection(plot)
+			elseif edge == DirectionTypes.DIRECTION_SOUTHEAST then
+				return GetRiverSEFlowDirection(plot)
+			elseif edge == DirectionTypes.DIRECTION_SOUTHWEST then
+				return GetRiverSWFlowDirection(plot)
+			end
+		end
+		
+		function CheckFlowDirectionValid(plotA, edgeA, plotB, edgeB)
+			local flowA	= GetFlowDirection(plotA, edgeA)
+			local flowB	= GetFlowDirection(plotB, edgeB)
+			if (NextFlowValid[flowA] and NextFlowValid[flowB]) and (not NextFlowValid[flowA][flowB]) and (not NextFlowValid[flowB][flowA]) then
+				print("Need to check Flow between: ", plotA:GetX(), plotA:GetY(), EdgeString[edgeA], FlowDirectionString[flowA], " and " , plotB:GetX(), plotB:GetY(), EdgeString[edgeB], FlowDirectionString[flowB])
+			end			
+		end
+		
 		function GetRiverNeighbors(node)
 
 			local neighbors 	= {}
@@ -3511,10 +3385,12 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 			if change[nextEdge] and IsEdgeRiver(plot, nextEdge) then 
 				local newPlot 	= Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), nextEdge)
 				local newEdge	= (nextEdge + 3) % 6
+				CheckFlowDirectionValid(plot, edge, newPlot, newEdge)
 				table.insert( neighbors, plotToNode(newPlot, newEdge) )
 				--print(" - Find neighbor on next edge, converted to opposing plot at ", newPlot:GetX(), newPlot:GetY(), " with opposing edge = ", DirectionString[newEdge])
 
 			elseif IsEdgeRiver(plot, nextEdge) then
+				CheckFlowDirectionValid(plot, edge, plot, nextEdge)
 				table.insert( neighbors, plotToNode(plot, nextEdge) )
 				--print(" - Find neighbor on next edge, same plot")
 			end
@@ -3523,9 +3399,11 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 			if change[prevEdge] and IsEdgeRiver(plot, prevEdge) then 
 				local newPlot 	= Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), prevEdge)
 				local newEdge	= (prevEdge + 3) % 6
+				CheckFlowDirectionValid(plot, edge, newPlot, newEdge)
 				table.insert( neighbors, plotToNode(newPlot, newEdge) )
 				--print(" - Find neighbor on previous edge, converted to opposing plot at ", newPlot:GetX(), newPlot:GetY(), " with opposing edge = ", DirectionString[newEdge])
 			elseif IsEdgeRiver(plot, prevEdge) then
+				CheckFlowDirectionValid(plot, edge, plot, prevEdge)
 				table.insert( neighbors, plotToNode(plot, prevEdge) )
 				--print(" - Find neighbor on previous edge, same plot")
 			end
@@ -3536,9 +3414,11 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 			if clockPlot and change[clockEdge] then
 				local newPlot 	= Map.GetAdjacentPlot(clockPlot:GetX(), clockPlot:GetY(), clockEdge)
 				local newEdge	= (clockEdge + 3) % 6
+				CheckFlowDirectionValid(plot, edge, newPlot, newEdge)
 				table.insert( neighbors, plotToNode(newPlot, newEdge) )
 				--print(" - Find diverging edge converted to opposing plot at ", newPlot:GetX(), newPlot:GetY(), " with opposing edge = ", DirectionString[newEdge])
 			elseif clockPlot then
+				CheckFlowDirectionValid(plot, edge, clockPlot, clockEdge)
 				table.insert( neighbors, plotToNode(clockPlot, clockEdge) )
 				--print(" - Find diverging edge on next plot (clock direction)")
 			end
@@ -3549,9 +3429,11 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 			if counterPlot and change[counterEdge] then
 				local newPlot 	= Map.GetAdjacentPlot(counterPlot:GetX(), counterPlot:GetY(), counterEdge)
 				local newEdge	= (counterEdge + 3) % 6
+				CheckFlowDirectionValid(plot, edge, newPlot, newEdge)
 				table.insert( neighbors, plotToNode(newPlot, newEdge) )
 				--print(" - Find diverging edge converted to opposing plot at ", newPlot:GetX(), newPlot:GetY(), " with opposing edge = ", DirectionString[newEdge])
 			elseif counterPlot then
+				CheckFlowDirectionValid(plot, edge, counterPlot, counterEdge)
 				table.insert( neighbors, plotToNode(counterPlot, counterEdge) )
 				--print(" - Find diverging edge on next plot (counter-clock direction)")
 			end
@@ -3576,9 +3458,16 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 			RiverMap[node] 		= riverID		
 			local plot, edge 	= nodeToPlotEdge(node)
 			
-			if edge == DirectionTypes.DIRECTION_EAST 		then TerrainBuilder.SetWOfRiver(	plot, true, GetRiverEFlowDirection(plot),	riverID)  end
-			if edge == DirectionTypes.DIRECTION_SOUTHEAST	then TerrainBuilder.SetNWOfRiver(	plot, true, GetRiverSEFlowDirection(plot),	riverID)  end
-			if edge == DirectionTypes.DIRECTION_SOUTHWEST 	then TerrainBuilder.SetNEOfRiver(	plot, true, GetRiverSWFlowDirection(plot),	riverID)  end
+			if edge == DirectionTypes.DIRECTION_EAST then
+				flow = GetRiverEFlowDirection(plot)
+				TerrainBuilder.SetWOfRiver(	plot, true, flow,	riverID)
+			elseif edge == DirectionTypes.DIRECTION_SOUTHEAST then
+				flow = GetRiverSEFlowDirection(plot)
+				TerrainBuilder.SetNWOfRiver(	plot, true, flow,	riverID)
+			elseif edge == DirectionTypes.DIRECTION_SOUTHWEST then
+				flow = GetRiverSWFlowDirection(plot)
+				TerrainBuilder.SetNEOfRiver(	plot, true, flow,	riverID)
+			end
 			
 			for _, nextNode in ipairs(GetRiverNeighbors(node)) do
 				if not RiverMap[nextNode] then MarkRiver(nextNode) end
@@ -3661,34 +3550,16 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 	print("Intermediate timer before AreaBuilder.Recalculate() = "..tostring(currentTimer).." seconds")
 	
 	AreaBuilder.Recalculate();
-
-	--[[
-	if not WorldBuilder:IsActive() and bAnalyseChokepoints then -- to do : must use an option here, is this added to saved map ? will they work without this ? But it saves a lot of time for editing and exporting terrain data for YnAMP
-		currentTimer = os.clock() - g_startTimer
-		print("Intermediate timer before first call to TerrainBuilder.AnalyzeChokepoints(); = "..tostring(currentTimer).." seconds")
-		TerrainBuilder.AnalyzeChokepoints();
-	end
-	--]]
+	
+	currentTimer = os.clock() - g_startTimer
+	print("Intermediate timer after AreaBuilder.Recalculate()= "..tostring(currentTimer).." seconds")
 	
 	if not bImportContinents then
 		currentTimer = os.clock() - g_startTimer
-		print("Intermediate timer before TerrainBuilder.StampContinents() = "..tostring(currentTimer).." seconds")	
+		--print("Intermediate timer before TerrainBuilder.StampContinents() = "..tostring(currentTimer).." seconds")	
 		TerrainBuilder.StampContinents();
 	end
 	
-	-- Low lands
-	--[[
-	if bExpansion2 then
-		if bDeepLowLand then
-			MarkDeepCoastalLowlands(g_iW, g_iH)
-		else
-			MarkCoastalLowlands()
-		end
-	end
-	--]]
-	
-	currentTimer = os.clock() - g_startTimer
-	print("Intermediate timer = "..tostring(currentTimer).." seconds")
 	
 	-- The map may require some specific placement...
 	ExtraPlacement()
@@ -3719,7 +3590,7 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 	AreaBuilder.Recalculate();	
 	currentTimer = os.clock() - g_startTimer	
 	if not WorldBuilder:IsActive() and bAnalyseChokepoints then -- to do : must use an option here, is this added to saved map ? will they work without this ? But it saves a lot of time for editing and exporting terrain data for YnAMP
-		print("Intermediate timer before second call to TerrainBuilder.AnalyzeChokepoints() = "..tostring(currentTimer).." seconds")
+		print("Intermediate timer before TerrainBuilder.AnalyzeChokepoints() = "..tostring(currentTimer).." seconds")
 		TerrainBuilder.AnalyzeChokepoints();
 	else
 		print("Worldbuilder detected, skipping TerrainBuilder.AnalyzeChokepoints()...")
@@ -3732,7 +3603,7 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 	---[[
 	print("Creating start plot database.")	
 	if bTSL then
-		buidTSL()
+		buildTSL()
 	end	
 	local startConfig = MapConfiguration.GetValue("start");-- Get the start config
 	-- START_MIN_Y and START_MAX_Y is the percent of the map ignored for major civs' starting positions.
@@ -3751,7 +3622,7 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 	currentTimer = os.clock() - g_startTimer
 	print("Intermediate timer = "..tostring(currentTimer).." seconds")
 	
-	ResourcesValidation(g_iW, g_iH) -- before Civ specific resources may be added (we allow exclusion override then)
+	MapValidation(g_iW, g_iH) -- before Civ specific resources may be added (we allow exclusion override then)
 
 	-- Check if all selected civs have been given a Starting Location
 	--if not bTSL or bAlternatePlacement then
@@ -3764,8 +3635,8 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 		
 	-- Balance Starting positions for TSL
 	if bTSL then	
-		currentTimer = os.clock() - g_startTimer
-		print("Intermediate timer before balancing TSL = "..tostring(currentTimer).." seconds")
+		--currentTimer = os.clock() - g_startTimer
+		--print("Intermediate timer before balancing TSL = "..tostring(currentTimer).." seconds")
 		-- to do : remove magic numbers
 		--if startConfig == 1 then AssignStartingPlots:__AddResourcesBalanced() end
 		--if startConfig == 3 then AssignStartingPlots:__AddResourcesLegendary()() end
@@ -3780,38 +3651,16 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 		
 	end
 	
-	currentTimer = os.clock() - g_startTimer
-	print("Intermediate timer = "..tostring(currentTimer).." seconds")
+	--currentTimer = os.clock() - g_startTimer
+	--print("Intermediate timer = "..tostring(currentTimer).." seconds")
 
 	local GoodyGen = AddGoodies(g_iW, g_iH);
 	
 	local totalTimer = os.clock() - g_startTimer
 	--]]
 	
-	-- check the map
-	--[[
-	local iW, iH = Map.GetGridSize()
-	for x = 0, iW - 1, 1 do
-		for y = 0, iH - 1, 1 do
-			local pPlot = Map.GetPlot(x,y)
-			print(pPlot, x, y)
-			print(pPlot:GetTerrainType(),pPlot:GetFeatureType(),pPlot:GetResourceType(),pPlot:IsWater(),pPlot:IsRiver(),pPlot:IsAdjacentToLand())
-		end
-	end
-	--]]
-	
 	-- Restore the original ResourceBuilder.CanHaveResource
 	ResourceBuilder.CanHaveResource = ResourceBuilder.OldCanHaveResource
-	
-	--[[
-	-- ...
-	currentTimer = os.clock() - g_startTimer
-	if not WorldBuilder:IsActive() and bAnalyseChokepoints then -- to do : must use an option here, is this added to saved map ? will they work without this ? But it saves a lot of time for editing and exporting terrain data for YnAMP
-		print("Intermediate timer before third call to TerrainBuilder.AnalyzeChokepoints() = "..tostring(currentTimer).." seconds")
-		AreaBuilder.Recalculate();
-		TerrainBuilder.AnalyzeChokepoints();
-	end
-	--]]
 	
 	print("Total time for Map creation = "..tostring(totalTimer).." seconds")
 end
@@ -4121,12 +3970,17 @@ function PlaceRealNaturalWonders(NaturalWonders)
 		HasMapScriptPosition[eFeatureType] = true
 	end
 	
-	-- The coordinates in NaturalWonders table are still those from the reference map
+	-- First pass to add NW that are in the DB with a direct reference to MapScript to the NaturalWonders table
+	-- NW directly defined in the Map File still take priority
 	for NaturalWonderRow in GameInfo.NaturalWonderPosition() do
-		if NaturalWonderRow.MapName == mapName and GameInfo.Features[NaturalWonderRow.FeatureType] then
+		local bScriptValid	= NaturalWonderRow.MapScript ~= nil and NaturalWonderRow.MapScript == mapScript
+		local bOnlyOffset	= true
+		if bScriptValid and GameInfo.Features[NaturalWonderRow.FeatureType] then
 			local eFeatureType = GameInfo.Features[NaturalWonderRow.FeatureType].Index
-			if NaturalWonders[eFeatureType] and not HasMapScriptPosition[eFeatureType] then --and not bUseRelativePlacement then 
-				-- Seems to be a multiplots feature...
+			if not NaturalWonders[eFeatureType] then
+				HasMapScriptPosition[eFeatureType] 	= true
+				NaturalWonders[eFeatureType] 		= { X = NaturalWonderRow.X, Y = NaturalWonderRow.Y}
+			else -- multiplot feature
 				if not DirectPlacementPlots[eFeatureType] then
 					-- add the original plot entry (already added to the NaturalWonders table during at first occurence) to the multiplots table
 					DirectPlacementPlots[eFeatureType] = {}
@@ -4141,15 +3995,51 @@ function PlaceRealNaturalWonders(NaturalWonders)
 					end
 				end
 				-- add new plot entry to the multiplots table
+				local plot = GetPlotFromRefMap(NaturalWonderRow.X, NaturalWonderRow.Y, bOnlyOffset)
+				if plot then				
+					if NaturalWonderRow.TerrainType and GameInfo.Terrains[NaturalWonderRow.TerrainType] then
+						TerrainBuilder.SetTerrainType(plot, GameInfo.Terrains[NaturalWonderRow.TerrainType].Index)
+					end
+					TerrainBuilder.SetFeatureType(plot, -1)
+					ResourceBuilder.SetResourceType(plot, -1)
+					table.insert(DirectPlacementPlots[eFeatureType], plot:GetIndex())
+				end			
+			
+			end		
+		end
+	end
+	
+	-- The coordinates in NaturalWonders table are still those from the reference map, unless using MapScript rows
+	for NaturalWonderRow in GameInfo.NaturalWonderPosition() do
+		local bNameValid 	= (not bMapScriptRefForNW) and NaturalWonderRow.MapName == mapName
+		if (bNameValid) and GameInfo.Features[NaturalWonderRow.FeatureType] then
+			local eFeatureType = GameInfo.Features[NaturalWonderRow.FeatureType].Index
+			if NaturalWonders[eFeatureType] and not HasMapScriptPosition[eFeatureType] then --and not bUseRelativePlacement then 
+				-- Seems to be a multiplots feature...
+				if not DirectPlacementPlots[eFeatureType] then
+					-- add the original plot entry (already added to the NaturalWonders table during at first occurence) to the multiplots table
+					DirectPlacementPlots[eFeatureType] = {}
+					local plot = GetPlotFromRefMap(NaturalWonders[eFeatureType].X, NaturalWonders[eFeatureType].Y)
+					if plot then
+						if NaturalWonderRow.TerrainType and GameInfo.Terrains[NaturalWonderRow.TerrainType] then
+							TerrainBuilder.SetTerrainType(plot, GameInfo.Terrains[NaturalWonderRow.TerrainType].Index)
+						end
+						TerrainBuilder.SetFeatureType(plot, -1)
+						ResourceBuilder.SetResourceType(plot, -1)
+						table.insert(DirectPlacementPlots[eFeatureType], plot:GetIndex())
+					end
+				end
+				-- add new plot entry to the multiplots table
 				
 				local plot
 				if bUseRelativePlacement then
 					-- Get new plots coordinates from original first plot coordinates when using relative placement, IE: plot1 = x,y and plot2 = x+1,y+1
-					local firstPlotX, firstPlotY	= GetXYFromRefMapXY(NaturalWonders[eFeatureType].X, NaturalWonders[eFeatureType].Y, bOnlyOffset)
+					-- todo : need fix for hex ?
+					local firstPlotX, firstPlotY	= GetXYFromRefMapXY(NaturalWonders[eFeatureType].X, NaturalWonders[eFeatureType].Y)
 					local diffX, diffY				= NaturalWonders[eFeatureType].X - NaturalWonderRow.X, NaturalWonders[eFeatureType].Y - NaturalWonderRow.Y
 					local plotX, plotY				= firstPlotX - diffX, firstPlotY - diffY
 					plot = Map.GetPlot(plotX, plotY)
-					print("  Multiplots NW, first plot at ", firstPlotX, firstPlotY, " new plot at ", plotX, plotY, plot)				
+					--print("  Multiplots NW, first plot at ", firstPlotX, firstPlotY, " new plot at ", plotX, plotY, plot)				
 				else
 					plot = GetPlotFromRefMap(NaturalWonderRow.X, NaturalWonderRow.Y, bOnlyOffset)
 				end
@@ -4163,11 +4053,11 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end
 			else
 				if HasMapScriptPosition[eFeatureType] then
-					print("- Skipping " .. tostring(NaturalWonderRow.FeatureType) .." position from the DB, has position already set in MapScript")				
+					--print("- Skipping " .. tostring(NaturalWonderRow.FeatureType) .." position from the reference DB, has position already set in MapScript")				
 				else
 					-- create original entry in the base table
 					NaturalWonders[GameInfo.Features[NaturalWonderRow.FeatureType].Index] = { X = NaturalWonderRow.X, Y = NaturalWonderRow.Y}
-					print("- Loading " .. tostring(NaturalWonderRow.FeatureType) .." position from the DB")
+					--print("- Loading " .. tostring(NaturalWonderRow.FeatureType) .." position from the DB")
 				end
 			end
 		end
@@ -4179,11 +4069,11 @@ function PlaceRealNaturalWonders(NaturalWonders)
 			local featureTypeName = GameInfo.Features[eFeatureType].FeatureType
 
 			-- Convert the NW coordinates to the current map position if using a reference map or offsets
-			local x, y = GetXYFromRefMapXY(position.X, position.Y, (bOnlyOffset or HasMapScriptPosition[eFeatureType])) -- if the NW has a true position from the MapScript table, don't use relative placement, only offset)
+			local x, y = GetXYFromRefMapXY(position.X, position.Y, (HasMapScriptPosition[eFeatureType])) -- if the NW has a true position from the MapScript table, don't use relative placement, only offset)
 			
 			print ("- Trying to place " .. tostring(featureTypeName) .. " at (" .. tostring(x) .. ", " .. tostring(y) .. ")")
 			
-			print ("	ref map position:", position.X, position.Y, " check back ref map from x,y:", GetRefMapXY(x,y))
+			--print ("	ref map position:", position.X, position.Y, " check back ref map from x,y:", GetRefMapXY(x,y))
 	
 			local pPlot = Map.GetPlot(x, y)
 			
@@ -4194,7 +4084,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				
 				-- Preparing placement
 				if featureTypeName == "FEATURE_DEAD_SEA" then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 2 plots, flat desert surrounded by desert, 1st plot is SOUTHWEST 
 					-- preparing the 2 plot
 					local terrainType = g_TERRAIN_TYPE_DESERT
@@ -4203,7 +4093,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end		
 				
 				if featureTypeName == "FEATURE_PIOPIOTAHI" then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 3 plots, flat grass near coast, 1st plot is WEST
 					-- preparing the 3 plots
 					local terrainType = g_TERRAIN_TYPE_GRASS
@@ -4213,7 +4103,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end
 				
 				if featureTypeName == "FEATURE_EVEREST" then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 3 plots, mountains, 1st plot is WEST
 					-- preparing the 3 plots
 					local terrainType = g_TERRAIN_TYPE_TUNDRA_MOUNTAIN
@@ -4223,7 +4113,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end
 				
 				if featureTypeName == "FEATURE_PANTANAL" then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 4 plots, flat grass/plains without features, 1st plot is SOUTH-WEST
 					-- preparing the 4 plots
 					local terrainType = g_TERRAIN_TYPE_PLAINS
@@ -4235,7 +4125,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end
 
 				if featureTypeName == "FEATURE_CLIFFS_DOVER" then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 2 plots, hills on coast, 1st plot is WEST 
 					-- preparing the 2 plots
 					local terrainType = g_TERRAIN_TYPE_GRASS_HILLS
@@ -4244,7 +4134,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end
 				
 				if featureTypeName == "FEATURE_YOSEMITE" or featureTypeName == "FEATURE_EYJAFJALLAJOKULL" then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 2 plots EAST-WEST, flat tundra/plains without features, 1st plot is WEST
 					-- preparing the 2 plots
 					local terrainType = g_TERRAIN_TYPE_PLAINS
@@ -4253,7 +4143,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end
 				
 				if featureTypeName == "FEATURE_TORRES_DEL_PAINE" then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 2 plots EAST-WEST without features, 1st plot is WEST
 					-- preparing the 2 plots
 					local terrainType = g_TERRAIN_TYPE_PLAINS
@@ -4262,7 +4152,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end		
 
 				if featureTypeName == "FEATURE_BARRIER_REEF" then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 2 plots, coast, 1st plot is SOUTHEAST 
 					-- preparing the 2 plots
 					local terrainType = g_TERRAIN_TYPE_COAST
@@ -4271,7 +4161,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end
 
 				if featureTypeName == "FEATURE_GALAPAGOS" then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 2 plots, coast, surrounded by coast, 1st plot is SOUTHWEST 
 					-- preparing the area
 					local terrainType = g_TERRAIN_TYPE_COAST
@@ -4281,7 +4171,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end
 
 				if featureTypeName == "FEATURE_GIANTS_CAUSEWAY" then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 2 plots, one on coastal land and one in water, 1st plot is land, SOUTHEAST
 					-- preparing the 2 plots
 					bUseOnlyPlotListPlacement = true
@@ -4290,7 +4180,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end
 				
 				if featureTypeName == "FEATURE_LYSEFJORDEN"then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 3 plots, flat grass near coast, 1st plot is EAST
 					-- preparing the 3 plots
 					local terrainType = g_TERRAIN_TYPE_GRASS
@@ -4301,7 +4191,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end
 				
 				if featureTypeName == "FEATURE_LAKE_VICTORIA" then
-					print(" - Preparing position...")
+					--print(" - Preparing position...")
 					-- 4 plots, coast without features, 1st plot is NORTH-EAST
 					-- preparing the 4 plots
 					local terrainType = g_TERRAIN_TYPE_COAST
@@ -4329,17 +4219,17 @@ function PlaceRealNaturalWonders(NaturalWonders)
 				end
 				
 				if not(TerrainBuilder.CanHaveFeature(pPlot, eFeatureType)) then			
-					print("  - WARNING : TerrainBuilder.CanHaveFeature says that we can't place that feature here...")
+					--print("  - WARNING : TerrainBuilder.CanHaveFeature says that we can't place that feature here...")
 				end		
 				
 				if not bUseOnlyPlotListPlacement then
-					print("  - Trying Direct Placement...")
+					--print("  - Trying Direct Placement...")
 					TerrainBuilder.SetFeatureType(pPlot, eFeatureType);
 				end
 				local bPlaced = pPlot:IsNaturalWonder()
 					
 				if (not bPlaced) and (#plotsIndex > 0) then
-					print("  - Using plot list for placement")
+					--print("  - Using plot list for placement")
 					TerrainBuilder.SetMultiPlotFeatureType(plotsIndex, eFeatureType)
 					bPlaced = pPlot:IsNaturalWonder()
 				end
@@ -4362,7 +4252,7 @@ function PlaceRealNaturalWonders(NaturalWonders)
 							end
 						end
 					end
-					print ("  - Success : plot is now a natural wonder !")
+					--print ("  - Success : plot is now a natural wonder !")
 					
 					-- Extra placement:					
 					-- Replace water by jungle plains around lake victoria and remove cliffs
@@ -4403,7 +4293,7 @@ end
 
 function AddFeatures()
 	print("---------------")
-	print("Adding Features")
+	print("Adding Features...")
 
 	-- Get Rainfall setting input by user.
 	local rainfall = MapConfiguration.GetValue("rainfall");
@@ -4433,7 +4323,7 @@ function AddFeatures()
 	featuregen:AddFeatures(true, true);
 	
 	if bExpansion2 then
-		print("Adding Features from Continents");
+		print("Adding Features from Continents...");
 		featuregen:AddFeaturesFromContinents();
 	end
 end
@@ -4444,7 +4334,9 @@ function ExtraPlacement()
 	print("Checking for extra placement...")
 	
 	for row in GameInfo.ExtraPlacement() do
-		if row.MapName == mapName  then
+		local bNameValid 	= (not bMapScriptRefForExtra) and row.MapName == mapName
+		local bScriptValid	= row.MapScript ~= nil and row.MapScript == mapScript
+		if bNameValid or bScriptValid then
 			local bDoPlacement = false
 			if row.ConfigurationId then
 				-- check if this setting is selected
@@ -4484,45 +4376,46 @@ function ExtraPlacement()
 				local resourceType	= row.ResourceType
 				local quantity 		= row.Quantity
 				local iElevation	= row.Elevation
-				local x, y 			= GetXYFromRefMapXY(row.X, row.Y)
+				local x, y 			= GetXYFromRefMapXY(row.X, row.Y, bScriptValid)
 				local plot 			= Map.GetPlot(x,y)
 				
 				if plot then
 					ResourceBuilder.SetResourceType(plot, -1) -- remove previous resource if any
 					if terrainType and GameInfo.Terrains[terrainType] then
-						print("- Trying to place ".. tostring(terrainType).. " at " .. tostring(x) ..",".. tostring(y))
+						--print("- Trying to place ".. tostring(terrainType).. " at " .. tostring(x) ..",".. tostring(y))
 						TerrainBuilder.SetTerrainType(plot, GameInfo.Terrains[terrainType].Index)
 					end
 					if featureType then
 						if GameInfo.Features[featureType] then
-							print("- Trying to place ".. tostring(featureType).. " at " .. tostring(x) ..",".. tostring(y))
+							--print("- Trying to place ".. tostring(featureType).. " at " .. tostring(x) ..",".. tostring(y))
 							TerrainBuilder.SetFeatureType(plot, GameInfo.Features[featureType].Index)
 						else -- remove the current feature on the plot if the featureType is invalid
-							print("- Removing current feature at " .. tostring(x) ..",".. tostring(y))
+							--print("- Removing current feature at " .. tostring(x) ..",".. tostring(y))
 							TerrainBuilder.SetFeatureType(plot, -1)						
 						end
 					end
 					if resourceType then
 						if GameInfo.Resources[resourceType] then
-							print("- Trying to place ".. tostring(resourceType).. " at " .. tostring(x) ..",".. tostring(y))
+							--print("- Trying to place ".. tostring(resourceType).. " at " .. tostring(x) ..",".. tostring(y))
 							local num = quantity or 1
 							ResourceBuilder.SetResourceType(plot, GameInfo.Resources[resourceType].Index, num)
 						else -- remove the current resource on the plot if the resourceType is invalid
-							print("- Removing current resource at " .. tostring(x) ..",".. tostring(y))
+							--print("- Removing current resource at " .. tostring(x) ..",".. tostring(y))
 							ResourceBuilder.SetResourceType(plot, -1)						
 						end
 					end
 					if bExpansion2 and iElevation then
 						if iElevation >= 0 and iElevation < 3 then
-							print("- Trying to set lowland elevation at ".. tostring(iElevation+1).. "m at " .. tostring(x) ..",".. tostring(y))
+							--print("- Trying to set lowland elevation at ".. tostring(iElevation+1).. "m at " .. tostring(x) ..",".. tostring(y))
 							TerrainBuilder.AddCoastalLowland(plot:GetIndex(), iElevation)
 						else
-							print("- Removing current lowland setting at " .. tostring(x) ..",".. tostring(y))
+							--print("- Removing current lowland setting at " .. tostring(x) ..",".. tostring(y))
 							TerrainBuilder.AddCoastalLowland(plot:GetIndex(), -1)
 						end
 					end
 				else
-					print("- WARNING, plot is nil at " .. tostring(x) ..",".. tostring(y))
+					print("- WARNING, plot is nil for ExtraPlacement at " .. tostring(x) ..",".. tostring(y))
+					for k, v in pairs(row) do print ("   - ", k, v) end
 				end
 			end		
 		end
@@ -4539,7 +4432,7 @@ function MarkDeepCoastalLowlands(g_iW, g_iH)
 
 	-- Sea rising level can reach further in land, following flatlands
 	
-	print("YnAMP - Deep Coastal Lowlands");
+	print("YnAMP - Deep Coastal Lowlands...");
 	
 	function IsEOfCliff(plot)
 		local pAdjacentPlot = Map.GetAdjacentPlot(plot:GetX(), plot:GetY(), DirectionTypes.DIRECTION_WEST)
@@ -4724,7 +4617,7 @@ function placeExclusiveResources()
 		local region = row.Region
 		if not IsRegionUndefined[region] then
 			local resource = row.Resource
-			print ("Trying to place ".. tostring(resource) .." in "..tostring(region))
+			--print ("Trying to place ".. tostring(resource) .." in "..tostring(region))
 			
 			local eResourceType = nil
 			if GameInfo.Resources[resource] then
@@ -4747,7 +4640,7 @@ function AddDeposits()
 	for DepositRow in GameInfo.ResourceRegionDeposit() do
 		local region = DepositRow.Region
 		local resource = DepositRow.Resource
-		print ("Trying to place ".. tostring(resource) .." in "..tostring(region))
+		--print ("Trying to place ".. tostring(resource) .." in "..tostring(region))
 		
 		local eResourceType = nil
 		if GameInfo.Resources[resource] then
@@ -4791,12 +4684,12 @@ function placeResourceInRegion(eResourceType, region, number, bNumberIsRatio)
 					local pPlot = shuffledPlotTable[i]
 					ResourceBuilder.SetResourceType(pPlot, eResourceType, 1)
 				end
-				print (" - Asked for " .. toPlace .. ", placed " .. placed .. " (available plots = " .. #shuffledPlotTable .. ", total plots in region = ".. plotCount .." )" )
+				--print (" - Asked for " .. toPlace .. ", placed " .. placed .. " (available plots = " .. #shuffledPlotTable .. ", total plots in region = ".. plotCount .." )" )
 				IsRegionUndefined = false
 			end
 		end
 	end
-	if IsRegionUndefined then print(" - This region ("..tostring(region)..") is not defined for the map : "..tostring(mapName)) end
+	--if IsRegionUndefined then print(" - This region ("..tostring(region)..") is not defined for the map : "..tostring(mapName)) end
 	return IsRegionUndefined
 end
 
@@ -4822,6 +4715,8 @@ end
 local bStartinglocationResourcesAdded = false
 function AddStartingLocationResources()
 
+	if bStartinglocationResourcesAdded then return end
+	
 	print("-----------------------------------------")
 	print("-- Adding requested resources for civs...")
 	print("-----------------------------------------")
@@ -4882,12 +4777,23 @@ function AddStartingLocationResources()
 	print("-------------------------------")
 end
 
-function ResourcesValidation(g_iW, g_iH)
+function MapValidation(g_iW, g_iH)
 
 	if bNoResources then return end
 
-	print("------------------------------------")
-	print("-- Resources Validation --")
+	print("--------------------------------------")
+	print("-- Map Validation...")
+		
+	local totalplots 		= g_iW * g_iH
+	local landPlots 		= Map.GetLandPlotCount()
+	local waterPlots		= totalplots - landPlots
+	local hills				= 0
+	local mountains			= 0
+	local flatLand			= 0
+	local missingLuxuries 	= {}
+	local missingStrategics	= {}
+	local terrainCount		= {}
+	local featureCount		= {}
 	
 	-- replacement tables
 	local resTable 		= {}
@@ -4925,7 +4831,7 @@ function ResourcesValidation(g_iW, g_iH)
 				for newResourceType, value in pairs (curTable) do
 if type(newResourceType) == "string" then print("Error: newResourceType is string instead of index : "..newResourceType); return; end
 					if newResourceType ~= eResourceType and YnAMP_CanHaveResource(plot, newResourceType) then
-						print(" - Found replacement resource for", GameInfo.Resources[eResourceType].ResourceType, "at", plot:GetX(), plot:GetY(), "by resource", GameInfo.Resources[newResourceType].ResourceType)
+						--print(" - Found replacement resource for", GameInfo.Resources[eResourceType].ResourceType, "at", plot:GetX(), plot:GetY(), "by resource", GameInfo.Resources[newResourceType].ResourceType)
 						return newResourceType						
 					end
 				end
@@ -4933,14 +4839,16 @@ if type(newResourceType) == "string" then print("Error: newResourceType is strin
 		end	
 	end
 		
-	local totalplots = g_iW * g_iH
 	for i = 0, (totalplots) - 1, 1 do
 		plot = Map.GetPlotByIndex(i)
 		local eResourceType = plot:GetResourceType()
+		local eTerrainType	= plot:GetTerrainType()
+		local eFeatureType	= plot:GetFeatureType()
 		if (eResourceType ~= -1) then
+			-- todo : sea/land resource check
 			if resTable[eResourceType] then
 				if not bImportResources and IsResourceExclusion(plot, eResourceType) then
-					print("WARNING - Removing unauthorised resource at", plot:GetX(), plot:GetY(), GameInfo.Resources[eResourceType].ResourceType)
+					--print("WARNING - Removing unauthorised resource at", plot:GetX(), plot:GetY(), GameInfo.Resources[eResourceType].ResourceType)
 					ResourceBuilder.SetResourceType(plot, -1)
 					-- find replacement
 					local newResourceType = FindReplacement(eResourceType, plot)
@@ -4955,27 +4863,47 @@ if type(newResourceType) == "string" then print("Error: newResourceType is strin
 				print("WARNING - resTable[eResourceType] is nil for eResourceType = " .. tostring(eResourceType))
 			end
 		end
+		
+		if (eTerrainType ~= -1) then
+			local count = terrainCount[eTerrainType] or 0
+			terrainCount[eTerrainType] = count + 1
+		end
+		
+		if (eFeatureType ~= -1) then
+			if not GameInfo.Features[eFeatureType].NaturalWonder then
+				-- todo: sea/land feature check
+				local count = featureCount[eFeatureType] or 0
+				featureCount[eFeatureType] = count + 1
+			end
+		end
+		
+		if plot:IsHills() 		then hills 		= hills + 1 end
+		if plot:IsMountain()	then mountains 	= mountains + 1 end
+		
 	end
 
-	print("------------------------------------")
-	print("-- Resources Placement Statistics --")
-	print("------------------------------------")
-	print("-- Total plots on map = " .. tostring(totalplots))
-	print("------------------------------------")
-
-	local landPlots 		= Map.GetLandPlotCount()
-	local missingLuxuries 	= {}
-	local missingStrategics	= {}
+	--print("======================================")
+	--print("====== Generated Map Statistics ======")
+	--print("======================================")
+	--print("-- Total plots on map = " .. tostring(totalplots))
+	--print("-- Land plots 			= ", tostring(landPlots).."		(" .. tostring(Round(landPlots / totalplots * 10000) / 100).."% of map)")
+	--print("-- Water plots 	= ", tostring(waterPlots).."		(" .. tostring(Round(waterPlots / totalplots * 10000) / 100).."% of map)")
+	--print("-- Hills plots 	= ", tostring(hills).."		(" .. tostring(Round(hills / landPlots * 10000) / 100).."% of land)")
+	--print("-- Mountains plots 	= ", tostring(mountains).."		(" .. tostring(Round(mountains / landPlots * 10000) / 100).."% of land)")
+	
+	--print("--------------------------------------")
+	--print("-------- Resources Statistics --------")
 	for resRow in GameInfo.Resources() do
-		local numRes = resTable[resRow.Index]
+		local numRes 		= resTable[resRow.Index]
 		local placedPercent	= Round(numRes / landPlots * 10000) / 100
+		local frequency		= math.max(resRow.Frequency, resRow.SeaFrequency)
+		local ratio 		= frequency > 0 and Round(placedPercent * 100 / frequency) or "---"
 		if placedPercent == 0 then placedPercent = "0.00" end
-		local ratio = Round(placedPercent * 100 / resRow.Frequency)
 		if ratio == 0 then ratio = "0.00" end
-		if resRow.Frequency > 0 then
-			local sFrequency = tostring(resRow.Frequency)
-			if resRow.Frequency < 10 then sFrequency = " "..sFrequency end
-			print("Resource = " .. tostring(resRow.ResourceType).."		placed = " .. tostring(numRes).."		(" .. tostring(placedPercent).."% of land)		frequency = " .. sFrequency.."		ratio = " .. tostring(ratio))
+		if frequency > 0 then
+			local sFrequency = tostring(frequency)
+			if frequency < 10 then sFrequency = " "..sFrequency end
+			--print("Resource = " .. tostring(resRow.ResourceType).."		placed = " .. tostring(numRes).."		(" .. tostring(placedPercent).."% of land)		frequency = " .. sFrequency.."		ratio = " .. tostring(ratio))
 			if numRes == 0 then
 				if luxTable[resRow.Index] and bPlaceAllLuxuries then
 					table.insert(missingLuxuries, resRow.Index)
@@ -5000,6 +4928,7 @@ if type(newResourceType) == "string" then print("Error: newResourceType is strin
 end
 
 function PlaceMissingResources(missingResourceTable)
+	print("--------------------------------------")
 	print("Placing missing resources...")
 	for _, resourceType in ipairs(missingResourceTable) do
 		local row = GameInfo.Resources[resourceType]
@@ -5018,14 +4947,17 @@ function PlaceMissingResources(missingResourceTable)
 		local iMagicFrequency = 14
 		local toPlace = math.max(1, Round(#possiblePlots * (iMagicFrequency / 100) * (row.Frequency / 100)))
 		
-		print("Trying to place ".. tostring(toPlace).." " .. tostring(row.ResourceType))
+		print("Trying to place ".. tostring(toPlace), tostring(row.ResourceType), ", available plots = ".. tostring(#possiblePlots))
 		aShuffledResourcePlots = GetShuffledCopyOfTable(possiblePlots)
+		local placed = 0
 		for i = 1, toPlace do
 			local plot = aShuffledResourcePlots[i]
 			if plot then
 				ResourceBuilder.SetResourceType(plot, resourceType, 1)
+				placed = placed + 1
 			end
 		end
+		print("  - placed: ".. tostring(placed))
 	end
 end
 
@@ -5704,6 +5636,8 @@ function SetTrueStartingLocations()
 			else
 				print ("WARNING ! Plot is out of land !")
 			end
+		else
+			print ("WARNING ! No TSL for : ", CivilizationTypeName, LeaderTypeName)
 		end
 	end	
 end
@@ -5784,17 +5718,6 @@ end
 ------------------------------------------------------------------------------
 -- Culturally Linked Start Locations
 ------------------------------------------------------------------------------
-function Round(num)
-    under = math.floor(num)
-    upper = math.floor(num) + 1
-    underV = -(under - num)
-    upperV = upper - num
-    if (upperV > underV) then
-        return under
-    else
-        return upper
-    end
-end
 
 BRUTE_FORCE_TRIES 	= 3 -- raise this number for better placement but longer initialization. From tests, 3 passes should be more than enough.
 OVERSEA_PENALTY 	= 50 -- distance penalty for starting plot separated by sea
@@ -6012,7 +5935,7 @@ function CalculateDistanceScoreCityStates(bOutput)
 		local startPlot1 = player:GetStartingPlot()
 		local civCulture = GameInfo.Civilizations[playerConfig:GetCivilizationTypeID()].Ethnicity		
 		if not civCulture then
-			print("WARNING : no Ethnicity defined for " .. playerConfig:GetPlayerName() ..", using EURO")
+			if bOutput then print("WARNING : no Ethnicity defined for " .. playerConfig:GetPlayerName() ..", using EURO") end
 			civCulture = "ETHNICITY_EURO"
 		end
 		if startPlot1 ~= nil then
@@ -6033,7 +5956,7 @@ function CalculateDistanceScoreCityStates(bOutput)
 						distanceScore = distanceScore + Round(distance*SAME_GROUP_WEIGHT)
 						if bOutput then print ("      - Distance to same culture (" .. tostring(playerConfig2:GetPlayerName()) .. ") = " .. tostring(distance) .. " (x".. tostring(SAME_GROUP_WEIGHT) .."), total distance score = " .. tostring(distanceScore) ) end
 					else
-						print("      - WARNING: no starting plot available for " .. tostring(playerConfig2:GetPlayerName()))
+						if bOutput then print("      - WARNING: no starting plot available for " .. tostring(playerConfig2:GetPlayerName())) end
 					end
 				else
 					local interGroupMinimizer = 1
@@ -6048,7 +5971,7 @@ function CalculateDistanceScoreCityStates(bOutput)
 						distanceScore = distanceScore + Round(distance/interGroupMinimizer)
 						if bOutput then print ("      - Distance to different culture (" .. tostring(playerConfig2:GetPlayerName()) .. ") = " .. tostring(distance) .. " (/".. tostring(interGroupMinimizer) .." from intergroup relative distance), total distance score = " .. tostring(distanceScore) ) end
 					else
-						print("      - WARNING: no starting plot available for " .. tostring(playerConfig2:GetPlayerName()))
+						if bOutput then print("      - WARNING: no starting plot available for " .. tostring(playerConfig2:GetPlayerName())) end
 					end
 				end
 			end
@@ -6077,7 +6000,7 @@ function CulturallyLinkedCityStates(bForcePlacement)
 	print ("------------------------------------------------------- ")
 	print ("Set Culturally linked starting positions for City States... ")
 
-	local initialDistanceScore = CalculateDistanceScoreCityStates()
+	local initialDistanceScore = CalculateDistanceScoreCityStates(true)
 	if  initialDistanceScore < bestDistanceScore then
 		bestDistanceScore = initialDistanceScore
 	end
