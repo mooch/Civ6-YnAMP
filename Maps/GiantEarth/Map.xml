@@ -78,13 +78,13 @@
 	
 	<!-- Minors -->
 	<StartPosition>		
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_ANTIOCH"		X="36" Y="55" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_ANTIOCH"		X="22" Y="63" /> <!-- Moved to Venice-->
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_AMSTERDAM"		X="15" Y="71" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_BABYLON"		X="39" Y="52" DisabledByCivilization="CIVILIZATION_PERSIA" /> <!-- Anshan -->
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_BRUSSELS"		X="15" Y="70" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_BABYLON"		X="45" Y="49" DisabledByCivilization="CIVILIZATION_PERSIA" /> <!-- Anshan -->
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_BRUSSELS"		X="15" Y="71" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_BUENOS_AIRES"	X="159" Y="15" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_CARTHAGE"		X="18" Y="52" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_GENEVA"		X="15" Y="63" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_GENEVA"		X="17" Y="64" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_HATTUSA"		X="37" Y="59" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_HONG_KONG"		X="84" Y="48" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_JAKARTA"		X="80" Y="26" />
@@ -102,7 +102,7 @@
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_TORONTO"		X="152" Y="69" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_VALLETTA"		X="22" Y="51" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_VILNIUS"		X="30" Y="74" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_YEREVAN"		X="42" Y="57" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_YEREVAN"		X="41" Y="57" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_ZANZIBAR"		X="33" Y="25" />
 		
 		<!-- DLC -->
@@ -111,7 +111,7 @@
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_ARMAGH" 		X="5" Y="75" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_GRANADA" 		X="8" Y="53" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_MUSCAT" 		X="45" Y="43" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_PALENQUE" 		X="145" Y="47" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_PALENQUE" 		X="145" Y="47" /> <!-- Moved to Mitla-->
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_AKKAD"			X="42"	Y="53" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_BOLOGNA"		X="19"	Y="61" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_CAHOKIA"		X="146"	Y="64" />
@@ -119,8 +119,7 @@
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_FEZ"			X="7"	Y="49" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_MEXICO_CITY"	X="138"	Y="49" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_NAZCA"			X="153"	Y="24" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_NGAZARGAMU"	X="21"	Y="39" />
-
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_NGAZARGAMU"	X="22"	Y="37" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_RAPA_NUI"		X="134"	Y="17" />
 
 		<!-- New Horizon DLC -->
@@ -128,7 +127,7 @@
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_HUNZA" 		X="153" Y="39" DisabledByLeader="LEADER_SIMON_BOLIVAR" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_LAHORE" 		X="59" Y="54" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_SINGAPORE" 	X="78" Y="32" />
-		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_TARUGA" 		X="19" Y="37" />
+		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_TARUGA" 		X="19" Y="36" />
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_VATICAN_CITY" 	X="20" Y="57" DisabledByLeader="LEADER_TRAJAN" />
 
 		<Replace MapName="GiantEarth" Civilization="CIVILIZATION_AYUTTHAYA" 		X="74" Y="41" />
@@ -241,8 +240,10 @@
 		<Replace MapName="GiantEarth" X="75" Y="29"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="84" Y="24"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="87" Y="24"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapName="GiantEarth" X="89" Y="41"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="89" Y="38"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="89" Y="32"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapName="GiantEarth" X="99" Y="33"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="102" Y="77"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="143" Y="46"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="111" Y="9"     RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
@@ -278,16 +279,229 @@
 		<Replace MapName="GiantEarth" X="98" Y="60"		RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" DisabledByFeature="FEATURE_SUK_FUJI"/>
 		<Replace MapName="GiantEarth" X="111" Y="73"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="113" Y="78"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
+		<Replace MapName="GiantEarth" X="161" Y="42"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="152" Y="39"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="155" Y="22"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="154" Y="34"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="115" Y="13"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
 		<Replace MapName="GiantEarth" X="154" Y="11"	RuleSet="RULESET_EXPANSION_2"	TerrainType="TERRAIN_PLAINS_MOUNTAIN" FeatureType="FEATURE_VOLCANO" />
-		
+
+	<!-- +++++++++++++++++++++++++++ -->
+	<!--   Giant Earth Geothermal    -->
+	<!-- +++++++++++++++++++++++++++ -->
+
+		<!--
+		<Replace MapName="GiantEarth" X="130" Y="64"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="133" Y="58"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="32" Y="29"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="19" Y="59"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="132" Y="59"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="74" Y="30"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="88" Y="40"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="2" Y="84"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="80" Y="25"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="113" Y="10"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="31" Y="56"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="133" Y="65"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="91" Y="54"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="146" Y="44"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="148" Y="42"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="33" Y="34"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="68" Y="54"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="52" Y="73"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="29" Y="28"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="121" Y="84"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="99" Y="66"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="44" Y="57"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="156" Y="20"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="99" Y="14"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="100" Y="17"	RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="99" Y="18"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<Replace MapName="GiantEarth" X="73" Y="46"		RuleSet="RULESET_EXPANSION_2" 	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		-->
+		<!-- Guelma, Algeria -->
+		<Replace MapName="GiantEarth" X="15" Y="52" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Assal, Djibouti -->
+		<Replace MapName="GiantEarth" X="38" Y="35" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Aluto-Langano, Ethiopia -->
+		<Replace MapName="GiantEarth" X="34" Y="32" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Olkaria, Kenya -->
+		<Replace MapName="GiantEarth" X="32" Y="29" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Antsirabe, Madagascar -->
+		<Replace MapName="GiantEarth" X="37" Y="16" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Warmwaterberg, South Africa -->
+		<Replace MapName="GiantEarth" X="25" Y="7" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Yangbajain, Tibet, China -->
+		<Replace MapName="GiantEarth" X="68" Y="54" TerrainType="TERRAIN_SNOW" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Xianyang, Shaanxi, China -->
+		<Replace MapName="GiantEarth" X="77" Y="59" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Georgia, Caucasus -->
+		<Replace MapName="GiantEarth" X="41" Y="60" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Tatapani, India -->
+		<Replace MapName="GiantEarth" X="60" Y="55" TerrainType="TERRAIN_GRASS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Bakreshwar, India -->
+		<Replace MapName="GiantEarth" X="66" Y="48" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Sabalan, Iran -->
+		<Replace MapName="GiantEarth" X="45" Y="56" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Qingshui, Taiwan -->
+		<Replace MapName="GiantEarth" X="87" Y="49" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Fang, Thailand -->
+		<Replace MapName="GiantEarth" X="75" Y="44" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Miravalles, Costa Rica -->
+		<Replace MapName="GiantEarth" X="148" Y="42" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Chinameca, El Salvador -->
+		<Replace MapName="GiantEarth" X="146" Y="44" TerrainType="TERRAIN_GRASS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Braunau-Altheim, Austria -->
+		<Replace MapName="GiantEarth" X="22" Y="65" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Brest-Pripyat, Belarus -->
+		<Replace MapName="GiantEarth" X="31" Y="68" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Koprivnica, Croatia/Csurgo, Hungary -->
+		<Replace MapName="GiantEarth" X="24" Y="64" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Soultz-sous-Forets, France -->
+		<Replace MapName="GiantEarth" X="16" Y="67" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Krafla, Iceland -->
+		<Replace MapName="GiantEarth" X="4" Y="85" TerrainType="TERRAIN_SNOW" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Larderello-Travale/Radicondoli, Italy -->
+		<Replace MapName="GiantEarth" X="19" Y="60" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Lodz, Poland -->
+		<Replace MapName="GiantEarth" X="26" Y="70" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Chaves, Portugal -->
+		<Replace MapName="GiantEarth" X="5" Y="58" TerrainType="TERRAIN_GRASS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Mt. Meager/Knight Inlet, British Columbia, Canada -->
+		<Replace MapName="GiantEarth" X="132" Y="72" TerrainType="TERRAIN_GRASS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Cerro Prieto, Mexico -->
+		<Replace MapName="GiantEarth" X="132" Y="58" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Los Azufres/Las Tres Virgenes, Mexico -->
+		<Replace MapName="GiantEarth" X="132" Y="54" TerrainType="TERRAIN_DESERT" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Paralana, South Australia, Australia -->
+		<Replace MapName="GiantEarth" X="98" Y="12" TerrainType="TERRAIN_DESERT_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Hastings Caves, Tasmania, Australia -->
+		<Replace MapName="GiantEarth" X="100" Y="4" TerrainType="TERRAIN_TUNDRA" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Jailolo, Indonesia -->
+		<Replace MapName="GiantEarth" X="91" Y="33" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Ulubelu, Indonesia -->
+		<Replace MapName="GiantEarth" X="78" Y="27" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Tohoku Region, Japan -->
+		<Replace MapName="GiantEarth" X="98" Y="65" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Kyushu Region, Japan -->
+		<Replace MapName="GiantEarth" X="90" Y="55" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Efate, Vaunatu -->
+		<Replace MapName="GiantEarth" X="109" Y="24" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Copahue, Argentina -->
+		<Replace MapName="GiantEarth" X="156" Y="13" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Sud Lipez, Bolivia -->
+		<Replace MapName="GiantEarth" X="157" Y="20" TerrainType="TERRAIN_TUNDRA_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Tolhuaca, Chile -->
+		<Replace MapName="GiantEarth" X="154" Y="13" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Hot Springs, Arkansas, US -->
+		<Replace MapName="GiantEarth" X="144" Y="61" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Devil's Kitchen, California, US -->
+		<Replace MapName="GiantEarth" X="132" Y="64" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Verde Hot Springs, Arizona, US -->
+		<Replace MapName="GiantEarth" X="134" Y="59" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Conundrum Hot Springs, Colorado, US -->
+		<Replace MapName="GiantEarth" X="138" Y="64" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Yellowstone, Wyoming, US -->
+		<Replace MapName="GiantEarth" X="136" Y="70" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		<!-- Chena Hot Springs, Alaska, US -->
+		<Replace MapName="GiantEarth" X="122" Y="83" TerrainType="TERRAIN_TUNDRA_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+
+
 	<!-- +++++++++++++++++++++++++++ -->
 	<!--      Giant Earth Reefs      -->
 	<!-- +++++++++++++++++++++++++++ -->
-	
+
+		<Replace MapName="GiantEarth" X="34" Y="25" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="34" Y="22" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="35" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="33" Y="19" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="34" Y="21" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="35" Y="23" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="36" Y="23" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="37" Y="21" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="34" Y="14" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="46" Y="16" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="50" Y="18" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="50" Y="16" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="48" Y="26" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="47" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="165" Y="37" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="166" Y="36" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="166" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="165" Y="38" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="57" Y="40" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="57" Y="39" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="58" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="59" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="58" Y="36" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="40" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="147" Y="49" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="62" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="148" Y="48" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="147" Y="47" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="78" Y="29" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="79" Y="28" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="80" Y="32" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="84" Y="26" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="86" Y="28" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="86" Y="36" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="38" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="34" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="88" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="89" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="91" Y="32" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="28" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="89" Y="40" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="95" Y="32" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="92" Y="32" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="96" Y="28" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="94" Y="27" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="99" Y="25" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="100" Y="24" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="102" Y="22" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="102" Y="21" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="103" Y="20" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="122" Y="37" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="111" Y="53" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="146" Y="52" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="119" Y="39" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="105" Y="20" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="100" Y="33" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="166" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="148" Y="46" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="153" Y="53" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="113" Y="22" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="82" Y="33" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="109" Y="18" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="106" Y="22" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="105" Y="23" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="84" Y="19" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="84" Y="13" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="88" Y="46" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="34" Y="45" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="36" Y="38" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="36" Y="39" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="154" Y="52" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="152" Y="48" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="69" Y="36" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="87" Y="36" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="160" Y="46" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="144" Y="54" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="142" Y="49" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="152" Y="45" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="43" Y="45" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="152" Y="47" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="54" Y="45" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="62" Y="35" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="34" Y="47" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="85" Y="39" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="82" Y="43" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="104" Y="28" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+		<Replace MapName="GiantEarth" X="90" Y="49" RuleSet="RULESET_EXPANSION_2" FeatureType="FEATURE_REEF" />
+
+<!--
 		<Replace MapName="GiantEarth" X="20" Y="51" TerrainType="TERRAIN_COAST" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_REEF" />
 		<Replace MapName="GiantEarth" X="11" Y="83" TerrainType="TERRAIN_COAST" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_REEF" />
 		<Replace MapName="GiantEarth" X="177" Y="57" TerrainType="TERRAIN_COAST" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_REEF" />
@@ -745,97 +959,7 @@
 		<Replace MapName="GiantEarth" X="110" Y="53" TerrainType="TERRAIN_COAST" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_REEF" />
 		<Replace MapName="GiantEarth" X="109" Y="54" TerrainType="TERRAIN_COAST" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_REEF" />
 		<Replace MapName="GiantEarth" X="109" Y="55" TerrainType="TERRAIN_COAST" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_REEF" />
-		
-	<!-- +++++++++++++++++++++++++++ -->
-	<!--    Giant Earth Fissures     -->
-	<!-- +++++++++++++++++++++++++++ -->
-		
-		<!-- Guelma, Algeria -->
-		<Replace MapName="GiantEarth" X="15" Y="52" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Assal, Djibouti -->
-		<Replace MapName="GiantEarth" X="38" Y="35" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Aluto-Langano, Ethiopia -->
-		<Replace MapName="GiantEarth" X="34" Y="32" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Olkaria, Kenya -->
-		<Replace MapName="GiantEarth" X="32" Y="29" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Antsirabe, Madagascar -->
-		<Replace MapName="GiantEarth" X="37" Y="16" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Warmwaterberg, South Africa -->
-		<Replace MapName="GiantEarth" X="25" Y="7" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Yangbajain, Tibet, China -->
-		<Replace MapName="GiantEarth" X="68" Y="54" TerrainType="TERRAIN_SNOW" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Xianyang, Shaanxi, China -->
-		<Replace MapName="GiantEarth" X="77" Y="59" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Georgia, Caucasus -->
-		<Replace MapName="GiantEarth" X="41" Y="60" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Tatapani, India -->
-		<Replace MapName="GiantEarth" X="60" Y="55" TerrainType="TERRAIN_GRASS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Bakreshwar, India -->
-		<Replace MapName="GiantEarth" X="66" Y="48" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Sabalan, Iran -->
-		<Replace MapName="GiantEarth" X="45" Y="56" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Qingshui, Taiwan -->
-		<Replace MapName="GiantEarth" X="87" Y="49" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Fang, Thailand -->
-		<Replace MapName="GiantEarth" X="75" Y="44" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Miravalles, Costa Rica -->
-		<Replace MapName="GiantEarth" X="148" Y="42" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Chinameca, El Salvador -->
-		<Replace MapName="GiantEarth" X="146" Y="44" TerrainType="TERRAIN_GRASS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Braunau-Altheim, Austria -->
-		<Replace MapName="GiantEarth" X="22" Y="65" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Brest-Pripyat, Belarus -->
-		<Replace MapName="GiantEarth" X="31" Y="68" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Koprivnica, Croatia/Csurgo, Hungary -->
-		<Replace MapName="GiantEarth" X="24" Y="64" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Soultz-sous-Forets, France -->
-		<Replace MapName="GiantEarth" X="16" Y="67" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Krafla, Iceland -->
-		<Replace MapName="GiantEarth" X="4" Y="85" TerrainType="TERRAIN_SNOW" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Larderello-Travale/Radicondoli, Italy -->
-		<Replace MapName="GiantEarth" X="19" Y="60" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Lodz, Poland -->
-		<Replace MapName="GiantEarth" X="26" Y="70" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Chaves, Portugal -->
-		<Replace MapName="GiantEarth" X="5" Y="58" TerrainType="TERRAIN_GRASS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Mt. Meager/Knight Inlet, British Columbia, Canada -->
-		<Replace MapName="GiantEarth" X="132" Y="72" TerrainType="TERRAIN_GRASS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Cerro Prieto, Mexico -->
-		<Replace MapName="GiantEarth" X="132" Y="58" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Los Azufres/Las Tres Virgenes, Mexico -->
-		<Replace MapName="GiantEarth" X="132" Y="54" TerrainType="TERRAIN_DESERT" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Paralana, South Australia, Australia -->
-		<Replace MapName="GiantEarth" X="98" Y="12" TerrainType="TERRAIN_DESERT_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Hastings Caves, Tasmania, Australia -->
-		<Replace MapName="GiantEarth" X="100" Y="4" TerrainType="TERRAIN_TUNDRA" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Jailolo, Indonesia -->
-		<Replace MapName="GiantEarth" X="91" Y="33" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Ulubelu, Indonesia -->
-		<Replace MapName="GiantEarth" X="78" Y="27" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Tohoku Region, Japan -->
-		<Replace MapName="GiantEarth" X="98" Y="65" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Kyushu Region, Japan -->
-		<Replace MapName="GiantEarth" X="90" Y="55" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Efate, Vaunatu -->
-		<Replace MapName="GiantEarth" X="109" Y="24" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Copahue, Argentina -->
-		<Replace MapName="GiantEarth" X="156" Y="13" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Sud Lipez, Bolivia -->
-		<Replace MapName="GiantEarth" X="157" Y="20" TerrainType="TERRAIN_TUNDRA_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Tolhuaca, Chile -->
-		<Replace MapName="GiantEarth" X="154" Y="13" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Hot Springs, Arkansas, US -->
-		<Replace MapName="GiantEarth" X="144" Y="61" TerrainType="TERRAIN_GRASS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Devil's Kitchen, California, US -->
-		<Replace MapName="GiantEarth" X="132" Y="64" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Verde Hot Springs, Arizona, US -->
-		<Replace MapName="GiantEarth" X="134" Y="59" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Conundrum Hot Springs, Colorado, US -->
-		<Replace MapName="GiantEarth" X="138" Y="64" TerrainType="TERRAIN_PLAINS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Yellowstone, Wyoming, US -->
-		<Replace MapName="GiantEarth" X="136" Y="70" TerrainType="TERRAIN_PLAINS_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
-		<!-- Chena Hot Springs, Alaska, US -->
-		<Replace MapName="GiantEarth" X="122" Y="83" TerrainType="TERRAIN_TUNDRA_HILLS" RuleSet="RULESET_EXPANSION_2"	FeatureType="FEATURE_GEOTHERMAL_FISSURE" />
+		-->
 		
 	</ExtraPlacement>
 	
@@ -935,7 +1059,7 @@
 		<Replace MapName="GiantEarth" X="4" Y="39" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
 		<Replace MapName="GiantEarth" X="5" Y="39" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
 		
-		<Replace MapName="GiantEarth" X="17" Y="64" FeatureType="FEATURE_MATTERHORN" TerrainType="TERRAIN_PLAINS_MOUNTAIN" /> 
+		<Replace MapName="GiantEarth" X="19" Y="64" FeatureType="FEATURE_MATTERHORN" TerrainType="TERRAIN_PLAINS_MOUNTAIN" /> 
 		<Replace MapName="GiantEarth" X="136" Y="63" FeatureType="FEATURE_DELICATE_ARCH" />
 		<Replace MapName="GiantEarth" X="8" Y="43" FeatureType="FEATURE_EYE_OF_THE_SAHARA" TerrainType="TERRAIN_DESERT" />
 		
@@ -971,6 +1095,12 @@
 		<Replace MapName="GiantEarth" X="155" Y="53" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
 		<Replace MapName="GiantEarth" X="156" Y="53" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
 		<Replace MapName="GiantEarth" X="156" Y="54" FeatureType="FEATURE_BERMUDA_TRIANGLE" TerrainType="TERRAIN_OCEAN" />
+
+		<Replace MapName="GiantEarth" X="154" Y="35" FeatureType="FEATURE_FOUNTAIN_OF_YOUTH" TerrainType="TERRAIN_GRASS" />
+		
+		<Replace MapName="GiantEarth" X="152" Y="36" FeatureType="FEATURE_PAITITI" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapName="GiantEarth" X="151" Y="35" FeatureType="FEATURE_PAITITI" TerrainType="TERRAIN_GRASS_HILLS" />
+		<Replace MapName="GiantEarth" X="152" Y="35" FeatureType="FEATURE_PAITITI" TerrainType="TERRAIN_PLAINS" />
 		
 		<!-- **************** -->
 		<!--    Modded NW     -->
