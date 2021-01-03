@@ -11830,7 +11830,7 @@
 <Replace Tag="LOC_CITY_NAME_DUHOK" Text="Duhok" Language="en_US" />
 <Replace Tag="LOC_CITY_NAME_MOSUL" Text="Mosul" Language="en_US" />
 <Replace Tag="LOC_CITY_NAME_BAGHDAD" Text="Baghdad" Language="en_US" />
-<Replace Tag="LOC_CITY_NAME_BABYLON" Text="Babylon" Language="en_US" />
+<Replace Tag="LOC_CITY_NAME_BABYLON" Text="Anshan" Language="en_US" />
 <Replace Tag="LOC_CITY_NAME_BASRAH" Text="Basrah" Language="en_US" />
 <Replace Tag="LOC_CITY_NAME_KUWAIT" Text="Kuwait" Language="en_US" />
 <Replace Tag="LOC_CITY_NAME_ABADAN" Text="Abadan" Language="en_US" />
