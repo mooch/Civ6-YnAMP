@@ -3561,9 +3561,6 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 	end
 	
 	
-	-- The map may require some specific placement...
-	ExtraPlacement()
-	
 	if bRealDeposits then	
 		AddDeposits()
 		-- to do : how to balance with normal placement ?
@@ -3585,6 +3582,9 @@ function GenerateImportedMap(MapToConvert, Civ6DataToConvert, NaturalWonders, wi
 		--print(" Adding Civ6 resource : Niter (TypeID = " .. tostring(resourceType)..")")
 		--PlaceStrategicResources(resourceType)
 	end
+	
+	-- The map may require some specific placement...
+	ExtraPlacement()
 	
 	-- Analyse Chokepoints after extra placement...
 	AreaBuilder.Recalculate();	
