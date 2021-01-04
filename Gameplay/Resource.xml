@@ -942,6 +942,10 @@
 			<Region>NORTH_AMERICA</Region>
 			<Resource>RESOURCE_FURS</Resource>
 		</Row>
+		<Row>
+			<Region>NORTH_AMERICA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclusive>
 	<!-- CENTRAL_AMERICA -->
 	<ResourceRegionExclude>
@@ -963,6 +967,14 @@
 			<Region>CENTRAL_AMERICA</Region>
 			<Resource>RESOURCE_SPICES</Resource>
 		</Row>
+		<Row>
+			<Region>CENTRAL_AMERICA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
+		<Row>
+			<Region>CENTRAL_AMERICA</Region>
+			<Resource>RESOURCE_TURTLES</Resource>
+		</Row>
 	</ResourceRegionExclusive>
 	<!-- SOUTH_AMERICA_WEST (Perou - Argentina)-->
 	<ResourceRegionExclude>
@@ -979,6 +991,10 @@
 		<Row>
 			<Region>SOUTH_AMERICA_WEST</Region>
 			<Resource>RESOURCE_TOBACCO</Resource>
+		</Row>
+		<Row>
+			<Region>SOUTH_AMERICA_WEST</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
 		</Row>
 	</ResourceRegionExclusive>
 	<!-- SOUTH_AMERICA_EAST (brazil)-->
@@ -1004,6 +1020,10 @@
 		<Row>
 			<Region>SOUTH_AMERICA_EAST</Region>
 			<Resource>RESOURCE_COFFEE</Resource>
+		</Row>
+		<Row>
+			<Region>SOUTH_AMERICA_EAST</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
 		</Row>
 	</ResourceRegionExclusive>
 	<!-- ANTARCTIC_AMERICA -->
@@ -1057,6 +1077,10 @@
 	</ResourceRegionExclusive>
 	<!-- AUSTRALIA -->
 	<ResourceRegionExclude>
+		<Row>
+			<Region>AUSTRALIA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1082,6 +1106,10 @@
 	</ResourceRegionExclusive>
 	<!-- OCEANIA -->
 	<ResourceRegionExclude>
+		<Row>
+			<Region>OCEANIA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1111,6 +1139,10 @@
 			<Region>SOUTH_ASIA</Region>
 			<Resource>RESOURCE_JADE</Resource>
 		</Row>
+		<Row>
+			<Region>SOUTH_ASIA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1132,6 +1164,10 @@
 	</ResourceRegionExclusive>
 	<!-- CENTRAL_ASIA -->
 	<ResourceRegionExclude>
+		<Row>
+			<Region>CENTRAL_ASIA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1154,6 +1190,10 @@
 			<Region>EAST_ASIA</Region>
 			<Resource>RESOURCE_DYES</Resource>
 		</Row>
+		<Row>
+			<Region>EAST_ASIA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1175,6 +1215,10 @@
 			<Region>NORTH_ASIA</Region>
 			<Resource>RESOURCE_CITRUS</Resource>
 		</Row>
+		<Row>
+			<Region>NORTH_ASIA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1191,6 +1235,10 @@
 		<Row>
 			<Region>MIDDLE_EAST</Region>
 			<Resource>RESOURCE_RICE</Resource>
+		</Row>
+		<Row>
+			<Region>MIDDLE_EAST</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
 		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
@@ -1225,6 +1273,10 @@
 			<Region>MEDITERRANEAN</Region>
 			<Resource>RESOURCE_SILVER</Resource>
 		</Row>
+		<Row>
+			<Region>MEDITERRANEAN</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1249,6 +1301,10 @@
 		<Row>
 			<Region>TURKEY</Region>
 			<Resource>RESOURCE_AMBER</Resource>
+		</Row>
+		<Row>
+			<Region>TURKEY</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
 		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
@@ -1283,6 +1339,10 @@
 			<Region>SOUTH_EUROPA</Region>
 			<Resource>RESOURCE_RICE</Resource>
 		</Row>
+		<Row>
+			<Region>SOUTH_EUROPA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1312,6 +1372,10 @@
 			<Region>WEST_EUROPA</Region>
 			<Resource>RESOURCE_AMBER</Resource>
 		</Row>
+		<Row>
+			<Region>WEST_EUROPA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1340,6 +1404,10 @@
 		<Row>
 			<Region>NORTH_EUROPA</Region>
 			<Resource>RESOURCE_AMBER</Resource>
+		</Row>
+		<Row>
+			<Region>NORTH_EUROPA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
 		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
@@ -1374,6 +1442,10 @@
 			<Region>EAST_EUROPA</Region>
 			<Resource>RESOURCE_DIAMONDS</Resource>
 		</Row>
+		<Row>
+			<Region>EAST_EUROPA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1394,6 +1466,10 @@
 		<Row>
 			<Region>NORTH_AFRICA</Region>
 			<Resource>RESOURCE_RICE</Resource>
+		</Row>
+		<Row>
+			<Region>NORTH_AFRICA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
 		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
@@ -1420,6 +1496,10 @@
 			<Region>CENTRAL_AFRICA</Region>
 			<Resource>RESOURCE_RICE</Resource>
 		</Row>
+		<Row>
+			<Region>CENTRAL_AFRICA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1441,6 +1521,10 @@
 			<Region>SOUTH_AFRICA</Region>
 			<Resource>RESOURCE_RICE</Resource>
 		</Row>
+		<Row>
+			<Region>SOUTH_AFRICA</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
+		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
 		<Row>
@@ -1461,6 +1545,10 @@
 		<Row>
 			<Region>MADAGASCAR</Region>
 			<Resource>RESOURCE_RICE</Resource>
+		</Row>
+		<Row>
+			<Region>MADAGASCAR</Region>
+			<Resource>RESOURCE_MAIZE</Resource>
 		</Row>
 	</ResourceRegionExclude>
 	<ResourceRegionExclusive>
