@@ -336,7 +336,7 @@
 		<Replace Tag="LOC_CITY_NAME_LISBOA_GREECE" Text="Lissavóna" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_LISBOA_HUNGARY" Text="Lisszabon" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_LISBOA_JAPAN" Text="Risubon" Language="en_US" />
-		<Replace Tag="LOC_CITY_NAME_LISBOA_LISBON" Text="Lisboa" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_LISBOA_LISBON" Text="Lisbon" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_LISBOA_ROME" Text="Olissipo" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_LLEIDA" Text="Lleida" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_LLEIDA_ARABIA" Text="Lāridâ" Language="en_US" />
@@ -901,6 +901,7 @@
 		<Replace Tag="LOC_CITY_NAME_RIMINI" Text="Rimini" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_RIMINI_ROME" Text="Ariminum" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_ROME" Text="Rome" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_ROME_VATICAN_CITY" Text="Vatican City" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_ROME_ARABIA" Text="Rūmiya" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_ROME_CHINA" Text="Luoma" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_ROME_GERMANY" Text="Rom" Language="en_US" />
@@ -967,7 +968,7 @@
 		<Replace Tag="LOC_CITY_NAME_VALLETTA_ARABIA" Text="Fālītā" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VALLETTA_FRANCE" Text="La Valette" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VALLETTA_GREECE" Text="Valéta" Language="en_US" />
-		<Replace Tag="LOC_CITY_NAME_VALLETTA_VALLETTA" Text="Il-Belt" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_VALLETTA_VALLETTA" Text="Valletta" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VASTO" Text="Vasto" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VASTO_ROME" Text="Larinum" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VENICE" Text="Venice" Language="en_US" />
@@ -2207,6 +2208,7 @@
 		<Replace Tag="LOC_CITY_NAME_ST_GALLEN" Text="St Gallen" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_ST_GALLEN_ROME" Text="Arbor Felix" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SZCZECIN" Text="Szczecin" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_SZCZECIN_WOLIN" Text="Wolin" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SZCZECIN_GERMANY" Text="Stettin" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SZCZECIN_NORWAY" Text="Stettin" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_TIEL" Text="Tiel" Language="en_US" />
@@ -3891,6 +3893,7 @@
 		<Replace Tag="LOC_CITY_NAME_CONSTANTINOPLE" Text="Constantinople" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_CYNOSCEPHALAE" Text="Cynoscephalæ" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_DELPHI" Text="Delphi" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_DELPHI_FRANCE" Text="Delphes" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_DIOCLETIANOPOLIS" Text="Diocletianopolis" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_DYRRACHIUM" Text="Dyrrachium" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_DORISKOS" Text="Doriskos" Language="en_US" />
@@ -4193,6 +4196,7 @@
 		<Replace Tag="LOC_CITY_NAME_PAPHOS_ARABIA" Text="Baf" Language="en_US" /> <!--Turkish -->
 		<Replace Tag="LOC_CITY_NAME_POLI_CRYSOCHOUS" Text="Poli Chysochous" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SAMSUN" Text="Samsun" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_SAMSUN_HATTUSA" Text="Hattusa" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SEYDISEHIR" Text="Seydişehir" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SINOP" Text="Sinop" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_TAVSANLI" Text="Tavşanlı" Language="en_US" />
@@ -4428,6 +4432,7 @@
 		<Replace Tag="LOC_CITY_NAME_MEDINA_SUMERIA" Text="Yathrib" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MIRBAT" Text="Mirbat" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MOSUL" Text="Mosul" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_MOSUL_AKKAD" Text="Akkad" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MOSUL_ARABIA" Text="al-Mawsil" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MOSUL_EGYPT" Text="Ninii" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MOSUL_GREECE" Text="Ninive" Language="en_US" />
@@ -4464,6 +4469,7 @@
 		<Replace Tag="LOC_CITY_NAME_SAMAWAH" Text="Samawah" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SANAA" Text="Sana'a" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SHIRAZ" Text="Shiraz" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_SHIRAZ_ANSHAN" Text="Anshan" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SHIRAZ_GREECE" Text="Persepolis" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SHIRAZ_INDIA" Text="Shiraaz" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SHIRAZ_ROME" Text="Persepolis" Language="en_US" />
@@ -4776,6 +4782,7 @@
 		<Replace Tag="LOC_CITY_NAME_CHIREDZI" Text="Chiredzi" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_CUITO_CUANAVALE" Text="Cuito Cuanavale" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_DAR_ES_SALAAM" Text="Dar es Salaam" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_DAR_ES_SALAAM_ZANZIBAR" Text="Zanzibar" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_DILOLO" Text="Dilolo" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_DIVUNDU" Text="Divundu" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_DODOMA" Text="Dodoma" Language="en_US" />
@@ -5236,6 +5243,7 @@
 		<Replace Tag="LOC_CITY_NAME_LOKUTU" Text="Lokutu" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_LOKUTU_FRANCE" Text="Elisabetha" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MAIDUGURU" Text="Maiduguru" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_MAIDUGURU_NGAZARGAMU" Text="Ngazargamu" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MAJI" Text="Maji" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MAKANZA" Text="Makanza" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MAKANZA_BOER" Text="Nieu-Antwerpen" Language="en_US" />
@@ -5407,6 +5415,7 @@
 		<Replace Tag="LOC_CITY_NAME_INEKAR" Text="Inékar" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_KADUNA" Text="Kaduna" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_KAEDI" Text="Kaédi" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_KAEDI_CHINGUETTI" Text="Chinguetti" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_KANKAN" Text="Kankan" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_KARA" Text="Kara" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_KATIOLA" Text="Katiola" Language="en_US" />
@@ -5429,6 +5438,7 @@
 		<Replace Tag="LOC_CITY_NAME_LAGOS" Text="Lagos" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_LAGOS_ROME" Text="Lacupolis" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_LOKOJA" Text="Lokoja" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_LOKOJA_TARUGA" Text="Taruga" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_LOME" Text="Lomé" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MAHINA" Text="Mahina" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MALANVILLE" Text="Malanville" Language="en_US" />
@@ -6505,6 +6515,7 @@
         <Replace Tag="LOC_CITY_NAME_KAVIENG_INDIA" Text="Kavienga" Language="en_US" />
 
 		<Replace Tag="LOC_CITY_NAME_HANGA_ROA" Text="Hanga Roa" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_HANGA_ROA_RAPA_NUI" Text="Rapa Nui" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_HANGA_ROA_KOREA" Text="Hang-ga Loa" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_HANGA_ROA_CHINA" Text="Anjialuoa" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_HANGA_ROA_ARABIA" Text="Hanajaan Ruu" Language="en_US" />
@@ -6685,6 +6696,7 @@
 		<Replace Tag="LOC_CITY_NAME_GREYMOUTH" Text="Greymouth" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_GREYMOUTH_MAORI" Text="Māwhera" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_HAMILTON" Text="Hamilton" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_HAMILTON_AUCKLAND" Text="Auckland" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_HAMILTON_MAORI" Text="Kirikiriroa" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_INVERCARGILL" Text="Invercargill" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_INVERCARGILL_MAORI" Text="Waihōpai" Language="en_US" />
@@ -7053,6 +7065,7 @@
 		<Replace Tag="LOC_CITY_NAME_TIMOR_LESTE" Text="Timor-Leste" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_BANDAR_LAMPUNG" Text="Bandar Lampung" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_JAKARTA" Text="Jakarta" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_JAKARTA_BANDAR_BRUNEI" Text="Bandar Brunei" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_KRAKATOA" Text="Krakatoa" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_BANDUNG" Text="Bandung" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SEMARANG" Text="Semarang" Language="en_US" />
@@ -7206,6 +7219,7 @@
 		<Replace Tag="LOC_CITY_NAME_NAGERCOIL" Text="Nagercoil" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_JAFFNA" Text="Jaffna" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_COLOMBO" Text="Colombo" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_COLOMBO_KANDY" Text="Kandy" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_BATTICOLOA" Text="Batticoloa" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_MALDIVES" Text="Maldives" Language="en_US" />
 
@@ -10438,6 +10452,7 @@
 		<Replace Tag="LOC_CITY_NAME_ST_LOUIS_AZTEC" Text="Cahokia" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_ST_LOUIS_MAPUCHE" Text="Cahokia" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_ST_LOUIS_CREE" Text="Cahokia" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_ST_LOUIS_CAHOKIA" Text="Cahokia" Language="en_US" />
 		
 		<!-- LOUISIANA -->
 		<Replace Tag="LOC_CITY_NAME_LAFAYETTE" Text="Lafayette" Language="en_US" />
@@ -11060,8 +11075,8 @@
 		<Replace Tag="LOC_CITY_NAME_VERACRUZ_MAPUCHE" Text="Cēmpoalātl" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VERACRUZ_CREE" Text="Cēmpoalātl" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VERACRUZ_TIKAL" Text="Cēmpoalātl" Language="en_US" />
-		<Replace Tag="LOC_CITY_NAME_VERACRUZ_LA_VENTA" Text="Cēmpoalātl" Language="en_US" />
-		<Replace Tag="LOC_CITY_NAME_VERACRUZ_PALENQUE" Text="Cēmpoalātl" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_VERACRUZ_LA_VENTA" Text="La Venta" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_VERACRUZ_PALENQUE" Text="Palenque" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VILLAHERMOSA" Text="Villahermosa" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VILLAHERMOSA_RUSSIA" Text="Vil'yaermosa" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_VILLAHERMOSA_CHINA" Text="Biya Aiermosa" Language="en_US" />
@@ -11116,8 +11131,9 @@
 		<Replace Tag="LOC_CITY_NAME_FLORES_AZTEC" Text="Nojpetén" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_FLORES_MAPUCHE" Text="Nojpetén" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_FLORES_TIKAL" Text="Nojpetén" Language="en_US" />
-		<Replace Tag="LOC_CITY_NAME_FLORES_PALENQUE" Text="Nojpetén" Language="en_US" />
-		<Replace Tag="LOC_CITY_NAME_FLORES_LA_VENTA" Text="Nojpetén" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_FLORES_PALENQUE" Text="Mitla" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_FLORES_LA_VENTA" Text="La Venta" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_FLORES_MITLA" Text="Mitla" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_GUATEMALA" Text="Guatemala City" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_GUATEMALA_RUSSIA" Text="Gvatemala Gorod" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_GUATEMALA_CHINA" Text="Weidimala Shi" Language="en_US" />
@@ -11232,6 +11248,7 @@
 		<Replace Tag="LOC_CITY_NAME_BLACK_RIVER" Text="Black River" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_SAN_JUAN_PUERTO_RICO" Text="San Juan" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_PONCE" Text="Ponce" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_PONCE_CAGUANA" Text="Caguana" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_BRITISH_VIRGIN_ISLANDS" Text="British Virgin Islands" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_US_VIRGIN_ISLANDS" Text="US Virgin Islands" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_PORT_PRINCE" Text="Port Prince" Language="en_US" />
@@ -11546,6 +11563,7 @@
 		<Replace Tag="LOC_CITY_NAME_MANIZALES" Text="Manizales" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_FACATATIVA" Text="Facatativá" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_BOGOTA" Text="Bogota" Language="en_US" />
+		<Replace Tag="LOC_CITY_NAME_BOGOTA_HUNZA" Text="Hunza" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_WILL_PASS" Text="Will pass" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_KUMAKA" Text="Kumaka" Language="en_US" />
 		<Replace Tag="LOC_CITY_NAME_CAJANA" Text="Cajana" Language="en_US" />

@@ -1347,7 +1347,7 @@
 	<ResourceRegionExclusive>
 		<Row>
 			<Region>SOUTH_EUROPA</Region>
-			<Resource>RESOURCE_MERCURY</Resource>
+			<Resource>RESOURCE_CITRUS</Resource>
 		</Row>
 		<Row>
 			<Region>SOUTH_EUROPA</Region>

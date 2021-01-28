@@ -1063,7 +1063,7 @@
 		<Replace MapName="GiantEarth" X="4" Y="39" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
 		<Replace MapName="GiantEarth" X="5" Y="39" FeatureType="FEATURE_LAKE_RETBA" TerrainType="TERRAIN_GRASS" />
 		
-		<Replace MapName="GiantEarth" X="19" Y="64" FeatureType="FEATURE_MATTERHORN" TerrainType="TERRAIN_PLAINS_MOUNTAIN" /> 
+		<Replace MapName="GiantEarth" X="18" Y="64" FeatureType="FEATURE_MATTERHORN" TerrainType="TERRAIN_PLAINS_MOUNTAIN" /> 
 		<Replace MapName="GiantEarth" X="136" Y="63" FeatureType="FEATURE_DELICATE_ARCH" />
 		<Replace MapName="GiantEarth" X="8" Y="43" FeatureType="FEATURE_EYE_OF_THE_SAHARA" TerrainType="TERRAIN_DESERT" />
 		
